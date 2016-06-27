@@ -1,0 +1,67 @@
+body{
+    max-width: 960px;
+}
+
+
+#rgulogo{
+   width: 250px;
+
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+    float: left;
+}
+
+li a{
+    float: left;
+    display: inline-block;
+    text-align: center;
+    padding: 0 20px 20px 20px;
+    text-decoration: none;
+}
+#banner{
+    max-width:960px;
+}
+#jayne{
+    width:240px;
+    float: left;
+}
+#section1{
+    width:66%;
+}
+
+#news{
+  width: 33%;
+  background-color: #DBC9DF;
+float: right;
+
+}
+#events{
+    width: 33%;
+    background-color: #782A7E;
+    float: right;
+
+}
+
+#white{
+    color: white;
+    text-align: center;
+}
+.textwhite1{
+    color: white;
+}
+
+h3, h4{
+    color: white;
+
+}
+
+footer{
+    background-color: #363636;
+    clear: both;
+}

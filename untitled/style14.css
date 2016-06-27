@@ -1,0 +1,13 @@
+div{
+
+    border-style: solid;
+}
+
+
+p{
+  font-family: Georgia;
+    font-weight: normal;
+border-style: solid;
+    border-color: aqua;
+    border-width: 10px;
+}

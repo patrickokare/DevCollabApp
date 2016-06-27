@@ -1,0 +1,123 @@
+body{
+
+   /* max-width: 960px; */
+}
+*{
+    font-family:  Verdana, Calibri;
+    font-weight: 300;
+    color: #066;
+    text-transform: none;
+    background-color: mintcream;
+}
+header{
+    max-width: 960px;
+}
+
+
+/* to control and design the forms, changes here will enable direct editing.....................................................................................*/
+label{
+
+    width: 10em;
+
+    text-align: center;
+    margin-right: 0.5em;
+    display: inline-block;
+
+}
+#labelcentral{
+
+    text-align: left;
+}
+
+#labelcentral1{
+
+    text-align: left;
+}
+
+
+.submit input{
+
+    margin-left: 4.5em;
+    color: darkgreen;
+    border: 2px outset #d7b9c9
+}
+fieldset
+{
+    border: 1px solid darkorange;
+    max-width: 960px;
+
+}
+
+input
+{
+    color: #781351;
+    background: #fee3ad;
+    border: 1px solid #781351;
+
+}
+textarea{
+    color: #781351;
+    background: #fee3ad;
+    border: 1px solid #781351;
+
+}
+
+
+/* ending of form control and design......................................................................................................................... */
+
+
+#logo{
+    alignment: left;
+    width: 200px;
+}
+
+h1 {
+    text-align: center;
+
+}
+
+
+#title{
+    text-align:left;
+    font-weight: 500;
+}
+/* to control the hyper links, changes here will edit the headers */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+li{
+    float: left;
+
+}
+
+li a{
+
+    display: inline-block;
+    text-align: center;
+    padding: 0 10px 10px 10px;
+    text-decoration: none;
+    background-color: green;
+    font-family: cursive;
+    font-size: 100%;
+    color: white;
+    max-width: 100%;
+
+}
+
+li a:hover{
+    background-color:darkorange;
+
+}
+
+/* end of hyper link control ..........................................................................*/
+footer{
+    background-color: green;
+    text-align: center;
+    color: white;
+    clear:both;
+    height: 100%;
+    max-width: 100%;
+}

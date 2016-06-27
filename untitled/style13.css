@@ -1,0 +1,36 @@
+h1{
+
+    color: aqua;
+    font-size: 44px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+body{
+    background-color: whitesmoke;
+
+}
+
+p{
+    padding:30px;
+    background-color: sandybrown;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+h3{
+    padding:30px;
+    color: rgb(56,0,4);
+}
+
+li{
+    text-decoration: line-through;
+}
+
+div{
+
+   background-color:red;
+
+}
