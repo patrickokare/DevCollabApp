@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.walepatrick.kareTechApp"
+        versionCode = "1"
+        version = "1.0.0">
+    <name> KareTechApp</name>
+    <description> Collaborative App for team-based M-learning </description>
+    <author href = "https://kareTechApp.azurewebsites.net"
+            email = "b.p.d.okare@rgu.ac.uk">
+        Wale Patrick
+    </author>
+    <preference name = "orientation" value = "none"/>
+
+</widget>
