@@ -4,13 +4,10 @@
         id        = "com.walepatrick.kareTechApp"
         versionCode = "1"
         version = "1.0.0">
-
     <gap:splash src="karetech_splash.png" gap:platform="android" gap:density="ldpi" />
     <gap:splash src="karetech_splash.png" gap:platform="android" gap:density="mdpi" />
     <gap:splash src="karetech_splash.png" gap:platform="android" gap:density="hdpi" />
     <gap:splash src="karetech_splash.png" gap:platform="android" gap:density="xhdpi" />
-
-
     <name> KareTechApp</name>
     <description> Collaborative App for team-based M-learning Property of Wale Patrick </description>
     <author href = "https://kareTechApp.azurewebsites.net"
