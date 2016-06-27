@@ -11,6 +11,6 @@
         Wale Patrick
     </author>
     <preference name = "orientation" value = "none"/>
-    <icon src = "ktlogo.JPG" />
+    <icon src ="icon.png" />
 </widget>
 
