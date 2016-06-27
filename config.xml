@@ -9,8 +9,7 @@
     <gap:splash src="karetech_splash.png" gap:platform="android" gap:density="mdpi" />
     <gap:splash src="karetech_splash.png" gap:platform="android" gap:density="hdpi" />
     <gap:splash src="karetech_splash.png" gap:platform="android" gap:density="xhdpi" />
-    <!-- Define version of phonegap to use -->
-    <preference name="phonegap-version" value="1.9.0" />
+
 
     <name> KareTechApp</name>
     <description> Collaborative App for team-based M-learning Property of Wale Patrick </description>
