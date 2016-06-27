@@ -5,12 +5,12 @@
         versionCode = "1"
         version = "1.0.0">
     <name> KareTechApp</name>
-    <description> Collaborative App for team-based M-learning </description>
+    <description> Collaborative App for team-based M-learning Property of Wale Patrick </description>
     <author href = "https://kareTechApp.azurewebsites.net"
             email = "b.p.d.okare@rgu.ac.uk">
         Wale Patrick
     </author>
     <preference name = "orientation" value = "none"/>
-    <icon src ="icon.png" />
+    <icon src ="icon.PNG" />
 </widget>
 
