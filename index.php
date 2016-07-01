@@ -17,12 +17,21 @@
  So far downloadable on Blackberry, Android, Windows, Nokia,Symbian devices.......
     <p> Application is meant to help teams collaborate in a working environment,
         having a data storage, vcs, facebook, google hangout and a file upload feature</p>
-
-<marquee> <span style="color: darkred"> Web/Mobile Hybrid Site in Development </span> </marquee>
-
 </h1>
 
 <a href=" https://codeshare.io/new"> What we are trying to Achieve 6025 </a>
+
+<?php
+
+require_once "dropbox-sdk/Dropbox/autoload.php";
+
+
+?>
+
+
+
+
+
 
 
 
