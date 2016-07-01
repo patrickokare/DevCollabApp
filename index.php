@@ -5,21 +5,7 @@
     <title>Home Page </title>
 </head>
 <body style="color: #066">
-<header>
-<img src="karetech_icon.PNG"/>
-<br>
-<br>
-<br>
-</header>
-<h1>
-    Dummy App for Project investigation on Collaborative M-learning
 
- So far downloadable on Blackberry, Android, Windows, Nokia,Symbian devices.......
-    <p> Application is meant to help teams collaborate in a working environment,
-        having a data storage, vcs, facebook, google hangout and a file upload feature</p>
-</h1>
-
-<a href=" https://codeshare.io/new"> What we are trying to Achieve 6025 </a>
 
 <?php
 
@@ -35,23 +21,7 @@ require_once "dropbox-sdk/Dropbox/autoload.php";
 
 
 
-<script src="https://static.opentok.com/v2/js/opentok.min.js"></script>
-<script charset="utf-8">
-    var apiKey = '45616052';
-    var sessionId = '2_MX40NTYxNjA1Mn5-MTQ2NzM5NTQ5Mzg1OH5Ob0txUzk5RjJIQUJxU2pJSlAzeUgyRGd-fg';
-    var token = 'T1==cGFydG5lcl9pZD00NTYxNjA1MiZzaWc9ODUxNTE2NWZkYWEzNGY0ZmIxMTgxN2NiMzdiZGY4M2NkMDJk' +
-            'ZjNlNDpzZXNzaW9uX2lkPTJfTVg0ME5UWXhOakExTW41LU1UUTJOek01TlRRNU16ZzFPSDVPYjB0eFV6azVSakpJU' +
-            'VVKeFUycEpTbEF6ZVVneVJHZC1mZyZjcmVhdGVfdGltZT0xNDY3Mzk1ODg5Jm5vbmNlPTAuNzE5MjU0MjU1Mjk0Nzk5OCZ' +
-            'yb2xlPXB1Ymxpc2hlciZleHBpcmVfdGltZT0xNDY5OTg3ODg3';
-    var session = OT.initSession(apiKey, sessionId)
-            .on('streamCreated', function(event) {
-                session.subscribe(event.stream);
-            })
-            .connect(token, function(error) {
-                var publisher = OT.initPublisher();
-                session.publish(publisher);
-            });
-</script>
+
 
 
 
