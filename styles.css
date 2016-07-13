@@ -24,7 +24,7 @@ nav>ul>li{
 
 nav>ul>li a {
     display: block;
-    color: darkorange;
+    color: whitesmoke;
     text-align: center;
     padding: 10px 30px;
     text-decoration: none;
@@ -37,7 +37,7 @@ li a:hover{
 
 footer>p{
     text-align: center;
-    color:darkorange;
+    color:whitesmoke;
 }
 .footer{
     background-color:  navy;
