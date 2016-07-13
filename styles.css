@@ -27,13 +27,13 @@ nav>ul>li a {
 }
 li a:hover{
     color: goldenrod;
-    background-color: darkred;
+    background-color: darkorange;
 }
 /* End of Navigation bar Control */
 
 footer>p{
     text-align: center;
-    color:darkred;
+    color:darkorange;
 }
 .footer{
     background-color:  #066;
