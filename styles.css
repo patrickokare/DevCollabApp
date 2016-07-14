@@ -59,7 +59,7 @@ input { font:12px arial; }
     background:#EBF4FB;
     width:504px;
     border:1px solid #ACD8F0;
-    float: left;
+
 }
 
 #loginform { padding-top:18px; }
@@ -98,5 +98,8 @@ input { font:12px arial; }
 #right{
     float: right;
 
+}
+#left{
+    float: left;
 }
 /* Chat form Close */
