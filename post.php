@@ -1,4 +1,4 @@
-<?php
+<?
 session_start();
 if(isset($_SESSION['name'])){
     $text = $_POST['text'];
@@ -8,4 +8,3 @@ if(isset($_SESSION['name'])){
     fclose($fp);
 }
 ?>
-
