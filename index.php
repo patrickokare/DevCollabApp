@@ -15,7 +15,7 @@
     <nav>
 
         <ul>
-            <li> <a href="index.html"> HOME </a> </li>
+            <li> <a href="index.php"> HOME </a> </li>
             <li> <a href="#"> FEATURES </a> </li>
         </ul>
 
@@ -55,11 +55,10 @@
 
     });
 </script>
-
-
-
-
 </div>
+
+
+
 
 
 
