@@ -96,7 +96,8 @@ else{
 
                 echo $contents;
             }
-            ?></div>
+            ?>
+        </div>
 
         <form name="message" action="">
             <input name="usermsg" type="text" id="usermsg" size="63" />
@@ -152,8 +153,9 @@ else{
 <br>
 
 
-<a href="https://twitter.com/intent/tweet?button_hashtag=collaborativeApp" class="twitter-hashtag-button" data-show-count="false">Tweet #collaborativeApp</a>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<a class="twitter-timeline"  href="https://twitter.com/hashtag/corgi" data-widget-id="753417739293908992">#corgi Tweets</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
 
 
 

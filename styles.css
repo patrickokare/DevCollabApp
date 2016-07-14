@@ -73,7 +73,9 @@ input { font:12px arial; }
     height:200px;
     width:430px;
     border:1px solid #ACD8F0;
-    overflow:auto; }
+    overflow:auto;
+float: right;
+}
 
 #usermsg {
     width:395px;
