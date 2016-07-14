@@ -35,7 +35,7 @@
 <div id="right">
     <div id="wrapper">
         <div id="menu">
-            <p class="welcome"> Logged in as, <b><?php echo $_SESSION['name']; ?></b></p>
+            <p class="welcome"> Logged in as: <b><?php echo $_SESSION['name']; ?></b></p>
             <p class="logout"><a id="exit" href="#">Exit Chat</a></p>
             <div style="clear:both"></div>
         </div>
@@ -101,7 +101,9 @@ if(isset($_POST['enter'])){
             if(exit==true){window.location = 'index.php?logout=true';}
         });
     });
+</script>
 
+<script>
 <?
 if(isset($_GET['logout'])){
 
@@ -124,39 +126,6 @@ $("#usermsg").attr("value", "");
 return false;
 });
 
-
-
-//Load the file containing the chat log
-function loadLog(){
-
-$.ajax({
-url: "log.html",
-cache: false,
-success: function(html){
-$("#chatbox").html(html); //Insert chat log into the #chatbox div
-},
-});
-}
-
-
-
-    //Load the file containing the chat log
-    function loadLog(){
-        var oldscrollHeight = $("#chatbox").attr("scrollHeight") - 20; //Scroll height before the request
-        $.ajax({
-            url: "log.html",
-            cache: false,
-            success: function(html){
-                $("#chatbox").html(html); //Insert chat log into the #chatbox div
-
-                //Auto-scroll
-                var newscrollHeight = $("#chatbox").attr("scrollHeight") - 20; //Scroll height after the request
-                if(newscrollHeight > oldscrollHeight){
-                    $("#chatbox").animate({ scrollTop: newscrollHeight }, 'normal'); //Autoscroll to bottom of div
-                }
-            },
-        });
-    }
 
 </script>
 
