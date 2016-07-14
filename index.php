@@ -88,7 +88,17 @@ else{
             <p class="logout"><a id="exit" href="#">Exit Chat</a></p>
             <div style="clear:both"></div>
         </div>
+        <div id="chatbox">
+            <?php
+            if(file_exists("log.html") && filesize("log.html") > 0){
+                $handle = fopen("log.html", "r");
+                $contents = fread($handle, filesize("log.html"));
+                fclose($handle);
 
+                echo $contents;
+            }
+            ?>
+        </div>
 
         <form name="message" action="">
             <input name="usermsg" type="text" id="usermsg" size="63" />
