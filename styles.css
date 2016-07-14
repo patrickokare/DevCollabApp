@@ -58,7 +58,9 @@ input { font:12px arial; }
     padding-bottom:25px;
     background:#EBF4FB;
     width:504px;
-    border:1px solid #ACD8F0; }
+    border:1px solid #ACD8F0;
+    float: left;
+}
 
 #loginform { padding-top:18px; }
 
@@ -74,7 +76,7 @@ input { font:12px arial; }
     width:430px;
     border:1px solid #ACD8F0;
     overflow:auto;
-float: right;
+
 }
 
 #usermsg {
