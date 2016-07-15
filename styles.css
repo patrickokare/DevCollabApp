@@ -6,10 +6,10 @@ body{
     background-color: mintcream;
 }
 header{
-    background-color: navy;
+    background-color: #066;
 }
 h2{
-    color: whitesmoke;
+    color: darkred;
     text-align: center;
 }
 nav>ul{
@@ -37,10 +37,10 @@ li a:hover{
 
 footer>p{
     text-align: center;
-    color:whitesmoke;
+    color:darkred;
 }
 .footer{
-    background-color:  navy;
+    background-color:  #066;
 
     height: 150px;
     clear: both;

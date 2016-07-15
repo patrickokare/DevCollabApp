@@ -50,7 +50,7 @@ if(isset($_POST['enter'])){
 <body>
 
 <header>
-    <h2> KareTech Collaborative Environment </h2>
+    <h2> ArrayTech Collaborative Environment </h2>
     <nav>
 
         <ul>
