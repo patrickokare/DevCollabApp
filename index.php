@@ -88,6 +88,7 @@ else{
             <p class="logout"><a id="exit" href="#">Exit Chat</a></p>
             <div style="clear:both"></div>
         </div>
+
         <div id="chatbox">
             <?php
             if(file_exists("log.html") && filesize("log.html") > 0){
