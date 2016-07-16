@@ -24,14 +24,14 @@ nav>ul>li{
 
 nav>ul>li a {
     display: block;
-    color: whitesmoke;
+    color: darkred;
     text-align: center;
     padding: 10px 30px;
     text-decoration: none;
 }
 li a:hover{
     color: goldenrod;
-  /  background-color: darkorange;
+    background-color: orange;
 }
 /* End of Navigation bar Control */
 
