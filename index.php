@@ -1,5 +1,14 @@
 
+<?php
 
+$comment = null;
+// when the form is submitted this code below will run
+if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'])){
+    $comment = $_POST['preview-form-comment'];
+
+}
+
+?>
 
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
@@ -28,20 +37,38 @@
 </header>
 
 
-<script type="text/javascript" src="codemirror/js/jquery.min.js.js"></script>
-<script type="text/javascript" src="codemirror/plugin/codemirror/lib/codemirror.js"></script>
-<script type="text/javascript" src ="codemirror/js/default.js"></script>
 
 
 
 <div id="left">
-<label> CODE EDITOR
 
-    <textarea class ="codemirror-textarea" rows="30" cols="80"></textarea>
 
-</label>
+
+    <form id="preview-form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?> ">
+
+<textarea class="codemirror-textarea" name="preview-form-comment" id="preview-form-comment" rows="30" cols="80">
+    <?php echo $comment; ?>
+</textarea>
+        <br>
+        <input type="submit" name = "preview-form-submit" id="preview-form-submit" value="Submit">
+
+    </form>
+    <div id="preview-comment"><?php echo $comment; ?> </div>
+
+
+    <script type="text/javascript" src="codemirror/js/jquery.min.js.js"></script>
+    <script type="text/javascript" src="codemirror/plugin/codemirror/lib/codemirror.js"></script>
+    <script type="text/javascript" src ="codemirror/js/default.js"></script>
+
+
+
 
 </div>
+
+
+
+
+
 
 
 
