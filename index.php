@@ -11,14 +11,16 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 ?>
 
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html>
 <head>
     <meta charset="UTF-8">
     <title>Welcome</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="codemirror/plugin/codemirror/lib/codemirror.css" rel="stylesheet">
-  <link href="styles.css" rel="stylesheet">
+    <link href="codemirror/plugin/codemirror/lib/codemirror.css" rel="stylesheet" type="text/css">
+
+  <link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -71,6 +73,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 </div>
 
 </div>
+
+
 
 
 
