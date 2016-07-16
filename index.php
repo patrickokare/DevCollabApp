@@ -53,7 +53,12 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
         <input type="submit" name = "preview-form-submit" id="preview-form-submit" value="Submit">
 
     </form>
-    <div id="preview-comment"><?php echo $comment; ?> </div>
+
+    <textarea>
+
+        <div id="preview-comment"><?php echo $comment; ?> </div>
+    </textarea>
+
 
 
     <script type="text/javascript" src="codemirror/js/jquery.min.js.js"></script>
