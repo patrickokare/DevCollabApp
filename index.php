@@ -1,4 +1,4 @@
-
+<!-- Developed by Wale Patrick August 2016 -->
 <?php
 
 $comment = null;
@@ -14,7 +14,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>Welcome</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="codemirror/plugin/codemirror/lib/codemirror.css" rel="stylesheet">
@@ -30,6 +30,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
         <ul>
             <li> <a href="index.php"> HOME </a> </li>
             <li> <a href="#"> FEATURES </a> </li>
+            <li> <a href="#"> ABOUT THE PROJECT</a> </li>
         </ul>
 
     </nav>
@@ -37,12 +38,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 </header>
 
 
-
-
-
+// Code Editor Code, Implementing Code Mirror technology..................
 <div id="left">
-
-
 
     <form id="preview-form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?> ">
 
@@ -63,32 +60,13 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
     </textarea>
 
 </div>
-
-
     <script type="text/javascript" src="codemirror/js/jquery.min.js.js"></script>
     <script type="text/javascript" src="codemirror/plugin/codemirror/lib/codemirror.js"></script>
     <script type="text/javascript" src ="codemirror/js/default.js"></script>
-
-
-
-
 </div>
+// End of code Mirror...................
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//Google Hangout Audio and Video Conferencing codes are here.......................
 <div id="right">
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 <div class="g-hangout" data-render="createhangout"
@@ -96,6 +74,12 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 </div>
 
 </div>
+//End of Google Hangout.............................
+
+
+
+
+
 
 
 
