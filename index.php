@@ -28,9 +28,9 @@
 </header>
 
 <div id="left">
-<label> -CODE EDITOR
+<label> CODE EDITOR
 
-    <textarea class ="codemirror-textarea"style="box-sizing: border-box"></textarea>
+    <textarea class ="codemirror-textarea" style="box-sizing: border-box"></textarea>
 
 </label>
 
