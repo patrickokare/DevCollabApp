@@ -8,7 +8,7 @@ $(document).ready(function(){
     $("#preview-form").submit(function(e){
         var value = editor.getValue();
         if(value.length== 0){
-            alert("Missing comment!");
+            alert("You Left the editor blank- Regards Wale Patrick!");
         }
     });
 });
