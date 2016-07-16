@@ -64,9 +64,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
     <script type="text/javascript" src="codemirror/plugin/codemirror/lib/codemirror.js"></script>
     <script type="text/javascript" src ="codemirror/js/default.js"></script>
 </div>
-// End of code Mirror...................
 
-//Google Hangout Audio and Video Conferencing codes are here.......................
 <div id="right">
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 <div class="g-hangout" data-render="createhangout"
@@ -74,7 +72,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 </div>
 
 </div>
-//End of Google Hangout.............................
+
 
 
 
