@@ -148,7 +148,7 @@ else{
 
 </div>
 
-
+<!-- Implementing Ace API Code Snippet for the code editor -->
 <div id="editor">some text</div>
 <script src="src/ace.js" type="text/javascript" charset="utf-8"></script>
 <script>
