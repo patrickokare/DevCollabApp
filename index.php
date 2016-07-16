@@ -51,7 +51,7 @@ if(isset($_POST['enter'])){
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Welcome</title>
+    <title>Welcome1</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
