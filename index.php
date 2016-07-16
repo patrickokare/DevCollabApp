@@ -149,6 +149,22 @@ else{
 </div>
 
 
+<div id="editor">some text</div>
+<script src="src/ace.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    var editor = ace.edit("editor");
+</script>
+
+<script src="src/mode-javascript.js" type="text/javascript" charset="utf-8"></script>
+<script>
+var JavaScriptMode = ace.require("ace/mode/javascript").Mode;
+editor.session.setMode(new JavaScriptMode());
+</script>
+
+
+
+
+
 
 
 <br>
