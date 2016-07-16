@@ -27,12 +27,14 @@
 
 </header>
 
-<label> CODE EDITOR
+<div id="left">
+<label> -CODE EDITOR
 
     <textarea class ="codemirror-textarea"></textarea>
 
 </label>
 
+</div>
 
 <script type="text/javascript" src="codemirror/js/jquery.min.js.js"></script>
 
