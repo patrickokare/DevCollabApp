@@ -102,10 +102,3 @@ input { font:12px arial; }
 #left{
     float: left;
 }
-/* Chat form Close */
-
-#editor {
-    position: absolute;
-    width: 500px;
-    height: 400px;
-}
