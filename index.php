@@ -37,7 +37,7 @@
 </div>
 
 
-<div class="text-center margin-tb-20"><button class="btn btn-default" id="btn-run"><i class="fa fa-play-circle"></i> Run</button></div>
+
 
 <script type="text/javascript" src="codemirror/js/jquery.min.js.js"></script>
 <script type="text/javascript" src="codemirror/plugin/codemirror/lib/codemirror.js"></script>
