@@ -30,7 +30,7 @@
 <div id="left">
 <label> -CODE EDITOR
 
-    <textarea class ="codemirror-textarea"></textarea>
+    <textarea class ="codemirror-textarea"style="box-sizing: border-box"></textarea>
 
 </label>
 
