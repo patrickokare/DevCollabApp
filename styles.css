@@ -102,3 +102,11 @@ input { font:12px arial; }
 #left{
     float: left;
 }
+
+textarea
+{
+    border:1px solid #999999;
+    width:100%;
+    margin:5px 0;
+    padding:3px;
+}
