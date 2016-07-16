@@ -1,14 +1,5 @@
 <!-- Developed by Wale Patrick August 2016 -->
-<?php
 
-$comment = null;
-// when the form is submitted this code below will run
-if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'])){
-    $comment = $_POST['preview-form-comment'];
-
-}
-
-?>
 <?
 session_start();
 
@@ -44,6 +35,18 @@ if(isset($_POST['enter'])){
         echo '<span class="error">Please type in a name</span>';
     }
 }
+?>
+
+
+<?php
+
+$comment = null;
+// when the form is submitted this code below will run
+if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'])){
+    $comment = $_POST['preview-form-comment'];
+
+}
+
 ?>
 
 
