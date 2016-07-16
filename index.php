@@ -42,7 +42,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
     <form id="preview-form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?> ">
 
-<textarea class="codemirror-textarea" name="preview-form-comment" id="preview-form-comment" rows="20" cols="80" placeholder="Code Editor Input">
+<textarea class="codemirror-textarea" name="preview-form-comment" id="preview-form-comment" rows="20" cols="80">
     <?php echo $comment; ?>
 </textarea>
         <br>
@@ -51,11 +51,14 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
     </form>
 
     <div id="preview-comment">
+<label> OUTPUT
+    <textarea  rows="20" cols="80">
 
         <?php echo $comment; ?>
 
+    </textarea>
+        </label>
 </div>
-
     <script type="text/javascript" src="codemirror/js/jquery.min.js.js"></script>
     <script type="text/javascript" src="codemirror/plugin/codemirror/lib/codemirror.js"></script>
     <script type="text/javascript" src ="codemirror/js/default.js"></script>
