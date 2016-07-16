@@ -116,7 +116,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
 
 
-<div id="right">
+<div id="right1">
 
     <?php
     if(!isset($_SESSION['name'])){

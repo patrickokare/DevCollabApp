@@ -97,7 +97,7 @@ input { font:12px arial; }
 
 #right{
     float: right;
-    width: 66%;
+
 
 }
 #left{
@@ -109,4 +109,7 @@ textarea{
     width:100%;
     margin:5px 0;
     padding:3px;
+}
+#right1{
+    width: 30%;
 }
