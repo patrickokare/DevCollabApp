@@ -1,3 +1,4 @@
+<!--
 <?php
 
 $comment = null;
@@ -8,7 +9,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 }
 
 ?>
-
+-->
+<!--
 
 <!DOCTYPE html>
 <html>
@@ -40,3 +42,4 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 </body>
 <html>
 
+-->

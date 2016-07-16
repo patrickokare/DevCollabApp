@@ -31,7 +31,7 @@ nav>ul>li a {
 }
 li a:hover{
     color: goldenrod;
-    background-color: orange;
+    background-color: grey;
 }
 /* End of Navigation bar Control */
 
