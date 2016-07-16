@@ -111,5 +111,6 @@ textarea{
     padding:3px;
 }
 #right1{
+    float: right;
     width: 30%;
 }

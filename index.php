@@ -148,7 +148,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                 <input name="submitmsg" type="submit"  id="submitmsg" value="Send" />
             </form>
         </div>
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+        <script type="text/javascript" src="codemirror/js/jquery.min.js"></script>
         <script type="text/javascript">
             // jQuery Document
             $(document).ready(function(){
