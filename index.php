@@ -38,12 +38,13 @@ if(isset($_POST['enter'])){
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="codemirror/plugin/codemirror/lib/codemirror.css" rel="stylesheet">
   <link href="styles.css" rel="stylesheet">
 </head>
 
@@ -62,7 +63,19 @@ if(isset($_POST['enter'])){
 
 </header>
 
-<p> Website Schematics </p>
+<textarea class ="codemirror-textarea"></textarea>
+
+<!-- JavaScript -->
+ <script type="text/javascript" src="codemirror/js/jquery.min.js.js"</script>
+
+<script type="text/javascript" src="codemirror/plugin/codemirror/lib/codemirror.js"> </script>
+
+<script type="text/javascript" src="codemirror/plugin/codemirror/lib/codemirror.js"></script>
+
+<script type="text/javascript" src ="codemirror/js/default.js"></script>
+
+
+
 
 
 <div id="right">
@@ -146,16 +159,10 @@ if(isset($_POST['enter'])){
     }
     ?>
 
-
-
-
-
-
-
-
-
-
 </div>
+
+
+
 
 
 
