@@ -155,11 +155,16 @@ else{
     var editor = ace.edit("editor");
 </script>
 
-<script src="src/mode-javascript.js" type="text/javascript" charset="utf-8"></script>
-<script>
+<script src="src/mode-javascript.js" type="text/javascript" charset="utf-8">
+
 var JavaScriptMode = ace.require("ace/mode/javascript").Mode;
 editor.session.setMode(new JavaScriptMode());
+
 </script>
+<script src="src/theme-twilight.js" type="text/javascript" charset="utf-8">
+editor.setTheme("ace/theme/twilight");
+</script>
+
 
 
 
