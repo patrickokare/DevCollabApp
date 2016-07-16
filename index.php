@@ -54,7 +54,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Welcome1</title>
+    <title>Welcome</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
