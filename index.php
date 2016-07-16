@@ -34,13 +34,14 @@
 </label>
 
 
-<script type="text/javascript" src="codemirror/js/jquery.min.js.js"</script>
-
-         <script type="text/javascript"> </script>
+<script type="text/javascript" src="codemirror/js/jquery.min.js.js"></script>
 
 <script type="text/javascript" src="codemirror/plugin/codemirror/lib/codemirror.js"></script>
 
 <script type="text/javascript" src ="codemirror/js/default.js"></script>
+
+
+
 
 
 
