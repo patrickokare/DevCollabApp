@@ -1,9 +1,9 @@
 
 body{
-    max-width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: mintcream;
+   / max-width: 960px;
+  /  margin-left: auto;
+  /  margin-right: auto;
+    background-color: lightgray;
 }
 header{
     background-color: #066;
@@ -113,6 +113,5 @@ textarea{
 #right1{
     float: right;
     width: 10%;
-    margin-left: auto;
-    margin-right: auto;
+
 }
