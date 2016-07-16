@@ -27,12 +27,16 @@
 
 </header>
 
-<textarea class ="codemirror-textarea"></textarea>
+<label> CODE EDITOR
+
+    <textarea class ="codemirror-textarea"></textarea>
+
+</label>
 
 /** JavaScript for code editor **/
 <script type="text/javascript" src="codemirror/js/jquery.min.js.js"</script>
 
-<script type="text/javascript" src=""> </script>
+         <script type="text/javascript"> </script>
 
 <script type="text/javascript" src="codemirror/plugin/codemirror/lib/codemirror.js"></script>
 
