@@ -38,7 +38,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 </header>
 
 
-// Code Editor Code, Implementing Code Mirror technology..................
 <div id="left">
 
     <form id="preview-form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?> ">
@@ -53,7 +52,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
     <div id="preview-comment">
 
-    <textarea rows="20" cols="80" placeholder="Your Code Result would be displayed here">
+    <textarea class="codemirror-textarea" name="preview-form-comment" id="preview-form-comment" rows="20" cols="80" placeholder="Your Code Result would be displayed here">
 
         <?php echo $comment; ?>
 
