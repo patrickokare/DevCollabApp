@@ -1,13 +1,13 @@
 <?php
 
 $comment = null;
+// when the form is submitted this code below will run
 if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'])){
     $comment = $_POST['preview-form-comment'];
 
 }
 
 ?>
-
 
 
 <!DOCTYPE html>

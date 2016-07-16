@@ -4,4 +4,11 @@ $(document).ready(function(){
     var editor = CodeMirror.fromTextArea(code,{
         lineNumbers : true
     });
+
+    $("#preview-form").submit(function(e){
+        var value = editor.getValue();
+        if(value.length== 0){
+            alert("Missing comment!");
+        }
+    });
 });
