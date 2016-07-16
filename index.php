@@ -33,7 +33,7 @@
 
 </label>
 
-/** JavaScript for code editor **/
+
 <script type="text/javascript" src="codemirror/js/jquery.min.js.js"</script>
 
          <script type="text/javascript"> </script>
