@@ -117,7 +117,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
 
 <footer class="footer">
-  <p> Msc Project - Developed by Wale Patrick 2016(c) </p>
+  <p> Msc Project- Developed by Wale Patrick 2016(c) </p>
 
 
 </footer>
