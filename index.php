@@ -67,6 +67,9 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
 <header>
   <a href="index.php"> <img src="onlinelogomaker-071916-2326.png">  </a>
+    <br>
+    <br>
+    <br>
     <p style="font-family: cursive"> KareTech, Optimized For Collaboration.......</p>
     <nav>
 

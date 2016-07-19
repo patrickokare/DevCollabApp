@@ -38,7 +38,7 @@ li a:hover{
 img{
     float: left;
     width: 20%;
-
+    height: 50%;
 }
 p{
     color: darkred;
