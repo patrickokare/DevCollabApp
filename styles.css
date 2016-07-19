@@ -37,6 +37,8 @@ li a:hover{
 /* End of Navigation bar Control */
 img{
     float: left;
+    width: 20%;
+
 }
 p{
     color: darkred;
