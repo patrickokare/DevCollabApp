@@ -108,26 +108,28 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
     <script type="text/javascript" src="codemirror/plugin/codemirror/lib/codemirror.js"></script>
     <script type="text/javascript" src ="codemirror/js/default.js"></script>
 </div>
-//Google Hangout Codes...........
+
 <div id="right">
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 <div class="g-hangout" data-render="createhangout"
      data-initial_apps="[{ app_id : '123456789012', start_data : 'dQw4w9WgXcQ', 'app_type' : 'ROOM_APP' }]">
 </div>
 
+
+    <form enctype="multipart/form-data" action="upload_file.php" method="post">
+
+        <p> Click Upload Your File here: </p>
+        <input name="file" type="file" id="file" size="80">
+        <br>
+        <br>
+        <input type="submit" id="u_button" value="Upload your File">
+
+
+    </form>
+
 </div>
 
-//File Upload Codes...............................
-<form enctype="multipart/form-data" action="upload_file.php" method="post">
 
-    <p> Click Upload Your File here: </p>
-    <input name="file" type="file" id="file" size="80">
-    <br>
-    <br>
-    <input type="submit" id="u_button" value="Upload your File">
-
-
-</form>
 
 
 
@@ -238,7 +240,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
 
 <footer class="footer">
-  <p> Msc Project- Developed by Wale Patrick 2016(c) </p>
+  <p> MSc Software Project- Developed by Wale Patrick 2016(c) </p>
 
 
 </footer>
