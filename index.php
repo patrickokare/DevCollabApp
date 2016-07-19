@@ -98,7 +98,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
     </form>
 
     <div id="preview-comment">
-<label> OUTPUT
+<label> OUTPUT BELOW
     <textarea  rows="20" cols="80">
 
         <?php echo $comment; ?>
