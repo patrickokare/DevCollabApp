@@ -75,7 +75,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
     <nav>
 
         <ul>
-            <li> <a href="#"> FEATURES </a> </li>
+            <li> <a href="#"> </a> </li>
         </ul>
 
     </nav>
@@ -117,7 +117,16 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
 </div>
 
+<form enctype="multipart/form-data" action="upload_file.php" method="post">
 
+    <p> Click Upload Your File here: </p>
+    <input name="file" type="file" id="file" size="80">
+    <br>
+    <br>
+    <input type="submit" id="u_button" value="Upload your File">
+
+
+</form>
 
 
 
