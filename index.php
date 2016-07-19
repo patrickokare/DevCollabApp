@@ -71,9 +71,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
     <br>
     <br>
     <p style="font-family: cursive"> KareTech, Optimized For Collaboration.......</p>
-    <br>
-    <br>
-    <br>
+
     <nav>
 
         <ul>
