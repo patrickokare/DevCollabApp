@@ -108,7 +108,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
     <script type="text/javascript" src="codemirror/plugin/codemirror/lib/codemirror.js"></script>
     <script type="text/javascript" src ="codemirror/js/default.js"></script>
 </div>
-
+//Google Hangout Codes...........
 <div id="right">
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 <div class="g-hangout" data-render="createhangout"
@@ -117,6 +117,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
 </div>
 
+//File Upload Codes...............................
 <form enctype="multipart/form-data" action="upload_file.php" method="post">
 
     <p> Click Upload Your File here: </p>
