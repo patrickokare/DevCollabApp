@@ -66,7 +66,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 <body>
 
 <header>
-    <h2> ARRAYTECH COLLABORATIVE ENVIRONMENT </h2>
+   <img src="onlinelogomaker-071916-2305.png">
     <nav>
 
         <ul>

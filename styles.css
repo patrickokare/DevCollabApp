@@ -6,7 +6,7 @@ body{
     background-color: lightgray;
 }
 header{
-    background-color: #066;
+    background-color: #00a8c6 ;
 }
 h2{
     color: darkred;
@@ -40,7 +40,7 @@ footer>p{
     color:darkred;
 }
 .footer{
-    background-color:  #066;
+    background-color: #00a8c6;
 
     height: 150px;
     clear: both;
