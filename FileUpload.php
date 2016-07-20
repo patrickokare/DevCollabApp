@@ -6,6 +6,11 @@ $type = $_FILES['file']['type'];
 
 $tmp_name = $_FILES['file']['tmp_name'];
 
+if(($size > 125000)){
+
+    die("Error - File too Large!");
+
+}
 
 if(isset($name)){
     if(!empty($name)){
@@ -18,7 +23,7 @@ if(isset($name)){
 
 
     }else{
-        echo 'Choose a file or Your File has not been Succussfully Uploaded!';
+        echo 'Choose a file or Your File has not been Uploaded!';
     }
 
 }
