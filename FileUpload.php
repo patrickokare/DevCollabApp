@@ -6,7 +6,7 @@ $type = $_FILES['file']['type'];
 
 $tmp_name = $_FILES['file']['tmp_name'];
 
-if(($size > 125000)){
+if(($size > 12500)){
 
     die("Error - File too Large!");
 
