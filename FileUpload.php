@@ -15,7 +15,7 @@ if(($size > 12500)){
 if(isset($name)){
     if(!empty($name)){
 
-         $location = 'uploads/';
+         $location = 'upload/';
     if(move_uploaded_file($tmp_name, $location.$name)){
 
         echo 'Upload Successfully';
