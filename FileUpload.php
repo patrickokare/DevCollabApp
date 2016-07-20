@@ -19,7 +19,7 @@ if(isset($_FILES['UploadFileField'])){
     if(!$UploadTmp){
         die("No File Selected, Please Upload Again");
     }else{
-        move_uploaded_file($UploadTmp, "C:\Users\user\PhpstormProjects\KareTechProject\Upload/$UploadName");
+        move_uploaded_file($UploadTmp, "Upload/$UploadName");
     }
 
 
