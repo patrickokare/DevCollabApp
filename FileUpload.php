@@ -11,7 +11,7 @@ if(isset($name)){
     if(!empty($name)){
         echo 'OKAY';
     }else{
-        echo 'Choose a file';
+        echo 'Choose a file!';
     }
 
 }
