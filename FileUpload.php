@@ -9,13 +9,19 @@ $tmp_name = $_FILES['file']['tmp_name'];
 
 if(isset($name)){
     if(!empty($name)){
-        echo 'OKAY';
+
+         $location = 'uploads/';
+    if(move_uploaded_file($tmp_name, $location.$name)){
+
+        echo 'Upload Successfully';
+    }
+
+
     }else{
-        echo 'Choose a file!';
+        echo 'Choose a file or Your File has not been Succussfully Uploaded!';
     }
 
 }
-
 
 
 ?>
