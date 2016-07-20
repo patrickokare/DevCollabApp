@@ -1,45 +1,33 @@
 <?php
-//Script to Upload a file.........
-$name = $_FILES['file']['name'];
-$size = $_FILES['file']['size'];
-$type = $_FILES['file']['type'];
+if(isset($_FILES['UploadFileField'])){
+    // Creates the Variables needed to Upload the file
+    $UploadName = $_FILES['UploadFileField']['name'];
+    $UploadName = mt_rand(100000, 999999).$UploadName;
+    $UploadTmp = $_FILES['UploadFileField']['tmp_name'];
+    $UploadType = $_FILES['UploadFileField']['type'];
+    $FileSize = $_FILES['UploadFileField']['size'];
 
-$tmp_name = $_FILES['file']['tmp_name'];
+    // Removes Unwanted Spaces and characters from the files names of the files being uploaded
+    $UploadName = preg_replace("#[^a-z0-9.]#i", "", $UploadName);
+    // Upload File Size Limit
+    if(($FileSize > 125000)){
 
-if(($size > 125000)){
+        die("Error - File too Big");
 
-    die("Error - File too Large!");
-
-}
-
-if(isset($name)){
-    if(!empty($name)){
-
-         $location = 'upload/';
-    if(move_uploaded_file($tmp_name, $location.$name)){
-
-        echo 'Upload Successfully';
     }
-
-
+    // Checks a File has been Selected and Uploads them into a Directory on your Server
+    if(!$UploadTmp){
+        die("No File Selected, Please Upload Again");
     }else{
-        echo 'Choose a file or Your File has not been Uploaded!';
+        move_uploaded_file($UploadTmp, "Upload/$UploadName");
     }
-
 }
-
-
 ?>
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <style>
-        body {
-            margin:0;
-            padding:0;
-            background-color:#CCC;
-        }
+        body { margin:0; padding:0; background-color:#CCC; }
         .fileuploadholder {
             width:400px;
             height:200px;
@@ -56,9 +44,10 @@ if(isset($name)){
 <body>
 
 <div class="fileuploadholder">
-    <form action="FileUpload.php" method="post" enctype="multipart/form-data">
-        <input type="file" name="file" />
-        <input type="submit" value="Upload" />
+    <form action="FileUpload.php" method="post" enctype="multipart/form-data" name="FileUploadForm" id="FileUploadForm">
+        <label for="UploadFileField"></label>
+        <input type="file" name="UploadFileField" id="UploadFileField" />
+        <input type="submit" name="UploadButton" id="UploadButton" value="Upload" />
     </form>
 </div>
 </body>
