@@ -83,6 +83,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 </header>
 
 
+
 <div id="left">
 
     <form id="preview-form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?> ">
