@@ -1,250 +1,162 @@
-<!-- Developed by Wale Patrick August 2016 -->
-
-<?
-session_start();
-
-if(isset($_GET['logout'])){
-
-    //Simple exit message
-    $fp = fopen("log.html", 'a');
-    fwrite($fp, "<div class='msgln'><i>User ". $_SESSION['name'] ." has left the chat session.</i><br></div>");
-    fclose($fp);
-
-    session_destroy();
-    header("Location: index.php"); //Redirect the user
-}
-
-function loginForm(){
-    echo'
-	<div id="loginform">
-	<form action="index.php" method="post">
-		<p>Enter the name you want to be identified among other users:</p>
-		<label for="name">Name:</label>
-		<input type="text" name="name" id="name" />
-		<input type="submit" name="enter" id="enter" value="Enter" />
-	</form>
-	</div>
-	';
-}
-
-if(isset($_POST['enter'])){
-    if($_POST['name'] != ""){
-        $_SESSION['name'] = stripslashes(htmlspecialchars($_POST['name']));
-    }
-    else{
-        echo '<span class="error">Please type in a name</span>';
-    }
-}
-?>
-
-
-<?php
-
-$comment = null;
-// when the form is submitted this code below will run
-if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'])){
-    $comment = $_POST['preview-form-comment'];
-
-}
-
-?>
-
 
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="codemirror/plugin/codemirror/lib/codemirror.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
 
-  <link href="styles.css" rel="stylesheet" type="text/css">
+    <script src ="js/jquery.js"> </script>
+    <script src="js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
 
 <header>
-  <a href="index.php"> <img src="onlinelogomaker-071916-2326.png">  </a>
-    <br>
-    <br>
-    <br>
-    <p style="font-family: cursive"> KareTech, Optimized For Collaboration.......</p>
+<nav class="navbar navbar-default navbar-static-top no-margin" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-ArrayTech-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.php"> <em style="font-family: cursive"> KareTech </em> </a>
+        </div>
 
-    <nav>
 
-        <ul>
-            <li> <a href="features.html"> Features </a> </li>
-        </ul>
+        <div class="collapse navbar-collapse" id="bs-ArrayTech-navbar-collapse-1">
+            <ul class="nav navbar-nav nav-tabs lead">
+                <li class="active "><a href="index.php">Home </a> </li>
+                <li> <a href="features.html"> Features </a> </li>
+                <li> <a href="#"> Contact </a> </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle nav navbar-nav nav-tabs " data-toggle="dropdown"> KareTech Dev <b class=" caret "> </b> </a>
+                    <ul class="dropdown-menu lead">
+                        <li class="lead"> <a href="#"> Desktop Platform </a> </li>
+                        <li class="lead"> <a href="#"> Mobile Platform </a>  </li>
+                        <li class ="divider"> </li>
+                        <li class="lead"><a href="#"> Download Link </a> </li>
 
-    </nav>
+                    </ul>
+                </li>
 
+            </ul>
+
+        </div>
+    </div>
+</nav>
 </header>
 
 
 
-<div id="left">
+<div class="jumbotron">
+    <div class="container">
 
-    <form id="preview-form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?> ">
+        <h4 class="text-center lead"> KareTech, Optimized for Collaboration...... </h4>
 
-<textarea class="codemirror-textarea" name="preview-form-comment" id="preview-form-comment" rows="20" cols="60">
-    <?php echo $comment; ?>
-</textarea>
-        <br>
-        <input type="submit" name = "preview-form-submit" id="preview-form-submit" value="Submit">
-
-    </form>
-
-    <div id="preview-comment">
-<label> OUTPUT BELOW
-    <textarea  rows="20" cols="80">
-
-        <?php echo $comment; ?>
-
-    </textarea>
-        </label>
-</div>
-    <script type="text/javascript" src="codemirror/js/jquery.min.js.js"></script>
-    <script type="text/javascript" src="codemirror/plugin/codemirror/lib/codemirror.js"></script>
-    <script type="text/javascript" src ="codemirror/js/default.js"></script>
-</div>
-
-<div id="right">
-<script src="https://apis.google.com/js/platform.js" async defer></script>
-<div class="g-hangout" data-render="createhangout"
-     data-initial_apps="[{ app_id : '123456789012', start_data : 'dQw4w9WgXcQ', 'app_type' : 'ROOM_APP' }]">
+    </div>
 </div>
 
 
-    <form enctype="multipart/form-data" action="upload_file.php" method="post">
+<div class="container">
+<div class="row">
 
-        <p> Click Upload Your File here: </p>
-        <input name="file" type="file" id="file" size="80">
-        <br>
-        <br>
-        <input type="submit" id="u_button" value="Upload your File">
+    <div class="col-md-8 col-md-push-3">
+        <div class="panel panel-default">
+    <p>   Collaborative code editor Should be placed here
+          Code editor Input here, Code editor input
+          Code editor, input Code editor input
+         Code Editor Output placed here
+         Code Editor Output Placed here
+         Code editor, code editor, Code Editor
+                Code editor, code editor, Code Editor
+              Code Editor Output placed here
+             Code Editor Output Placed here  <br>
+             Code editor, code editor, Code Editor <br>
+             Code editor, code editor, Code Editor
+             Collaborative code editor Should be placed here
+                Code editor Input here, Code editor input <br>
+                Code editor, input Code editor input <br>
+                Code Editor Output placed here
+                Code Editor Output Placed here
+                Code editor, code editor, Code Editor
+                Code editor, code editor, Code Editor
+                Code Editor Output placed here
+                Code Editor Output Placed here  <br>
+                Code editor, code editor, Code Editor <br>
+                Code editor, code editor, Code Editor
+            </p>
+    </div>
+</div>
 
 
-    </form>
+    <div class="col-md-3 col-md-pull-8">
+        <div class="panel panel-default">
+   <h3>  Google Hangout </h3>
+        <p>   Google Hangout button placement here.......<br>
+              Google Hangout audio/Video Conferencing,<br>
+              Google Hangout audio/Video Conferencing <br>
+              Google Hangout, Audio/video Conferencing
+        </p>
+        <h3>  File Upload </h3>
+        <p>   File upload button placement here.......<br>
+            File upload button placement here.......,<br>
+            File upload button placement here....... <br>
+            File upload button placement here.......
+        </p>
+
+                <div class="panel panel-default">
+                <h3> Real -time chatting box placement here </h3>
+                <p>  Real -time chatting box placement here<br>
+                    Real -time chatting box placement here,<br>
+                    Real -time chatting box placement here <br>
+                    Real -time chatting box placement here
+                </p>
+
+
+
+    </div>
+    </div>
+    </div>
+    </div>
 
 </div>
 
 
 
 
+<footer class="site-footer">
+
+<div class="container">
+     <div class="row">
+
+             <span style="font-family: cursive" class="moveright"> KareTech(c) </span>
 
 
 
-
-
-
-
-<div id="right1">
-
-    <?php
-    if(!isset($_SESSION['name'])){
-        loginForm();
-    }
-    else{
-        ?>
-        <div id="wrapper">
-            <div id="menu">
-                <p class="welcome">Welcome, <b><?php echo $_SESSION['name']; ?></b></p>
-                <p class="logout"><a id="exit" href="#">Exit Chat</a></p>
-                <div style="clear:both"></div>
-            </div>
-
-            <div id="chatbox">
-                <?php
-                if(file_exists("log.html") && filesize("log.html") > 0){
-                    $handle = fopen("log.html", "r");
-                    $contents = fread($handle, filesize("log.html"));
-                    fclose($handle);
-
-                    echo $contents;
-                }
-                ?>
-            </div>
-
-            <form name="message" action="">
-                <input name="usermsg" type="text" id="usermsg" size="63" />
-                <input name="submitmsg" type="submit"  id="submitmsg" value="Send" />
-            </form>
+</div>
+    <div class="bottom-footer">
+        <div class="col-md-5"> Designed by Wale Patrick 2016(c)</div>
+        <div class="col-md-7">
+            <ul class="footer-nav lead">
+                <li><a href="#"> Home </a> </li>
+                <li><a href="#"> Features </a> </li>
+                <li><a href="#"> Contact </a> </li>
+            </ul>
         </div>
-        <script type="text/javascript" src="codemirror/js/jquery.min.js"></script>
-        <script type="text/javascript">
-            // jQuery Document
-            $(document).ready(function(){
-                //If user submits the form
-                $("#submitmsg").click(function(){
-                    var clientmsg = $("#usermsg").val();
-                    $.post("post.php", {text: clientmsg});
-                    $("#usermsg").attr("value", "");
-                    return false;
-                });
-
-                //Load the file containing the chat log
-                function loadLog(){
-                    var oldscrollHeight = $("#chatbox").attr("scrollHeight") - 20;
-                    $.ajax({
-                        url: "log.html",
-                        cache: false,
-                        success: function(html){
-                            $("#chatbox").html(html); //Insert chat log into the #chatbox div
-                            var newscrollHeight = $("#chatbox").attr("scrollHeight") - 20;
-                            if(newscrollHeight > oldscrollHeight){
-                                $("#chatbox").animate({ scrollTop: newscrollHeight }, 'normal'); //Autoscroll to bottom of div
-                            }
-                        },
-                    });
-                }
-                setInterval (loadLog, 2500);	//Reload file every 2.5 seconds
-
-                //If user wants to end session
-                $("#exit").click(function(){
-                    var exit = confirm("Are you sure you want to end the session?");
-                    if(exit==true){window.location = 'index.php?logout=true';}
-                });
-            });
-        </script>
-        <?php
-    }
-    ?>
+</div>
 
 </div>
 
-
-<br>
-<br>
-<br>
-<br>
-
-
-
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-        s1.async=true;
-        s1.src='https://embed.tawk.to/577687e86d4b9c1403db8444/default';
-        s1.charset='UTF-8';
-        s1.setAttribute('crossorigin','*');
-        s0.parentNode.insertBefore(s1,s0);
-    })();
-</script>
-<!--End of Tawk.to Script-->
-
-
-
-
-
-<footer class="footer">
-  <p> Software Project- Property of Wale Patrick 2016(c) </p>
 
 
 </footer>
+
+
 </body>
 </html>
-
