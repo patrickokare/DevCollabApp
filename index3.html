@@ -29,19 +29,6 @@
 
 <body>
 
-<div id="firepad"></div>
-<script>
-    // Initialize the Firebase SDK
-    firebase.initializeApp({
-        apiKey: '<API_KEY>',
-        databaseURL: 'https://<DATABASE_NAME>.firebaseio.com'
-    });
-
-    var firepadRef = firebase.database().ref();
-    var codeMirror = CodeMirror(document.getElementById('firepad'), { lineWrapping: true });
-    var firepad = Firepad.fromCodeMirror(firepadRef, codeMirror,
-            { richTextShortcuts: true, richTextToolbar: true, defaultText: 'Hello, World!' });
-</script>
 
 <div id="firepad-container"></div>
 
