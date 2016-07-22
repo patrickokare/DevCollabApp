@@ -2,6 +2,11 @@ body{
 
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif ;
 }
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+
+    color: darkred;
+}
+
 
 /* Chat form css */
 form, p, span {
@@ -116,7 +121,7 @@ textarea{
 }
 .footer-nav a:hover{
     text-decoration: none;
-    color: darkgray;
+    color: darkred;
 }
 .moveright{
     float: right;
