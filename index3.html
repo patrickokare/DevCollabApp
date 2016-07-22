@@ -24,6 +24,13 @@
 
 <body>
 
+var firepadDiv = document.getElementById('firepad');
+var firepadRef = new Firebase('<firebase url...>');
+    var codeMirror = CodeMirror(firepadDiv, { lineWrapping: true });
+    var firepad = Firepad.fromCodeMirror(firepadRef, codeMirror,
+    { richTextShortcuts: true, richTextToolbar: true });
+
+    </firebase>
 
 <div id="firepad-container"></div>
 
