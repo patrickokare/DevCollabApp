@@ -1,0 +1,14 @@
+.site-footer{
+
+    background-color: lightgray;
+    color: gray;
+    margin-top: 30px;
+    padding-top: 30px;
+}
+.bottom-footer{
+
+    border-top: 1px solid;
+    margin-top: 10px;
+    padding-top:10px;
+    color:gray;
+}
