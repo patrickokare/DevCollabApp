@@ -135,7 +135,7 @@
 <div class="container">
      <div class="row">
 
-             <span style="font-family: cursive" class="moveright"> KareTech(c) </span>
+             <span style="font-family: cursive" class="moveright"> KareTech Collaborative App(c) </span>
 
 
 
