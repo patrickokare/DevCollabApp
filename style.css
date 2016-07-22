@@ -1,3 +1,8 @@
+header{
+    position: static;
+}
+
+/** Styling of the Footer below **/
 .site-footer{
 
     background-color: lightgray;
@@ -7,8 +12,31 @@
 }
 .bottom-footer{
 
-    border-top: 1px solid;
+    border-top: 1px solid gray;
     margin-top: 10px;
     padding-top:10px;
     color:gray;
 }
+.footer-nav{
+    text-align: right;
+    list-style:none;
+}
+.footer-nav li{
+
+    display:inline;
+}
+.footer-nav li:not(:first-child):before{
+    content:'|' ;
+    padding:0px 10px;
+}
+.footer-nav a{
+    color:gray;
+}
+.footer-nav a:hover{
+    text-decoration: none;
+    color: darkgray;
+}
+.moveright{
+    float: right;
+}
+/** End of footer styling **/
