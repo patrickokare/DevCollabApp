@@ -135,6 +135,18 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                     Real -time chatting box placement here <br>
                     Real -time chatting box placement here
                 </p>
+                    <hr>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3> Geo-Location </h3>
+                        </div>
+                        <p>  Geo-loaction box placement here<br>
+                            Real -time chatting box placement here,<br>
+                            Real -time chatting box placement here <br>
+                            Real -time chatting box placement here
+                        </p>
+
 
 
     </div>
