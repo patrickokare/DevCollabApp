@@ -137,6 +137,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                 </p>
                     <hr>
 
+
+
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h3> Geo-Location </h3>
