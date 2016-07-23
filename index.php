@@ -93,7 +93,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
             <div id="preview-comment">
                 <label> OUTPUT BELOW
-       <textarea  rows="20" cols="80">
+       <textarea  rows="20" cols="60">
 
         <?php echo $comment; ?>
 
@@ -103,7 +103,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 </div>
 
 
-    <div class="col-md-3 col-md-pull-8">
+    <div class="col-md-4 col-md-4">
         <div class="panel panel-default">
    <h3>  Google Hangout </h3>
         <p>   Google Hangout button placement here.......<br>
