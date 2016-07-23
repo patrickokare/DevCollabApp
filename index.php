@@ -105,16 +105,19 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
         <div class="panel panel-default">
 
             <!-- This codes below are for the GOOGLE hangout, file Upload and messenging box -->
+            <div class="panel-heading">
      <h3>  Start Hangout  </h3>
+                </div>
             <script src="https://apis.google.com/js/platform.js" async defer></script>
             <div class="g-hangout" data-render="createhangout"
                  data-initial_apps="[{ app_id : '123456789012', start_data : 'dQw4w9WgXcQ', 'app_type' : 'ROOM_APP' }]">
             </div>
-
+            <div class="panel-heading">
           <h3> Upload Your Files Here </h3>
+                </div>
             <form enctype="multipart/form-data" action="#" method="post">
 <hr>
-                <p> Click Upload Your File here: </p>
+
                 <input name="file" type="file" id="file" size="80">
                 <br>
                 <br>
