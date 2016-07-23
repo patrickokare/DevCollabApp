@@ -83,7 +83,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
         <div class="panel panel-default">
             <form id="preview-form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?> ">
 <label>
-        <textarea class="codemirror-textarea" name="preview-form-comment" id="preview-form-comment" rows="20" cols="60">
+        <textarea class="codemirror-textarea" name="preview-form-comment" id="preview-form-comment" rows="40" cols="60">
         <?php echo $comment; ?>
         </textarea>
                 </label>
@@ -93,7 +93,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                </form>
 
                 <label>
-               <textarea rows="20" cols="60">
+               <textarea rows="40" cols="60">
                <?php echo $comment; ?>
                 </textarea>
                 </label>

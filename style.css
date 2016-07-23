@@ -10,7 +10,7 @@ body{
 
 /**To control the editor styling.... **/
 textarea{
-    border:1px solid darkred;
+    border:1px solid slategray;
     width:100%;
     margin:5px 0;
     padding:3px;
