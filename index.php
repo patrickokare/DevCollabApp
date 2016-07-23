@@ -106,11 +106,10 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
             <!-- This codes below are for the GOOGLE hangout, file Upload and messenging box -->
    <h3>  Google Hangout </h3>
-        <p>   Google Hangout button placement here.......<br>
-              Google Hangout audio/Video Conferencing,<br>
-              Google Hangout audio/Video Conferencing <br>
-              Google Hangout, Audio/video Conferencing
-        </p>
+            <script src="https://apis.google.com/js/platform.js" async defer></script>
+            <div class="g-hangout" data-render="createhangout"
+                 data-initial_apps="[{ app_id : '123456789012', start_data : 'dQw4w9WgXcQ', 'app_type' : 'ROOM_APP' }]">
+
         <h3>  File Upload </h3>
         <p>   File upload button placement here.......<br>
             File upload button placement here.......,<br>
