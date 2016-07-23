@@ -225,7 +225,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
              <span style="font-family: cursive" class="moveright"> KareTech Collaborative App(c) </span>
 
-
+         <a href="http://www.geoplugin.com/geolocation/" target="_new">IP Geolocation</a> by <a href="http://www.geoplugin.com/" target="_new">geoPlugin</a>
 
 </div>
     <div class="bottom-footer">
