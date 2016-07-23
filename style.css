@@ -69,10 +69,9 @@ input { font:12px arial; }
 
 textarea{
     border:1px solid darkred;
-  /  width:50%;
- /   height: 60%;
- /   margin:5px 0;
-  /  padding:3px;
+    width:100%;
+    margin:5px 0;
+    padding:3px;
 }
 #right1{
     float: right;
