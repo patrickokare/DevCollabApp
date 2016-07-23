@@ -136,12 +136,12 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                     Real -time chatting box placement here
                 </p>
                     <hr>
-                    <pre class="{language}">
+
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h3> Geo-Location </h3>
                         </div>
-
+<pre class="{language}">
                         <script>
                         if("geolocation" in navigator) {
                         //w00t!
