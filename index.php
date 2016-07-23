@@ -1,3 +1,13 @@
+<?php
+
+$comment = null;
+// when the form is submitted this code below will run
+if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'])){
+    $comment = $_POST['preview-form-comment'];
+
+}
+
+?>
 
 <!DOCTYPE html>
 <html>
@@ -10,6 +20,9 @@
 
     <script src ="js/jquery.js"> </script>
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="codemirror/js/jquery.min.js.js"></script>
+    <script type="text/javascript" src="codemirror/plugin/codemirror/lib/codemirror.js"></script>
+    <script type="text/javascript" src ="codemirror/js/default.js"></script>
 
 </head>
 
@@ -68,29 +81,24 @@
 
     <div class="col-md-8 col-md-push-3">
         <div class="panel panel-default">
-    <p>   Collaborative code editor Should be placed here
-          Code editor Input here, Code editor input
-          Code editor, input Code editor input
-         Code Editor Output placed here
-         Code Editor Output Placed here
-         Code editor, code editor, Code Editor
-                Code editor, code editor, Code Editor
-              Code Editor Output placed here
-             Code Editor Output Placed here  <br>
-             Code editor, code editor, Code Editor <br>
-             Code editor, code editor, Code Editor
-             Collaborative code editor Should be placed here
-                Code editor Input here, Code editor input <br>
-                Code editor, input Code editor input <br>
-                Code Editor Output placed here
-                Code Editor Output Placed here
-                Code editor, code editor, Code Editor
-                Code editor, code editor, Code Editor
-                Code Editor Output placed here
-                Code Editor Output Placed here  <br>
-                Code editor, code editor, Code Editor <br>
-                Code editor, code editor, Code Editor
-            </p>
+            <form id="preview-form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?> ">
+
+        <textarea class="codemirror-textarea" name="preview-form-comment" id="preview-form-comment" rows="20" cols="60">
+        <?php echo $comment; ?>
+        </textarea>
+                <br>
+                <input type="submit" name = "preview-form-submit" id="preview-form-submit" value="Submit">
+
+            </form>
+
+            <div id="preview-comment">
+                <label> OUTPUT BELOW
+       <textarea  rows="20" cols="80">
+
+        <?php echo $comment; ?>
+
+        </textarea>
+                </label>
     </div>
 </div>
 

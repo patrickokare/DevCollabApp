@@ -8,9 +8,7 @@ body{
     color: darkred;
 }
 
-.lead{
-    color: darkred;
-}
+
 /* Chat form css */
 form, p, span {
     margin:0;
