@@ -113,9 +113,10 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                  data-initial_apps="[{ app_id : '123456789012', start_data : 'dQw4w9WgXcQ', 'app_type' : 'ROOM_APP' }]">
             </div>
             <div class="panel-heading">
+
           <h3> Upload Your Files Here </h3>
                 </div>
-            <form enctype="multipart/form-data" action="#" method="post">
+            <form enctype="multipart/form-data" action="upload.php" method="post">
 <hr>
 
                 <input name="file" type="file" id="file" size="80">
