@@ -112,15 +112,15 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
             </div>
 
           <h3> Upload Your Files Here </h3>
-            <form enctype="multipart/form-data" action="upload_file.php" method="post">
-
+            <form enctype="multipart/form-data" action="#" method="post">
+<hr>
                 <p> Click Upload Your File here: </p>
                 <input name="file" type="file" id="file" size="80">
                 <br>
                 <br>
                 <input type="submit" id="u_button" value="Upload your File">
-
             </form>
+<hr>
 
                 <div class="panel panel-default">
                 <h3> Real -time chatting box placement here </h3>
