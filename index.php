@@ -36,7 +36,7 @@
                 <li> <a href="#"> Contact </a> </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle nav navbar-nav nav-tabs " data-toggle="dropdown"> KareTech Dev <b class=" caret "> </b> </a>
-                    <ul class="dropdown-menu lead">
+                    <ul class="dropdown-menu">
                         <li class="lead"> <a href="#"> Desktop Platform </a> </li>
                         <li class="lead"> <a href="#"> Mobile Platform </a>  </li>
                         <li class ="divider"> </li>

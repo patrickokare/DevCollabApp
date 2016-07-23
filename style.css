@@ -2,16 +2,15 @@ body{
 
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif ;
 }
-em{
-    font-family: cursive;
-}
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
 
     color: darkred;
 }
 
-
+.dropdown-menu {
+    color: darkred;
+}
 /* Chat form css */
 form, p, span {
     margin:0;
