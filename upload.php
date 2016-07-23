@@ -8,7 +8,7 @@ if(!$_FILES['photo']['error'])
 {
 //now is the time to modify the future file name and validate the file
 $new_file_name = strtolower($_FILES['photo']['tmp_name']); //rename file
-if($_FILES['photo']['size'] > (1024000)) //can't be larger than 1 MB
+if($_FILES['photo']['size'] > (10024000)) //can't be larger than 1 MB
 {
 $valid_file = false;
 $message = 'Oops!  Your file\'s size is to large.';
