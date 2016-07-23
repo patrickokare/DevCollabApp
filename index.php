@@ -93,7 +93,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
             <div id="preview-comment">
                 <label>
-       <textarea  rows="20" cols="60">
+       <textarea class="codemirror-textarea" name="preview-form-comment" id="preview-form-comment" rows="20" cols="60">
 
         <?php echo $comment; ?>
 
