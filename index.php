@@ -126,13 +126,14 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 <hr>
 
                 <div class="panel panel-default">
-                <h3> Real -time chatting box placement here </h3>
+                    <div class="panel-heading">
+                <h3> Chat Box  </h3>
+                        </div>
                 <p>  Real -time chatting box placement here<br>
                     Real -time chatting box placement here,<br>
                     Real -time chatting box placement here <br>
                     Real -time chatting box placement here
                 </p>
-
 
 
     </div>
@@ -141,6 +142,9 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
     </div>
 
 </div>
+
+
+
 
 
 
