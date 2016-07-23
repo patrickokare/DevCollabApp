@@ -75,8 +75,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
     </div>
 </div>
 
-/* This code below is for the code editor
-      Script */
+
 <div class="container">
 <div class="row">
 
@@ -104,6 +103,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
     <div class="col-md-4 col-md-4">
         <div class="panel panel-default">
+
             <!-- This codes below are for the GOOGLE hangout, file Upload and messenging box -->
    <h3>  Google Hangout </h3>
         <p>   Google Hangout button placement here.......<br>
