@@ -75,27 +75,30 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
     </div>
 </div>
 
-
+/* This code below is for the code editor
+      Script */
 <div class="container">
 <div class="row">
 
     <div class="col-md-8 col-md-8">
         <div class="panel panel-default">
             <form id="preview-form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?> ">
-
+<label>
         <textarea class="codemirror-textarea" name="preview-form-comment" id="preview-form-comment" rows="20" cols="60">
         <?php echo $comment; ?>
         </textarea>
-                <br>
+                </label>
+                 <br>
                 <input type="submit" name = "preview-form-submit" id="preview-form-submit" value="Submit">
 
-            </form>
+               </form>
+
                 <label>
-       <textarea rows="20" cols="60">
+               <textarea rows="20" cols="60">
 
-        <?php echo $comment; ?>
+               <?php echo $comment; ?>
 
-        </textarea>
+                </textarea>
                 </label>
     </div>
 </div>
@@ -103,6 +106,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
     <div class="col-md-4 col-md-4">
         <div class="panel panel-default">
+            <!-- This codes below are for the GOOGLE hangout, file Upload and messenging box -->
    <h3>  Google Hangout </h3>
         <p>   Google Hangout button placement here.......<br>
               Google Hangout audio/Video Conferencing,<br>
