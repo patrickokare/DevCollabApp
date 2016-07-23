@@ -46,7 +46,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
             <ul class="nav navbar-nav nav-tabs lead">
                 <li class="active "><a href="index.php">Home </a> </li>
                 <li> <a href="features.html"> Features </a> </li>
-                <li> <a href="#"> Contact </a> </li>
+                <li> <a href="contact.html"> Contact </a> </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle nav navbar-nav nav-tabs " data-toggle="dropdown"> KareTech Dev <b class=" caret "> </b> </a>
                     <ul class="dropdown-menu lead">
