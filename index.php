@@ -141,11 +141,23 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                         <div class="panel-heading">
                             <h3> Geo-Location </h3>
                         </div>
-                        <p>  Geo-loaction box placement here<br>
-                            Real -time chatting box placement here,<br>
-                            Real -time chatting box placement here <br>
-                            Real -time chatting box placement here
-                        </p>
+
+                        <script>
+                        if("geolocation" in navigator) {
+                        //w00t!
+                        }
+                        else {
+                        alert("No soup for you!  Your browser does not support this feature");
+                        }
+
+
+                        if("geolocation" in navigator) {
+                        navigator.geolocation.getCurrentPosition(function(position) {
+                        console.log(position);
+                        });
+                        }
+                        </script>
+
     </div>
 </div>
 
