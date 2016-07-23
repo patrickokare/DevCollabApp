@@ -69,7 +69,7 @@ input { font:12px arial; }
 
 textarea{
     border:1px solid darkred;
-    width:100%;
+    width:auto;
     margin:5px 0;
     padding:3px;
 }
