@@ -146,11 +146,15 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                             Real -time chatting box placement here <br>
                             Real -time chatting box placement here
                         </p>
-
-
-
     </div>
-    </div>
+
+
+
+
+
+
+
+
     </div>
     </div>
 
