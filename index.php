@@ -117,7 +117,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
           <h3> Upload Your Files Here </h3>
                 </div>
             <form enctype="multipart/form-data" action="upload.php" method="post">
-<hr>
 
                 <input name="file" type="file" id="file" size="80">
                 <br>
