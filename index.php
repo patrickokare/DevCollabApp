@@ -131,7 +131,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                 <h3> Chat Box  </h3>
                         </div>
                     <!-- Begin ParaChat Basic v9 Code -->
-                    <iframe src='http://chat.parachat.com/chat/login.html?room=karetech&width=200&height=200&bg=00ff99&fg=000000&lang=en_uk' style="border-style:ridge;border-width:4px;border-color:#00ff99 #00ff99;" framespacing='0' frameborder='0' scrolling='no' width='200' height='200'>
+                    <iframe src='http://chat.parachat.com/chat/login.html?room=karetech&width=200&height=200&bg=00ff99&fg=000000&lang=en_uk' style="border-style:ridge;border-width:4px;border-color:#00ff99 #00ff99;" framespacing='0' frameborder='0' scrolling='no' width='250' height='250'>
                         <p>You do not have iframes enabled. <a href="http://www.parachat.com/iframe.html">More Info</a></p></iframe><a href="http://www.parachat.com"><img src="http://www.parachat.com/images/basic.png" border="0"></a>
                     <!-- End ParaChat Basic v9 Code -->
                     <hr>
