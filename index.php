@@ -70,7 +70,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 <div class="jumbotron">
     <div class="container">
 
-        <h4 class="text-center lead"> KareTech, Optimized for Collaboration...... </h4>
+        <h4 class="text-center lead"> DevCollab, Optimized for Collaboration...... </h4>
 
     </div>
 </div>
