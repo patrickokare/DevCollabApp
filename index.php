@@ -38,7 +38,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.php"> <em style="font-family: cursive"> KareTech </em> </a>
+            <a class="navbar-brand" href="index.php"> <em style="font-family: cursive"> DevCollab  </em> </a>
         </div>
 
 
@@ -48,7 +48,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                 <li> <a href="features.html"> Features </a> </li>
                 <li> <a href="contact.html"> Contact </a> </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle nav navbar-nav nav-tabs " data-toggle="dropdown"> KareTech Dev <b class=" caret "> </b> </a>
+                    <a href="#" class="dropdown-toggle nav navbar-nav nav-tabs " data-toggle="dropdown">DevCollab  <b class=" caret "> </b> </a>
                     <ul class="dropdown-menu lead">
                         <li class="lead"> <a href="#"> Desktop Platform </a> </li>
                         <li class="lead"> <a href="#"> Mobile Platform </a>  </li>
