@@ -28,7 +28,7 @@ function loginForm(){
     echo'
 	<div id="loginform">
 	<form action="index.php" method="post">
-		<p>Enter the name you want to be identified among other users:</p>
+		<p>Enter the name you want to be identified among other Collaborators:</p>
 		<label for="name">Name:</label>
 		<input type="text" name="name" id="name" />
 		<input type="submit" name="enter" id="enter" value="Enter" />
