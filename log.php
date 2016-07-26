@@ -6,15 +6,17 @@
 </head>
 <body>
 
-<div id="chatbox"><?php
+<div id="chatbox">
+
+    <?php
             if(file_exists("log.php") && filesize("log.php") > 0){
-    $handle = fopen("log.php", "r");
-    $contents = fread($handle, filesize("log.php"));
-    fclose($handle);
+
+
 
     echo $contents;
     }
     ?>
+
 </div>
 <script>
     //Load the file containing the chat log
