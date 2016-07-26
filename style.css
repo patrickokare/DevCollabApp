@@ -31,7 +31,7 @@ input { font:12px arial; }
     margin:0 auto;
     padding-bottom:25px;
     background:#EBF4FB;
-    width:504px;
+    width:150px;
     border:1px solid #ACD8F0;
 
 }
@@ -54,7 +54,7 @@ input { font:12px arial; }
 }
 
 #usermsg {
-    width:150px;
+    width:200px;/** Controls where users would type into **/
     border:1px solid #ACD8F0; }
 
 #submit { width: 60px; }
