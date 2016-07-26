@@ -9,6 +9,44 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
 ?>
 
+
+<?
+session_start();
+//This is for the real-time chat
+if(isset($_GET['logout'])){
+
+    //Simple exit message
+    $fp = fopen("log.php", 'a');
+    fwrite($fp, "<div class='msgln'><i>User ". $_SESSION['name'] ." has left the chat session.</i><br></div>");
+    fclose($fp);
+
+    session_destroy();
+    header("Location: index.php"); //Redirect the user
+}
+
+function loginForm(){
+    echo'
+	<div id="loginform">
+	<form action="index.php" method="post">
+		<p>Enter the name you want to be identified among other users:</p>
+		<label for="name">Name:</label>
+		<input type="text" name="name" id="name" />
+		<input type="submit" name="enter" id="enter" value="Enter" />
+	</form>
+	</div>
+	';
+}
+
+if(isset($_POST['enter'])){
+    if($_POST['name'] != ""){
+        $_SESSION['name'] = stripslashes(htmlspecialchars($_POST['name']));
+    }
+    else{
+        echo '<span class="error">Please type in a name</span>';
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -129,10 +167,78 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                     <div class="panel-heading">
                 <h3> Chat Box  </h3>
                         </div>
-                    <!-- Begin ParaChat Basic v9 Code -->
-                    <iframe src='http://chat.parachat.com/chat/login.html?room=karetech&width=200&height=200&bg=00ff99&fg=000000&lang=en_uk' style="border-style:ridge;border-width:4px;border-color:#00ff99 #00ff99;" framespacing='0' frameborder='0' scrolling='no' width='350' height='250'>
-                        <p>You do not have iframes enabled. <a href="http://www.parachat.com/iframe.html">More Info</a></p></iframe><a href="http://www.parachat.com"><img src="http://www.parachat.com/images/basic.png" border="0"></a>
-                    <!-- End ParaChat Basic v9 Code -->
+
+                    <?php
+                    if(!isset($_SESSION['name'])){
+                        loginForm();
+                    }
+                    else{
+                        ?>
+                        <div id="wrapper">
+                            <div id="menu">
+                                <p class="welcome">Welcome, <b><?php echo $_SESSION['name']; ?></b></p>
+                                <p class="logout"><a id="exit" href="#">Exit Chat</a></p>
+                                <div style="clear:both"></div>
+                            </div>
+
+                            <div id="chatbox">
+                                <?php
+                                if(file_exists("log.php") && filesize("log.php") > 0){
+                                    $handle = fopen("log.php", "r");
+                                    $contents = fread($handle, filesize("log.php"));
+                                    fclose($handle);
+
+                                    echo $contents;
+                                }
+                                ?>
+                            </div>
+
+                            <form name="message" action="">
+                                <input name="usermsg" type="text" id="usermsg" size="63" />
+                                <input name="submitmsg" type="submit"  id="submitmsg" value="Send" />
+                            </form>
+                        </div>
+                        <script type="text/javascript" src="codemirror/js/jquery.min.js"></script>
+                        <script type="text/javascript">
+                            // jQuery Document
+                            $(document).ready(function(){
+                                //If user submits the form
+                                $("#submitmsg").click(function(){
+                                    var clientmsg = $("#usermsg").val();
+                                    $.post("post.php", {text: clientmsg});
+                                    $("#usermsg").attr("value", "");
+                                    return false;
+                                });
+
+                                //Load the file containing the chat log
+                                function loadLog(){
+                                    var oldscrollHeight = $("#chatbox").attr("scrollHeight") - 20;
+                                    $.ajax({
+                                        url: "log.php",
+                                        cache: false,
+                                        success: function(html){
+                                            $("#chatbox").html(html); //Insert chat log into the #chatbox div
+                                            var newscrollHeight = $("#chatbox").attr("scrollHeight") - 20;
+                                            if(newscrollHeight > oldscrollHeight){
+                                                $("#chatbox").animate({ scrollTop: newscrollHeight }, 'normal'); //Autoscroll to bottom of div
+                                            }
+                                        },
+                                    });
+                                }
+                                setInterval (loadLog, 2500);	//Reload file every 2.5 seconds
+
+                                //If user wants to end session
+                                $("#exit").click(function(){
+                                    var exit = confirm("Are you sure you want to end the session?");
+                                    if(exit==true){window.location = 'index.php?logout=true';}
+                                });
+                            });
+                        </script>
+                        <?php
+                    }
+                    ?>
+
+
                     <hr>
 
 
