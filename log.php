@@ -7,9 +7,9 @@
 <body>
 
 <div id="chatbox"><?php
-            if(file_exists("log.html") && filesize("log.html") > 0){
-    $handle = fopen("log.html", "r");
-    $contents = fread($handle, filesize("log.html"));
+            if(file_exists("log.php") && filesize("log.php") > 0){
+    $handle = fopen("log.php", "r");
+    $contents = fread($handle, filesize("log.php"));
     fclose($handle);
 
     echo $contents;
@@ -21,7 +21,7 @@
     function loadLog(){
 
         $.ajax({
-            url: "log.html",
+            url: "log.php",
             cache: false,
             success: function(html){
                 $("#chatbox").html(html); //Insert chat log into the #chatbox div
@@ -34,7 +34,7 @@
     function loadLog(){
         var oldscrollHeight = $("#chatbox").attr("scrollHeight") - 20; //Scroll height before the request
         $.ajax({
-            url: "log.html",
+            url: "log.php",
             cache: false,
             success: function(html){
                 $("#chatbox").html(html); //Insert chat log into the #chatbox div
