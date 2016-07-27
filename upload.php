@@ -18,7 +18,7 @@ $message = 'Oops!  Your file\'s size is to large.';
 if($valid_file)
 {
 //move it to where we want it to be
-move_uploaded_file($_FILES['photo']['tmp_name'], 'uploads/'.$new_file_name);
+move_uploaded_file($_FILES['photo']['tmp_name'], 'App/'.$new_file_name);
 $message = 'Congratulations!  Your file was accepted.';
 
     header('Location:  index.php');
