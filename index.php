@@ -121,7 +121,7 @@ if(isset($_POST['enter'])){
         <div class="panel panel-default">
             <form id="preview-form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?> ">
 <label>
-        <textarea class="codemirror-textarea" name="preview-form-comment" id="preview-form-comment" rows="20" cols="120">
+        <textarea class="codemirror-textarea" name="preview-form-comment" id="preview-form-comment" rows="20" cols="140">
         <?php echo $comment; ?>
         </textarea>
                 </label>
