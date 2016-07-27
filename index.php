@@ -131,7 +131,7 @@ if(isset($_POST['enter'])){
                </form>
 
                 <label>
-               <textarea rows="20" cols="120">
+               <textarea rows="20" cols="140">
                <?php echo $comment; ?>
                 </textarea>
                 </label>
