@@ -24,10 +24,9 @@ if(!$_FILES['photo']['error']) {
         exit();
 
     }
-}
-//if there is an error......
-else
-{
+
+} else{
+
 //set that to be the returned message
 $message = 'Ooops!  Your upload triggered the following error:  '.$_FILES['photo']['error'];
 
