@@ -23,8 +23,9 @@ $webAuth = new Dropbox\WebAuth($appInfo, $appName, 'https://karetechapp.azureweb
 
 //user details
 $user = $db->prepare("SELECT * FROM users WHERE id = :user_id ");
+
 $user->execute(['user_id' => $_SESSION['user_id']]);
 $user = $user->fetch();
 
-var_dump($user);
+
 
