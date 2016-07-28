@@ -1,5 +1,3 @@
 <?php
 
-
-echo 'working!!!';
-
+require 'start.php';
