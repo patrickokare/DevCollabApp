@@ -1,5 +1,5 @@
 <?php
-$target_dir = "Uploads/";
+$target_dir = "Upload/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
 $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
@@ -9,10 +9,23 @@ if(isset($_POST["submit"])) {
     if($check !== false) {
         echo "File is an image - " . $check["mime"] . ".";
         $uploadOk = 1;
+
+        header('Location:  index.php');
+        exit();
+
     } else {
         echo "File is not an image.";
         $uploadOk = 0;
+
+
     }
+
+
+
+
 }
+
+
+
 ?>
 
