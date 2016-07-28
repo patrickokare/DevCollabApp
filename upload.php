@@ -19,6 +19,11 @@ if($valid_file)
 //move it to where we want it to be
 move_uploaded_file($_FILES['photo']['tmp_name'], 'uploads/'.$new_file_name);
 $message = 'Congratulations!  Your file was accepted.';
+    echo $message;
+
+    header('Location:  index.php');
+    exit();
+   // header("location:index.phplab");
 }
 }
 //if there is an error......
@@ -26,6 +31,8 @@ else
 {
 //set that to be the returned message
 $message = 'Ooops!  Your upload triggered the following error:  '.$_FILES['photo']['error'];
+
+    echo $message;
 }
 }
 //you get the following information for each file:
