@@ -21,7 +21,7 @@ move_uploaded_file($_FILES['photo']['tmp_name'], 'uploads/'.$new_file_name);
 $message = 'Congratulations!  Your file was accepted.';
 }
 }
-//if there is an error...
+//if there is an error......
 else
 {
 //set that to be the returned message
