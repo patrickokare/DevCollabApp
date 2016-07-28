@@ -24,6 +24,7 @@ $message = 'Congratulations!  Your file was accepted.';
     header('Location:  index.php');
     exit();
 }
+
 }
 //if there is an error...
 else
