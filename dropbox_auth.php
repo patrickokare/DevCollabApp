@@ -1,4 +1,6 @@
 <?php
+include ("start.php");
+
 
 if($user->dropbox_token){
 
