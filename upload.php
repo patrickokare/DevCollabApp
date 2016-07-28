@@ -5,7 +5,7 @@
 Result is "uploads/filename.extension" */
 
 
-$target_path = "./Upload/";
+$target_path = "./App/";
 
 $target_path = $target_path . basename( $_FILES['uploadedfile']['name']);
 
