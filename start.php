@@ -26,5 +26,5 @@ $user = $db->prepare("SELECT * FROM users WHERE id = :user_id ");
 $user->execute(['user_id' => $_SESSION['user_id']]);
 $user = $user->fetch();
 
-//var_dump($user);
+var_dump($user);
 
