@@ -1,27 +1,38 @@
 <?php
-// Where the file is going to be placed
-
-/* Add the original filename to our target path.
-Result is "uploads/filename.extension" */
-
-
-$target_path = "./App/";
-
-$target_path = $target_path . basename( $_FILES['uploadedfile']['name']);
-
-if(move_uploaded_file($_FILES['uploadedfile']['tmp_name'], $target_path)) {
-    echo "The file ".  basename( $_FILES['uploadedfile']['name']).
-
-        " has been uploaded";
-
-    header('Location:  ./index.php');
-    exit();
-
-} else{
-    echo "There was an error uploading the file, please try again!";
+//if they DID upload a file...
+if($_FILES['photo']['name'])
+{
+//if no errors...
+if(!$_FILES['photo']['error'])
+{
+//now is the time to modify the future file name and validate the file
+$new_file_name = strtolower($_FILES['photo']['tmp_name']); //rename file
+if($_FILES['photo']['size'] > (1024000)) //can't be larger than 1 MB
+{
+$valid_file = false;
+$message = 'Oops!  Your file\'s size is to large.';
 }
 
-
+//if the file has passed the test
+if($valid_file)
+{
+//move it to where we want it to be
+move_uploaded_file($_FILES['photo']['tmp_name'], 'uploads/'.$new_file_name);
+$message = 'Congratulations!  Your file was accepted.';
+}
+}
+//if there is an error...
+else
+{
+//set that to be the returned message
+$message = 'Ooops!  Your upload triggered the following error:  '.$_FILES['photo']['error'];
+}
+}
+//you get the following information for each file:
+$_FILES['field_name']['name'];
+$_FILES['field_name']['size'];
+$_FILES['field_name']['type'];
+$_FILES['field_name']['tmp_name'];
 
 
 
