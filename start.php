@@ -21,3 +21,5 @@ $csrfTokenStore = new Dropbox\ArrayEntryStore($_SESSION, 'dropbox-auth-csrf-toke
 //Define auth details
 
 $webAuth = new Dropbox\WebAuth($appInfo, $appName, 'https://karetechapp.azurewebsites.net/dropbox_finish.php', $csrfTokenStore);
+
+
