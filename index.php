@@ -154,6 +154,7 @@ if(isset($_POST['enter'])){
 
           <h3> Upload Your Files Here </h3>
                 </div>
+
             <form enctype="multipart/form-data" action="upload.php" method="post">
 
                 <input name="file" type="file" id="file" size="80">
