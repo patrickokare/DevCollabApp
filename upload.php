@@ -5,7 +5,7 @@
 Result is "uploads/filename.extension" */
 
 
-$target_path = "Upload/";
+$target_path = "./Upload/";
 
 $target_path = $target_path . basename( $_FILES['uploadedfile']['name']);
 
@@ -14,7 +14,7 @@ if(move_uploaded_file($_FILES['uploadedfile']['tmp_name'], $target_path)) {
 
         " has been uploaded";
 
-    header('Location:  index.php');
+    header('Location:  ./index.php');
     exit();
 
 } else{
