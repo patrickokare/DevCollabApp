@@ -1,4 +1,5 @@
 <?php
+include ("connection.php");
 
 session_start();
 $_SESSION['user_id'] = 1;
@@ -20,4 +21,10 @@ $csrfTokenStore = new Dropbox\ArrayEntryStore($_SESSION, 'dropbox-auth-csrf-toke
 
 $webAuth = new Dropbox\WebAuth($appInfo, $appName, 'https://karetechapp.azurewebsites.net/dropbox_finish.php', $csrfTokenStore);
 
+//user details
+$user = $db->prepare("SELECT * FROM users WHERE id = :user_id ");
+$user->execute(['user_id' => $_SESSION['user_id']]);
+$user = $user->fetch();
+
+//var_dump($user);
 
