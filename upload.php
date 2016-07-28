@@ -15,6 +15,8 @@ if($_FILES['photo']['name']){
             echo $message;
         }
 
+
+
 //if the file has passed the test
         if ($valid_file) {
 //move it to where we want it to be
