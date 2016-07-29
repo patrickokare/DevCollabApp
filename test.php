@@ -1,5 +1,5 @@
 <?php
-include ("index2.php");
+
 
 
 $location = "/site/wwwroot/uploads/";

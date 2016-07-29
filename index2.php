@@ -13,7 +13,7 @@ if (isset($_POST['submit'])) { //checking for anythiing will break the code
         }
     }
 } else {
-    echo 'Please select a file:';
+    echo 'Select A File For Upload:';
 }
 function checkType($name, $type){
     //$extension = strtolower(substr($name, strpos($name, '.') + 1)); //get the extension
@@ -22,7 +22,7 @@ function checkType($name, $type){
         if (($extension == 'jpg' || $extension == 'png') && ($type == 'image/jpeg' || $type == 'image/png')) {
             return true;
         } else{
-            echo 'That is not a jpg or png';
+            echo 'That is not a jpeg or png file';
             return false;
         }
     }
