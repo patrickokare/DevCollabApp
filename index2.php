@@ -19,7 +19,7 @@ function checkType($name, $type){
     //$extension = strtolower(substr($name, strpos($name, '.') + 1)); //get the extension
     $extension = pathinfo($name, PATHINFO_EXTENSION); //better way to get extension
     if (!empty($name)) {
-        if (($extension == 'jpg' || $extension == 'png') && ($type == 'image/jpeg' || $type == 'image/png')) {
+        if (($extension == 'jpg' || $extension == 'PNG') && ($type == 'image/jpeg' || $type == 'image/PNG')) {
             return true;
         } else{
             echo 'That is not a jpg or png';
