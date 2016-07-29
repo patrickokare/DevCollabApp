@@ -1,8 +1,5 @@
 <?php
 
-
-
-
 $max_size = 12400000000;
 $location = 'uploads/'; //where the file is going
 if (isset($_POST['submit'])) { //checking for anythiing will break the code
@@ -54,19 +51,6 @@ function save_file($tmp_name, $name, $location)
     }
     if (move_uploaded_file($tmp_name, $location . $name)) {
         echo 'Success! ' . $og_name . ' was uploaded';
-
-        $location = "/site/wwwroot/uploads/";
-        $dir_handle = opendir($location);
-        echo "<ul>";
-        while ($file = readdir($dir_handle)) {
-            if ($file != "." && $file != ".." && $file != ".DS_Store") {
-                if (!is_dir($file)) {
-                    echo "<li><a href='" . $file . "'>" . $file . "</a></li>";
-                }
-            }
-        }
-        closedir($dir_handle);
-
 
 
         if (!($og_name == $name)) { //if original name != name
