@@ -7,6 +7,7 @@ if (isset($_POST['submit'])) { //checking for anythiing will break the code
     $size = $_FILES['file']['size']; //file size
     $type = $_FILES['file']['type']; //file type
     $tmp_name = $_FILES['file']['tmp_name']; //temp location on server
+
     if(checkType($name, $type) && checkSize($size, $max_size)){
         if (isset($name)) {
             save_file($tmp_name, $name, $location); //call my function
@@ -19,13 +20,13 @@ function checkType($name, $type){
     //$extension = strtolower(substr($name, strpos($name, '.') + 1)); //get the extension
     $extension = pathinfo($name, PATHINFO_EXTENSION); //better way to get extension
     if (!empty($name)) {
-        if (($extension == 'jpg' || $extension == 'png') && ($type == 'image/jpeg' || $type == 'image/png')) {
+
             return true;
         } else{
-            echo 'That is not a jpeg or png file';
+            echo 'Failed!';
             return false;
         }
-    }
+
 }
 function checkSize($size, $max_size){
     if($size <= $max_size){
