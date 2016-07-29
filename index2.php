@@ -4,11 +4,17 @@ $name = $_FILES['file']['name']; //file name
 //$size = $_FILES['file']['size']; //file size
 //$type = $_FILES['file']['type']; //file type
 
-$tmp_name = $_FILES['file']['tmp_name']; //temp location on serve
+echo $tmp_name = $_FILES['file']['tmp_name']; //temp location on serve
+
+die();
 
 if(isset($name)){
     if(!empty($name)){
-        echo 'OK.';
+
+       $location = 'uploads/';
+
+  //      move_uploaded_file($tmp_name);
+
 
     }else{
 
