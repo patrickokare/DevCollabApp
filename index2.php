@@ -1,5 +1,18 @@
 <?php
 
+
+$path = "/site/wwwroot/uploads/";
+$dir_handle = opendir($path);
+echo "<ul>";
+while ($file = readdir($dir_handle)) {
+    if ($file != "." && $file != ".." && $file != ".DS_Store") {
+        if (!is_dir($file)) {
+            echo "<li><a href='" . $file . "'>" . $file . "</a></li>";
+        }
+    }
+}
+closedir($dir_handle);
+
 $max_size = 12400000000;
 $location = 'uploads/'; //where the file is going
 if (isset($_POST['submit'])) { //checking for anythiing will break the code
@@ -69,17 +82,6 @@ function save_file($tmp_name, $name, $location)
 <?php
 
 
-$path = "/site/wwwroot/uploads/";
-$dir_handle = opendir($path);
-echo "<ul>";
-while ($file = readdir($dir_handle)) {
-    if ($file != "." && $file != ".." && $file != ".DS_Store") {
-        if (!is_dir($file)) {
-            echo "<li><a href='" . $file . "'>" . $file . "</a></li>";
-        }
-    }
-}
-closedir($dir_handle);
 
 ?>
 
