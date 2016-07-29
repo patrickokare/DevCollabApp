@@ -6,12 +6,11 @@ $name = $_FILES['file']['name']; //file name
 
 echo $tmp_name = $_FILES['file']['tmp_name']; //temp location on serve
 
-die();
 
 if(isset($name)){
     if(!empty($name)){
 
-       $location = 'uploads/';
+
 
   //      move_uploaded_file($tmp_name);
 
