@@ -1,6 +1,15 @@
 <?php
 
-echo $name = $_FILES['file']['name'];
+$name = $_FILES['file']['name']; //file name
+//$size = $_FILES['file']['size']; //file size
+//$type = $_FILES['file']['type']; //file type
+
+$tmp_name = $_FILES['file']['tmp_name']; //temp location on serve
+
+if(isset($name)){
+    echo 'ok';
+}
+
 
 
 ?>
