@@ -1,20 +1,25 @@
 <?php
 
 $name = $_FILES['file']['name']; //file name
-//$size = $_FILES['file']['size']; //file size
+$size = $_FILES['file']['size']; //file size
 //$type = $_FILES['file']['type']; //file type
 
  $tmp_name = $_FILES['file']['tmp_name']; //temp location on serve
 
+if($size>14000) {
+    echo 'Sorry, File too Large';
+}
+
 if(isset($name)){
-    if(!empty($name)){
+    if(!empty($name)) {
 
         $location = 'uploads/';
 
-  if( move_uploaded_file($tmp_name,$location.$name)){
-      echo 'Uploaded!';
-
-  }
+        if (move_uploaded_file($tmp_name, $location . $name)) {
+            echo 'Uploaded!';
+        } else {
+            echo 'There was an error.';
+        }
 
 
     }else{
