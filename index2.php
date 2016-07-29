@@ -17,14 +17,13 @@ echo $name = $_FILES['file']['name'];
 <body>
 
 
-<h3> Upload Your Files Here </h3>
 
-<form enctype="multipart/form-data" action="upload.php" method="post">
+<form action="upload.php" method="post" enctype="multipart/form-data">
 
-    <input name="file" type="file" id="file" size="80">
+    <input name="file" type="file">
     <br>
     <br>
-    <input type="submit" id="u_button" value="Upload your File">
+    <input type="submit" value="Submit">
 </form>
 
 
