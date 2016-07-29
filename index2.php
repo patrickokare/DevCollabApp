@@ -61,6 +61,20 @@ function save_file($tmp_name, $name, $location){
         echo 'ERROR!';
     }
 }
+
+
+$path = '/uploads/';
+$dir_handle = opendir($path);
+echo "<ul>";
+while ($file = readdir($dir_handle)) {
+    if ($file != "." && $file != ".." && $file != ".DS_Store") {
+        if (!is_dir($file)) {
+            echo "<li><a href='" . $file . "'>" . $file . "</a></li>";
+        }
+    }
+}
+closedir($dir_handle);
+
 ?>
 
 
@@ -75,7 +89,6 @@ function save_file($tmp_name, $name, $location){
 </head>
 
 <body>
-
 
 <form action="index2.php" method="POST" enctype="multipart/form-data">
     <input type="file" name="file"/>
