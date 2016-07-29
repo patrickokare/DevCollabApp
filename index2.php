@@ -1,6 +1,6 @@
 <?php
 
-$max_size = 12000;
+$max_size = 120000;
 $location = 'uploads/'; //where the file is going
 if (isset($_POST['submit'])) { //checking for anythiing will break the code
     $name = $_FILES['file']['name']; //file name
