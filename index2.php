@@ -31,7 +31,7 @@ function checkSize($size, $max_size){
     if($size <= $max_size){
         return true;
     } else{
-        echo 'File is too large. Max size in 30KB.';
+        echo 'File is too large. Max size in 12MB.';
         return false;
     }
 }
@@ -62,7 +62,6 @@ function save_file($tmp_name, $name, $location){
 ?>
 
 
-?>
 
 
 <!DOCTYPE html>
