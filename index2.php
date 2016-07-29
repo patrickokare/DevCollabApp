@@ -50,6 +50,8 @@ function save_file($tmp_name, $name, $location){
     }
     if (move_uploaded_file($tmp_name, $location . $name)) {
         echo 'Success! ' . $og_name . ' was uploaded';
+
+
         if(!($og_name==$name)){ //if original name != name
             echo ' and renamed to '.$name.'.<br/>';
         } else{
