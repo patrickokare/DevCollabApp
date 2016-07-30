@@ -13,12 +13,39 @@ if(isset($_POST['name']) && !isset($display_case)){
 }elseif(isset($display_case)){
     if(!isset($ermsg)){
         ?>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ChatBox</title>
+
+    <link href="style2.css" rel="stylesheet" type="text/css">
+    <link href="font-awesome.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+
+
         <h2>Name Needed For Chatting</h2>
         You must provide a name for chatting. This name will be visible to other users.<br/><br/>
-        <form action="index.php" method="POST">
-            <div>Your Name : <input name="name" placeholder="A Name Please"/></div>
+<div class="container">
+
+
+           <form action="index.php" method="POST">
+               <div class="form-input">
+                   <div>Your Name : <input name="name" placeholder="A Name Please"/></div>
+               </div>
+
             <button>Submit & Start Chatting</button>
         </form>
+
+</div>
+
+</body>
+</html>
+
+
         <?
     }else{
         echo $ermsg;
