@@ -30,11 +30,11 @@ if(isset($_POST['name']) && !isset($display_case)){
         <h2>Name Needed For Chatting</h2>
         You must provide a name for chatting. This name will be visible to other users.<br/><br/>
 <div class="container">
-
+<img src="#">
 
            <form action="index.php" method="POST">
                <div class="form-input">
-                   <div>Your Name : <input name="name" placeholder="A Name Please"/></div>
+                   <div>Enter Chat Name  <input name="name" placeholder="A Name Please"/></div>
                </div>
 
             <button>Submit & Start Chatting</button>
