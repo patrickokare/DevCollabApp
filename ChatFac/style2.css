@@ -20,7 +20,7 @@ input{
 }
 
 .form-input::before{
-    content: "\f007";
+   / content: "\f007";
     position: absolute;
     font-family: 'FontAwesome';
     padding-left: 5px;
@@ -29,5 +29,5 @@ input{
     font-size:35px;
 }
 .form-input:last-child::before{
-    content: "\f023";
+   / content: "\f023";
 }
