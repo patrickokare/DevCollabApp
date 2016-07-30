@@ -28,3 +28,6 @@ input{
     color:#9B59B6;
     font-size:35px;
 }
+.form-input:last-child::before{
+    content: "\f023";
+}
