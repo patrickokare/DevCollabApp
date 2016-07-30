@@ -2,8 +2,8 @@ body{
     margin:0 auto;
 }
 .container{
-    width:100px;
-    height: 400px;
+    width:200px;
+    height: 100px;
     text-align: center;
     background-color: rgba(52,73,94,0.7);
     border-radius: 4px;
