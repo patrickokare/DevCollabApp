@@ -6,6 +6,7 @@ body{
     height: 400px;
     text-align: center;
     background-color: #34495E;
+    border-radius: 4px;
     margin: 0 auto;
-
+    margin-top: 150px;
 }
