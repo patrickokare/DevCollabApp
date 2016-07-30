@@ -36,7 +36,7 @@ if(isset($_POST['name']) && !isset($display_case)){
                    <div>Enter Chat Name  <input name="name" placeholder="A Name Please"/></div>
                </div>
 
-            <button>Submit & Start Chatting</button>
+            <button class="btn-submit">Submit & Start Chatting</button>
         </form>
 
 </div>
