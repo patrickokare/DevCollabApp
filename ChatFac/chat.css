@@ -4,6 +4,7 @@
     height:350px;
     padding:0px 15px;
     position:relative;
+    background-color: green;
 }
 .chat .users{
     background:lawngreen;
@@ -36,6 +37,7 @@
     white-space:pre-line;
     word-break:break-word;
 }
+
 
 
 
