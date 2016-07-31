@@ -7,7 +7,7 @@ if(isset($_SESSION['user'])){
     <div class='msgs'>
         <?include("msgs.php");?>
     </div>
-    <form id="msg_form">
+    <form class="msg_form">
 
         <textarea name="">  </textarea>
         <button>Send</button>

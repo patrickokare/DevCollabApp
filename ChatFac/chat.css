@@ -39,11 +39,19 @@
 
 
 
+.msg_form{
 
 
-#msg_form textarea{
-   color: red;
+
+}
+
+.msg_form textarea{
+
     background: blue;
+
+
+
+
 }
 
 
@@ -67,7 +75,7 @@
 
 
 /** button control **/
-#msg_form button{
+.msg_form button{
     background: #066;
     padding:5px 15px;
     font-size:10px;
@@ -83,7 +91,7 @@
     -o-transition: background .2s ease;
 }
 
-#msg_form button:hover{
+.msg_form button:hover{
     background: darkred;
 
 }
