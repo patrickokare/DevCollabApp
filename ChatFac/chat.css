@@ -4,31 +4,18 @@
     height:350px;
     padding:0px 15px;
     position:relative;
-
 }
-
-
 .chat .users{
-    background:lawngreen;
+    background:#066;
     color:white;
-    width:70px;
+    width:98px;
     overflow-y:auto;
-    border-radius: 4px;
 }
-
 .chat .chatbox{
-
-    color:white;
+    background:#fff;
+    color:black;
     margin-left:4px;
-    width:400px;
-    background-color: #066;
-
-   / padding:25px;
-    box-shadow: 0 3px #ccc;
-    border-radius: 30px;
-
-
-
+    width:330px;
 }
 .chat .chatbox .msgs{
     border-top:1px solid black;
@@ -41,72 +28,4 @@
 }
 .chat .error{color:red;}
 .chat .success{color:green;}
-
-.chat .msgs .msg, .chat .users .user{
-    border-bottom:1px solid black;
-    padding:4px 0px;
-    white-space:pre-line;
-    word-break: normal;
-}
-
-
-
-
-.msg_form{
-    margin-top:20px;
-    display:flex;
-    align-items:flex-start;
-}
-
-
-.msg_form textarea{
-
-    background: #fbfbfb;
-    width:80%;
-    height:50px;
-    border:2px solid #eee;
-    border-radius: 3px;
-    resize: none;
-    padding: 10px;
-    font-size: 12px;
-    color:#333;
-
-
-}
-
-.msg_form textarea :focus{
-    background-color: #fff;
-}
-
-
-.msg_form textarea ::-webkit-scrollbar{
-    width:10px;
-}
-.msg_form textarea ::-webkit-scrollbar-thumb{
-    border-radius:5px;
-    background: rgba(0,0,0,.1);
-
-}
-
-
-/** button control **/
-.msg_form button{
-    background: #066;
-    padding:5px 15px;
-    font-size:10px;
-    color:#fff;
-    border:none;
-    margin:0 10px;
-    border-radius:30px;
-    box-shadow: 0 3px 0 #0eb2c1;
-    cursor: pointer;
-    float: right;
-    -webkit-transition: background .2s ease;
-    -moz-transition:background .2s ease;
-    -o-transition: background .2s ease;
-}
-
-.msg_form button:hover{
-    background: darkred;
-
-}
+.chat .msgs .msg, .chat .users .user{border-bottom:1px solid black;padding:4px 0px;white-space:pre-line;word-break:break-word;}
