@@ -19,8 +19,14 @@
    / background:#fff;
     color:black;
     margin-left:4px;
-    width:330px;
+    width:400px;
+
+    min-width:390px;
     background-color: red;
+
+
+
+
 
 }
 .chat .chatbox .msgs{
