@@ -11,11 +11,10 @@
     <script src="//code.jquery.com/jquery-latest.js"></script>
     <script src="chat.js"></script>
     <link href="chat.css" rel="stylesheet"/>
-    <title>PHP Group Chat With jQuery & AJAX</title>
+    <title>Real-time ChatBox</title>
 </head>
 <body>
 <div id="content" style="margin-top:10px;height:100%;">
-    <center><h1>Group Chat In PHP</h1></center>
     <div class="chat">
         <div class="users">
             <?include("users.php");?>
