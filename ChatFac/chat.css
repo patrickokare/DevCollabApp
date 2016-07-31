@@ -8,7 +8,7 @@
 .chat .users{
     background:lawngreen;
     color:white;
-    width:90px;
+    width:50px;
     overflow-y:auto;
 }
 .chat .chatbox{
