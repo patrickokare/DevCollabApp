@@ -39,7 +39,6 @@ if(isset($_POST['name']) && !isset($display_case)){
 </div>
 
 
-
 </body>
 </html>
 
