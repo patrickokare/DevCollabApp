@@ -33,11 +33,6 @@ title='{$r['posted']}'>
 </div>
 
  </div>
-  <div class=\"chat-form\">
-        <textarea> </textarea>
-        <button>Send</button>
-
-    </div>
 
 </div>
 

@@ -10,9 +10,11 @@ if(isset($_SESSION['user'])){
     <form id="msg_form">
 
 
-        <input name="msg" size="30" type="text"/>
-        <button>Send</button>
+        <div class="chat-form">
+            <textarea name="msg"> </textarea>
+            <button>Send</button>
 
+        </div>
 
     </form>
     <?
