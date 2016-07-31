@@ -43,7 +43,10 @@
 
 
 
+input{
+color: red;
 
+}
 
 
 
@@ -80,4 +83,9 @@
     -webkit-transition: background .2s ease;
     -moz-transition:background .2s ease;
     -o-transition: background .2s ease;
+}
+
+#msg_form button:hover{
+    background: darkred;
+
 }
