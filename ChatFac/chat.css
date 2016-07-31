@@ -8,8 +8,9 @@
 .chat .users{
     background:lawngreen;
     color:white;
-    width:50px;
+    width:70px;
     overflow-y:auto;
+    border-radius: 4px;
 }
 .chat .chatbox{
     background:#fff;
