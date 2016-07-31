@@ -25,7 +25,9 @@ if(isset($_SESSION['user'])){
     <a style="right: 20px;top: 20px;position: absolute;cursor: pointer;" href="logout.php">Log Out</a>
 
             <p class="chat-message">
+                <?include("msgs.php");
 
+                ?>
 
 
             </p>
@@ -38,9 +40,7 @@ if(isset($_SESSION['user'])){
 
             <textarea>
 
-                    <?include("msgs.php");
 
-                    ?>
 
 
             </textarea>
