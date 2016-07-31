@@ -6,16 +6,18 @@
     position:relative;
 }
 .chat .users{
-    background:#066;
+    background:lawngreen;
     color:white;
     width:98px;
     overflow-y:auto;
+    border-radius: 4px;
 }
 .chat .chatbox{
-    background:#fff;
+    background:#066;
     color:black;
     margin-left:4px;
     width:330px;
+    border-radius: 4px;
 }
 .chat .chatbox .msgs{
     border-top:1px solid black;
