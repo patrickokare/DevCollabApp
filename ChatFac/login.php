@@ -20,7 +20,7 @@ if(isset($_POST['name']) && !isset($display_case)){
     <meta name ="viewport" content="width=device-width, initial-scale=1.0">
     <title> ChatBox</title>
 
-    <link href="style2.css" rel="stylesheet" type="text/css">
+    <link href="loginStyleSheet.css" rel="stylesheet" type="text/css">
 
 </head>
 <body>
