@@ -9,7 +9,7 @@ if(isset($_SESSION['user'])){
     <meta charset="UTF-8">
     <meta name ="viewport" content="width=device-width, initial-scale=1.0">
     <title> ChatBox</title>
-
+    <link href="chat.css" rel="stylesheet" type="text/css">
     <link href="style1.css" rel="stylesheet" type="text/css">
 </head>
 <body>
