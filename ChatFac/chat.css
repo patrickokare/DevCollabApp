@@ -64,9 +64,19 @@
 
 }
 
+.msg_form textarea :focus{
+    background-color: #fff;
+}
 
 
+.msg_form textarea ::-webkit-scrollbar{
+    width:10px;
+}
+.msg_form textarea ::-webkit-scrollbar-thumb{
+    border-radius:5px;
+    background: rgba(0,0,0,.1);
 
+}
 
 
 /** button control **/
