@@ -51,9 +51,8 @@
 
 .msg_form textarea{
 
-
     background: #fbfbfb;
-    width:75%;
+    width:80%;
     height:50px;
     border:2px solid #eee;
     border-radius: 3px;
@@ -61,8 +60,6 @@
     padding: 10px;
     font-size: 18px;
     color:#333;
-
-
 
 
 }
