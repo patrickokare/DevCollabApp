@@ -21,14 +21,10 @@ if(isset($_POST['name']) && !isset($display_case)){
     <title> ChatBox</title>
 
     <link href="style2.css" rel="stylesheet" type="text/css">
-    <link href="font-awesome.css" rel="stylesheet" type="text/css">
+
 </head>
 <body>
 
-
-
-        <h2>Name Needed For Chatting</h2>
-        You must provide a name for chatting. This name will be visible to other users.<br/><br/>
 <div class="container">
 
            <form action="index.php" method="POST">
