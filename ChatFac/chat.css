@@ -18,14 +18,17 @@
 .chat .chatbox{
    / background:#fff;
     color:black;
-    margin-left:4px;
+   / margin-left:4px;
     width:400px;
 
     min-width:390px;
     background-color: red;
 
 
-
+    padding:25px;
+    margin: 20px auto;
+    box-shadow: 0 3px #ccc;
+    border-radius: 30px;
 
 
 }
