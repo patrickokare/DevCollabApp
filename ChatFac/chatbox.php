@@ -26,9 +26,7 @@ if(isset($_SESSION['user'])){
 
             <p class="chat-message">
 
-                  <?include("msgs.php");
 
-        ?>
 
             </p>
 
@@ -37,7 +35,15 @@ if(isset($_SESSION['user'])){
 
 
         <div class="chat-form">
-            <textarea> </textarea>
+
+            <textarea>
+
+                    <?include("msgs.php");
+
+                    ?>
+
+
+            </textarea>
             <button>Send</button>
 
         </div>
