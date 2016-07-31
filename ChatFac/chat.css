@@ -29,5 +29,13 @@
 }
 .chat .error{color:red;}
 .chat .success{color:green;}
-.chat .msgs .msg, .chat .users .user{border-bottom:1px solid black;padding:4px 0px;white-space:pre-line;word-break:break-word;
+
+.chat .msgs .msg, .chat .users .user{
+    border-bottom:1px solid black;
+    padding:4px 0px;
+    white-space:pre-line;
+    word-break:break-word;
+}
+button{
+    color: red;
 }
