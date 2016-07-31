@@ -6,7 +6,7 @@
     position:relative;
 }
 .chat .users{
-    background:#CCC;
+    background:lawngreen;
     color:white;
     width:98px;
     overflow-y:auto;

@@ -19,6 +19,7 @@
         <div class="users">
             <?include("users.php");?>
         </div>
+
         <div class="chatbox">
             <?
             if(isset($_SESSION['user'])){
