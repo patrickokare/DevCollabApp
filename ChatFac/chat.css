@@ -43,8 +43,8 @@
 
 
 
-input{
-color: red;
+#msg_form textarea{
+   color: red;
 
 }
 
