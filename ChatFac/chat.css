@@ -37,5 +37,17 @@
     word-break:break-word;
 }
 button{
-    color: red;
+    background: #066;
+    padding:5px 15px;
+    font-size:30px;
+    color:#fff;
+    border:none;
+    margin:0 10px;
+    border-radius:30px;
+    box-shadow: 0 3px 0 #0eb2c1;
+    cursor: pointer;
+
+    -webkit-transition: background .2s ease;
+    -moz-transition:background .2s ease;
+    -o-transition: background .2s ease;
 }
