@@ -1,11 +1,9 @@
 *{
-    margin:0;
-    padding:0;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;;
     box-sizing:border-box;
 }
 body{
-  /  background-color: #00a8c6;
+    background-color: #00a8c6;
 }
 
 .chatbox{
@@ -41,7 +39,7 @@ body{
     flex-flow:row wrap;
     align-items:flex-start;
     margin-bottom: 10px ;
-/ background: #ccc;
+/   background: #ccc;
 }
 
 .chat .chat-message{
