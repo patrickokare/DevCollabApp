@@ -14,18 +14,21 @@
     width:70px;
     overflow-y:auto;
     border-radius: 4px;
+
+
 }
 .chat .chatbox{
-   / background:#fff;
-    color:black;
+
+    color:white;
     margin-left:4px;
     width:400px;
+    background-color: #066;
 
-
-    background-color: red;
    / padding:25px;
     box-shadow: 0 3px #ccc;
     border-radius: 30px;
+
+
 
 }
 .chat .chatbox .msgs{
