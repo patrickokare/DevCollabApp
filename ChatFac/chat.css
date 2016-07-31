@@ -14,7 +14,7 @@
 }
 .chat .chatbox{
     background:#066;
-    color:black;
+    color:white;
     margin-left:4px;
     width:330px;
     border-radius: 4px;
@@ -30,4 +30,4 @@
 }
 .chat .error{color:red;}
 .chat .success{color:green;}
-.chat .msgs .msg, .chat .users .user{border-bottom:1px solid black;padding:4px 0px;white-space:pre-line;word-break:break-word;}
+.chat .msgs .msg, .chat .users .user{border-bottom:1px solid black;padding:4px 0px;white-space:pre-line;word-break: break-all;}
