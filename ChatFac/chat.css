@@ -36,7 +36,7 @@
     white-space:pre-line;
     word-break:break-word;
 }
-button{
+#msg_form button{
     background: #066;
     padding:5px 15px;
     font-size:30px;
