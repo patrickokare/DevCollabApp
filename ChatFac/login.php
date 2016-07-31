@@ -39,7 +39,7 @@ if(isset($_POST['name']) && !isset($display_case)){
             <button class="btn-submit">Start Chatting</button>
 
         </form>
-    <p> A name to be recognize among users </p>
+    <p> A Name to be recognize during Chat Session </p>
 </div>
 
 
