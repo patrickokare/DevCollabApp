@@ -9,7 +9,7 @@ if(isset($_SESSION['user'])){
     </div>
     <form id="msg_form">
 
-        <textarea name="msg">  </textarea>
+        <textarea name="">  </textarea>
         <button>Send</button>
     </form>
     <?
