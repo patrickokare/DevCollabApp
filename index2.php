@@ -17,6 +17,20 @@ if (isset($_POST['submit'])) { //checking for anythiing will break the code
     echo 'Select A File For Upload:';
 }
 
+$dir = "/uploads/";
+// Open a directory, and read its contents
+if (is_dir($dir)){
+    if ($dh = opendir($dir)){
+        while (($file = readdir($dh)) !== false){
+            echo "filename:" . $file . "<br>";
+        }
+        closedir($dh);
+    }
+}
+
+
+
+
 
 function checkType($name, $type){
 
@@ -58,18 +72,6 @@ function save_file($tmp_name, $name, $location)
     }
     if (move_uploaded_file($tmp_name, $location . $name)) {
         echo 'Success! ' . $og_name . ' was uploaded';
-
-
-$dir = "/uploads/";
-// Open a directory, and read its contents
-if (is_dir($dir)){
-    if ($dh = opendir($dir)){
-        while (($file = readdir($dh)) !== false){
-            echo "filename:" . $file . "<br>";
-        }
-        closedir($dh);
-    }
-}
 
 
 
