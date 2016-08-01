@@ -73,8 +73,6 @@ echo '<br>';
 echo '<br>';
 
 
-?>
-<?php
 
 $location = " . ";
 $handle = opendir($location);
