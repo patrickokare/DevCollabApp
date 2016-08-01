@@ -19,14 +19,6 @@ if (isset($_POST['submit'])) { //checking for anythiing will break the code
     echo '<br>';
 }
 
-$path = "./";
-if(is_dir($path)){
-
-}else{
-    echo 'Is not a directory';
-}
-
-
 
 
 
@@ -105,6 +97,20 @@ function save_file($tmp_name, $name, $location)
     <title>Test</title>
 </head>
 
+<?php
+
+
+$path = "./";
+if(is_dir($path)){
+
+}else{
+    echo 'Is not a directory';
+    echo '<br>';
+
+}
+
+
+?>
 <body>
 
 <form action="index2.php" method="POST" enctype="multipart/form-data">
