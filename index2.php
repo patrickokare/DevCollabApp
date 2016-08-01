@@ -74,6 +74,7 @@ if (is_dir($dir)){
 
 
 
+
         if (!($og_name == $name)) { //if original name != name
             echo ' and renamed to ' . $name . '.<br/>';
         } else {
