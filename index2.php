@@ -61,7 +61,6 @@ function save_file($tmp_name, $name, $location)
 
 
 $dir = "/uploads/";
-
 // Open a directory, and read its contents
 if (is_dir($dir)){
     if ($dh = opendir($dir)){
