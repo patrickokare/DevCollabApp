@@ -1,5 +1,6 @@
 <?php
 
+$dir = '/uploads/';
 $max_size = 12400000000;
 $location = 'uploads/'; //where the file is going
 if (isset($_POST['submit'])) { //checking for anythiing will break the code
@@ -18,7 +19,7 @@ if (isset($_POST['submit'])) { //checking for anythiing will break the code
 }
 
 echo '<br> i can work from here';
-$dir = "/uploads/";
+
 // Open a directory, and read its contents
 if (is_dir($dir)){
     if ($dh = opendir($dir)){
