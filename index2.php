@@ -60,7 +60,7 @@ function save_file($tmp_name, $name, $location)
         echo 'Success! ' . $og_name . ' was uploaded';
 
 
-$dir = "/images/";
+$dir = "/uploads/";
 
 // Open a directory, and read its contents
 if (is_dir($dir)){
