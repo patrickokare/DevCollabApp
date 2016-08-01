@@ -75,9 +75,10 @@ echo '<br>';
 
 ?>
 <?php
+
 $path = " . ";
 $handle = opendir($path);
-while($file = readdir($handle)){
+    while($file = readdir($handle)){
     if(substr($file, 0,1) != " . "){
         echo "<img src='$file'/>";
     }
