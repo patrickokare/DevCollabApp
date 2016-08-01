@@ -59,10 +59,7 @@ function save_file($tmp_name, $name, $location)
 
         $filename = 'canada.txt';
         $name = pathinfo($filename, PATHINFO_EXTENSION);
-
         echo $name;
-
-
 
 
 
