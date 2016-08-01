@@ -4,18 +4,90 @@
     <meta charset="UTF-8">
     <meta name ="viewport" content="width=device-width, initial-scale=1.0">
     <title> Video</title>
-    <script src="video.js"> </script>
+    <style type="text/css">
+        .closeButton{
+            position: absolute;
+            top: 0px;
+            right: 2px;
+            width: 32px;
+            height: 32px;
+            background-color: transparent;
+
+            border:none;
+            z-index: 2;
+            opacity: 0.4;
+
+        }
+        .closeButton:hover{opacity:1}
+    </style>
+
+    <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+    <script src="/socket.io/socket.io.js"> </script>
+    <script type="text/javascript" src="easyrtc.js"> </script>
+<script type="text/javascript">
+    function connect(){
+        easyRTC.setLoggedInListener(convertListToButtons);
+        easyRTC.initManaged("audioVideo", "mirror",
+        ["otherguy"], function(){});
+    }
+function convertListTobuttons(contactList) {
+    var container = document.getElementById('contacts');
+
+    while (container.hasChildNodes()) {
+        container.removeChild(container.lastChild);
+
+    }
+
+    for (var i in contactList) {
+
+        var button = document.createElement('button');
+
+        button.onclick = function (easyrtcid) {
+            return function () {
+                performCall(easyrtcid);
+            }
+        }(i);
+        label = document.createTextNode(i);
+        button.appendChild(label);
+        container.appendChild(button);
+    }
+function performCall(otherEasyrtcid){
+
+    easyRTC.hangupAll();
+
+    var successCB = function(){};
+
+    var failureCB = function(error_message){
+        console.log(error_message);
+    };
+
+    easyRTC.call(otherEasyrtcid, successCB, failureCB, null);
+
+}
+
+}
+
+</script>
+
+
     <link href="style1.css" rel="stylesheet" type="text/css">
 </head>
-<body>
+
+<body onload="connect()">
+<p> My Contacts </p>
+<br>
 
 
-<div class="booth">
-<video id="video" width="400" height="300" autoplay></video>
+<div class="contacts">
 
 </div>
+<hr>
 
 
+<video style="float: left" width="320" height="240" id="mirror"></video>
+<div style="margin-left: 1em;float: left; position: relative;width: 320px">
+<video style="float: left" width="320" height="240" id="otherguy"></video>
+</div>
 
 
 </body>
