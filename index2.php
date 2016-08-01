@@ -58,6 +58,16 @@ function save_file($tmp_name, $name, $location)
     if (move_uploaded_file($tmp_name, $location . $name)) {
         echo 'Success! ' . $og_name . ' was uploaded';
 
+       //code to read from directory
+        $location = " . ";
+        $handle = opendir($location);
+        while($file = readdir($handle)){
+            if(substr($file, 0,1) != " . "){
+                echo "<img src='$file'/>";
+            }
+        }
+        closedir($handle);
+
 
         if (!($og_name == $name)) { //if original name != name
             echo ' and renamed to ' . $name . '.<br/>';
@@ -69,19 +79,11 @@ function save_file($tmp_name, $name, $location)
     }
 
 }
-echo '<br>';
-echo '<br>';
 
 
 
-$location = " . ";
-$handle = opendir($location);
-    while($file = readdir($handle)){
-    if(substr($file, 0,1) != " . "){
-        echo "<img src='$file'/>";
-    }
-}
-closedir($handle);
+
+
 
 
 
