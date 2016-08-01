@@ -24,7 +24,7 @@ function checkType($name, $type){
    // $extension = pathinfo($name, PATHINFO_EXTENSION); //better way to get extension
 
     //code to read from directory
-    $location = " . ";
+    $location = 'uploads/';
     $handle = opendir($location);
     while($file = readdir($handle)){
         if(substr($file, 0,1) != " . "){
