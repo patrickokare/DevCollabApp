@@ -23,6 +23,7 @@ function checkType($name, $type){
 
 
 
+
     if (!empty($name)) {
 
             return true;
@@ -68,10 +69,24 @@ function save_file($tmp_name, $name, $location)
     }
 
 }
+echo '<br>';
+echo '<br>';
 
 
 ?>
+<?php
+$path = " . ";
+$handle = opendir($path);
+while($file = readdir($handle)){
+    if(substr($file, 0,1) != " . "){
+        echo "<img src='$file'/>";
+    }
+}
+closedir($handle);
 
+
+
+?>
 
 
 
@@ -90,6 +105,7 @@ function save_file($tmp_name, $name, $location)
     <input type="submit" name="submit" value="Submit"/>
 
 </form>
+
 
 
 
