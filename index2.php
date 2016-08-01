@@ -17,6 +17,7 @@ if (isset($_POST['submit'])) { //checking for anythiing will break the code
     echo 'Select A File For Upload:';
 }
 
+echo '<br> i can work from here';
 $dir = "/uploads/";
 // Open a directory, and read its contents
 if (is_dir($dir)){
