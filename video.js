@@ -12,12 +12,16 @@
 
 
     }, function(stream) {
-       console.log(stream);
+
+    video.src=vendorUrl.createObjectURL(Stream);
+    video.play();
+
+    }, function(error){
+
+        //An error occured
+        // error.code
+
 
     } );
-
-
-
-
 
 })();
