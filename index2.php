@@ -23,15 +23,6 @@ function checkType($name, $type){
    // $extension = strtolower(substr($name, strpos($name, '.') + 1)); //get the extension
    // $extension = pathinfo($name, PATHINFO_EXTENSION); //better way to get extension
 
-    //code to read from directory
-    $location = 'uploads/';
-    $handle = opendir($location);
-    while($file = readdir($handle)){
-        if(substr($file, 0,1) != " . "){
-            echo "<img src='$file'/>";
-        }
-    }
-    closedir($handle);
 
 
     if (!empty($name)) {
@@ -67,6 +58,19 @@ function save_file($tmp_name, $name, $location)
     }
     if (move_uploaded_file($tmp_name, $location . $name)) {
         echo 'Success! ' . $og_name . ' was uploaded';
+
+
+$dir = "/images/";
+
+// Open a directory, and read its contents
+if (is_dir($dir)){
+    if ($dh = opendir($dir)){
+        while (($file = readdir($dh)) !== false){
+            echo "filename:" . $file . "<br>";
+        }
+        closedir($dh);
+    }
+}
 
 
 
