@@ -17,8 +17,12 @@ if (isset($_POST['submit'])) { //checking for anythiing will break the code
     echo 'Select A File For Upload:';
 }
 function checkType($name, $type){
-    //$extension = strtolower(substr($name, strpos($name, '.') + 1)); //get the extension
-    $extension = pathinfo($name, PATHINFO_EXTENSION); //better way to get extension
+
+   // $extension = strtolower(substr($name, strpos($name, '.') + 1)); //get the extension
+   // $extension = pathinfo($name, PATHINFO_EXTENSION); //better way to get extension
+
+
+
     if (!empty($name)) {
 
             return true;
@@ -52,6 +56,14 @@ function save_file($tmp_name, $name, $location)
     }
     if (move_uploaded_file($tmp_name, $location . $name)) {
         echo 'Success! ' . $og_name . ' was uploaded';
+
+        $filename = 'canada.txt';
+        $name = pathinfo($filename, PATHINFO_EXTENSION);
+
+        echo $name;
+
+
+
 
 
         if (!($og_name == $name)) { //if original name != name
