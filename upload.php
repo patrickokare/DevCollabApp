@@ -2,9 +2,9 @@
 
 header('Content-type: text/plain');
 
-$file = "./document.txt";
+$location = 'uploads/';
 
-$document = file_get_contents($file);
+$document = file_get_contents($location);
 
 echo $document;
 
