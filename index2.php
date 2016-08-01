@@ -16,6 +16,8 @@ if (isset($_POST['submit'])) { //checking for anythiing will break the code
 } else {
     echo 'Select A File For Upload:';
 }
+
+
 function checkType($name, $type){
 
    // $extension = strtolower(substr($name, strpos($name, '.') + 1)); //get the extension
