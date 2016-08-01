@@ -1,17 +1,15 @@
 <?php
 
-$path = " . ";
 
-$handle = opendir($path);
-while ($file = readdir($handle)){
+$path = "./";
+if(is_dir($path)){
 
-    echo $file . "<br>";
-
-
+}else{
+    echo 'Is not a directory';
+    echo '<br>';
 
 }
 
-closedir($handle);
 
 
 
