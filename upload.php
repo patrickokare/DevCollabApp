@@ -27,6 +27,7 @@ closedir( $dir_handle );
 $path = ".//uploads/";
 
 if(is_dir($path)){
+
 echo "Yup u are finally in a directory";
 
 }else{
@@ -34,6 +35,7 @@ echo "Yup u are finally in a directory";
     echo "Is not a directory boy!";
 
 }
+
 
 //$handle = opendir($path);
 
