@@ -21,7 +21,7 @@ if ($dhandle) {
     closedir($dhandle);
 }
 
-echo "<select name=\"file\">\n";
+echo "<select disabled name=\"file\">\n";
 // Now loop through the files, echoing out a new select option for each one
 foreach( $files as $fname )
 {
