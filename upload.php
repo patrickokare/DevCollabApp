@@ -24,21 +24,20 @@ closedir( $dir_handle );
 **/
 
 
-$dir = ".//uploads/";
+$path = ".//uploads/";
+$handle = opendir($path);
 
-if (is_dir($dir)) {
-    if ($dh = opendir($dir)) {
-        while (($file = readdir($dh)) !== false) {
-            if (substr($file, 0, 1) != ".") {
+        while($file = readdir($handle)){
+            if(substr($file,0,1) != "."){
                 echo "<img src='$file'/>";
                 echo '<br>';
 
             }
             closedir($dh);
-        }
+
     }
 
-}
+
 
 
 /**
