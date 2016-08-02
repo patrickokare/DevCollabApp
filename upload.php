@@ -26,27 +26,23 @@ closedir( $dir_handle );
 
 $path = ".//uploads/";
 
-if(is_dir($path)){
 
-echo "Yup u are finally in a directory";
+$handle = opendir($path);
 
-}else{
-
-    echo "Is not a directory boy!";
-
+while($file = readdir($handle)){
+    if(substr($file,0,1)!= " .") {
+        echo "<img src = '$file'/> ";
+    }
 }
 
+closedir($handle);
 
-//$handle = opendir($path);
-
-//while($file = readdir($handle)){
-
-  //  if(substr($file,0,1)!= " .") {
+  //
      //   echo "<img src = '$file'/> ";
   //  }
 
 //}
 
 
-//closedir($handle);
+
 
