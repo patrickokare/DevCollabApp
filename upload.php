@@ -1,6 +1,6 @@
 <?php
 
-
+/**
 $path = "./";
 if(is_dir($path)) {
 
@@ -21,9 +21,16 @@ closedir( $dir_handle );
 
 }
 
+**/
 
 
+$path = "./";
 
+$handle = opendir($path);
+while($file = readdir($handle)){
+    echo $file . "<br>";
 
+}
 
+closedir($handle);
 
