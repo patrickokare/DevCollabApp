@@ -23,7 +23,7 @@ closedir( $dir_handle );
 
 **/
 
-
+/**
 $dir = ".//uploads/";
 
 if (is_dir($dir)){
@@ -36,12 +36,14 @@ if (is_dir($dir)){
         closedir($dh);
     }
 }
+**/
 
 
-/**
 $path = ".//uploads/";
 
 $handle = opendir($path);
 
-**/
-
+while($file = readdir($handle)){
+    echo $file . "<br>";
+}
+closedir($handle);

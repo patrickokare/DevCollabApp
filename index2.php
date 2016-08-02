@@ -65,8 +65,6 @@ function save_file($tmp_name, $name, $location)
 
 
 
-
-
         if (!($og_name == $name)) { //if original name != name
             echo ' and renamed to ' . $name . '.<br/>';
         } else {
