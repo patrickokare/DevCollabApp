@@ -39,7 +39,7 @@ if (is_dir($dir)){
 **/
 
 
-$path = ".//uploads/";
+$path = "./data.txt/";
 $dataToWrite = "";
 
 $handle = opendir($path);
