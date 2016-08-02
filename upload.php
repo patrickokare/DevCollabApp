@@ -26,7 +26,7 @@ echo "<select name=\"file\">\n";
 // Now loop through the files, echoing out a new select option for each one
 foreach( $files as $fname )
 {
-    echo "<option>{ <a href='$fname'> link1 </a> }</option>\n";
+    echo "<option>{ <a href='#'> $fname </a> }</option>\n";
 }
 echo "</select>\n";
 
