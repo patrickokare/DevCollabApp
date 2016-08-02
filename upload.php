@@ -27,8 +27,12 @@ closedir( $dir_handle );
 $path = "./";
 
 $handle = opendir($path);
+
 while($file = readdir($handle)){
-    echo $file . "<br>";
+
+    if(substr($file,0,1)!= " .") {
+        echo $file . "<br>";
+    }
 
 }
 
