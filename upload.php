@@ -23,7 +23,7 @@ closedir( $dir_handle );
 
 **/
 
-/**
+
 $dir = ".//uploads/";
 
 if (is_dir($dir)){
@@ -35,11 +35,11 @@ if (is_dir($dir)){
     }
 }
 ?>
-**/
 
+/**
 $path = ".//uploads/";
 
 $handle = opendir($path);
 
-
+**/
 
