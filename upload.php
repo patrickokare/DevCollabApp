@@ -24,18 +24,25 @@ closedir( $dir_handle );
 **/
 
 
-$path = "../upload/";
+$path = "./upload/";
 
-$handle = opendir($path);
+if(is_dir($path)){
 
-while($file = readdir($handle)){
+}else{
 
-    if(substr($file,0,1)!= " .") {
-        echo "<img src = '$file'/> ";
-    }
-
+    echo "Is not a directory";
 }
 
+//$handle = opendir($path);
 
-closedir($handle);
+//while($file = readdir($handle)){
+
+  //  if(substr($file,0,1)!= " .") {
+     //   echo "<img src = '$file'/> ";
+  //  }
+
+//}
+
+
+//closedir($handle);
 
