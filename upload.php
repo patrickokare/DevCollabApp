@@ -59,7 +59,7 @@ while (!feof($fm) && $cur < $end && (connection_status() == 0)) {
 
 
 
-/**
+/**functional prints out the files but does not display
 $path = ".//uploads/";
 $handle = opendir($path);
 
@@ -76,7 +76,7 @@ $handle = opendir($path);
 **/
 
 
-/**
+/**creates a data.txt directory, compiling the files
 $dataToWrite = "";
 $path = ".//uploads/";
 $handle = opendir($path);
