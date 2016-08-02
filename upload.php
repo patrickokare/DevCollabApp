@@ -40,6 +40,7 @@ if (is_dir($dir)){
 
 
 $path = ".//uploads/";
+$dataToWrite = "";
 
 $handle = opendir($path);
 
@@ -47,8 +48,13 @@ while($file = readdir($handle)){
     if(substr($file,0,1) != "."){
         echo "<img src='$file'/>";
         echo '<br>';
+        $dataToWrite .= $file . "\n";
 
     }
 }
 closedir($handle);
+
+$writer = fopen("data.txt", 'w');
+fwrite($writer, $dataToWrite);
+fclose($writer);
 
