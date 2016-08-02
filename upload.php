@@ -1,7 +1,7 @@
 <?php
 
-/**
-$filename = 'data.txt';
+
+$filename = 'data2.txt';
 $file_path = "./";
 $file_fullpath = $file_path . $filename;
 //
@@ -56,10 +56,10 @@ while (!feof($fm) && $cur < $end && (connection_status() == 0)) {
     print fread($fm, min(1024 * 16, $end - $cur));
     $cur+= 1024 * 16;
 }
-**/
 
 
-/**functional prints out the files but does not display
+
+/**functional prints out the files but does not display or not downloadable
 $path = ".//uploads/";
 $handle = opendir($path);
 
@@ -72,11 +72,11 @@ $handle = opendir($path);
             closedir($dh);
 
     }
-
 **/
 
 
 
+/**creates a data.txt directory, compiling the files
 $dataToWrite = "";
 $path = ".//uploads/";
 $handle = opendir($path);
@@ -95,3 +95,4 @@ $writer = fopen("data2.txt", 'w');
 fwrite($writer, $dataToWrite);
 fclose($writer);
 
+**/
