@@ -27,7 +27,7 @@ closedir( $dir_handle );
 $path = "./";
 
 if(is_dir($path)){
-echo $path;
+echo "Yup u are finally in a directory";
 
 }else{
 
