@@ -31,11 +31,12 @@ $handle = opendir($path);
 
 while($file = readdir($handle)){
     if(substr($file,0,1)!= " .") {
-        echo  $file . "<br> ";
+        echo "<img src = '$file'/> ";
     }
 }
 
 closedir($handle);
+
 
   //
      //   echo "<img src = '$file'/> ";
