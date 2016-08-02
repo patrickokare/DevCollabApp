@@ -1,7 +1,7 @@
 <?php
 
 
-$path = "./";
+$path = ".//uploads/";
 if(is_dir($path)) {
 
     $dir_handle = opendir($path);
@@ -14,6 +14,7 @@ if(is_dir($path)) {
             if($dir == "test"){
                 $sub_dir_handle = opendir($dir);
                 while(($sub_dir = readdir($sub_dir_handle)) !== false){
+
                     echo "--> --> contents = $sub_dir <br>";
 
 
