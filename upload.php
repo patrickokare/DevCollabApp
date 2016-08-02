@@ -2,7 +2,7 @@
 
 
 // open the current directory
-$dhandle = opendir('.');
+$dhandle = opendir('.//uploads/');
 // define an array to hold the files
 $files = array();
 
