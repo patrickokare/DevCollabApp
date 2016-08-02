@@ -24,10 +24,10 @@ closedir( $dir_handle );
 **/
 
 
-$path = "./";
+$path = "./upload";
 
 if(is_dir($path)){
-echo "Yup! you ar finally in the directory";
+echo "Yup! you are finally in the directory";
 
 }else{
 
