@@ -11,6 +11,16 @@ if(is_dir($path)) {
         if (is_dir($dir)) {
             echo "is dir: " . $dir . "<br>";
 
+            if($dir == "test"){
+                $sub_dir_handle = opendir($dir);
+                while(($sub_dir = readdir($sub_dir_handle)) !== false){
+                    echo "--> --> contents = $sub_dir <br>";
+
+                }
+            }
+
+
+
         } elseif (is_file($dir)) {
 
             echo "is file: " . $dir . "<br>";
