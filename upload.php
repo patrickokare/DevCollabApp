@@ -39,7 +39,7 @@ if (is_dir($dir)){
 **/
 
 
-$path = "./data.txt/";
+$path = "./data.txt";
 
 if (is_dir($path)){
 
