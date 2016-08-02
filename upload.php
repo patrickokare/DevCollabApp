@@ -24,7 +24,7 @@ closedir( $dir_handle );
 **/
 
 
-$path = "./site/wwwroot/uploads/";
+$path = "./wwwroot/uploads/";
 
 if(is_dir($path)){
 echo "Yup u are finally in a directory";
