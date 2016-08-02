@@ -40,6 +40,15 @@ if (is_dir($dir)){
 
 
 $path = "./data.txt/";
+
+if (is_dir($path)){
+
+
+}else{
+    echo "This is not a directory";
+}
+
+/**
 $dataToWrite = "";
 
 $handle = opendir($path);
@@ -58,3 +67,4 @@ $writer = fopen("data.txt", 'w');
 fwrite($writer, $dataToWrite);
 fclose($writer);
 
+**/
