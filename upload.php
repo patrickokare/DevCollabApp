@@ -1,6 +1,38 @@
 <?php
 
+// You need to create the files/ directory inside your document root to put your files.
+if (substr($_SERVER['REQUEST_URI'], 0, 7) !== './/uploads/') {
+    die('not allowed');
+}
+$absolutePath = $_SERVER['DOCUMENT_ROOT'] . $_SERVER['REQUEST_URI'];
+$pathParts = pathinfo($absolutePath);
+$fileName = $pathParts['basename'];
+$fileInfo = finfo_open(FILEINFO_MIME_TYPE);
+$fileType = finfo_file($fileInfo, $absolutePath);
+finfo_close($fileInfo);
+$fileSize = filesize($absolutePath);
+header('Content-Length: ' . $fileSize);
+header('Content-Type: ' . $fileType);
+header('Content-Disposition: attachment; filename=' . $fileName);
+ob_clean();
+flush();
+readfile($absolutePath);
+exit;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**same as the other scripts, displays but not downloadable......
 // open the current directory
 $dhandle = opendir('.//uploads/');
 // define an array to hold the files
@@ -29,7 +61,7 @@ foreach( $files as $fname )
     echo "<option>{$fname }</option>\n";
 }
 echo "</select>\n";
-
+**/
 
 
 /**functional prints out the files but does not display or not downloadable
