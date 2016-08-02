@@ -6,7 +6,7 @@ if(is_dir($path)) {
 
     $dir_handle = opendir($path);
 
-    while (($dir = readdir()) !== false) {
+    while (($dir = readdir( $dir_handle)) !== false) {
 
         if (is_dir($dir)) {
             echo "is dir: " . $dir . "<br>";
@@ -17,7 +17,7 @@ if(is_dir($path)) {
         }
 
     }
-closedir( );
+closedir( $dir_handle );
 
 }
 
