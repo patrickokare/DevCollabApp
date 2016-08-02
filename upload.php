@@ -40,12 +40,6 @@ while($file = readdir($handle)){
 closedir($handle);
 
 
-  //
-     //   echo "<img src = '$file'/> ";
-  //  }
-
-//}
-
 
 
 
