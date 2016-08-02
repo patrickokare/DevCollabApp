@@ -26,18 +26,19 @@ closedir( $dir_handle );
 
 $dir = ".//uploads/";
 
-if (is_dir($dir)){
-    if ($dh = opendir($dir)){
-        while (($file = readdir($dh)) !== false){
-            echo "<a href='$file'> </a>";
-            echo '<br>';
+if (is_dir($dir)) {
+    if ($dh = opendir($dir)) {
+        while (($file = readdir($dh)) !== false) {
+            if (substr($file, 0, 1) != ".") {
+                echo "<a href='$file'>img </a>";
+                echo '<br>';
 
+            }
+            closedir($dh);
         }
-        closedir($dh);
     }
+
 }
-
-
 
 
 /**
