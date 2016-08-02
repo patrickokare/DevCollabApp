@@ -1,7 +1,7 @@
 <?php
 
 
-$path = "./data.txt";
+$path = ".//data.txt";
 if(is_dir($path)) {
 
     $dir_handle = opendir($path);
