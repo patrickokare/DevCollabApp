@@ -49,6 +49,6 @@ while($file = readdir($handle)){
         echo '<br>';
 
     }
-
 }
 closedir($handle);
+
