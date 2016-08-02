@@ -23,7 +23,7 @@ closedir( $dir_handle );
 
 **/
 
-/**
+
 $dir = ".//uploads/";
 
 if (is_dir($dir)){
@@ -36,17 +36,8 @@ if (is_dir($dir)){
         closedir($dh);
     }
 }
-**/
 
 
-$path = ".//data.txt/";
-
-if (is_dir($path)){
-
-
-}else{
-    echo "This is not a directory";
-}
 
 /**
 $dataToWrite = "";
