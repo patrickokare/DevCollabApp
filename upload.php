@@ -26,7 +26,7 @@ echo "<select name=\"file\">\n";
 // Now loop through the files, echoing out a new select option for each one
 foreach( $files as $fname )
 {
-    echo "<option>{<img src='$fname' /> }</option>\n";
+    echo "<option>{$fname }</option>\n";
 }
 echo "</select>\n";
 
