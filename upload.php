@@ -31,7 +31,7 @@ $handle = opendir($path);
 
 while($file = readdir($handle)) {
 
-    echo $file;
+    echo " <img src = '$file' /> ";
 
     echo '<br>';
     $dataToWrite .= $file . "\n";
