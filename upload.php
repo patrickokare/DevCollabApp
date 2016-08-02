@@ -1,7 +1,7 @@
 <?php
 
 
-$filename = 'uploads';
+$filename = ".//uploads/";
 $file_path = "./";
 $file_fullpath = $file_path . $filename;
 //
