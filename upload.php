@@ -32,6 +32,7 @@ echo "Yup u are finally in a directory";
 }else{
 
     echo "Is not a directory boy!";
+
 }
 
 //$handle = opendir($path);
