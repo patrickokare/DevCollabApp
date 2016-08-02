@@ -6,19 +6,20 @@ if(is_dir($path)) {
 
     $dir_handle = opendir($path);
 
-    while (($dir = readdir( $dir_handle)) !== false) {
+    while (($dir = readdir( )) !== false) {
 
         if (is_dir($dir)) {
             echo "is dir: " . $dir . "<br>";
 
-            if($dir == "test"){
+            if ($dir == "test") {
                 $sub_dir_handle = opendir($dir);
-                while(($sub_dir = readdir($sub_dir_handle)) !== false){
+                while (($sub_dir = readdir($sub_dir_handle)) !== false) {
 
                     echo "--> --> contents = $sub_dir <br>";
 
 
                 }
+                closedir();
             }
 
 
@@ -29,7 +30,7 @@ if(is_dir($path)) {
         }
 
     }
-closedir( $dir_handle );
+closedir(  );
 
 }
 
