@@ -29,7 +29,7 @@ $dir = ".//uploads/";
 if (is_dir($dir)){
     if ($dh = opendir($dir)){
         while (($file = readdir($dh)) !== false){
-            echo $file;
+            echo "<img src='$file'/>";
             echo '<br>';
 
         }
