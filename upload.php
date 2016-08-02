@@ -25,14 +25,16 @@ closedir( $dir_handle );
 
 
 $path = ".//uploads/";
-
+$dataToWrite = "";
 
 $handle = opendir($path);
 
-while($file = readdir($handle)){
+while($file = readdir($handle)) {
 
-        echo " <img src = '$file' /> ";
-        echo '<br>';
+    echo $file;
+
+    echo '<br>';
+    $dataToWrite .= $file . "\n";
 
 
 }
@@ -40,6 +42,9 @@ while($file = readdir($handle)){
 closedir($handle);
 
 
+$writer = fopen("data.txt", 'w');
+fwrite($writer, $dataToWrite);
+fclose($writer);
 
 
 
