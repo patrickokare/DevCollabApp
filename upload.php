@@ -2,7 +2,7 @@
 
 
 $filename = 'data.txt';
-$file_path = ".//uploads/";
+$file_path = "./";
 $file_fullpath = $file_path . $filename;
 //
 //
