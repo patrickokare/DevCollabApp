@@ -24,7 +24,7 @@ closedir( $dir_handle );
 **/
 
 
-$path = "./upload";
+$path = "/upload";
 
 $handle = opendir($path);
 
