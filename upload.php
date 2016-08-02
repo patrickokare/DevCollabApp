@@ -24,7 +24,7 @@ closedir( $dir_handle );
 **/
 
 
-$path = "./upload";
+$path = "./uploads";
 
 if(is_dir($path)){
 echo "Yup! you are finally in the directory";
