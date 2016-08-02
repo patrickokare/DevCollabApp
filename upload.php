@@ -50,7 +50,7 @@ if (is_dir($path)){
 
 /**
 $dataToWrite = "";
-
+$path = ".//uploads/";
 $handle = opendir($path);
 
 while($file = readdir($handle)){
