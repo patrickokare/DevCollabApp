@@ -16,6 +16,7 @@ if(is_dir($path)) {
                 while(($sub_dir = readdir($sub_dir_handle)) !== false){
                     echo "--> --> contents = $sub_dir <br>";
 
+
                 }
             }
 
