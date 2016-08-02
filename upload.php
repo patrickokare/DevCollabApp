@@ -1,7 +1,7 @@
 <?php
 
 
-$filename = 'something';
+$filename = 'canada.txt';
 $file_path = ".//uploads/";
 $file_fullpath = $file_path . $filename;
 //
