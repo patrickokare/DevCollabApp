@@ -1,6 +1,6 @@
 <?php
 
-/**
+
 $path = "./";
 if(is_dir($path)) {
 
@@ -21,9 +21,9 @@ closedir( $dir_handle );
 
 }
 
-**/
 
 
+/**
 $path = ".//uploads/";
 $handle = opendir($path);
 
@@ -37,7 +37,7 @@ $handle = opendir($path);
 
     }
 
-
+**/
 
 
 /**
