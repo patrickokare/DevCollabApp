@@ -1,7 +1,7 @@
 <?php
 
 // You need to create the files/ directory inside your document root to put your files.
-if (substr($_SERVER['REQUEST_URI'], 0, 7) !== './/uploads/') {
+if (substr($_SERVER['REQUEST_URI'], 0, 7) !== '/files/') {
     die('not allowed');
 }
 $absolutePath = $_SERVER['DOCUMENT_ROOT'] . $_SERVER['REQUEST_URI'];
@@ -18,6 +18,7 @@ ob_clean();
 flush();
 readfile($absolutePath);
 exit;
+
 
 
 
