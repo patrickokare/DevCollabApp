@@ -158,6 +158,7 @@ if(isset($_POST['enter'])){
 
             <?php
 
+            include ("index2.php");
             include ("upload.php");
             ?>
 
