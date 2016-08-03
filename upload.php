@@ -1,5 +1,6 @@
 
 <?php
+/**
 ignore_user_abort(true);
 set_time_limit(0); // disable the time limit for this script
 
@@ -48,6 +49,7 @@ exit;
 
 ?>
 
+**/
 
 
 
@@ -58,13 +60,12 @@ exit;
 
 
 
-<?php
 
 
 
 
 
-/**same as the other scripts, displays but not downloadable......
+
 // open the current directory
 $dhandle = opendir('.//uploads/');
 // define an array to hold the files
@@ -93,7 +94,7 @@ foreach( $files as $fname )
     echo "<option>{$fname }</option>\n";
 }
 echo "</select>\n";
-**/
+
 
 
 /**functional prints out the files but does not display or not downloadable
