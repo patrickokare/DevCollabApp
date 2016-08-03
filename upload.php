@@ -95,7 +95,10 @@ foreach( $files as $fname )
 }
 echo "</select>\n";
 
-
+foreach( $files as $fname )
+{
+    echo "<a href='.//uploads/.{$fname }.'>{$fname }</a>\n";
+}
 
 /**functional prints out the files but does not display or not downloadable
 $path = ".//uploads/";
