@@ -52,43 +52,8 @@ echo "</ul>";
 
 echo php_file_tree('./uploads/', "http://karetechapp.azurewebsites.net/[link]");
 
-/**functional prints out the files but does not display or not downloadable
-$path = ".//uploads/";
-$handle = opendir($path);
-
-        while($file = readdir($handle)){
-            if(substr($file,0,1) != "."){
-                echo "<img src='$file'/>";
-                echo '<br>';
-
-            }
-            closedir($dh);
-
-    }
-**/
 
 
-
-/**creates a data.txt directory, compiling the files
-$dataToWrite = "";
-$path = ".//uploads/";
-$handle = opendir($path);
-
-while($file = readdir($handle)){
-    if(substr($file,0,1) != "."){
-        echo "<img src='$file'/>";
-        echo '<br>';
-        $dataToWrite .= $file . "\n";
-
-    }
-}
-closedir($handle);
-
-$writer = fopen("data2.txt", 'w');
-fwrite($writer, $dataToWrite);
-fclose($writer);
-
-**/
 ?>
 
 
