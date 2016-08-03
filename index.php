@@ -144,15 +144,14 @@ if(isset($_POST['enter'])){
 
             <!-- This codes below are for the GOOGLE hangout, file Upload and messenging box -->
             <div class="panel-heading">
-     <h3>  Start Hangout  </h3>
-                </div>
+                <h3>  Start Hangout  </h3>
+            </div>
              <div>
                  <video height="300" id="localVideo"></video>
                  <div id="remotesVideos"></div>
              </div>
             <div class="panel-heading">
-
-          <h3> Upload Your Files Here </h3>
+            <h3> Upload Your Files Here </h3>
                 </div>
 
 
