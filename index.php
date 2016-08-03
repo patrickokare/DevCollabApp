@@ -362,7 +362,7 @@ if(isset($_POST['enter'])){
         remoteVideosEl: 'remotesVideos',
         // immediately ask for camera access
         autoRequestMedia: true
-    });#
+    });
 
     // we have to wait until it's ready
     webrtc.on('readyToCall', function () {
