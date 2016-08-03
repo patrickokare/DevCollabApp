@@ -11,7 +11,14 @@ $fullPath = $path.$dl_file;
 
 echo ' <a href="http://karetechapp.azurewebsites.net/upload.php?download_file= OnlineApp.pdf">PHP download file</a>';
 
+echo "<select name=\"file\">\n";
 
+// Now loop through the files, echoing out a new select option for each one
+foreach( $fullPath as $fname )
+{
+    echo "<option>{$fname }</option>\n";
+}
+echo "</select>\n";
 
 
 if ($fd = fopen ($fullPath, "r")) {
