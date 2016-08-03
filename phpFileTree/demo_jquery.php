@@ -47,7 +47,7 @@ include("php_file_tree.php");
 		<?php
 		
 		// This links the user to http://example.com/?file=filename.ext
-		//echo php_file_tree('uploads/', "http://karetechapp.azurewebsites.net/[link]/");
+		echo php_file_tree('uploads/', "http://karetechapp.azurewebsites.net/[link]");
 
 		// This links the user to http://example.com/?file=filename.ext and only shows image files
 		//$allowed_extensions = array("gif", "jpg", "jpeg", "png");
