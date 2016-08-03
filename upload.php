@@ -9,6 +9,8 @@ $dl_file = preg_replace("([^\w\s\d\-_~,;:\[\]\(\).]|[\.]{2,})", '', $_GET['downl
 $dl_file = filter_var($dl_file, FILTER_SANITIZE_URL); // Remove (more) invalid characters
 $fullPath = $path.$dl_file;
 
+echo ' <a href="http://karetechapp.azurewebsites.net/upload.php?download_file=canada.txt">PHP download file</a>';
+
 if ($fd = fopen ($fullPath, "r")) {
     $fsize = filesize($fullPath);
     $path_parts = pathinfo($fullPath);
@@ -35,29 +37,6 @@ fclose ($fd);
 exit;
 
 ?>
-
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download</title>
-
-</head>
-
-<body>
-
-<a href="http://karetechapp.azurewebsites.net/upload.php?download_file=canada.txt">PHP download file</a>
-
-
-
-
-
-
-</body>
-</html>
-
-
 
 
 
