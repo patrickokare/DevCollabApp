@@ -1,6 +1,11 @@
+<link href="./phpFileTree/styles/default/default.css" rel="stylesheet" type="text/css" media="screen" />
 
+<!-- Makes the file tree(s) expand/collapsae dynamically -->
+<script src="./phpFileTree/jquery-1.3.2" type="text/javascript"></script>
+<script src="./phpFileTree/php_file_tree_jquery.js" type="text/javascript"></script>
 <?php
 include("./phpFileTree/php_file_tree.php");
+
 
 /**
 ignore_user_abort(true);
