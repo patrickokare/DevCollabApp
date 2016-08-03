@@ -156,6 +156,12 @@ if(isset($_POST['enter'])){
                 </div>
 
 
+            <?php
+
+            include ("upload.php");
+            ?>
+
+
 <hr>
 
                 <div class="panel panel-default">
