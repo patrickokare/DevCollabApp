@@ -9,8 +9,16 @@ $dl_file = preg_replace("([^\w\s\d\-_~,;:\[\]\(\).]|[\.]{2,})", '', $_GET['downl
 $dl_file = filter_var($dl_file, FILTER_SANITIZE_URL); // Remove (more) invalid characters
 $fullPath = $path.$dl_file;
 
-echo ' <a href="http://karetechapp.azurewebsites.net/upload.php?download_file= '. $dl_file. ' ">PHP download file</a>';
+//echo ' <a href="http://karetechapp.azurewebsites.net/upload.php?download_file= '. $dl_file. ' ">PHP download file</a>';
 
+echo "<select name=\"file\">\n";
+
+// Now loop through the files, echoing out a new select option for each one
+foreach( $dl_file as $fname )
+{
+    echo  "<option>{$fname}</option>\n";
+}
+echo "</select>\n";
 
 
 if ($fd = fopen ($fullPath, "r")) {
