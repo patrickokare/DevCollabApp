@@ -9,7 +9,7 @@ $dl_file = preg_replace("([^\w\s\d\-_~,;:\[\]\(\).]|[\.]{2,})", '', $_GET['downl
 $dl_file = filter_var($dl_file, FILTER_SANITIZE_URL); // Remove (more) invalid characters
 $fullPath = $path.$dl_file;
 
-echo ' <a href="http://karetechapp.azurewebsites.net/upload.php?download_file= 20160618_025543.jpg ">PHP download file</a>';
+echo ' <a href="http://karetechapp.azurewebsites.net/upload.php?download_file= OnlineAppInstructions windsor.pdf ">PHP download file</a>';
 
 
 
