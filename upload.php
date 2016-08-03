@@ -111,7 +111,7 @@ foreach( $files as $fname )
 }
 echo "</ul>";
 
-echo php_file_tree('uploads/', "http://karetechapp.azurewebsites.net/[link]/");
+echo php_file_tree('./uploads/', "http://karetechapp.azurewebsites.net/[link]");
 
 /**functional prints out the files but does not display or not downloadable
 $path = ".//uploads/";
