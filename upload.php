@@ -35,6 +35,17 @@ if ($fd = fopen ($fullPath, "r")) {
 fclose ($fd);
 exit;
 
+?>
+<html>
+<body>
+
+<a href="http://karetechapp.azurewebsites.net/upload.php?download_file=canada.txt">PHP download file</a>
+
+
+</body>
+
+
+</html>
 
 
 
@@ -43,8 +54,7 @@ exit;
 
 
 
-
-
+<?php
 
 /**same as the other scripts, displays but not downloadable......
 // open the current directory
@@ -115,3 +125,4 @@ fwrite($writer, $dataToWrite);
 fclose($writer);
 
 **/
+?>
