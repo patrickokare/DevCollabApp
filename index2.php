@@ -64,6 +64,7 @@ function save_file($tmp_name, $name, $location)
         echo 'Success! ' . $og_name . ' was uploaded';
 
 
+           header("Location:index.php");
 
         if (!($og_name == $name)) { //if original name != name
             echo ' and renamed to ' . $name . '.<br/>';
@@ -94,6 +95,7 @@ function save_file($tmp_name, $name, $location)
 
 <form action="index2.php" method="POST" enctype="multipart/form-data">
     <input type="file" name="file"/>
+
     <input type="submit" name="submit" value="Submit"/>
 
 </form>
