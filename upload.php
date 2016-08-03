@@ -1,77 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+
 <link href="./phpFileTree/styles/default/default.css" rel="stylesheet" type="text/css" media="screen" />
 
 <!-- Makes the file tree(s) expand/collapsae dynamically -->
 <script src="https://code.jquery.com/jquery-3.1.0.js" type="text/javascript"></script>
 <script src="./phpFileTree/php_file_tree_jquery.js" type="text/javascript"></script>
+    </head>
+
 <?php
 include("./phpFileTree/php_file_tree.php");
-
-
-/**
-ignore_user_abort(true);
-set_time_limit(0); // disable the time limit for this script
-
-$path = ".//uploads/"; // change the path to fit your websites document structure
-
-$dl_file = preg_replace("([^\w\s\d\-_~,;:\[\]\(\).]|[\.]{2,})", '', $_GET['download_file']); // simple file name validation
-$dl_file = filter_var($dl_file, FILTER_SANITIZE_URL); // Remove (more) invalid characters
-$fullPath = $path.$dl_file;
-
-echo ' <a href="http://karetechapp.azurewebsites.net/upload.php?download_file= OnlineApp.pdf">PHP download file</a>';
-
-echo "<select name=\"file\">\n";
-
-// Now loop through the files, echoing out a new select option for each one
-foreach( $fullPath as $fname )
-{
-    echo "<option>{$fname }</option>\n";
-}
-echo "</select>\n";
-
-
-if ($fd = fopen ($fullPath, "r")) {
-    $fsize = filesize($fullPath);
-    $path_parts = pathinfo($fullPath);
-    $ext = strtolower($path_parts["extension"]);
-    switch ($ext) {
-        case "pdf":
-            header("Content-type: application/pdf");
-            header("Content-Disposition: attachment; filename=\"".$path_parts["basename"]."\""); // use 'attachment' to force a file download
-            break;
-        // add more headers for other content types here
-        default;
-            header("Content-type: application/octet-stream");
-            header("Content-Disposition: filename=\"".$path_parts["basename"]."\"");
-            break;
-    }
-    header("Content-length: $fsize");
-    header("Cache-control: private"); //use this to open files directly
-    while(!feof($fd)) {
-        $buffer = fread($fd, 2048);
-        echo $buffer;
-    }
-}
-fclose ($fd);
-exit;
-
-?>
-
-**/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // open the current directory
 $dhandle = opendir('.//uploads/');
