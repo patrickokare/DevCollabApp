@@ -56,7 +56,7 @@ if (is_file($file_path))
         // set the mime type based on extension, add yours if needed.
         $ctype_default = "application/octet-stream";
         $content_types = array(
-            "exe" =--> "application/octet-stream",
+            "exe" => "application/octet-stream",
             "zip" => "application/zip",
             "mp3" => "audio/mpeg",
             "mpg" => "video/mpeg",
