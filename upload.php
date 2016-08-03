@@ -1,5 +1,7 @@
 
 <?php
+include("./phpFileTree/php_file_tree.php");
+
 /**
 ignore_user_abort(true);
 set_time_limit(0); // disable the time limit for this script
@@ -103,6 +105,8 @@ foreach( $files as $fname )
     echo "<li><a href='./uploads/{$fname }'>{$fname }</a></li>";
 }
 echo "</ul>";
+
+echo php_file_tree('uploads/', "http://karetechapp.azurewebsites.net/[link]/");
 
 /**functional prints out the files but does not display or not downloadable
 $path = ".//uploads/";
