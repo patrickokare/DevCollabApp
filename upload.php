@@ -32,23 +32,10 @@ if ($dhandle) {
     closedir($dhandle);
 }
 
-echo "<select name=\"file\">\n";
+
 
 // Now loop through the files, echoing out a new select option for each one
-foreach( $files as $fname )
-{
-    echo "<option>{$fname }</option>\n";
-}
-echo "</select>\n";
 
-echo "</br>";
-
-echo"<ul>";
-foreach( $files as $fname )
-{
-    echo "<li><a href='./uploads/{$fname }'>{$fname }</a></li>";
-}
-echo "</ul>";
 
 echo php_file_tree('./uploads/', "http://karetechapp.azurewebsites.net/[link]");
 
