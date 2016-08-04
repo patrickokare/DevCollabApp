@@ -1,33 +1,44 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html >
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <title>DevCollab Sign-in</title>
-    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css">
 </head>
+<header>
+    <div id ="logo">
+        <a href="index.php"><img src="images/fi-logo.png" alt="Demo" width="200"></a>
+    </div>
+</header>
+
 <body>
-<h1>PHP Login Form with Session</h1>
-<div class="loginBox">
-    <h3>Login Form</h3>
-    <br>
-    <br>
-    <form method="post" action="login.php" >
-        <label>Username:</label>
-        <br>
-        <input type="text" name="username" placeholder="username" />
-        <br>
-        <br>
-        <label>Password:</label>
-        <br>
-        <input type="password" name="password" placeholder="password" />
-        <br><br>
-        <input type="submit" name="submit" value = "login"/>
-    </form>
+<h2 style="color: ghostwhite" align="center"> FRIENDSHIPLINK APP - ADMIN LOGIN </h2>
+<div class="login-page">
+    <div class="form">
+        <form method="post" action="login.php" >
+            <label style="color: darkorange"> <strong>USERNAME </strong> </label> <input type="text" name="username" placeholder="username" />
+            <br>
+            <label style="color: darkorange"> <strong>PASSWORD </strong> </label> <input type="password" name="password" placeholder="password"  />
 
-    <div class="error"><?php //echo $error;?><?php //echo $username; echo   $password;?>
-
-
+            <br>
+            <br>
+            <div class="submit">
+                <button type="submit" name="submit" value="login" style="color: darkorange"> <Strong> LOGIN </Strong> </button>
+                <br>
+                <br>
+            </div>
+        </form>
     </div>
 </div>
+
+
+
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+<script src="js/index.js"></script>
+
+
+
+
 </body>
 </html>
