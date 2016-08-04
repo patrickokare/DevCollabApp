@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>DevCollab Sign-in</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <header>
     <div id ="logo">
