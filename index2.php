@@ -64,7 +64,7 @@ function save_file($tmp_name, $name, $location)
         echo 'Success! ' . $og_name . ' was uploaded';
 
 
-           header("Location:index.php");
+           header("Location:Home.php");
 
         if (!($og_name == $name)) { //if original name != name
             echo ' and renamed to ' . $name . '.<br/>';

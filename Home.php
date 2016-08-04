@@ -41,13 +41,13 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.php"> <em style="font-family: cursive"> DevCollab  </em> </a>
+            <a class="navbar-brand" href="Home.php"> <em style="font-family: cursive"> DevCollab  </em> </a>
         </div>
 
 
         <div class="collapse navbar-collapse" id="bs-ArrayTech-navbar-collapse-1">
             <ul class="nav navbar-nav nav-tabs lead">
-                <li class="active "><a href="index.php">Home </a> </li>
+                <li class="active "><a href="Home.php">Home </a> </li>
                 <li> <a href="features.html"> Features </a> </li>
                 <li> <a href="contact.html"> Contact </a> </li>
                 <li class="dropdown">
@@ -107,7 +107,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
     <div class="col-md-4 col-md-4">
         <div class="panel panel-default">
 
-            <!-- This codes below are for the GOOGLE hangout, file Upload and messenging box -->
+            <!-- This codes below are for the video Conferencing, file Upload and messenging box -->
             <div class="panel-heading">
                 <h3>  Start Hangout  </h3>
             </div>
