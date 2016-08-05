@@ -74,12 +74,13 @@ if(!isset($_SESSION['login_user'])){
 </nav>
 </header>
 
-<p style="color: darkred"> Welcome, <?php echo $_SESSION['login_user']; ?> </p>
+
 
 <div class="jumbotron">
     <div class="container">
+        <p style="color: darkred"> Welcome, <?php echo $_SESSION['login_user']; ?> </p>
 
-        <h4 class="text-center lead"> DevCollab, Optimized for Collaboration...... </h4>
+        <h3 class="text-center lead"> DevCollab, Optimized for Collaboration...... </h3>
 
     </div>
 </div>

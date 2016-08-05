@@ -51,7 +51,7 @@ span{
 
     <input type="password" class="form-control input-lg" name="password" placeholder="Password">
           </div>
-            <div class="form-group">
+            <div class="form-group" style="color: darkred">
     <input type="submit" class="btn btn-block btn-lg btn-primary" value="Login">
 
            </div>
