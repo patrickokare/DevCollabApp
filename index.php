@@ -59,6 +59,26 @@
 
 
 <hr>
+    <footer class="site-footer">
+
+        <div class="container">
+            <div class="row">
+
+                <span style="font-family: cursive" class="moveright"> DevCollab App(c) </span>
+
+
+            </div>
+
+            <div class="bottom-footer">
+                <div class="col-md-5"> Designed by Wale Patrick 2016(c)</div>
+
+            </div>
+
+        </div>
+
+
+
+    </footer>
 
 </body>
 </html>
