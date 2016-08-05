@@ -33,11 +33,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         echo $_SESSION['login_user'];
         header("location: Home.php?username=$username"); // Redirecting To another Page
     }else {
-        $error = 'Your Login Name or Password is invalid';
-        echo ' YOUR PASSWORD IS NOT recognized! TRY AGAIN... <br>';
+        $error = 'YOUR PASSWORD IS NOT recognized! TRY AGAIN... <br>';
+        echo $error;
     }
 }
-if(empty($_POST["username"]) || empty($_POST["password"])) {
-    echo "INCOMPLETE FIELD!. ";
+if(empty($_POST["password"])) {
+    echo "PLEASE ENTER A PASSWWORD!. ";
 }
 
