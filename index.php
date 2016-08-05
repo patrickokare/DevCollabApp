@@ -12,14 +12,15 @@
 <body>
 <header>
     <div id ="logo">
-        <a class="navbar-brand" href="Home.php"> <em style="font-family: cursive"> DevCollab  </em> </a>
+        <a class="navbar-brand" href="index.php"> <em style="font-family: cursive"> DevCollab  </em> </a>
     </div>
 </header>
 
-<div class="container">
+
 
 
 <h2 style="color: ghostwhite" align="center"> FRIENDSHIPLINK APP - ADMIN LOGIN </h2>
+    <div class="container">
 <div class="login-page">
     <div class="form">
         <form method="post" action="login.php" >
