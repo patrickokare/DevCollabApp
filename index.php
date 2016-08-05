@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>DevCollab Sign-in</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="#">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrapmin.css">
@@ -19,10 +19,11 @@
 <body>
 <header>
 
+    <a class="navbar-brand" href="index.php"> <em style="font-family: cursive"> DevCollab </em> </a>
 
 
 </header>
-<hr>
+<hr style="color: darkred">
 
 <div class="modal-dialog">
 <div class="modal-content">
@@ -58,7 +59,7 @@
 
 
 
-<hr>
+<hr style="color: darkred">
     <footer class="site-footer">
 
         <div class="container">
@@ -70,7 +71,6 @@
             </div>
 
             <div class="bottom-footer">
-                <div class="col-md-5"> Designed by Wale Patrick 2016(c)</div>
 
             </div>
 
