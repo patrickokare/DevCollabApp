@@ -19,10 +19,19 @@
 
 <script type="application/javascript">
 
+
+
+
     var webrtc = new SimpleWebRTC({
+        // the id/element dom element that will hold "our" video
         localVideoEl: 'localVideo',
-        remoteVideosEl: '' // empty string
+        // the id/element dom element that will hold remote videos
+        remoteVideosEl: 'remotesVideos',
+        // immediately ask for camera access
+        autoRequestMedia: true,
+        url: 'https://http://karetechapp.azurewebsites.net/hangout.php'
     });
+
     </script>
 
 <script type="application/javascript">
