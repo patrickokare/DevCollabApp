@@ -37,12 +37,12 @@
         <form method="post" action="login.php" class="col-md-12 center-block">
             <div class="form-group">
 
-                <input type="text" class="form-control input-lg" name="username" placeholder="username">
+                <input type="text" class="form-control input-lg" name="username" placeholder="Username">
 
             </div>
         <div class="form-group">
 
-    <input type="password" class="form-control input-lg" name="password" placeholder="password">
+    <input type="password" class="form-control input-lg" name="password" placeholder="Password">
           </div>
             <div class="form-group">
     <input type="submit" class="btn btn-block btn-lg btn-primary" value="Login">
