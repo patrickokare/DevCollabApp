@@ -79,7 +79,7 @@ if(!isset($_SESSION['login_user'])){
     <div class="container">
 
         <h4 class="text-center lead"> DevCollab, Optimized for Collaboration...... </h4>
-<marquee style="color: darkred"> Please do not test the Application! Thank you </marquee>
+
     </div>
 </div>
 
