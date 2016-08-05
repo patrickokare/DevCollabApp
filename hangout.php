@@ -15,7 +15,7 @@
 
 <body>
  <h2> Something should please work!!!!!!!!</h2>
-       <div class="videoContainer">
+
 
 <script type="application/javascript">
 
@@ -23,7 +23,9 @@
         localVideoEl: 'localVideo',
         remoteVideosEl: '' // empty string
     });
+    </script>
 
+<script type="application/javascript">
     webrtc.on('videoAdded', function (video, peer) {
         console.log('video added', peer);
         var remotes = document.getElementById('remotes');
@@ -40,8 +42,9 @@
         }
     });
 
+</script>
 
-
+<script type="application/javascript">
     // a peer video was removed
     webrtc.on('videoRemoved', function (video, peer) {
         console.log('video removed ', peer);
@@ -54,7 +57,7 @@
 
            </script>
 
-       </div>
+
 
 
 
