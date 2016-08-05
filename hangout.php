@@ -17,7 +17,8 @@
 
 
 
-<iframe src="https://appear.in/karetechChatRoom" width=800" height="450" frameborder="0" style="float: bottom;"></iframe>
+
+
 
 
 </body>
