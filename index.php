@@ -22,6 +22,13 @@ span{
         color: darkred; !important;
     }
 
+    body{
+        max-width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: blueviolet;
+    }
+
 </style>
 </head>
 <body>
