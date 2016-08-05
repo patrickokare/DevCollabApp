@@ -65,7 +65,7 @@ if(!isset($_SESSION['login_user'])){
 
                     </ul>
                 </li>
-
+                <li class="navbar-right"> <a href = "logout.php"> Log Out </a>  </li>
             </ul>
 
         </div>
