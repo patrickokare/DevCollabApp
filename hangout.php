@@ -39,11 +39,7 @@
         }
     });
 
-</script>
-       </div>
 
-       <div>
-       <script>
     // a peer video was removed
     webrtc.on('videoRemoved', function (video, peer) {
         console.log('video removed ', peer);

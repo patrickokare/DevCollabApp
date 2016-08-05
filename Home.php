@@ -210,17 +210,8 @@ if(!isset($_SESSION['login_user'])){
                         ?>
 
 
-
-
-
-
-
     </div>
 </div>
-
-
-
-
 
 
 </div>
@@ -228,10 +219,6 @@ if(!isset($_SESSION['login_user'])){
     </div>
 
 </div>
-
-
-
-
 
 
 
