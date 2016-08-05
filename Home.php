@@ -130,7 +130,7 @@ if(!isset($_SESSION['login_user'])){
 
             <?php
 
-            include ("index2.php");
+            include("fileUpload.php");
             include ("upload.php");
             ?>
 
