@@ -3,7 +3,7 @@
 <head>
 
 </head>
-<body bgcolor="#8b0000">
+<body bgcolor="red">
 
 </body>
 </html>
@@ -22,6 +22,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
             WHERE username = '$username'
             and
             password = '$password'";
+
     $result = mysqli_query($db,$sql);
     $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
     $active = $row['active'];
@@ -33,7 +34,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         echo $_SESSION['login_user'];
         header("location: Home.php?username=$username"); // Redirecting To another Page
     }else {
-        $error = 'YOUR PASSWORD IS NOT recognized! TRY AGAIN... <br>';
+        $error = 'YOUR PASSWORD IS NOT RECOGNIZED! TRY AGAIN... <br>';
         echo $error;
     }
 }
