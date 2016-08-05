@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>DevCollab Sign-in</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="mainloginstylesheet.css">
+    <link rel="stylesheet" type="text/css" href="#">
     <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrapmin.css">
