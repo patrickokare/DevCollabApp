@@ -90,7 +90,7 @@
 }
 body {
     background: dimgray; /* fallback for old browsers */
-    background: -webkit-linear-gradient(right, #066, #066);
+    background: -webkit-linear-gradient(right, dimgray, dimgray);
     background: -moz-linear-gradient(right, #066, #066);
     background: -o-linear-gradient(right, #066, #066);
     background: linear-gradient(to left, #066, #066);
