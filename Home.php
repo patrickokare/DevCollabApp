@@ -52,8 +52,8 @@ if(!isset($_SESSION['login_user'])){
         <div class="collapse navbar-collapse" id="bs-ArrayTech-navbar-collapse-1">
             <ul class="nav navbar-nav nav-tabs lead">
                 <li class="active "><a href="Home.php">Home </a> </li>
-                <li> <a href="features.html"> Features </a> </li>
-                <li> <a href="contact.html"> Contact </a> </li>
+                <li> <a href="features.php"> Features </a> </li>
+                <li> <a href="contact.php"> Contact </a> </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle nav navbar-nav nav-tabs " data-toggle="dropdown">DevCollab  <b class=" caret "> </b> </a>
                     <ul class="dropdown-menu lead">
