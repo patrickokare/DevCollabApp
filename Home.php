@@ -8,7 +8,12 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 }
 
 ?>
-
+<?php
+session_start();
+if(!isset($_SESSION['login_user'])){
+    header("location:index.php");
+}
+?>
 
 
 
@@ -68,7 +73,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 </nav>
 </header>
 
-
+<p> Welcome <?php echo $_SESSION['login_user']; ?></p>
 
 <div class="jumbotron">
     <div class="container">
