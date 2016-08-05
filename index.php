@@ -14,7 +14,10 @@
     h1{
         color: darkred;
     }
-
+span{
+    text-align: center;
+    color: darkred;
+}
 
 </style>
 </head>
@@ -59,14 +62,14 @@
 </div>
 
 
-
+    <hr style="color: darkred">
 
     <footer class="site-footer">
 
         <div class="container">
             <div class="row">
 
-                <hr style="color: darkred"> <span style="font-family: cursive: color: darkred: align-items: center;"> DevCollab App(c) </span>
+                 <span style="font-family: cursive: color: darkred;"> DevCollab App(c) </span>
 
 
             </div>
