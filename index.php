@@ -26,10 +26,11 @@
 
 <div class="modal-dialog">
 <div class="modal-content">
+
     <div class="modal-header">
         <h1 class="text-center" style="font-family: cursive"> DevCollab </h1>
 
-    </div>
+
     <div class="modal-body">
 
         <form method="post" action="login.php" class="col-md-12 center-block">
@@ -48,11 +49,11 @@
            </div>
 
         </form>
-
-
-</div>
+    </div>
 
 </div>
+
+
 </div>
 
 
