@@ -73,7 +73,7 @@ if(!isset($_SESSION['login_user'])){
 </nav>
 </header>
 
-<p> Welcome <?php echo $_SESSION['login_user']; ?></p>
+<p style="color: darkred"> Welcome, <?php echo $_SESSION['login_user']; ?> </p>
 
 <div class="jumbotron">
     <div class="container">
