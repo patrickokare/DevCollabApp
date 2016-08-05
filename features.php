@@ -30,7 +30,7 @@
 
             <div class="collapse navbar-collapse" id="bs-ArrayTech-navbar-collapse-1">
                 <ul class="nav navbar-nav nav-tabs lead">
-                    <li class="active "><a href="Home.php">Home </a> </li>
+                    <li><a href="Home.php">Home </a> </li>
                     <li class="active "> <a href="features.php"> Features </a> </li>
                     <li> <a href="contact.php"> Contact </a> </li>
                     <li class="dropdown">
