@@ -25,14 +25,14 @@
 <div class="login-page">
     <div class="form">
         <form method="post" action="login.php" >
-            <label style="color: darkorange"> <strong>USERNAME </strong> </label> <input type="text" name="username" placeholder="username" />
+            <label style="color: darkred"> <strong>USERNAME </strong> </label> <input type="text" name="username" placeholder="username" />
             <br>
-            <label style="color: darkorange"> <strong>PASSWORD </strong> </label> <input type="password" name="password" placeholder="password"  />
+            <label style="color: darkred"> <strong>PASSWORD </strong> </label> <input type="password" name="password" placeholder="password"  />
 
             <br>
             <br>
             <div class="submit">
-                <button type="submit" name="submit" value="login" style="color: darkorange"> <Strong> LOGIN </Strong> </button>
+                <button type="submit" name="submit" value="login" style="color: dimgray"> <Strong> LOGIN </Strong> </button>
                 <br>
                 <br>
             </div>
@@ -41,6 +41,7 @@
 </div>
 </div>
 
+<hr>
 
 </body>
 </html>
