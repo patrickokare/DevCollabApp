@@ -3,15 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>DevCollab Sign-in</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mainloginstylesheet.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src ="js/jquery.js"> </script>
+    <script src="js/bootstrap.min.js"></script>
+
 </head>
+<body>
 <header>
     <div id ="logo">
-        <a href="index.php"><img src="images/fi-logo.png" alt="Demo" width="200"></a>
+        <a class="navbar-brand" href="Home.php"> <em style="font-family: cursive"> DevCollab  </em> </a>
     </div>
 </header>
 
-<body>
+<div class="container">
+
+
 <h2 style="color: ghostwhite" align="center"> FRIENDSHIPLINK APP - ADMIN LOGIN </h2>
 <div class="login-page">
     <div class="form">
@@ -30,15 +37,14 @@
         </form>
     </div>
 </div>
-
+</div>
 
 
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
 <script src="js/index.js"></script>
 
-
-
-
 </body>
 </html>
+
+
