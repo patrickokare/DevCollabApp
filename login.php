@@ -4,14 +4,14 @@ include ("connection.php");
 session_start();
 if($_SERVER["REQUEST_METHOD"] == "POST") {
     // username and password sent from form
-    $username = mysqli_real_escape_string($dbs,$_POST['username']);
-    $password = mysqli_real_escape_string($dbs,$_POST['password']);
+    $username = mysqli_real_escape_string($db,$_POST['username']);
+    $password = mysqli_real_escape_string($db,$_POST['password']);
     $sql = "SELECT uid
             FROM users
             WHERE username = '$username'
             and
             password = '$password'";
-    $result = mysqli_query($dbs,$sql);
+    $result = mysqli_query($db,$sql);
     $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
     $active = $row['active'];
     $count = mysqli_num_rows($result);
