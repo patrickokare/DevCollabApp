@@ -15,11 +15,11 @@
 
 <body>
 
-<div class="video">
 
-<iframe src="https://appear.in/karetechChatRoom" width=300" height="500" frameborder="0"></iframe>
 
-</div>
+<iframe src="https://appear.in/karetechChatRoom" width=350" height="400" frameborder="5"></iframe>
+
+
 
 </body>
 </html>
