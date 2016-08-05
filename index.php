@@ -18,6 +18,9 @@ span{
     text-align: center;
     color: darkred;
 }
+    input[type=submit]{
+        color: darkred; !important;
+    }
 
 </style>
 </head>
@@ -49,7 +52,7 @@ span{
     <input type="password" class="form-control input-lg" name="password" placeholder="Password">
           </div>
             <div class="form-group">
-    <input type="submit" class="btn btn-block btn-lg btn-primary" value="Login" style="color: silver">
+    <input type="submit" class="btn btn-block btn-lg btn-primary" value="Login">
 
            </div>
 
