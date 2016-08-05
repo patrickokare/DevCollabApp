@@ -32,7 +32,7 @@
             <br>
             <br>
             <div class="submit">
-                <button type="submit" name="submit" value="login" style="color: dimgray"> <Strong> LOGIN </Strong> </button>
+                <button type="submit" name="submit" value="login" style="color: honeydew"> <Strong> LOGIN </Strong> </button>
                 <br>
                 <br>
             </div>
