@@ -89,7 +89,7 @@
     color: #EF3B3A;
 }
 body {
-    background: #066; /* fallback for old browsers */
+    background: dimgray; /* fallback for old browsers */
     background: -webkit-linear-gradient(right, #066, #066);
     background: -moz-linear-gradient(right, #066, #066);
     background: -o-linear-gradient(right, #066, #066);
