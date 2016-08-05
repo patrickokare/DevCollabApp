@@ -27,16 +27,6 @@ form, p, span {
     margin:0;
     padding:0; }
 
-input { font:12px arial; }
-
-#wrapper, #loginform {
-    margin:0 auto;
-    padding-bottom:25px;
-    background:#EBF4FB;
-    width:350px;
-    border:1px solid #ACD8F0;
-
-}
 
 
 
