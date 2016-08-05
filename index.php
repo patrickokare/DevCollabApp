@@ -66,7 +66,7 @@
         <div class="container">
             <div class="row">
 
-                <hr style="color: darkred"> <span style="font-family: cursive: color: darkred: align-items: center;;"> DevCollab App(c) </span>
+                <hr style="color: darkred"> <span style="font-family: cursive: color: darkred: align-items: center;"> DevCollab App(c) </span>
 
 
             </div>
