@@ -91,9 +91,9 @@
 body {
     background: dimgray; /* fallback for old browsers */
     background: -webkit-linear-gradient(right, dimgray, dimgray);
-    background: -moz-linear-gradient(right, #066, #066);
-    background: -o-linear-gradient(right, #066, #066);
-    background: linear-gradient(to left, #066, #066);
+    background: -moz-linear-gradient(right, dimgray, dimgray);
+    background: -o-linear-gradient(right,dimgray, dimgray);
+    background: linear-gradient(to left, dimgray, dimgray);
     font-family: "cursive", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
