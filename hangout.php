@@ -38,6 +38,12 @@
             remotes.appendChild(container);
         }
     });
+
+</script>
+       </div>
+
+       <div>
+       <script>
     // a peer video was removed
     webrtc.on('videoRemoved', function (video, peer) {
         console.log('video removed ', peer);
@@ -47,12 +53,12 @@
             remotes.removeChild(el);
         }
     });
+           </script>
+
+       </div>
 
 
 
-
-</script>
-</div>
 
 
 </body>
