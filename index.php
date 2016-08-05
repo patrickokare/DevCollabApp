@@ -20,11 +20,10 @@
 <body>
 <header>
 
-    <a class="navbar-brand" href="index.php"> <em style="font-family: cursive"> DevCollab </em> </a>
-
+    <hr style="color: darkred">
 
 </header>
-<hr style="color: darkred">
+
 
 <div class="modal-dialog">
 <div class="modal-content">
@@ -46,7 +45,7 @@
     <input type="password" class="form-control input-lg" name="password" placeholder="Password">
           </div>
             <div class="form-group">
-    <input type="submit" class="btn btn-block btn-lg btn-primary" value="Login">
+    <input type="submit" class="btn btn-block btn-lg btn-primary" value="Login" style="color: silver">
 
            </div>
 
@@ -60,13 +59,13 @@
 
 
 
-<hr style="color: darkred">
+    <hr style="color: darkred">
     <footer class="site-footer">
 
         <div class="container">
             <div class="row">
 
-                <span style="font-family: cursive" class="moveright"> DevCollab App(c) </span>
+                <span style="font-family: cursive: color: darkred;" class="moveright"> DevCollab App(c) </span>
 
 
             </div>
