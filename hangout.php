@@ -32,9 +32,9 @@
         url: 'https://http://karetechapp.azurewebsites.net/hangout.php'
     });
 
-    </script>
 
-<script type="application/javascript">
+
+//<script type="application/javascript">
     webrtc.on('videoAdded', function (video, peer) {
         console.log('video added', peer);
         var remotes = document.getElementById('remotes');
@@ -51,9 +51,9 @@
         }
     });
 
-</script>
 
-<script type="application/javascript">
+
+//<script type="application/javascript">
     // a peer video was removed
     webrtc.on('videoRemoved', function (video, peer) {
         console.log('video removed ', peer);
