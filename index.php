@@ -26,7 +26,7 @@ span{
         max-width: 960px;
         margin-left: auto;
         margin-right: auto;
-        background-color: blueviolet;
+        background-color: silver;
     }
 
 </style>
