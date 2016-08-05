@@ -15,6 +15,7 @@
         color: darkred;
     }
 
+
 </style>
 </head>
 <body>
@@ -59,13 +60,13 @@
 
 
 
-    <hr style="color: darkred">
+
     <footer class="site-footer">
 
         <div class="container">
             <div class="row">
 
-                <span style="font-family: cursive: color: darkred;" class="moveright"> DevCollab App(c) </span>
+                <hr style="color: darkred"> <span style="font-family: cursive: color: darkred: align-items: center;;"> DevCollab App(c) </span>
 
 
             </div>
