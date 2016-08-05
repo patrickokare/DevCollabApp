@@ -65,9 +65,13 @@ if(!isset($_SESSION['login_user'])){
 
                     </ul>
                 </li>
-
-                <li class="nav navbar-nav navbar-right"> <a href = "logout.php"> Log Out </a>  </li>
             </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav navbar-nav navbar-right"> <a href = "logout.php"> Log Out </a>  </li>
+                </ul>
+
+
 
         </div>
     </div>
