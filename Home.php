@@ -123,7 +123,11 @@ if(!isset($_SESSION['login_user'])){
                  <div id="remotesVideos"></div>
 
              </div>
+
+
             <div class="panel-heading">
+
+
             <h3> Upload Your Files Here </h3>
                 </div>
 
@@ -245,9 +249,9 @@ if(!isset($_SESSION['login_user'])){
         <div class="col-md-5"> Designed by Wale Patrick 2016(c)</div>
         <div class="col-md-7">
             <ul class="footer-nav lead">
-                <li><a href="#"> Home </a> </li>
-                <li><a href="#"> Features </a> </li>
-                <li><a href="#"> Contact </a> </li>
+                <li class="active"><a href="Home.php"> Home </a> </li>
+                <li><a href="features.php"> Features </a> </li>
+                <li><a href="contact.php"> Contact </a> </li>
             </ul>
         </div>
 </div>
