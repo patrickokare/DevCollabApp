@@ -14,9 +14,10 @@
 </head>
 
 <body>
+ <h2> Something should please work!!!!!!!!</h2>
        <div class="videoContainer">
 
-<script>
+<script type="application/javascript">
 
     var webrtc = new SimpleWebRTC({
         localVideoEl: 'localVideo',
@@ -50,6 +51,7 @@
             remotes.removeChild(el);
         }
     });
+
            </script>
 
        </div>
