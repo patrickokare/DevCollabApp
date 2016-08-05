@@ -1,7 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body bgcolor="#8b0000">
+
+</body>
+</html>
+
 <?php
 include ("connection.php");
 
 session_start();
+
 if($_SERVER["REQUEST_METHOD"] == "POST") {
     // username and password sent from form
     $username = mysqli_real_escape_string($db,$_POST['username']);
@@ -23,9 +34,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         header("location: Home.php?username=$username"); // Redirecting To another Page
     }else {
         $error = 'Your Login Name or Password is invalid';
-        echo 'Your Login Name or Password is invalid';
+        echo ' YOUR PASSWORD IS NOT recognized! TRY AGAIN... <br>';
     }
 }
 if(empty($_POST["username"]) || empty($_POST["password"])) {
-    echo "Both fields are required. ";
+    echo "INCOMPLETE FIELD!. ";
 }
+
