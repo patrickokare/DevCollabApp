@@ -15,7 +15,10 @@
 
 <body>
 
+<div class="video">
 <iframe src="https://appear.in/karetechChatRoom" width=700" height="600" frameborder="0"></iframe>
+
+</div>
 
 </body>
 </html>
