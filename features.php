@@ -61,7 +61,7 @@ if(!isset($_SESSION['login_user'])){
 </header>
 
 
-<marquee> <span class="lead" style="color: darkred">  Developement On Going  </span> </marquee>
+<marquee> <span class="lead" style="color: darkred">  Developement On Going: Set date 15th Of August. </span> </marquee>
 <h1> Project Specification in a Nutshell </h1>
 
 <p>

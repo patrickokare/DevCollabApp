@@ -67,14 +67,14 @@ if(!isset($_SESSION['login_user'])){
             <div class="panel panel-default">
                 <div class="panel-heading">
 
-                    <h4 class="panel-title"> Contact Address </h4>
+                    <h4 class="panel-title"> CONTACT ADDRESS </h4>
 
 
                 </div>
                 <div class ="panel-body">
 
       <address>
-<Strong>KareTech Project </Strong> <br>
+<Strong> MSc Software Project </Strong> <br>
           Robert Gordon University,
           Garthdee House,<br>
           Garthdee Road,
@@ -82,7 +82,7 @@ if(!isset($_SESSION['login_user'])){
           <br>
 <strong> Developer's Email</strong> <br>
 
-   <p>       Wale Patrick       </p>
+   <p>       b.p.d.okare@rgu.ac.uk </p>
       </address>
 
                 </div>
