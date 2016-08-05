@@ -23,10 +23,10 @@ span{
     }
 
     body{
-        max-width: 960px;
-        margin-left: auto;
-        margin-right: auto;
-        background-color: silver;
+        max-width: 960px; !important;
+        margin-left: auto;!important;
+        margin-right: auto;!important;
+        background-color: mintcream;
     }
 
 </style>
@@ -34,7 +34,6 @@ span{
 <body>
 <header>
 
-    <hr style="color: darkred">
 
 </header>
 
