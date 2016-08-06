@@ -4,27 +4,26 @@
     <meta charset="UTF-8">
     <meta name ="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Page </title>
-<script src="http://simplewebrtc.com/latest.js"></script>
+    <script src="http://simplewebrtc.com/latest.js"></script>
 
-<style>
+    <style>
 
-    #remotesvideos video {
-        height: 250px;
+        #remotesvideos video {
+            height: 250px;
+            border-color: darkred;
 
-        color:  darkred;
-    }
-    #localVideo {
-     /   height: 250px;
-        / float: right;
+        }
+        #localVideo {
+            height: 250px;
+        /  float: right;
 
-        color:  #066;
+            border-color: #066;
 
-    }
-</style>
+
+        }
+    </style>
 </head>
 <body>
-
-<h1> Fucking display</h1>
 
 <h1> Test 24 </h1>
 
@@ -50,6 +49,8 @@
                 webrtc.joinRoom('KaretechRoom255');
             });
 
+        }
+
 
 
     </script>
@@ -60,8 +61,6 @@
 </video>
 
 <div id="remotesvideos">
-
-
 
 
 
