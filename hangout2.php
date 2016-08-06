@@ -7,7 +7,8 @@
 <script src="http://simplewebrtc.com/latest.js"></script>
 
 <style>
-    #remotevideos video {
+
+    #remotesvideos video {
         height: 250px;
 
         color:  darkred;
@@ -23,55 +24,7 @@
 </head>
 <body>
 
-<h1> Test 24 </h1>
-
-
-<video id="localVideo" height="300">
-
-    <script language="javascript">
-        var webrtc = null;
-
-        function startconf() {
-
-            webrtc = new SimpleWebRTC({
-                localVideoEl: 'localVideo',
-                // the id/element dom element that will hold remote videos
-                remoteVideosEl: 'remoteVideos',
-                // immediately ask for camera access
-                autoRequestMedia: true
-            });
-
-            // we have to wait until it's ready
-            webrtc.on('readyToCall', function () {
-                // you can name it anything
-                webrtc.joinRoom('KaretechChatRoom86');
-            });
-
-
-
-    </script>
-
-
-
-
-    </video>
-
-<div id="remotesvideos">
-
-
-
-
-
-
-
-
-    </div>
-<br>
-
-<button id="btn1" onclick="startconf()">Start Conferences
-
-
-</button>
+<h1> Fucking display</h1>
 
 
 
