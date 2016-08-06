@@ -28,7 +28,7 @@
 </head>
 <body>
 
-<h1> Test 24 </h1>
+<h1> Test 23 </h1>
 
 
 <video id="localVideo" height="300">
