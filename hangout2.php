@@ -31,6 +31,22 @@
 <h1> Test 23 </h1>
 
 
+
+
+<div id="remotesvideos">
+
+
+
+
+
+</div>
+<br>
+
+<button id="btn1" onclick="startconf()">Start Conferences
+
+
+</button>
+
 <video id="localVideo">
 
     <script type="application/javascript">
@@ -60,19 +76,6 @@
 
 </video>
 
-<div id="remotesvideos">
-
-
-
-
-
-</div>
-<br>
-
-<button id="btn1" onclick="startconf()">Start Conferences
-
-
-</button>
 
 
 </body>
