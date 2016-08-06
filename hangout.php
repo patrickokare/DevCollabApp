@@ -33,8 +33,18 @@
         // immediately ask for camera access
         autoRequestMedia: true
 
-//local mute/unmute events
-        webrtc.on('audioOn', function () {
+
+
+    });
+        // we have to wait until it's ready
+        webrtc.on('readyToCall', function () {
+        // you can name it anything
+        webrtc.joinRoom('chat');
+
+
+    });
+    //local mute/unmute events
+    webrtc.on('audioOn', function () {
         // your local audio just turned on
     });
     webrtc.on('audioOff', function () {
@@ -46,16 +56,6 @@
     webrtc.on('videoOff', function () {
         // local video just turned off
     });
-
-    });
-        // we have to wait until it's ready
-        webrtc.on('readyToCall', function () {
-        // you can name it anything
-        webrtc.joinRoom('chat');
-
-
-    });
-
 
 
 //<script type="application/javascript">
@@ -86,9 +86,7 @@
         vol.className = 'muted';
         container.appendChild(muted);
 
-        var muted = document.createElement('span');
-        vol.className = 'muted';
-        container.appendChild(muted);
+
 
     // show the ice connection state
     if (peer && peer.pc) {
