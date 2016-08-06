@@ -20,6 +20,13 @@
  <h2> Something should please work!!!!!!!!</h2>
 
 
+
+
+
+
+</body>
+</html>
+
 <script type="application/javascript">
 
 
@@ -36,8 +43,8 @@
 
 
     });
-        // we have to wait until it's ready
-        webrtc.on('readyToCall', function () {
+    // we have to wait until it's ready
+    webrtc.on('readyToCall', function () {
         // you can name it anything
         webrtc.joinRoom('chat');
 
@@ -58,7 +65,7 @@
     });
 
 
-//<script type="application/javascript">
+    //<script type="application/javascript">
     webrtc.on('videoAdded', function (video, peer) {
         console.log('video added', peer);
         var remotes = document.getElementById('remotes');
@@ -88,73 +95,73 @@
 
 
 
-    // show the ice connection state
-    if (peer && peer.pc) {
-        var connstate = document.createElement('div');
-        connstate.className = 'connectionstate';
-        container.appendChild(connstate);
-        peer.pc.on('iceConnectionStateChange', function (event) {
-            switch (peer.pc.iceConnectionState) {
-                case 'checking':
-                    connstate.innerText = 'Connecting to peer...';
-                    break;
-                case 'connected':
-                case 'completed': // on caller side
-                    connstate.innerText = 'Connection established.';
-                    break;
-                case 'disconnected':
-                    connstate.innerText = 'Disconnected.';
-                    break;
-                case 'failed':
-                    break;
-                case 'closed':
-                    connstate.innerText = 'Connection closed.';
-                    break;
-            }
-        });
-    }
+        // show the ice connection state
+        if (peer && peer.pc) {
+            var connstate = document.createElement('div');
+            connstate.className = 'connectionstate';
+            container.appendChild(connstate);
+            peer.pc.on('iceConnectionStateChange', function (event) {
+                switch (peer.pc.iceConnectionState) {
+                    case 'checking':
+                        connstate.innerText = 'Connecting to peer...';
+                        break;
+                    case 'connected':
+                    case 'completed': // on caller side
+                        connstate.innerText = 'Connection established.';
+                        break;
+                    case 'disconnected':
+                        connstate.innerText = 'Disconnected.';
+                        break;
+                    case 'failed':
+                        break;
+                    case 'closed':
+                        connstate.innerText = 'Connection closed.';
+                        break;
+                }
+            });
+        }
 
 
 
 //<script type="application/javascript">
-    // a peer video was removed
-    webrtc.on('videoRemoved', function (video, peer) {
-        console.log('video removed ', peer);
-        var remotes = document.getElementById('remotes');
-        var el = document.getElementById(peer ? 'container_' + webrtc.getDomId(peer) : 'localScreenContainer');
-        if (remotes && el) {
-            remotes.removeChild(el);
+        // a peer video was removed
+        webrtc.on('videoRemoved', function (video, peer) {
+            console.log('video removed ', peer);
+            var remotes = document.getElementById('remotes');
+            var el = document.getElementById(peer ? 'container_' + webrtc.getDomId(peer) : 'localScreenContainer');
+            if (remotes && el) {
+                remotes.removeChild(el);
+            }
+        });
+
+        // local p2p/ice failure
+        webrtc.on('iceFailed', function (peer) {
+            var connstate = document.querySelector('#container_' + webrtc.getDomId(peer) + ' .connectionstate');
+            console.log('local fail', connstate);
+            if (connstate) {
+                connstate.innerText = 'Connection failed.';
+                fileinput.disabled = 'disabled';
+            }
+        });
+
+        // remote p2p/ice failure
+        webrtc.on('connectivityError', function (peer) {
+            var connstate = document.querySelector('#container_' + webrtc.getDomId(peer) + ' .connectionstate');
+            console.log('remote fail', connstate);
+            if (connstate) {
+                connstate.innerText = 'Connection failed.';
+                fileinput.disabled = 'disabled';
+            }
+        });
+
+
+        function showVolume(el, volume) {
+            console.log('showVolume', volume, el);
+            if (!el) return;
+            if (volume < -45) volume = -45; // -45 to -20 is
+            if (volume > -20) volume = -20; // a good range
+            el.value = volume;
         }
-    });
-
-    // local p2p/ice failure
-    webrtc.on('iceFailed', function (peer) {
-        var connstate = document.querySelector('#container_' + webrtc.getDomId(peer) + ' .connectionstate');
-        console.log('local fail', connstate);
-        if (connstate) {
-            connstate.innerText = 'Connection failed.';
-            fileinput.disabled = 'disabled';
-        }
-    });
-
-    // remote p2p/ice failure
-    webrtc.on('connectivityError', function (peer) {
-        var connstate = document.querySelector('#container_' + webrtc.getDomId(peer) + ' .connectionstate');
-        console.log('remote fail', connstate);
-        if (connstate) {
-            connstate.innerText = 'Connection failed.';
-            fileinput.disabled = 'disabled';
-        }
-    });
-
-
-    function showVolume(el, volume) {
-        console.log('showVolume', volume, el);
-        if (!el) return;
-        if (volume < -45) volume = -45; // -45 to -20 is
-        if (volume > -20) volume = -20; // a good range
-        el.value = volume;
-    }
 
 // local volume has changed
         webrtc.on('volumeChange', function (volume, treshold) {
@@ -165,13 +172,6 @@
             showVolume(document.getElementById('volume_' + peer.id), volume);
         });
 
-           </script>
+</script>
 
 
-
-
-
-
-
-</body>
-</html>
