@@ -40,7 +40,6 @@
         autoRequestMedia: true
 
 
-
     });
     // we have to wait until it's ready
     webrtc.on('readyToCall', function () {
