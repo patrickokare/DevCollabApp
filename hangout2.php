@@ -49,7 +49,7 @@
             // we have to wait until it's ready.
             webrtc.on('readyToCall', function () {
                 // you can name it anything
-                webrtc.joinRoom('KaretechRoom255');
+                webrtc.joinRoom('Chat');
             });
 
         }
