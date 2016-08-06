@@ -25,6 +25,13 @@ h3{
     height: 100%;
 }
 
+.connectionstate {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    text-align: center;
+    color: #fff
+}
 
 
 /**To control the editor styling.... **/

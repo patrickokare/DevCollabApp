@@ -28,8 +28,8 @@
         // the id/element dom element that will hold remote videos
         remoteVideosEl: 'remotesVideos',
         // immediately ask for camera access
-        autoRequestMedia: true,
-        url: 'https://http://karetechapp.azurewebsites.net/hangout.php'
+        autoRequestMedia: true
+
     });
 
 
@@ -50,6 +50,31 @@
             remotes.appendChild(container);
         }
     });
+    // show the ice connection state
+    if (peer && peer.pc) {
+        var connstate = document.createElement('div');
+        connstate.className = 'connectionstate';
+        container.appendChild(connstate);
+        peer.pc.on('iceConnectionStateChange', function (event) {
+            switch (peer.pc.iceConnectionState) {
+                case 'checking':
+                    connstate.innerText = 'Connecting to peer...';
+                    break;
+                case 'connected':
+                case 'completed': // on caller side
+                    connstate.innerText = 'Connection established.';
+                    break;
+                case 'disconnected':
+                    connstate.innerText = 'Disconnected.';
+                    break;
+                case 'failed':
+                    break;
+                case 'closed':
+                    connstate.innerText = 'Connection closed.';
+                    break;
+            }
+        });
+    }
 
 
 
