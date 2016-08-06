@@ -122,7 +122,11 @@ if(!isset($_SESSION['login_user'])){
                  <video height="300" id="localVideo"></video>
                  <div id="remotesVideos"></div>
 
-             </div>
+
+
+
+
+                </div>
 
 
             <div class="panel-heading">
