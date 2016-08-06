@@ -5,11 +5,14 @@
     <style>
         #remoteVideos video {
             height: 250px;
-
+             border-radius: 10px;
+            border: darkred;
         }
         #localVideo {
             height: 250px;
             float: right;
+            border-radius: 10px;
+            border: #066;
 
         }
     </style>
