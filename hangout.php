@@ -8,7 +8,7 @@
 
         }
         #localVideo {
-            height: 150px;
+            height: 250px;
             float: right;
 
         }
