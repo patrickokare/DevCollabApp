@@ -40,7 +40,27 @@ h3{
     height: 10px;
 }
 
+.muted, .paused{
 
+
+display: none;
+position: absolute;
+z-index: 1;
+color: #12acef;
+}
+
+.muted{
+left: 0px;
+       bottom: 10%;
+width: 100%
+}
+.paused{
+
+left: 0px;
+       top: 40%;
+width: 100%;
+
+}
 /**To control the editor styling.... **/
 textarea{
     border:1px solid darkred;
