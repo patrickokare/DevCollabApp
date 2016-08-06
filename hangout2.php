@@ -15,7 +15,7 @@
     }
     #localVideo {
      /   height: 250px;
-        float: right;
+        / float: right;
 
         color:  #066;
 
