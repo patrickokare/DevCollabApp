@@ -21,14 +21,14 @@
         }
         #localVideo {
             height: 150px;
-     / float: right;
+      float: right;
 
         }
     </style>
 </head>
 <body>
 
-<h1> Test 22 </h1>
+<h1> Test 21 </h1>
 
 
 
