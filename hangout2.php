@@ -7,13 +7,13 @@
 <script src="http://simplewebrtc.com/latest.js"></script>
 
 <style>
-    #remoteVideos video {
+    #remotevideos video {
         height: 250px;
 
         color:  darkred;
     }
     #localVideo {
-        height: 250px;
+     /   height: 250px;
         float: right;
 
         color:  #066;
