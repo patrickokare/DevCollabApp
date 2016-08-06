@@ -4,7 +4,7 @@
     <script src="https://simplewebrtc.com/latest-v2.js"></script>
     <style>
         #remoteVideos video {
-            height: 150px;
+            height: 250px;
 
         }
         #localVideo {
@@ -15,6 +15,7 @@
     </style>
 </head>
 <body>
+
 
 
 
