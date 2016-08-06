@@ -9,7 +9,6 @@
         }
         #localVideo {
             height: 150px;
-
             float: right;
 
         }
