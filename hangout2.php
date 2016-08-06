@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Page </title>
-    <script src="http://simplewebrtc.com/latest.js"></script>
+
+        <meta charset="UTF-8">
+        <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Welcome</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script src="https://simplewebrtc.com/latest-v2.js"></script>
+        <script src ="js/jquery.js"> </script>
+
+
+
 
     <style>
 
         #remotesvideos video {
-            height: 250px;
-            border-color: darkred;
+            height: 150px;
 
         }
         #localVideo {
-            height: 250px;
-            float: right;
-
-            border-color: #066;
+            height: 150px;
 
 
         }
@@ -30,7 +33,7 @@
 
 <video id="localVideo" height="300">
 
-    <script language="javascript">
+    <script type="application/javascript">
         var webrtc = null;
 
         function startconf() {
