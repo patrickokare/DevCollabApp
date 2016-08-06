@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Page </title>
     <script src="https://simplewebrtc.com/latest-v2.js"></script>
     <style>
         #remoteVideos video {
             height: 250px;
-             border-radius: 10px;
-            border: darkred;
+
+            color:  darkred;
         }
         #localVideo {
             height: 250px;
             float: right;
-            border-radius: 10px;
-            border: #066;
+
+           color:  #066;
 
         }
     </style>
 </head>
 <body>
 
-
+<h4> Test 24 </h4>
 
 
 <video id="localVideo">
