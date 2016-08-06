@@ -21,7 +21,7 @@
         }
         #localVideo {
             height: 150px;
-
+      float: right;
 
         }
     </style>
@@ -31,7 +31,7 @@
 <h1> Test 23 </h1>
 
 
-<video id="localVideo" height="300">
+<video id="localVideo">
 
     <script type="application/javascript">
         var webrtc = null;
