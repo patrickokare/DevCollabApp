@@ -5,6 +5,7 @@
     <style>
         #remoteVideos video {
             height: 150px;
+            float: right;
         }
         #localVideo {
             height: 150px;
