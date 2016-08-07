@@ -91,6 +91,16 @@ if(loggedin()) {
 </header>
 
 <div class="container">
+    <div class="row">
+        <div class="col-md-5">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+
+            <h4 class="panel-title"> DEVCOLLAB REGISTRATION FORM </h4>
+
+
+        </div>
+        <div class ="panel-body">
 
 <form action ="register.php" method="POST">
 
@@ -109,6 +119,11 @@ if(loggedin()) {
 </form>
 
 </div>
+        </div>
+            </div>
+        </div>
+    </div>
+
 
 <footer class="site-footer">
 
