@@ -32,9 +32,9 @@ if(!isset($_SESSION['login_user'])){
     <script type="text/javascript" src ="codemirror/js/default.js"></script>
     <style>
 
-        #remotesVideos{
-            height: 300%;
-            width: 300%;
+       div #remotesVideos{
+            height: 250%;
+            width: 320%;
         }
     </style>
 
@@ -126,8 +126,8 @@ if(!isset($_SESSION['login_user'])){
                 <h3>  Start Hangout  </h3>
             </div>
              <div>
-                 <video height="300" width="300" id="localVideo"></video>
-                 <div id="remotesVideos"></div>
+                 <video height="300" width="320" id="localVideo"></video>
+                 <div id="remotesVideos" style="height: 300: width: 320;"></div>
 
 
 
