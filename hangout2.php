@@ -21,7 +21,7 @@
         }
         #localVideo {
             height: 150px;
-      float: right;
+
 
         }
     </style>
@@ -43,7 +43,6 @@
 
 
 <button id="btn1" onclick="startconf()">Start Conferences
-
 
 
 
