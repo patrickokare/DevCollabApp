@@ -39,7 +39,7 @@ if(loggedin()) {
 
 
                     if ($query_run = mysqli_query($db, $query)) {
-                        header('Location: success.php?username=username');
+                        header('Location: success.php?username='.$username);
                     } else {
                         echo 'Sorry, we Could not register you at this time. Try again Later.';
                     }
