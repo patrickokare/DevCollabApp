@@ -4,7 +4,7 @@ require 'session.php';
 
 if(!loggedin()){
     ?>
- Register Form.
+
 <?php
 
 } else if (loggedin()) {

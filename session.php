@@ -11,7 +11,15 @@ $login_session = $row['username']; // This displays the username the client or u
 
 function Loggedin(){
     if(!isset($_SESSION['login_user'])){
-        header("location:login.php");
+        return true;
+    } else {
+        return false;
     }
 
 }
+
+/**
+if(!isset($_SESSION['login_user'])){
+    header("location:login.php");
+}
+ **/
