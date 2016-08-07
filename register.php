@@ -13,7 +13,13 @@ if(loggedin()) {
 
 
         if (!empty($username) && !empty($password) && !empty($password_again)) {
-            echo 'OKAY.';
+
+           if($password != $password_again){
+             echo 'Passwords do not match.';
+           }else{
+               echo 'OKAY!';
+           }
+
         } else {
 
             echo '<Span style="color: darkred"> All Fields are required.</Span>';
@@ -32,6 +38,8 @@ if(loggedin()) {
     <meta charset="UTF-8">
     <meta name ="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
+
+    <link href="style.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <script src ="js/jquery.js"> </script>
     <script src="js/bootstrap.min.js"></script>
