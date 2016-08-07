@@ -2,11 +2,11 @@
 
 require 'session.php';
 
-if(!loggedin()){
+if(loggedin()){
 
 echo 'Register First.';
 
-} else if (loggedin()) {
+} else if (!loggedin()) {
     echo 'you are already registered and logged in. ';
 }
 
