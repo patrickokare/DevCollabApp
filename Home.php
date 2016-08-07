@@ -34,7 +34,7 @@ if(!isset($_SESSION['login_user'])){
 
         #remotesVideos{
             height: 300%;
-            width: 200%;
+            width: 300%;
         }
     </style>
 
@@ -126,7 +126,7 @@ if(!isset($_SESSION['login_user'])){
                 <h3>  Start Hangout  </h3>
             </div>
              <div>
-                 <video height="300" width="250" id="localVideo"></video>
+                 <video height="300" width="300" id="localVideo"></video>
                  <div id="remotesVideos"></div>
 
 
