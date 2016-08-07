@@ -27,10 +27,12 @@ if(loggedin()) {
 
                $query_run = mysqli_query($db,$query);
 
+               echo $query_run;
+
                if(mysql_num_rows($query_run)==1){
                    echo 'The username'. $username . ' already exists.';
                } else {
-echo $query_run;
+
                   // $query = "INSERT INTO users (username,password)
                         //      VALUES ('".mysqli_real_escape_string($username)."', '".mysqli_real_escape_string($password)."');";
 
@@ -114,7 +116,7 @@ echo $query_run;
     <input type="password" name="password">
     </label><br> <br>
     <label> Password Again:<br> <br>
-    <input type="password" name="password_again" required>
+    <input type="password" name="password_again">
     </label> <br> <br>
 
      <input type="submit" value="Register">
