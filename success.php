@@ -1,4 +1,9 @@
 <?php
+session_start();
+
+?>
+
+<?php
 
 $username = $_GET['username'];
 ?>
@@ -55,7 +60,7 @@ $username = $_GET['username'];
                 <div class ="panel-body">
 
                     <address>
-                    <h4> Your New username is: </h4>   <?php echo $username ?> <br>
+                    <h4> Your username is: </h4>   <?php echo $username ?> <br>
 
                        <h4>You have Successfully Completed your registration Process</h4><br>
                         <h4>Thank you!</h4>
