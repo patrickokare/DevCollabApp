@@ -12,6 +12,8 @@ if(loggedin()) {
         $password = $_POST['password'];
         $password_again = $_POST['password_again'];
 
+        $query = "INSERT INTO users (username,password)
+                              VALUES ('$username', '$password');";
 
         if (!empty($username) && !empty($password) && !empty($password_again)) {
 
