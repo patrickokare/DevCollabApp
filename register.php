@@ -12,8 +12,6 @@ if(loggedin()) {
         $password = $_POST['password'];
         $password_again = $_POST['password_again'];
 
-        $query = "INSERT INTO users (username,password)
-                              VALUES ('$username', '$password');";
 
         if (!empty($username) && !empty($password) && !empty($password_again)) {
 
@@ -32,7 +30,16 @@ if(loggedin()) {
                if(mysql_num_rows($query_run)==1){
                    echo 'The username'. $username . ' already exists.';
                } else {
-                   echo 'Okay!';
+
+                   $query = "INSERT INTO users (username,password)
+                              VALUES ('".mysqli_real_escape_string($username)."', '".mysqli_real_escape_string($password)."');";
+
+               if( $query_run = mysqli_query($db,$query)){
+                 header('Location: success.php');
+               }else{
+                   echo 'Sorry, we Could not register you at this time. Try again Later.';
+               }
+
 
                }
 
