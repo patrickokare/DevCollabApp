@@ -8,6 +8,10 @@ $ses_sql = mysqli_query($db," select username
                                        ");
 $row = mysqli_fetch_array($ses_sql,MYSQLI_ASSOC);
 $login_session = $row['username']; // This displays the username the client or user type's in .......
-if(!isset($_SESSION['login_user'])){
-    header("location:login.php");
+
+function Loggedin(){
+    if(!isset($_SESSION['login_user'])){
+        header("location:login.php");
+    }
+
 }
