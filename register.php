@@ -16,7 +16,7 @@ if(loggedin()) {
             echo 'OKAY.';
         } else {
 
-            echo 'All fields are required.';
+            echo '<Span style="color: darkred"> All fields are required.</Span>';
         }
     }
 
