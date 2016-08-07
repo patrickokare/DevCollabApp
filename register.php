@@ -3,8 +3,9 @@
 require 'session.php';
 
 if(!loggedin()){
-
-echo'register';
+    ?>
+ Register Form.
+<?php
 
 } else if (loggedin()) {
     echo 'you are already registered and logged in. ';
