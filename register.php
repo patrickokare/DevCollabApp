@@ -4,10 +4,8 @@ require 'session.php';
 
 if(loggedin()) {
 
-    if (isset($_POST['username']) &&
-        isset($_POST['password']) &&
-        isset($_POST['password_again'])
-    ) {
+    if (isset($_POST['username']) && isset($_POST['password']) && isset($_POST['password_again'])) {
+
 
         $username = $_POST['username'];
         $password = $_POST['password'];
@@ -15,9 +13,10 @@ if(loggedin()) {
 
 
         if (!empty($username) && !empty($password) && !empty($password_again)) {
-
+            echo 'OKAY.';
         } else {
 
+            echo 'All fields are required.';
         }
     }
 
@@ -26,6 +25,9 @@ if(loggedin()) {
 
 
 ?>
+
+
+
 
 <form action ="register.php" method="POST">
 
