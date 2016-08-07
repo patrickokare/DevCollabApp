@@ -65,10 +65,10 @@ if(loggedin()) {
     <input type="text" name="username" value="<?php echo $username; ?>">
     </label><br> <br>
     <label> Password:<br> <br>
-    <input type="password" name="password" value="<?php echo $username; ?>">
+    <input type="password" name="password">
     </label><br> <br>
     <label> Password Again:<br> <br>
-    <input type="password" name="password_again" value="<?php echo $username; ?>">
+    <input type="password" name="password_again">
     </label> <br> <br>
 
      <input type="submit" value="Register">
