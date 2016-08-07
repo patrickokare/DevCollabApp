@@ -1,7 +1,7 @@
 <?php
 session_start();
-if(!isset($_SESSION['login_user'])){
-
+if(!isset($_SESSION['username'])){
+    header("location:success.php");
 }
 ?>
 
