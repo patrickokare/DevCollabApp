@@ -14,7 +14,17 @@
 
     <style>
 
+        #remotesvideos video {
+            height: 150px;
+            min-width: 400px;
+    border: solid;
+        }
+        #localVideo {
+            height: 150px;
+            min-width: 400px;
+     border: dashed;
 
+        }
     </style>
 
 </head>
