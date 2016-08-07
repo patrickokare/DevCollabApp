@@ -1,7 +1,7 @@
 <?php
 
 require 'session.php';
-include ("connection.php");
+require ("connection.php");
 
 if(loggedin()) {
 
@@ -19,7 +19,7 @@ if(loggedin()) {
              echo 'Passwords do not match.';
            }else{
 
-               echo $username;
+
 
                $query = "SELECT `username`
                           FROM `users`
