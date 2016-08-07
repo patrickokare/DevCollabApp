@@ -2,18 +2,18 @@
 
 require 'session.php';
 
-if(!loggedin()){
-
+if(!loggedin()) {
+}
 ?>
 <form action ="register.php" method="POST">
 
-    <label> UserName
+    <label> UserName:
     <input type="text" name="username">
     </label><br> <br>
-    <label> Password
+    <label> Password:
     <input type="password" name="password">
     </label><br> <br>
-    <label> Password Again
+    <label> Password Again:
     <input type="password" name="password_again">
     </label>
     <br> <br>
@@ -22,10 +22,5 @@ if(!loggedin()){
 </form>
 
 
-<?php
-
-} else if (loggedin()) {
-    echo 'you are already registered and logged in. ';
-}
 
 
