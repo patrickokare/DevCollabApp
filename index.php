@@ -79,7 +79,7 @@ span{
             <div class="row">
 
                  <span style="font-family: cursive: color: darkred;"> DevCollab App(c) </span>
-       <a href="#"> Not a User? Click to Register</a>
+                  <a href="#"> Not a User? Click to Register</a>
 
             </div>
 
