@@ -12,29 +12,30 @@
         <script src ="js/jquery.js"> </script>
 
 
-
-
     <style>
 
         #remotesvideos video {
             height: 150px;
+            min-width: 400px;
 
         }
         #localVideo {
             height: 150px;
+            min-width: 400px;
 
 
         }
     </style>
+
 </head>
 <body>
 
-<h1> Code Test Number 19 </h1>
+<h1> Code Test Number 18 </h1>
 
 
-<video id="localVideo" height="300"></video>
+<video id="localVideo" height="300" width="400"></video>
 
-<div id="remotesvideos"></div>
+<div id="remotesvideos" height="300" width="400"></div>
 
 
 
