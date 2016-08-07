@@ -14,17 +14,7 @@
 
     <style>
 
-        #remotesvideos video {
-            height: 150px;
-            min-width: 400px;
 
-        }
-        #localVideo {
-            height: 150px;
-            min-width: 400px;
-
-
-        }
     </style>
 
 </head>
@@ -32,14 +22,14 @@
 
 <h1> Code Test Number 17 </h1>
 
-
+<div>
 <video id="localVideo" height="300" width="400"></video>
 
 <div id="remotesvideos" height="300" width="400"></div>
 
 
 
-
+</div>
 
 
 
