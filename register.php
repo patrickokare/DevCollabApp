@@ -1,6 +1,7 @@
 <?php
 
 require 'session.php';
+include ("connection.php");
 
 if(loggedin()) {
 
@@ -17,7 +18,22 @@ if(loggedin()) {
            if($password != $password_again){
              echo 'Passwords do not match.';
            }else{
-               echo 'OKAY!';
+
+               echo $username;
+
+               $query = "SELECT `username`
+                          FROM `users`
+                          WHERE `username` = '$username'";
+
+               $query_run = mysqli_query($db,$query);
+
+               if(mysql_num_rows($query_run)==1){
+                   echo 'The username'. $username . ' already exists.';
+               } else {
+                   echo 'Okay!';
+
+               }
+
            }
 
         } else {
