@@ -39,7 +39,7 @@ if(loggedin()) {
 
 
                     if ($query_run = mysqli_query($db, $query)) {
-                        header('Location: success.php');
+                        header('Location: success.php?username=username');
                     } else {
                         echo 'Sorry, we Could not register you at this time. Try again Later.';
                     }
@@ -114,7 +114,7 @@ $username = $_POST['username'];
     <label> Password:<br> <br>
     <input type="password" name="password">
     </label><br> <br>
-    <label> Password Again:<br> <br>
+    <label> Re-enter Password:<br> <br>
     <input type="password" name="password_again">
     </label> <br> <br>
 

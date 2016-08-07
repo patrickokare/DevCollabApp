@@ -1,3 +1,7 @@
+<?php
+
+$username = $_GET['username'];
+?>
 
 <!DOCTYPE html>
 <html>
@@ -38,7 +42,6 @@
     </nav>
 </header>
 
-
 <div class="container">
     <div class="row">
         <div class="col-md-5">
@@ -52,6 +55,8 @@
                 <div class ="panel-body">
 
                     <address>
+                        <?php echo $username ?> <br>
+
                        <h4>You have Successfully Completed your registration Process</h4><br>
                         <a href="index.php">LOGIN</a>
 
