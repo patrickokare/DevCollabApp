@@ -116,20 +116,6 @@ if(!isset($_SESSION['login_user'])){
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
-
-
-
-
-
-
 
 <footer class="site-footer">
 

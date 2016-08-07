@@ -109,10 +109,10 @@ $username = $_POST['username'];
 <form action ="register.php" method="POST">
 
     <label> UserName:<br> <br>
-    <input type="text" name="username" value="<?php echo $username; ?>">
+    <input type="text" maxlength="50" name="username" value="<?php if(isset($username)){ echo $username;} ?>">
     </label><br> <br>
     <label> Password:<br> <br>
-    <input type="password" name="password">
+    <input type="password" maxlength="50" name="password">
     </label><br> <br>
     <label> Re-enter Password:<br> <br>
     <input type="password" name="password_again">
