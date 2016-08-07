@@ -17,43 +17,46 @@ if(loggedin()) {
         $password_again = mysqli_real_escape_string($db, $_POST['password_again']);
 
         if (!empty($username) && !empty($password) && !empty($password_again)) {
-
-            if ($password != $password_again) {
-                echo 'Passwords do not match.';
+            if (strlen($username) > 50 || strlen($password) > 50) {
+           echo 'Maximum Length of field is 50';
             } else {
+                if ($password != $password_again) {
+                    echo 'Passwords do not match.';
+                } else {
 
 
-                $query = "SELECT `username`
+                    $query = "SELECT `username`
                           FROM `users`
                           WHERE `username` = '$username'";
 
-                $query_run = mysqli_query($db, $query);
+                    $query_run = mysqli_query($db, $query);
 
 
-                if (mysql_num_rows($query_run) == 1) {
-                    echo 'The username' . $username . ' already exists.';
-                } else {
+                    if (mysql_num_rows($query_run) == 1) {
+                        echo 'The username' . $username . ' already exists.';
+                    } else {
 
-                    $query = "INSERT INTO users (username,password)
+                        $query = "INSERT INTO users (username,password)
                             VALUES ('" . $username . "', '" . $password . "');";
 
 
-                    if ($query_run = mysqli_query($db, $query)) {
-                        header('Location: success.php?username='.$username);
-                    } else {
-                        echo 'Sorry, we Could not register you at this time. Try again Later.';
+                        if ($query_run = mysqli_query($db, $query)) {
+                            header('Location: success.php?username=' . $username);
+                        } else {
+                            echo 'Sorry, we Could not register you at this time. Try again Later.';
+                        }
+
+
                     }
-
-
+                }
                 }
 
             }
+        else {
 
-        } else {
-
-            echo '<Span style="color: darkred"> All Fields are required.</Span>';
+                echo '<Span style="color: darkred"> All Fields are required.</Span>';
+            }
         }
-    }
 
 
 }
