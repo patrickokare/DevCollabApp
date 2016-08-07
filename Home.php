@@ -34,7 +34,7 @@ if(!isset($_SESSION['login_user'])){
 
        div #remotesVideos{
             height: 250%;
-            width: 320%;
+            width: 150%;
            border: solid darkred;
         }
     </style>
@@ -128,7 +128,7 @@ if(!isset($_SESSION['login_user'])){
             </div>
              <div>
                  <video height="300" width="320" id="localVideo"></video>
-                 <div id="remotesVideos" style="height: 300%: width: 320%;"></div>
+                 <div id="remotesVideos" style="height: 300%: width: 150%;"></div>
 
 
 
