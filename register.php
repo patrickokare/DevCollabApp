@@ -4,10 +4,29 @@ require 'session.php';
 
 if(loggedin()) {
 
-    if(isset($_POST['username']) && isset($_POST['password'])
+    if (isset($_POST['username']) &&
+        isset($_POST['password']) &&
+        isset($_POST['password_again'])
+    ) {
+
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+        $password_again = $_POST['password_again'];
+
+
+        if (!empty($username) && !empty($password) && !empty($password_again)) {
+
+        } else {
+
+        }
+    }
+
 
 }
+
+
 ?>
+
 <form action ="register.php" method="POST">
 
     <label> UserName:<br> <br>
@@ -23,7 +42,6 @@ if(loggedin()) {
      <input type="submit" value="Register">
 
 </form>
-
 
 
 
