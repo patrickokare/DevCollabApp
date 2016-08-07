@@ -33,15 +33,12 @@
 
 <video id="localVideo" height="300"></video>
 
-
-
-
-<div id="remotesvideos">
+<div id="remotesvideos"></div>
 
 
 
 
-</div>
+
 <br>
 
 
