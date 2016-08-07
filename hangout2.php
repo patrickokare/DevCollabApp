@@ -30,7 +30,7 @@
 </head>
 <body>
 
-<h1> Code Test Number 18 </h1>
+<h1> Code Test Number 17 </h1>
 
 
 <video id="localVideo" height="300" width="400"></video>
