@@ -35,6 +35,7 @@ if(!isset($_SESSION['login_user'])){
        div #remotesVideos{
             height: 250%;
             width: 320%;
+           border: solid darkred;
         }
     </style>
 
