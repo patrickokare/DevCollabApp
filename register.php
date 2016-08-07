@@ -18,40 +18,36 @@ if(loggedin()) {
 
         if (!empty($username) && !empty($password) && !empty($password_again)) {
 
-           if($password != $password_again){
-             echo 'Passwords do not match.';
-           }else{
+            if ($password != $password_again) {
+                echo 'Passwords do not match.';
+            } else {
 
 
-
-               $query = "SELECT `username`
+                $query = "SELECT `username`
                           FROM `users`
                           WHERE `username` = '$username'";
 
-               $query_run = mysqli_query($db,$query);
+                $query_run = mysqli_query($db, $query);
 
 
+                if (mysql_num_rows($query_run) == 1) {
+                    echo 'The username' . $username . ' already exists.';
+                } else {
 
-               if(mysql_num_rows($query_run)==1){
-                   echo 'The username'. $username . ' already exists.';
-               } else {
-
-                   $query = "INSERT INTO users (username,password)
-                            VALUES ('".$username."', '".$password."');";
-
+                    $query = "INSERT INTO users (username,password)
+                            VALUES ('" . $username . "', '" . $password . "');";
 
 
+                    if ($query_run = mysqli_query($db, $query)) {
+                        header('Location: success.php');
+                    } else {
+                        echo 'Sorry, we Could not register you at this time. Try again Later.';
+                    }
 
-               if( $query_run = mysqli_query($db,$query)){
-                 header('Location: success.php');
-               }else{
-                   echo 'Sorry, we Could not register you at this time. Try again Later.';
-               }
 
+                }
 
-               }
-
-           }
+            }
 
         } else {
 
@@ -62,7 +58,7 @@ if(loggedin()) {
 
 }
 
-
+$username = $_POST['username'];
 ?>
 
 <!DOCTYPE html>
@@ -104,7 +100,7 @@ if(loggedin()) {
     <div class="panel panel-default">
         <div class="panel-heading">
 
-            <h4 class="panel-title"> DEVCOLLAB REGISTRATION FORM </h4>
+            <h4 class="panel-title"><span style="color: darkred">  DEVCOLLAB REGISTRATION FORM</span> </h4>
 
 
         </div>
