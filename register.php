@@ -12,6 +12,9 @@ if(loggedin()) {
         $password = $_POST['password'];
         $password_again = $_POST['password_again'];
 
+        $username = mysqli_real_escape_string($db, $_POST['username']);
+        $password = mysqli_real_escape_string($db, $_POST['password']);
+        $password_again = mysqli_real_escape_string($db, $_POST['password_again']);
 
         if (!empty($username) && !empty($password) && !empty($password_again)) {
 
@@ -27,14 +30,14 @@ if(loggedin()) {
 
                $query_run = mysqli_query($db,$query);
 
-               echo $query_run;
+
 
                if(mysql_num_rows($query_run)==1){
                    echo 'The username'. $username . ' already exists.';
                } else {
 
-                  // $query = "INSERT INTO users (username,password)
-                        //      VALUES ('".mysqli_real_escape_string($username)."', '".mysqli_real_escape_string($password)."');";
+                   $query = "INSERT INTO users (username,password)
+                            VALUES ('".$username."', '".$password."');";
 
 
 
