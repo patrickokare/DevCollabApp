@@ -41,16 +41,7 @@
 
 
 
-<br>
 
-
-<button id="btn1" onclick="startconf()">Start Conferences
-
-
-
-
-
-</button>
 
 
 
@@ -60,9 +51,9 @@
 </html>
 
 <script type="application/javascript">
-    var webrtc = null;
+   // var webrtc = null;
 
-    function startconf() {
+
 
         webrtc = new SimpleWebRTC({
             localVideoEl: 'localVideo',
@@ -78,7 +69,7 @@
             webrtc.joinRoom('Chat');
         });
 
-    }
+
 
 
 </script>
