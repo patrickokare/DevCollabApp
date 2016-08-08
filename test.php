@@ -24,8 +24,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
 </head>
 <body>
-
-
+<h3>Code Mirror Implementation.....Test 13 </h3>
+<div style="align-content: center">
 <form id="preview-form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?> ">
     <label>
            <textarea class="codemirror-textarea" name="preview-form-comment" id="preview-form-comment" rows="20" cols="140">
@@ -43,7 +43,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                 </textarea>
 </label>
 
-
+</div>
 
 
 
