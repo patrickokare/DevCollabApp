@@ -11,7 +11,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 <?php
 session_start();
 if(!isset($_SESSION['login_user'])){
-    header("location:index.php");
+    header("location:messgIndex.php");
 }
 ?>
 
@@ -160,9 +160,7 @@ if(!isset($_SESSION['login_user'])){
 
                     <?php
 
- include ("ChatFac/index.php");
-                    include ("ChatFac/chatbox.php");
-                    include "ChatFac/login.php";
+
                     ?>
 
                     <hr>
