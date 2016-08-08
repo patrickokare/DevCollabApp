@@ -15,7 +15,7 @@
 
            #remotesVideos{
             height: 200%;
-            width: 100%;
+            width: 50%;
             border: solid darkred;
         }
 #localVideo{
@@ -33,17 +33,6 @@
 
 <video height="250" width="320" id="localVideo"></video>
 <div id="remotesVideos" style="height: 300%: width: 50%;"></div>
-
-
-
-
-
-
-
-
-
-
-
 
 
 
