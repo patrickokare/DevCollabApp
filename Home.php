@@ -124,7 +124,7 @@ if(!isset($_SESSION['login_user'])){
 
             <!-- This codes below are for the video Conferencing, file Upload and messenging box -->
             <div class="panel-heading">
-                <h3>  Start Hangout  </h3>
+                <h3>  Video Conference  </h3>
             </div>
              <div>
                  <video height="250" width="320" id="localVideo"></video>
@@ -155,7 +155,7 @@ if(!isset($_SESSION['login_user'])){
 
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                <h3> Chat Box  </h3>
+                <h3> Real-time Messaging  </h3>
                         </div>
 
                     <?php
