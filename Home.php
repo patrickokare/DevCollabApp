@@ -126,7 +126,7 @@ if(!isset($_SESSION['login_user'])){
             <div class="panel-heading">
                 <h3>  Video Conference  </h3>
             </div>
-             <div class="glyphicon-camera">
+             <div class="col-sm-4">
             <!--
              <video height="250" width="320" id="localVideo"></video>
                  <div id="remotesVideos" style="height: 300%: width: 100%;"></div>
