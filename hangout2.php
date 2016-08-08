@@ -18,7 +18,10 @@
             width: 100%;
             border: solid darkred;
         }
+#localVideo{
 
+    border:dotted blueviolet;
+}
 
     </style>
 
@@ -29,7 +32,7 @@
 
 
 <video height="250" width="320" id="localVideo"></video>
-<div id="remotesVideos" style="height: 300%: width: 100%;"></div>
+<div id="remotesVideos" style="height: 300%: width: 50%;"></div>
 
 
 
