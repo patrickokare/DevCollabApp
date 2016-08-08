@@ -44,7 +44,7 @@ if(!isset($_SESSION['login_user'])){
             <div class="panel panel-default">
                 <div class="panel-heading">
 
-                    <h4 class="panel-title"><span style="color: darkred">  GEOGRAPHICAL LOCATION DETAILS. </span> </h4>
+                    <h4 class="panel-title"><span style="color: darkred"> YOUR GEOGRAPHICAL LOCATION DETAILS. </span> </h4>
 
 
                 </div>
@@ -107,3 +107,32 @@ if ( isset($nearby[0]['geoplugin_place']) ) {
 
 
 <a href="Home.php">Click to go back</a>
+
+                    <footer class="site-footer">
+
+                        <div class="container">
+                            <div class="row">
+
+                                <span style="font-family: cursive" class="moveright"> DevCollab App(c) </span>
+
+
+
+                            </div>
+                            <div class="bottom-footer">
+                                <div class="col-md-5"> Designed by Wale Patrick 2016(c)</div>
+                                <div class="col-md-7">
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+
+
+
+
+
+
+                    </footer>
