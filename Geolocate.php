@@ -3,6 +3,7 @@
 require ("geoplugin.class.php");
 
 
+
 /* find places nearby */
 $nearby = $geoplugin->nearby();
 if ( isset($nearby[0]['geoplugin_place']) ) {
