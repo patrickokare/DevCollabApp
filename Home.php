@@ -97,7 +97,7 @@ if(!isset($_SESSION['login_user'])){
 <div class="container">
 <div class="row">
 
-    <div class="col-md-8 col-md-8">
+    <div class="col-sm-8 col-sm-8">
         <div class="panel panel-default">
             <form id="preview-form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?> ">
 <label>
@@ -119,7 +119,7 @@ if(!isset($_SESSION['login_user'])){
 </div>
 
 
-    <div class="col-md-4 col-md-4">
+    <div class="col-sm-4 col-sm-4">
         <div class="panel panel-default">
 
             <!-- This codes below are for the video Conferencing, file Upload and messenging box -->
