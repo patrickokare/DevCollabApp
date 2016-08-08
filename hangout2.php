@@ -45,6 +45,10 @@
 </html>
 
 <script type="application/javascript">
+
+    function startconf(){
+
+
     var webrtc = new SimpleWebRTC({
         // the id/element dom element that will hold "our" video
         localVideoEl: 'localVideo',
@@ -59,4 +63,6 @@
         // you can name it anything
         webrtc.joinRoom('chat');
     });
+
+    }
 </script>
