@@ -8,7 +8,7 @@ if(isset($_SESSION['user'])){
         <?include("msgs.php");?>
     </div>
     <form id="msg_form">
-        <input name="msg" size="40" type="text" height="10"/>
+        <input name="msg" size="40" type="text" height="20"/>
         <button style="float: right">Send</button>
     </form>
     <?
