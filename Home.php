@@ -159,7 +159,7 @@ if(!isset($_SESSION['login_user'])){
                         </div>
 
                     <?php
-          //  include ("ChatFac/messgIndex.php")
+            include ("ChatFac/messgIndex.php")
 
                     ?>
 
