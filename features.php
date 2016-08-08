@@ -142,8 +142,8 @@ if(!isset($_SESSION['login_user'])){
         </div>
 
         <div class="bottom-footer">
-            <div class="col-md-5"> Designed by Wale Patrick 2016(c)</div>
-            <div class="col-md-7">
+            <div class="col-sm-5"> Designed by Wale Patrick 2016(c)</div>
+            <div class="col-sm-7">
                 <ul class="footer-nav lead">
                     <li><a href="Home.php"> Home </a> </li>
                     <li class="active"><a href="features.php"> Features </a> </li>
