@@ -15,10 +15,7 @@ if(isset($_POST['name']) && !isset($display_case)){
 }elseif(isset($display_case)){
     if(!isset($ermsg)){
         ?>
-        <?php
 
-$username = $_GET['username'];
-?>
 
 <!DOCTYPE html>
 <html>
@@ -36,7 +33,7 @@ $username = $_GET['username'];
 
            <form action="messgIndex.php" method="POST">
                <div class="form-input">
-                   <div style="color: whitesmoke">Enter Chat Name  <input name="name" placeholder="Chat Name" value="<? $username;?>"/></div>
+                   <div style="color: whitesmoke">Enter Chat Name  <input name="name" placeholder="Chat Name"/></div>
                </div>
 
             <button class="btn-submit">Start Chatting</button>
