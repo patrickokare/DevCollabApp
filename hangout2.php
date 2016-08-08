@@ -14,13 +14,13 @@
     <style>
 
            #remotesVideos{
-            height: 200%;
-            width: 50%;
-            border: solid darkred;
+               height: 200%;
+               width: 100%;
+               border: solid darkred;
         }
 #localVideo{
 
-    border:dotted blueviolet;
+   / border:dotted darkred;
 }
 
     </style>

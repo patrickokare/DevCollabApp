@@ -33,9 +33,9 @@ if(!isset($_SESSION['login_user'])){
     <style>
 
        div #remotesVideos{
-            height: 200%;
-            width: 100%;
-           border: solid darkred;
+        /    height: 200%;
+        /    width: 100%;
+        /   border: solid darkred;
         }
     </style>
 
@@ -131,7 +131,9 @@ if(!isset($_SESSION['login_user'])){
              <video height="250" width="320" id="localVideo"></video>
                  <div id="remotesVideos" style="height: 300%: width: 100%;"></div>
              -->
-
+<?php
+include('hangout2.php');
+?>
 
 
 
