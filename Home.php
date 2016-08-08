@@ -197,13 +197,14 @@ if(!isset($_SESSION['login_user'])){
 
                         if ( $geoplugin->currency != $geoplugin->currencyCode ) {
                         //our visitor is not using the same currency as the base currency
-                        echo "<p>At todays rate, US$100 will cost you " . $geoplugin->convert(100) ." </p>\n";
+                        echo "<p>At today's rate, US$100 will cost you " . $geoplugin->convert(100) ." </p>\n";
                         }
 
                         /* find places nearby */
                         $nearby = $geoplugin->nearby();
                         if ( isset($nearby[0]['geoplugin_place']) ) {
                         echo "<pre><p>Some places you may wish to visit near " . $geoplugin->city . ": </p>\n";
+
 	foreach ( $nearby as $key => $array ) {
 
 		echo ($key + 1) .":<br />";
