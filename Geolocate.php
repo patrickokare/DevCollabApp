@@ -107,6 +107,8 @@ if ( isset($nearby[0]['geoplugin_place']) ) {
 
 
                   <a href="Home.php">Click to go back</a>
+</div>
+                </div>
 
                     <footer class="site-footer">
 
