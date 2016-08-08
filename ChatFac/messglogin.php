@@ -1,4 +1,6 @@
 <?php
+require ("../login.php");
+
 if(isset($_POST['name']) && !isset($display_case)){
     $name=htmlspecialchars($_POST['name']);
     $sql=$dbh->prepare("SELECT name FROM chatters WHERE name=?");
@@ -13,6 +15,11 @@ if(isset($_POST['name']) && !isset($display_case)){
 }elseif(isset($display_case)){
     if(!isset($ermsg)){
         ?>
+        <?php
+
+$username = $_GET['username'];
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,7 +36,7 @@ if(isset($_POST['name']) && !isset($display_case)){
 
            <form action="messgIndex.php" method="POST">
                <div class="form-input">
-                   <div style="color: whitesmoke">Enter Chat Name  <input name="name" placeholder="Chat Name"/></div>
+                   <div style="color: whitesmoke">Enter Chat Name  <input name="name" placeholder="Chat Name" value="<? $username;?>"/></div>
                </div>
 
             <button class="btn-submit">Start Chatting</button>
