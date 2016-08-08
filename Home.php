@@ -11,7 +11,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 <?php
 session_start();
 if(!isset($_SESSION['login_user'])){
-    header("location:messgIndex.php");
+    header("location:index.php");
 }
 ?>
 

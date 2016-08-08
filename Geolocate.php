@@ -1,6 +1,31 @@
 <?php
 
-require ("geoplugin.class.php");
+
+                        require_once('geoplugin.class.php');
+                        $geoplugin = new geoPlugin();
+                        // If we wanted to change the base currency, we would uncomment the following line
+                        // $geoplugin->currency = 'EUR';
+
+                        $geoplugin->locate();
+
+                        echo "Geolocation results for {$geoplugin->ip}: <br />\n".
+                            "City: {$geoplugin->city} <br />\n".
+                            "Region: {$geoplugin->region} <br />\n".
+                            "Area Code: {$geoplugin->areaCode} <br />\n".
+                            "DMA Code: {$geoplugin->dmaCode} <br />\n".
+                            "Country Name: {$geoplugin->countryName} <br />\n".
+                            "Country Code: {$geoplugin->countryCode} <br />\n".
+                            "Longitude: {$geoplugin->longitude} <br />\n".
+                            "Latitude: {$geoplugin->latitude} <br />\n".
+                            "Currency Code: {$geoplugin->currencyCode} <br />\n".
+                            "Currency Symbol: {$geoplugin->currencySymbol} <br />\n".
+                            "Exchange Rate: {$geoplugin->currencyConverter} <br />\n";
+
+                        if ( $geoplugin->currency != $geoplugin->currencyCode ) {
+                            //our visitor is not using the same currency as the base currency
+                            echo "<p>At today's rate, US$100 will cost you " . $geoplugin->convert(100) ." </p>\n";
+                        }
+
 
 
 
@@ -26,3 +51,7 @@ if ( isset($nearby[0]['geoplugin_place']) ) {
     echo "</pre>\n";
 
 }
+
+?>
+
+<a href="Home.php">Click to go back</a>
