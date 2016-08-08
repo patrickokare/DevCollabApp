@@ -28,7 +28,6 @@
 </head>
 <body>
 
-<h1> Now or Never </h1>
 
 
 <video height="250" width="320" id="localVideo"></video>
