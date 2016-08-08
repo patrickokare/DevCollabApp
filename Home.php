@@ -101,9 +101,9 @@ if(!isset($_SESSION['login_user'])){
         <div class="panel panel-default">
             <form id="preview-form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?> ">
 <label>
-        <textarea class="codemirror-textarea" name="preview-form-comment" id="preview-form-comment" rows="20" cols="140">
+           <textarea class="codemirror-textarea" name="preview-form-comment" id="preview-form-comment" rows="20" cols="140">
         <?php echo $comment; ?>
-        </textarea>
+             </textarea>
                 </label>
                  <br>
                 <input type="submit" name = "preview-form-submit" id="preview-form-submit" value="Submit">
@@ -127,9 +127,10 @@ if(!isset($_SESSION['login_user'])){
                 <h3>  Video Conference  </h3>
             </div>
              <div>
-                 <video height="250" width="320" id="localVideo"></video>
+            <!--
+             <video height="250" width="320" id="localVideo"></video>
                  <div id="remotesVideos" style="height: 300%: width: 100%;"></div>
-
+             -->
 
 
 
@@ -247,6 +248,7 @@ if(!isset($_SESSION['login_user'])){
 
 </body>
 </html>
+<!--
 <script type="application/javascript">
     var webrtc = new SimpleWebRTC({
         // the id/element dom element that will hold "our" video
@@ -263,3 +265,6 @@ if(!isset($_SESSION['login_user'])){
         webrtc.joinRoom('chat');
     });
 </script>
+
+-->
+
