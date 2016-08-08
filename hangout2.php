@@ -11,31 +11,31 @@
         <script src="https://simplewebrtc.com/latest-v2.js"></script>
         <script src ="js/jquery.js"> </script>
 
-
     <style>
 
-        #remotesvideos video {
-            height: 150px;
-            min-width: 400px;
-    border: solid;
+           #remotesVideos{
+            height: 200%;
+            width: 100%;
+            border: solid darkred;
         }
-        #localVideo {
-            height: 150px;
-            min-width: 400px;
-     border: dashed;
 
-        }
+
     </style>
 
 </head>
 <body>
 
-<h1> Code Test Number 02 </h1>
+<h1> Code Test Number 01 </h1>
 
 
-<video id="localVideo" height="300" width="400"></video>
+<video height="250" width="320" id="localVideo"></video>
+<div id="remotesVideos" style="height: 300%: width: 100%;"></div>
 
-<div id="remotesvideos" style=" height 300%: width: 400%;"></div>
+
+
+
+
+
 
 
 
