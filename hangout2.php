@@ -30,16 +30,16 @@
 </head>
 <body>
 
-<h1> Code Test Number 17 </h1>
+<h1> Code Test Number 02 </h1>
 
-<div>
+
 <video id="localVideo" height="300" width="400"></video>
 
-<div id="remotesvideos" height="300" width="400"></div>
+<div id="remotesvideos" style=" height 300%: width: 400%;"></div>
 
 
 
-</div>
+
 
 
 
@@ -51,25 +51,18 @@
 </html>
 
 <script type="application/javascript">
-   // var webrtc = null;
+    var webrtc = new SimpleWebRTC({
+        // the id/element dom element that will hold "our" video
+        localVideoEl: 'localVideo',
+        // the id/element dom element that will hold remote videos
+        remoteVideosEl: 'remotesVideos',
+        // immediately ask for camera access
+        autoRequestMedia: true
+    });
 
-
-
-        webrtc = new SimpleWebRTC({
-            localVideoEl: 'localVideo',
-            // the id/element dom element that will hold remote videos
-            remoteVideosEl: 'remoteVideos',
-            // immediately ask for camera access
-            autoRequestMedia: true
-        });
-
-        // we have to wait until it's ready.
-        webrtc.on('readyToCall', function () {
-            // you can name it anything
-            webrtc.joinRoom('Chat');
-        });
-
-
-
-
+    // we have to wait until it's ready
+    webrtc.on('readyToCall', function () {
+        // you can name it anything
+        webrtc.joinRoom('chat');
+    });
 </script>
