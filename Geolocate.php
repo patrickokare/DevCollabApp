@@ -1,4 +1,55 @@
 <?php
+session_start();
+if(!isset($_SESSION['login_user'])){
+    header("location:index.php");
+}
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevCollab Registration Form</title>
+
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src ="js/jquery.js"> </script>
+    <script src="js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar navbar-default navbar-static-top no-margin" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-ArrayTech-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="Home.php"> <em style="font-family: cursive"> DevCollab  </em> </a>
+                <a class="navbar-brand" href="Home.php">  Go back  </a>
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-5">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+
+                    <h4 class="panel-title"><span style="color: darkred">  GEOGRAPHICAL LOCATION DETAILS. </span> </h4>
+
+
+                </div>
+                <div class ="panel-body">
+<?php
 
 
                         require_once('geoplugin.class.php');
@@ -53,5 +104,6 @@ if ( isset($nearby[0]['geoplugin_place']) ) {
 }
 
 ?>
+
 
 <a href="Home.php">Click to go back</a>
