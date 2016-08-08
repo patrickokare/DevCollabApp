@@ -9,10 +9,10 @@ if(!isset($_SESSION['login_user'])){
 <head>
     <meta charset="UTF-8">
     <meta name ="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevCollab Registration Form</title>
-
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Welcome</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
+
     <script src ="js/jquery.js"> </script>
     <script src="js/bootstrap.min.js"></script>
 
@@ -106,7 +106,7 @@ if ( isset($nearby[0]['geoplugin_place']) ) {
 ?>
 
 
-<a href="Home.php">Click to go back</a>
+                  <a href="Home.php">Click to go back</a>
 
                     <footer class="site-footer">
 
