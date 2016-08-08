@@ -19,7 +19,7 @@
 
 <button id="setup-new-room">Setup New Conference</button>
 
-<video style="width: 100%;" id="rooms-list"></video>
+<div style="width: 100%;" id="rooms-list"></div>
 <div id="videos-container"></div>
 
 <script>
