@@ -15,7 +15,7 @@
 
            #remotesVideos{
                height: 200%;
-               width: 50%;
+               width: 100%;
                border: solid darkred;
         }
 #localVideo{

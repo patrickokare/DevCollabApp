@@ -33,9 +33,9 @@ if(!isset($_SESSION['login_user'])){
     <style>
 
        div #remotesVideos{
-        /    height: 200%;
-        /    width: 100%;
-        /   border: solid darkred;
+           height: 200%;
+           width: 100%;
+          border: solid darkred;
         }
     </style>
 
@@ -130,11 +130,23 @@ if(!isset($_SESSION['login_user'])){
             <!--
              <video height="250" width="320" id="localVideo"></video>
                  <div id="remotesVideos" style="height: 300%: width: 100%;"></div>
-             -->
-<?php
-include('hangout2.php');
-?>
 
+
+             -->
+
+                 <video height="250" width="360" id="localVideo"></video>
+                 <div id="remotesVideos" style="height: 300%: width: 50%;"></div>
+
+                 <br>
+
+
+                 <button id="btn1" onclick="startconf()">Start Conferences
+
+
+
+
+
+                 </button>
 
 
                 </div>
@@ -250,6 +262,29 @@ include('hangout2.php');
 
 </body>
 </html>
+
+<script type="application/javascript">
+
+    function startconf(){
+
+
+        var webrtc = new SimpleWebRTC({
+            // the id/element dom element that will hold "our" video
+            localVideoEl: 'localVideo',
+            // the id/element dom element that will hold remote videos
+            remoteVideosEl: 'remotesVideos',
+            // immediately ask for camera access
+            autoRequestMedia: true
+        });
+
+        // we have to wait until it's ready
+        webrtc.on('readyToCall', function () {
+            // you can name it anything
+            webrtc.joinRoom('chat');
+        });
+
+    }
+</script>
 
 <!--
 <script type="application/javascript">
