@@ -4,7 +4,7 @@ if(isset($_POST['name']) && !isset($display_case)){
     $sql=$dbh->prepare("SELECT name FROM chatters WHERE name=?");
     $sql->execute(array($name));
     if($sql->rowCount()!=0){
-        $ermsg= "<h2 class='error'>Name Taken. <a href='messgIndex.php'>Try another Name.</a></h2>";
+        $ermsg= "<h2 class='error'>Name Taken. <a href='messgIndex.php'>Please try another Name.</a></h2>";
     }else{
         $sql=$dbh->prepare("INSERT INTO chatters (name,seen) VALUES (?,NOW())");
         $sql->execute(array($name));
