@@ -30,7 +30,7 @@
 
 
 
-<video height="250" width="350" id="localVideo"></video>
+<video height="250" width="360" id="localVideo"></video>
 <div id="remotesVideos" style="height: 300%: width: 50%;"></div>
 
 <br>
