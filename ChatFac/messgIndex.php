@@ -1,6 +1,6 @@
 <?php
   include("config.php");
-  include("login.php");
+  include("messglogin.php");
 
 
 ?>
@@ -26,7 +26,7 @@
                 include("chatbox.php");
             }else{
                 $display_case=true;
-                include("login.php");
+                include("messglogin.php");
             }
             ?>
         </div>
