@@ -1,5 +1,5 @@
 <?php
-require ("../login.php");
+
 
 if(isset($_POST['name']) && !isset($display_case)){
     $name=htmlspecialchars($_POST['name']);
