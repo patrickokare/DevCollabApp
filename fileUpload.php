@@ -1,6 +1,6 @@
 <?php
 
-
+/**
 $max_size = 12400000000;
 $location = 'uploads/'; //where the file is going
 if (isset($_POST['submit'])) { //checking for anythiing will break the code
@@ -104,3 +104,4 @@ function save_file($tmp_name, $name, $location)
 
 
 </body>
+**/
