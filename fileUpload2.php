@@ -107,6 +107,11 @@ function save_file($tmp_name, $name, $location)
        / left: 40px;
     }
 
+    .submit[input=text]{
+        color: darkred;
+    }
+
+
 </style>
 
 
