@@ -16,7 +16,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
     <meta name ="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Page </title>
     <script src ="js/jquery.js"> </script>
-
+    <link href="style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="lib/codemirror.css">
     <script src="lib/codemirror.js"> </script>
 
@@ -52,7 +52,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
     <h4> Code Editor </h4>
 
                <form id="preview-form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?> ">
-               <textarea class="codemirror-textarea" name="preview-form-comment" id="preview-form-comment" rows="20" cols="80">
+               <textarea class="codemirror-textarea" name="preview-form-comment" id="preview-form-comment" rows="20" cols="50">
                <?php echo $comment; ?>
                </textarea>
                <input type="submit" name = "preview-form-submit" id="preview-form-submit" value="Submit">
