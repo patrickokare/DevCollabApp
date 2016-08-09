@@ -67,7 +67,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
     <label>
 
-               <textarea rows="20" cols="160">
+               <textarea rows="" cols="">
                <?php echo $comment; ?>
                 </textarea>
 
@@ -76,7 +76,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
 <script>
 
-    var editor = CodeMirror(document.getElementById("preview-form"),{
+    var editor = CodeMirror(document.getElementById(""),{
 
         mode: "javascript",
         theme: "night",
