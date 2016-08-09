@@ -11,9 +11,8 @@ if(file_exists('.//uploads/'. $_FILES["file"]["name"])){
         $fname = $_FILES['file']['tmp_name'];
         $path = './/uploads/' . $_FILES['file']['name'];
         move_uploaded_file($fname, $path);
-        {
 
-        }
+
     }
 
 }
