@@ -32,12 +32,7 @@
 <h4> Code Mirror Implementation- test 13 </h4>
 <form id="codeeditor" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?> ">
 
-             <label>
-            <textarea class="codemirror-textarea" name="preview-form-comment" id="preview-form-comment" rows="20" cols="140">
 
-
-
-             </textarea>
 
 
 

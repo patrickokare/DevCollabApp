@@ -111,6 +111,9 @@ if(!isset($_SESSION['login_user'])){
 
                </form>
 
+
+
+
                 <label>
                <textarea rows="20" cols="140">
                <?php echo $comment; ?>
