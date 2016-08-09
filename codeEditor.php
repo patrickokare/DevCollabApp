@@ -25,7 +25,7 @@
 </head>
 <body>
 <h4> Code Mirror Implementation- test 13 </h4>
-<form id="preview-form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?> ">
+<form id="preview-form" method="post">
 
 
 
