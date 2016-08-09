@@ -49,6 +49,12 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
         </form>
 
 
+<script>
+
+<?php echo $comment;
+
+?>
+</script>
 
 
 <script>
