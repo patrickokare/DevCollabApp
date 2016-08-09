@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="lib/codemirror.css">
     <script src="mode/javascript/javascript.js"></script>
     <link rel="stylesheet" href="theme/night.css">
-
+    <script src="hint/show-hint.js"></script>
+    <script src="hint/css-hint.js"></script>
+    <link rel="stylesheet" href="hint/show-hint.css">
 
 <style>
     body{
@@ -31,7 +33,9 @@
             mode: "javascript",
             theme: "night",
             tabSize: 20,
-            lineNumbers: true
+            lineNumbers: true,
+            firstLineNumber:50,
+            extraKeys:{"Ctrl-Space": "autocomplete"}
         });
 
     </script>
