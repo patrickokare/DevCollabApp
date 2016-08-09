@@ -51,9 +51,9 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 <body>
     <h4> Now or Never please work!!!!!! </h4>
 
-       <form id="preview-form" method="post" class="codemirror-textarea" name="preview-form-comm" action="<?php echo $_SERVER['PHP_SELF']; ?> ">
+    <form id="preview-form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?> ">
 
-     <textarea class="codemirror-textarea" name="preview-form-comment" id="preview-form-comment" rows="20" cols="140">
+     <textarea class="codemirror-textarea" name="preview-form-comment" id="preview-form-comment" rows="" cols="">
               <?php echo $comment; ?>
               </textarea>
 
