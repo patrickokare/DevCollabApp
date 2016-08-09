@@ -123,8 +123,8 @@ function save_file($tmp_name, $name, $location)
 <div id="imagepreview"><img id="previewing" src="noimagepng" />
 </div>
     <div id="selectImage">
-        <input type="file" name="file" id="file"/><br>
-    <input type="submit" name="submit" value="upload" class="submit"/>
+        <input type="file" name="file" id="file"/><br> <br>
+        <input type="submit" name="submit" value="upload" class="submit"/>
     </div>
 </form>
 <div id="message">
