@@ -127,7 +127,7 @@ if(!isset($_SESSION['login_user'])){
 
                   <label>
 
-                <textarea rows="20" cols="89">
+                <textarea rows="10" cols="89">
                 <?php echo $comment; ?>
                 </textarea>
 
