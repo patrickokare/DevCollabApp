@@ -139,7 +139,7 @@ function save_file($tmp_name, $name, $location)
             $("#message").empty();
 
             $.ajax({
-                url: "fileUpload2.php",
+                url: "ajax.php",
                 type: "POST",
                 data: new FormData(this),
                 contentType: false,
