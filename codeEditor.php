@@ -29,7 +29,7 @@
     </style>
 </head>
 <body>
-<h4> Code Mirror Implementation- test 11 </h4>
+<h4> Code Mirror Implementation- test 10 </h4>
 
        <form id="preview-form-comment" method="post" class="codemirror-textarea" name="preview-form-comment" action="<?php echo $_SERVER['PHP_SELF']; ?> ">
 
