@@ -14,6 +14,11 @@
     <script src="hint/css-hint.js"></script>
     <link rel="stylesheet" href="hint/show-hint.css">
 
+
+    <script type="text/javascript" src="codemirror/js/jquery.min.js.js"></script>
+    <script type="text/javascript" src="codemirror/plugin/codemirror/lib/codemirror.js"></script>
+    <script type="text/javascript" src ="codemirror/js/default.js"></script>
+
     <style>
         body{
             background-color: greenyellow;
@@ -25,7 +30,14 @@
 </head>
 <body>
 <h4> Code Mirror Implementation- test 13 </h4>
-<form id="codeeditor" method="post">
+<form id="codeeditor" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?> ">
+
+             <label>
+            <textarea class="codemirror-textarea" name="preview-form-comment" id="preview-form-comment" rows="20" cols="140">
+
+
+
+             </textarea>
 
 
 
