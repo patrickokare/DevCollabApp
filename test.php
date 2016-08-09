@@ -25,7 +25,12 @@
 
     <script>
 
-        var editor = CodeMirror(document.getElementById("codeeditor"));
+        var editor = CodeMirror(document.getElementById("codeeditor"),{
+            value:"",
+            mode: "php",
+            theme:""
+
+        });
 
     </script>
 
