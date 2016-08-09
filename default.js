@@ -5,13 +5,11 @@ $(document).ready(function(){
         lineNumbers : true
     });
 
-    $("#preview-form").submit(function(e){
+    $("#preview-form-comment").submit(function(e){
         var value = editor.getValue();
         if(value.length== 0){
             alert("missing comment!");
         }
     });
 });
-
-//you can change #preview-form-comment to preview-form
 
