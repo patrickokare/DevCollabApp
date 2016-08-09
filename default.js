@@ -7,7 +7,7 @@ $(document).ready(function(){
     var editor = CodeMirror.fromTextArea(code,{
         mode: "javascript",
         theme: "night",
-        tabSize: 10,
+        tabSize: 20,
         lineNumbers: true,
         firstLineNumber:1,
         extraKeys:{"Ctrl": "autocomplete"}
