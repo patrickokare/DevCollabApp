@@ -31,10 +31,10 @@
 <body>
 <h4> Code Mirror Implementation- test 12 </h4>
 
-       <form id="codeeditor" method="post" class="codemirror-textarea" action="<?php echo $_SERVER['PHP_SELF']; ?> ">
+       <form id="preview-form-comment" method="post" class="codemirror-textarea" name="preview-form-comment" action="<?php echo $_SERVER['PHP_SELF']; ?> ">
 
 
-         <br>
+
          <input type="submit" name = "preview-form-submit" id="preview-form-submit" value="Submit">
 
         </form>
@@ -44,7 +44,7 @@
 
 <script>
 
-    var editor = CodeMirror(document.getElementById("codeeditor"),{
+    var editor = CodeMirror(document.getElementById("preview-form-comment"),{
 
         mode: "javascript",
         theme: "night",
