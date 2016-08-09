@@ -105,7 +105,6 @@ if(!isset($_SESSION['login_user'])){
 
 
 
-            <?php include ("codeEditor.php")?>
 
     </div>
 </div>
