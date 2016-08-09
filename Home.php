@@ -180,7 +180,7 @@ if(!isset($_SESSION['login_user'])){
         //    include("fileUpload2.php");
          //   include ("upload.php");
                ?>
-              <hr>
+
 
 
 
@@ -196,7 +196,7 @@ if(!isset($_SESSION['login_user'])){
 
                     ?>
 
-                    <hr>
+
 
 
 
