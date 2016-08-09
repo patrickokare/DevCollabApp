@@ -99,6 +99,7 @@ if(!isset($_SESSION['login_user'])){
 
     <div class="col-sm-8 col-sm-8">
         <div class="panel panel-default">
+
             <div class="panel-heading">
                 <h3>  Code Editor  </h3>
             </div>
