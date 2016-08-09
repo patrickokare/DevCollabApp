@@ -149,7 +149,7 @@ if(!isset($_SESSION['login_user'])){
 
             <!-- This codes below are for the video Conferencing, file Upload and messenging box -->
             <div class="panel-heading">
-                <h3>  Video Conference  </h3>
+                <h3>  VIDEO CONFERENCE  </h3>
             </div>
              <div>
             <!--
@@ -173,15 +173,15 @@ if(!isset($_SESSION['login_user'])){
             <h3> Upload Your Files Here </h3>
                 </div>
 
-
             <?php
-
-            include("fileUpload.php");
+            include("fileUpload2.php");
             include ("upload.php");
             ?>
+           <hr>
 
 
-<hr>
+
+
 
                 <div class="panel panel-default">
                     <div class="panel-heading">

@@ -94,6 +94,7 @@ function save_file($tmp_name, $name, $location)
         padding: 10px;
         margin-top: 10px;
         margin-left: 10px;
+        color: darkred;
     }
     #file{
         color: darkred;
@@ -105,10 +106,6 @@ function save_file($tmp_name, $name, $location)
     #message{
        / top:50px;
        / left: 40px;
-    }
-
-    .submit[input=submit]{
-        color: darkred;
     }
 
 
