@@ -96,10 +96,10 @@ function save_file($tmp_name, $name, $location)
         margin-left: 10px;
     }
     #file{
-      /  color: darkred;
+        color: darkred;
       /  padding:100px;
         margin-left: 10px;
-       / width: 26%;
+        width: 20%;
     }
 
     #message{
