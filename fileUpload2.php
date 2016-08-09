@@ -90,9 +90,9 @@ function save_file($tmp_name, $name, $location)
     <title>File Upload without Refresh </title>
 <style>
     .submit{
-       font-size: 16px;
-        padding: 10px;
-        margin-top: 8px;
+        font-size: 15px;
+        padding: 8px;
+        margin-top: 4px;
         margin-left: 5px;
         color: darkred;
     }
