@@ -55,6 +55,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
     <br>
     <br>
 
+
     <label>
 
                <textarea rows="20" cols="20">
