@@ -20,12 +20,25 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
     <script type="text/javascript" src="codemirror/js/jquery.min.js.js"></script>
     <script type="text/javascript" src="codemirror/plugin/codemirror/lib/codemirror.js"></script>
     <script type="text/javascript" src ="codemirror/js/default.js"></script>
-
+<link rel="stylesheet" href="codemirror/plugin/codemirror/theme/neo.css">
 
 </head>
-<body>
+<body bgcolor="#008b8b">
 <h3>Code Mirror Implementation.....Test 13 </h3>
 <div style="align-content: center">
+
+    <script>
+        var editor = codeMirror(document.getElementById("codeeditor"),{
+            value:"",
+            mode: "javascript",
+            theme:"neo"
+
+        });
+
+
+    </script>
+
+
 <form id="preview-form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?> ">
     <label>
            <textarea class="codemirror-textarea" name="preview-form-comment" id="preview-form-comment" rows="20" cols="140">
@@ -36,6 +49,10 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
     <input type="submit" name = "preview-form-submit" id="preview-form-submit" value="Submit">
 
 </form>
+
+
+
+
 
 <label>
                <textarea rows="20" cols="140">
