@@ -23,7 +23,7 @@ span{
     }
 
     body{
-        background-image: url("vlcsnap-2013-11-18-16h58m11s176.png");
+        background-image: url("Auckland_City_Street_Life_by_MisterDedication.jpg");
         background-repeat: no-repeat;
         max-width: 960px; !important;
         margin-left: auto;!important;
