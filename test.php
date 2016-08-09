@@ -8,7 +8,7 @@
     <script src="lib/codemirror.js"> </script>
     <link rel="stylesheet" href="lib/codemirror.css">
     <script src="mode/javascript/javascript.js"></script>
-    <link rel="stylesheet" href="theme/solarized.css.css">
+    <link rel="stylesheet" href="theme/solarized.css">
 
 <link rel="stylesheet" href="codemirror/plugin/codemirror/theme/night.css">
 <style>
