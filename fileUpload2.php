@@ -100,7 +100,7 @@ function save_file($tmp_name, $name, $location)
         color: darkred;
       /  padding:100px;
          margin-left: 5px;
-         width: 15%;
+         width: 8%;
     }
 
     #message{
