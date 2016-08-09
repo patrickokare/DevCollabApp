@@ -98,7 +98,7 @@ function save_file($tmp_name, $name, $location)
     #file{
       /  color: darkred;
       /  padding:100px;
-       / margin-left: -9px;
+        margin-left: 10px;
        / width: 26%;
     }
 
@@ -117,14 +117,14 @@ function save_file($tmp_name, $name, $location)
 
 
 <body>
-<h2>File Upload test 03 </h2>
+<h2>File Upload test 02 </h2>
 <form action="" id="uploadimage" method="POST" enctype="multipart/form-data">
 
-<div id="imagepreview"><img id="previewing" src="noimagepng" />
-</div>
-    <div id="selectImage">
-        <input type="file" name="file" id="file"/><br> <br>
-        <input type="submit" name="submit" value="upload" class="submit"/>
+            <div id="imagepreview"><img id="previewing" src="noimagepng" />
+            </div>
+                 <div id="selectImage">
+                 <input type="file" name="file" id="file"/><br> <br>
+                 <input type="submit" name="submit" value="upload" class="submit"/>
     </div>
 </form>
 <div id="message">
