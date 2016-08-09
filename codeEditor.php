@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name ="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Page </title>
+
     <script src="lib/codemirror.js"> </script>
     <link rel="stylesheet" href="lib/codemirror.css">
     <script src="mode/javascript/javascript.js"></script>
@@ -24,7 +25,11 @@
 </head>
 <body>
 <h4> Code Mirror Implementation- test 13 </h4>
-<form id="codeeditor" style="width: 60%"></form>
+<form id="preview-form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?> ">
+
+
+
+</form>
 
 
 
