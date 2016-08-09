@@ -139,9 +139,9 @@ if(!isset($_SESSION['login_user'])){
 
 
              -->
-  <?php
-    include('hangout2.php');
-    ?>
+              <?php
+              include('hangout2.php');
+               ?>
 
 
 

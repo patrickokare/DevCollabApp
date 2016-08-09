@@ -1,3 +1,12 @@
+<?php
+
+$comment = null;
+// when the form is submitted this code below will run
+if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'])){
+    $comment = $_POST['preview-form-comment'];
+
+}
+?>
 
 <!DOCTYPE html>
 <html>
@@ -29,7 +38,7 @@
     </style>
 </head>
 <body>
-<h4> Code Mirror Implementation- test 10 </h4>
+<h4> Code Mirror Implementation- test 09 </h4>
 
        <form id="preview-form-comment" method="post" class="codemirror-textarea" name="preview-form-comment" action="<?php echo $_SERVER['PHP_SELF']; ?> ">
 
