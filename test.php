@@ -29,7 +29,6 @@
 
             mode: "php"
 
-
         });
 
     </script>
