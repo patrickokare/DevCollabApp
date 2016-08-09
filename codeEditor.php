@@ -1,12 +1,12 @@
-
 <?php
 
 $comment = null;
 // when the form is submitted this code below will run
-if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comm'])){
-    $comment = $_POST['preview-form-comm'];
+if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'])){
+    $comment = $_POST['preview-form-comment'];
 
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -53,9 +53,9 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comm']))
 
        <form id="preview-form" method="post" class="codemirror-textarea" name="preview-form-comm" action="<?php echo $_SERVER['PHP_SELF']; ?> ">
 
-<textarea>
-    <?php echo $comment; ?>
-</textarea>
+     <textarea class="codemirror-textarea" name="preview-form-comment" id="preview-form-comment" rows="20" cols="140">
+              <?php echo $comment; ?>
+              </textarea>
 
 
          <input type="submit" name = "preview-form-submit" id="preview-form-submit" value="Submit">
