@@ -72,8 +72,9 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                 </textarea>
 
     </label>
-
-
+</body>
+</html>
+<!--
 <script>
 
     var editor = CodeMirror(document.getElementById("preview-form-comment"),{
@@ -89,6 +90,5 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 </script>
 
 
-</body>
-</html>
+
 
