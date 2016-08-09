@@ -99,14 +99,13 @@ if(!isset($_SESSION['login_user'])){
           <div class="col-md-8 col-md-8">
               <div class="panel panel-default">
 
-                  <div style="width: 50%">
+
                       <form id="preview-form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?> ">
                <textarea class="codemirror-textarea" name="preview-form-comment" id="preview-form-comment" rows="20" cols="20">
                <?php echo $comment; ?>
                </textarea>
                           <input type="submit" name = "preview-form-submit" id="preview-form-submit" value="Submit">
                       </form>
-                  </div>
 
                   <br>
                   <br>
