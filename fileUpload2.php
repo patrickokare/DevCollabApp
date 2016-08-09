@@ -91,9 +91,9 @@ function save_file($tmp_name, $name, $location)
 <style>
     .submit{
        font-size: 16px;
-      /  padding: 10px;
-      /  margin-top: 10px;
-      /  margin-left: 10px;
+        padding: 10px;
+        margin-top: 10px;
+        margin-left: 10px;
     }
     #file{
       /  color: darkred;
