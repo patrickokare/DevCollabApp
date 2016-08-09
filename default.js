@@ -5,7 +5,12 @@ $(document).ready(function(){
 
 
     var editor = CodeMirror.fromTextArea(code,{
-        lineNumbers : true
+        mode: "javascript",
+        theme: "night",
+        tabSize: 20,
+        lineNumbers: true,
+        firstLineNumber:1,
+        extraKeys:{"Ctrl": "autocomplete"}
     });
 
     $("#preview-form").submit(function(e){
