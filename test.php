@@ -7,7 +7,7 @@
     <title>Test Page </title>
     <script src="lib/codemirror.js"> </script>
     <link rel="stylesheet" href="lib/codemirror.css">
-    <script src="mode/javascript/javascript.js"></script>
+    <script src="mode/php/php.js"></script>
 
 <link rel="stylesheet" href="codemirror/plugin/codemirror/theme/night.css">
 <style>
