@@ -288,7 +288,7 @@ if(!isset($_SESSION['login_user'])){
 <!--
 <script type="application/javascript">
     var webrtc = new SimpleWebRTC({
-        // the id/element dom element that will hold "our" video
+        // the id/element dom element that will hold "our" Video
         localVideoEl: 'localVideo',
         // the id/element dom element that will hold remote videos
         remoteVideosEl: 'remotesVideos',
