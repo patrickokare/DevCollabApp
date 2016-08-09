@@ -102,7 +102,7 @@ if(!isset($_SESSION['login_user'])){
 
         <p style="color: darkred"> Welcome, <?php echo $_SESSION['login_user']; ?> </p>
 
-        <h2 class="text-center lead"> <strong> DevCollab, Optimized for Collaboration......</strong> </h2>
+         <h2 class="text-center lead">  DevCollab, Optimized for Collaboration...... </h2>
 
     </div>
 
