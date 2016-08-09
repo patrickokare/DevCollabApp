@@ -39,7 +39,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
     </style>
 </head>
 <body>
-    <h4> Now or Never </h4>
+    <h4> Now or Never 01 </h4>
 
        <form id="preview-form-comment" method="post" class="codemirror-textarea" name="preview-form-comment" action="<?php echo $_SERVER['PHP_SELF']; ?> ">
 
@@ -51,7 +51,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
 
 <label>
-               <textarea rows="20" cols="140">
+               <textarea rows="20" cols="120">
                <?php echo $comment; ?>
                 </textarea>
 </label>
