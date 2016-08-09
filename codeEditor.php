@@ -66,7 +66,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
     </label>
 </body>
 </html>
-
+<!--
 <script>
 $(".save-file").click(function (){
 editor.save();
@@ -91,7 +91,7 @@ alert("File not saved!");
 });
 
 </script>
-
+-->
 <!--
 <script>
 
