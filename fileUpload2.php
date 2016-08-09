@@ -1,6 +1,6 @@
 <?php
 
-
+/**
 $max_size = 12400000000;
 $location = 'uploads/'; //where the file is going
 if (isset($_POST['submit'])) { //checking for anythiing will break the code
@@ -76,7 +76,7 @@ function save_file($tmp_name, $name, $location)
     }
 
 }
-
+**/
 ?>
 
 
@@ -127,6 +127,7 @@ function save_file($tmp_name, $name, $location)
                  <input type="submit" name="submit" value="upload" class="submit"/>
     </div>
 </form>
+
 <div id="message">
 </div>
 <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
