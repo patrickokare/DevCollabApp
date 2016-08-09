@@ -100,9 +100,10 @@ if(!isset($_SESSION['login_user'])){
 
     <div class="container">
 
-        <p style="color: darkred"> Welcome, <?php echo $_SESSION['login_user']; ?> </p>
 
-         <h2 class="text-center lead">  DevCollab, Optimized for Collaboration...... </h2>
+        <p style="color: darkred"> Welcome, <?php echo $_SESSION['login_user']; ?> </p>
+        <h1 class="display-3">Hello, world!</h1>
+         <h1 class="text-center lead">  DevCollab, Optimized for Collaboration...... </h1>
 
     </div>
 
