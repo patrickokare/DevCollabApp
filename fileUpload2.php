@@ -120,19 +120,57 @@ function save_file($tmp_name, $name, $location)
 
 <form action="fileUpload2.php" id="uploadimage" method="POST" enctype="multipart/form-data">
 
-<div id="imagepreview"><img id="previewing" src="" />
+<div id="imagepreview"><img id="previewing" src="noimagepng" />
 </div>
     <div id="selectImage">
-        <input type="file" name="file" id="file"/>
+        <input type="file" name="file" id="file"/><br>
     <input type="submit" name="submit" value="upload" class="submit"/>
     </div>
 </form>
 <div id="message">
 </div>
-
+<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
 <script>
 
+    $(document).ready(function (e){
 
+        $("#uploadimage").on('submit' ,(function(e) {
+            e.preventDefault();
+            $("#message").empty();
+
+            $.ajax({
+                url: "ajax.php",
+                type: "POST",
+                data: new FormData(this),
+                contentType: false,
+                cache: false,
+                processData: false,
+                success: function(data){
+
+                    $('#loading').hide();
+                    $("#message").html(data);
+                }
+            });
+
+        }));
+        $(function()
+                     {
+            $("#file").change(function(){
+
+                {
+                    var reader = new FileReader();
+                    reader.onload = imageIsLoaded;
+                    reader.readAsDataURL(this.files[0]);
+                }
+            });
+        });
+        function imageIsLoaded(e){
+
+            $('#previewing').attr('src', e.target.result);
+            $('#previewing').attr('width', '250px');
+            $('#previewing').attr('height', '230px');
+        };
+    });
 
 
 </script>
