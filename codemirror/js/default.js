@@ -13,3 +13,5 @@ $(document).ready(function(){
     });
 });
 
+//you can change #preview-form-comment to preview-form
+

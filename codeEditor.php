@@ -15,9 +15,15 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
     <meta name ="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Page </title>
 
-
     <script src="lib/codemirror.js"> </script>
     <link rel="stylesheet" href="lib/codemirror.css">
+
+    <script type="text/javascript" src="codemirror/js/jquery.min.js.js"></script>
+    <script type="text/javascript" src="codemirror/plugin/codemirror/lib/codemirror.js"></script>
+    <script type="text/javascript" src ="codemirror/js/default.js"></script>
+
+
+
     <script src="mode/javascript/javascript.js"></script>
     <link rel="stylesheet" href="theme/night.css">
     <script src="hint/show-hint.js"></script>
@@ -25,9 +31,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
     <link rel="stylesheet" href="hint/show-hint.css">
 
 
-    <script type="text/javascript" src="codemirror/js/jquery.min.js.js"></script>
-    <script type="text/javascript" src="codemirror/plugin/codemirror/lib/codemirror.js"></script>
-    <script type="text/javascript" src ="codemirror/js/default.js"></script>
 
     <style>
         body{
@@ -50,11 +53,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
         </form>
 
 
-<label>
-               <textarea rows="20" cols="120">
-               <?php echo $comment; ?>
-                </textarea>
-</label>
+
 
 
 <script>
