@@ -17,6 +17,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
     <title>Test Page </title>
     <script src ="js/jquery.js"> </script>
     <link href="style.css" rel="stylesheet" type="text/css">
+
     <link rel="stylesheet" href="lib/codemirror.css">
     <script src="lib/codemirror.js"> </script>
 
