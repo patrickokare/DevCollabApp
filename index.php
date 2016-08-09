@@ -23,10 +23,12 @@ span{
     }
 
     body{
+        background-image: url("vlcsnap-2013-11-18-16h58m11s176.png");
+        background-repeat: no-repeat;
         max-width: 960px; !important;
         margin-left: auto;!important;
         margin-right: auto;!important;
-        background-color: mintcream;
+     /   background-color: transparent;
     }
 
 </style>
