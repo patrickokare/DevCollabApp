@@ -90,21 +90,21 @@ function save_file($tmp_name, $name, $location)
     <title>File Upload Test</title>
 <style>
     .submit{
-       font-size: 16px;
-        padding: 10px;
-        margin-top: 10px;
-        margin-left: 10px;
+     /  font-size: 16px;
+      /  padding: 10px;
+      /  margin-top: 10px;
+      /  margin-left: 10px;
     }
     #file{
-        color: darkred;
-        padding:100px;
-        margin-left: -9px;
-        width: 26%;
+      /  color: darkred;
+      /  padding:100px;
+       / margin-left: -9px;
+       / width: 26%;
     }
 
     #message{
-        top:50px;
-        left: 40px;
+       / top:50px;
+       / left: 40px;
     }
 
 </style>
