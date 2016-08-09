@@ -20,7 +20,15 @@ if(!isset($_SESSION['login_user'])){
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="codemirror/js/jquery.min.js.js"></script>
     <script type="text/javascript" src="codemirror/plugin/codemirror/lib/codemirror.js"></script>
-    <script type="text/javascript" src ="codemirror/js/default.js"></script>
+    <script type="text/javascript" src ="default.js"></script>
+
+
+    <script src="mode/javascript/javascript.js"></script>
+
+    <script src="hint/show-hint.js"></script>
+    <script src="hint/css-hint.js"></script>
+    <link rel="stylesheet" href="theme/night.css">
+    <link rel="stylesheet" href="hint/show-hint.css">
     <style>
 
        div #remotesVideos{
