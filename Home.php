@@ -103,6 +103,8 @@ if(!isset($_SESSION['login_user'])){
                 <h3>  Code Editor  </h3>
             </div>
 
+
+
             <?php include ("codeEditor.php")?>
 
     </div>
