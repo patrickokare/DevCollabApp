@@ -23,7 +23,7 @@
 </style>
 </head>
 <body>
-<div id="codeeditor"></div>
+<div id="codeeditor" style="width: 60%"></div>
 
 
     <script>
