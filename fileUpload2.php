@@ -98,7 +98,7 @@ function save_file($tmp_name, $name, $location)
     }
     #file{
         color: darkred;
-      /  padding:100px;
+        padding:100px;
          margin-left: 5px;
          width: 70%;
     }
