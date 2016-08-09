@@ -8,7 +8,7 @@
     <script src="lib/codemirror.js"> </script>
     <link rel="stylesheet" href="lib/codemirror.css">
     <script src="mode/javascript/javascript.js"></script>
-    <link rel="stylesheet" href="theme/solarized.css">
+    <link rel="stylesheet" href="theme/paraiso-dark.css">
 
 <link rel="stylesheet" href="codemirror/plugin/codemirror/theme/night.css">
 <style>
@@ -29,7 +29,7 @@
         var editor = CodeMirror(document.getElementById("codeeditor"),{
 
             mode: "javascript",
-            theme: "solarized"
+            theme: "paraiso-dark"
 
         });
 
