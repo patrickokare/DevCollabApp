@@ -3,8 +3,8 @@
 
 $comment = null;
 // when the form is submitted this code below will run
-if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'])){
-    $comment = $_POST['preview-form-comment'];
+if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comm'])){
+    $comment = $_POST['preview-form-comm'];
 
 }
 ?>
@@ -51,7 +51,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 <body>
     <h4> Now or Never please work!!!!!! </h4>
 
-       <form id="preview-form-comment" method="post" class="codemirror-textarea" name="preview-form-comment" action="<?php echo $_SERVER['PHP_SELF']; ?> ">
+       <form id="preview-form" method="post" class="codemirror-textarea" name="preview-form-comm" action="<?php echo $_SERVER['PHP_SELF']; ?> ">
 
            <?php echo $comment; ?>
 
@@ -73,7 +73,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
 <script>
 
-    var editor = CodeMirror(document.getElementById("preview-form-comment"),{
+    var editor = CodeMirror(document.getElementById("preview-form"),{
 
         mode: "javascript",
         theme: "night",
