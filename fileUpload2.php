@@ -88,6 +88,27 @@ function save_file($tmp_name, $name, $location)
     <meta charset="UTF-8">
     <meta name ="viewport" content="width=device-width, initial-scale=1.0">
     <title>File Upload Test</title>
+<style>
+    .submit{
+       font-size: 16px;
+        padding: 10px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    #file{
+        color: darkred;
+        padding:100px;
+        margin-left: -9px;
+        width: 26%;
+    }
+
+    #message{
+        top:50px;
+        left: 40px;
+    }
+
+</style>
+
 
 
 
