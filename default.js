@@ -7,10 +7,10 @@ $(document).ready(function(){
     var editor = CodeMirror.fromTextArea(code,{
         mode: "javascript",
         theme: "night",
-        tabSize: 40,
+        tabSize: 10,
         lineNumbers: true,
         firstLineNumber:1,
-        extraKeys:{"Ctrl": "autocomplete"}
+        extraKeys:{"Ctrl-Space": "autocomplete"}
     });
 
     $("#preview-form").submit(function(e){
