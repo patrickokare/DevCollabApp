@@ -93,14 +93,14 @@ function save_file($tmp_name, $name, $location)
        font-size: 16px;
         padding: 10px;
         margin-top: 10px;
-        margin-left: 10px;
+        margin-left: 5px;
         color: darkred;
     }
     #file{
         color: darkred;
       /  padding:100px;
-         margin-left: 10px;
-         width: 20%;
+         margin-left: 5px;
+         width: 15%;
     }
 
     #message{
