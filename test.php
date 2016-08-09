@@ -10,14 +10,21 @@
     <script src="codemirror/plugin/codemirror/mode/javascript/javascript.js"></script>
 
 <link rel="stylesheet" href="codemirror/plugin/codemirror/theme/night.css">
+<style>
+    body{
+        background-color: #eee;
+    }
 
+
+
+</style>
 </head>
-<body bgcolor="#008b8b">
+<body>
 <div id="codeeditor"></div>
 
 
     <script>
-        var editor = codeMirror(document.getElementById("codeeditor"));
+        var editor = CodeMirror(document.getElementById("codeeditor"));
 
 
 
