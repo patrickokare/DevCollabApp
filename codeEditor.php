@@ -29,15 +29,15 @@
     </style>
 </head>
 <body>
-<h4> Code Mirror Implementation- test 13 </h4>
+<h4> Code Mirror Implementation- test 12 </h4>
 
-     <form id="codeeditor" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?> ">
+       <form id="codeeditor" method="post" class="codemirror-textarea" action="<?php echo $_SERVER['PHP_SELF']; ?> ">
 
 
+         <br>
+         <input type="submit" name = "preview-form-submit" id="preview-form-submit" value="Submit">
 
-      <input type="submit" name = "preview-form-submit" id="preview-form-submit" value="Submit">
-
-      </form>
+        </form>
 
 
 
