@@ -8,9 +8,9 @@
     <script src="lib/codemirror.js"> </script>
     <link rel="stylesheet" href="lib/codemirror.css">
     <script src="mode/javascript/javascript.js"></script>
-    <link rel="stylesheet" href="theme/3024-night.css">
+    <link rel="stylesheet" href="theme/night.css">
 
-<link rel="stylesheet" href="codemirror/plugin/codemirror/theme/night.css">
+
 <style>
     body{
         background-color: #eee;
@@ -29,8 +29,9 @@
         var editor = CodeMirror(document.getElementById("codeeditor"),{
 
             mode: "javascript",
-            theme: "3024-night"
-            tabSize: 20
+            theme: "night",
+            tabSize: 20,
+            lineNumbers: true
         });
 
     </script>
