@@ -34,7 +34,7 @@
             theme: "night",
             tabSize: 20,
             lineNumbers: true,
-            firstLineNumber:50,
+            firstLineNumber:1,
             extraKeys:{"Ctrl-Space": "autocomplete"}
         });
 
