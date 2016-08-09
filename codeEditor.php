@@ -30,13 +30,14 @@
 </head>
 <body>
 <h4> Code Mirror Implementation- test 13 </h4>
-<form id="codeeditor" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?> ">
+
+     <form id="codeeditor" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?> ">
 
 
 
+      <input type="submit" name = "preview-form-submit" id="preview-form-submit" value="Submit">
 
-
-</form>
+      </form>
 
 
 

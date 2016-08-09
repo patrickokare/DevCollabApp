@@ -102,9 +102,9 @@ if(!isset($_SESSION['login_user'])){
 
             <form id="preview-form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?> ">
            <label>
-            <textarea class="codemirror-textarea" name="preview-form-comment" id="preview-form-comment" rows="20" cols="140">
+             <textarea class="codemirror-textarea" name="preview-form-comment" id="preview-form-comment" rows="20" cols="140">
               <?php echo $comment; ?>
-             </textarea>
+              </textarea>
                 </label>
                  <br>
                 <input type="submit" name = "preview-form-submit" id="preview-form-submit" value="Submit">
