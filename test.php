@@ -30,7 +30,7 @@
 
             mode: "javascript",
             theme: "3024-night"
-
+            tabSize: 20
         });
 
     </script>
