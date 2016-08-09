@@ -97,12 +97,10 @@ if(!isset($_SESSION['login_user'])){
 <div class="container">
       <div class="row">
 
-    <div class="col-sm-8 col-sm-8">
-        <div class="panel panel-default">
+          <div class="col-md-8 col-md-8">
+              <div class="panel panel-default">
 
-            <div class="panel-heading">
-                <h3>  Code Editor  </h3>
-            </div>
+
 
 
 
@@ -112,7 +110,7 @@ if(!isset($_SESSION['login_user'])){
 
 
 
-</div>
+
 
 
     <div class="col-sm-4 col-sm-4">
