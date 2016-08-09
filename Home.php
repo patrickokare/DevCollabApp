@@ -99,9 +99,7 @@ if(!isset($_SESSION['login_user'])){
 
     <div class="col-sm-8 col-sm-8">
         <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3>  Code Editor  </h3>
-            </div>
+
             <form id="preview-form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?> ">
              <label>
 
@@ -123,7 +121,7 @@ if(!isset($_SESSION['login_user'])){
                <?php echo $comment; ?>
                 </textarea>
                 </label>
-                </div>
+
     </div>
 </div>
 
