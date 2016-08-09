@@ -42,7 +42,7 @@ function checkSize($size, $max_size){
     if($size <= $max_size){
         return true;
     } else{
-        echo 'File is too large. Max size in 12MB.';
+        echo 'Your file is too large, dont Crash the Application.  Max size in 12MB.';
         return false;
     }
 }
