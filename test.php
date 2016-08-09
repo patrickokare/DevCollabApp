@@ -20,7 +20,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
     <script type="text/javascript" src="codemirror/js/jquery.min.js.js"></script>
     <script type="text/javascript" src="codemirror/plugin/codemirror/lib/codemirror.js"></script>
     <script type="text/javascript" src ="codemirror/js/default.js"></script>
-<link rel="stylesheet" href="codemirror/plugin/codemirror/theme/neo.css">
+<link rel="stylesheet" href="codemirror/plugin/codemirror/theme/night.css">
 
 </head>
 <body bgcolor="#008b8b">
@@ -31,7 +31,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
         var editor = codeMirror(document.getElementById("codeeditor"),{
             value:"",
             mode: "javascript",
-            theme:"neo"
+            theme:"night"
 
         });
 
