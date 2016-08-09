@@ -103,15 +103,7 @@ if(!isset($_SESSION['login_user'])){
                 <h3>  Code Editor  </h3>
             </div>
 
-            <h2>HEllo helogrdshhhhssssssssssssssss</h2>
-            <h2>HEllo helogrdshhhhhhhhhhhsssssssss</h2>
-            <h2>HEllo helogrdshhhhhhhhhhhssssssssssssssssssssss</h2>
-            <h2>HEllo helogrdshhhhhhhhh</h2>
-            <h2>HEllo helogrdshhhhhhhhhssssssssssssssssssss</h2>
-            <h2>HEllo helogrdshhhhhhhhhhsssssssssssssssssssssss</h2>
-            <h2>HEllo helogrdshhhhhhhhhhhsssssssssssssssssssssss</h2>
-            <h2>HEllo helogrdshhhhhhhhhhhssssssssssss</h2>
-            <h2>HEllo helogrdshhhhhhhhssssssssssssss</h2>
+            <?php include ("codeEditor.php")?>
 
     </div>
 </div>
