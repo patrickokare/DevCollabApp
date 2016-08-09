@@ -39,20 +39,13 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
 
 
-    <style>
-        body{
-           background-color: greenyellow;
-        }
 
-
-
-    </style>
 </head>
 <body>
-    <h4> Code Editor </h4>
+
 
                <form id="preview-form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?> ">
-               <textarea class="codemirror-textarea" name="preview-form-comment" id="preview-form-comment" rows="20" cols="50">
+               <textarea class="codemirror-textarea" name="preview-form-comment" id="preview-form-comment" rows="20" cols="">
                <?php echo $comment; ?>
                </textarea>
                <input type="submit" name = "preview-form-submit" id="preview-form-submit" value="Submit">
@@ -64,7 +57,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
     <label>
 
-               <textarea rows="20" cols="80">
+               <textarea rows="20" cols="">
                 <?php echo $comment; ?>
                 </textarea>
 
