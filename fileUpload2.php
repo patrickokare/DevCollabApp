@@ -117,13 +117,13 @@ function save_file($tmp_name, $name, $location)
 
 
 <body>
-
+<h2>File Upload test </h2>
 <form action="fileUpload2.php" id="uploadimage" method="POST" enctype="multipart/form-data">
 
 <div id="imagepreview"><img id="previewing" src="noimagepng" />
 </div>
     <div id="selectImage">
-        <input type="file" name="file" id="file"/><br>
+        <input type="file" name="file" id="file"/><br><br>
     <input type="submit" name="submit" value="upload" class="submit"/>
     </div>
 </form>
