@@ -105,8 +105,8 @@ function save_file($tmp_name, $name, $location)
     }
 
     #message{
-       / top:50px;
-       / left: 40px;
+        top:50px;
+        left: 40px;
     }
 
 
