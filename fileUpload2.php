@@ -118,14 +118,23 @@ function save_file($tmp_name, $name, $location)
 
 <body>
 
-<form action="fileUpload2.php" method="POST" enctype="multipart/form-data">
-    <input type="file" name="file"/>
+<form action="fileUpload2.php" id="uploadimage" method="POST" enctype="multipart/form-data">
 
-    <input type="submit" name="submit" value="Submit"/>
-
+<div id="imagepreview"><img id="previewing" src="" />
+</div>
+    <div id="selectImage">
+        <input type="file" name="file" id="file"/>
+    <input type="submit" name="submit" value="upload" class="submit"/>
+    </div>
 </form>
+<div id="message">
+</div>
+
+<script>
 
 
 
 
+</script>
 </body>
+</html>
