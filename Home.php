@@ -115,29 +115,34 @@ if(!isset($_SESSION['login_user'])){
                   <div class="panel-heading">
                       <h3> CODE EDITOR  </h3>
                   </div>
-                      <form id="preview-form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?> ">
-               <textarea class="codemirror-textarea" name="preview-form-comment" id="preview-form-comment" rows="20" cols="20">
-               <?php echo $comment; ?>
-               </textarea>
+                  <form id="preview-form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?> ">
+
+                  <textarea class="codemirror-textarea" name="preview-form-comment" id="preview-form-comment" rows="20" cols="20">
+
+                 <?php echo $comment; ?>
+
+                 </textarea>
+
                           <input type="submit" name = "preview-form-submit" id="preview-form-submit" value="Submit">
-                      </form>
+
+                  </form>
 
                   <br>
                   <br>
                   <br>
 
-
-                  <label>
 
                 <textarea rows="10" cols="89">
-                <?php echo $comment; ?>
-                </textarea>
 
-                  </label>
+                   <?php echo $comment; ?>
 
 
-    </div>
-</div>
+                 </textarea>
+
+
+
+                 </div>
+                 </div>
 
 
 
@@ -159,7 +164,7 @@ if(!isset($_SESSION['login_user'])){
 
              -->
               <?php
-              include('hangout2.php');
+           //   include('hangout2.php');
                ?>
 
 
@@ -170,14 +175,14 @@ if(!isset($_SESSION['login_user'])){
             <div class="panel-heading">
 
 
-            <h3> UPLOAD YOUR FILES HERE: </h3>
+            <h3> UPLOAD YOUR FILES </h3>
                 </div>
 
             <?php
-            include("fileUpload2.php");
-            include ("upload.php");
-            ?>
-           <hr>
+        //    include("fileUpload2.php");
+         //   include ("upload.php");
+               ?>
+              <hr>
 
 
 
@@ -185,7 +190,7 @@ if(!isset($_SESSION['login_user'])){
 
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                <h3> REAL-TIME MESSAGING  </h3>
+                  <h3> REAL-TIME MESSAGING  </h3>
                         </div>
 
                     <?php
@@ -203,6 +208,7 @@ if(!isset($_SESSION['login_user'])){
                         </div>
 
 <?php
+/**
 
                         require_once('geoplugin.class.php');
                         $geoplugin = new geoPlugin();
@@ -230,9 +236,10 @@ if(!isset($_SESSION['login_user'])){
                         }
 
 
-
+**/
                         ?>
-                        <a href="Geolocate.php">Click to get information about the Cities near you </a>
+
+                        <a href="#" style="color: darkred">CLICK TO GET INFORMATION ABOUT THE CITIES NEAR YOU </a>
 
 
     </div>
