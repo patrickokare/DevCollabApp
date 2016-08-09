@@ -92,7 +92,7 @@ if(!isset($_SESSION['login_user'])){
               <div class="panel panel-default">
 
 
-<?php include ("codeEditor.php");?>
+
 
 
 
