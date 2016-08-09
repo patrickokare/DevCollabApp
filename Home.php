@@ -100,7 +100,18 @@ if(!isset($_SESSION['login_user'])){
                       </form>
                   </div>
 
+                  <br>
+                  <br>
+                  <br>
 
+
+                  <label>
+
+               <textarea rows="20" cols="50">
+                <?php echo $comment; ?>
+                </textarea>
+
+                  </label>
 
 
     </div>
