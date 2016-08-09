@@ -87,7 +87,7 @@ function save_file($tmp_name, $name, $location)
 <head>
     <meta charset="UTF-8">
     <meta name ="viewport" content="width=device-width, initial-scale=1.0">
-    <title>File Upload Test</title>
+    <title>File Upload without Refresh </title>
 <style>
     .submit{
        font-size: 16px;
@@ -98,8 +98,8 @@ function save_file($tmp_name, $name, $location)
     #file{
         color: darkred;
       /  padding:100px;
-        margin-left: 10px;
-        width: 20%;
+         margin-left: 10px;
+         width: 20%;
     }
 
     #message{
