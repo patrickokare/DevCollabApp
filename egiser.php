@@ -43,7 +43,7 @@ if(loggedin()) {
                         if ($query_run = mysqli_query($db, $query)) {
                             header('Location: success.php?username=' . $username);
                         } else {
-                            echo 'Sorry, we Could not register you at this time. Try again Later.';
+                            echo 'Sorry, We Could not register you at this time. Try again Later.';
                         }
 
 
@@ -109,7 +109,7 @@ $username = $_POST['username'];
         </div>
         <div class ="panel-body">
 
-<form action ="register.php" method="POST">
+<form action ="egiser.php" method="POST">
 
     <label> UserName:<br> <br>
     <input type="text" maxlength="50" name="username" value="<?php if(isset($username)){ echo $username;} ?>">
