@@ -35,7 +35,7 @@
             tabSize: 20,
             lineNumbers: true,
             firstLineNumber:1,
-            extraKeys:{"Ctrl-Space": "autocomplete"}
+            extraKeys:{"Ctrl": "autocomplete"}
         });
 
     </script>
