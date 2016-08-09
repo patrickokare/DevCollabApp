@@ -113,7 +113,7 @@ if(!isset($_SESSION['login_user'])){
               <div class="panel panel-default">
 
                   <div class="panel-heading">
-                      <h3> Code Editor  </h3>
+                      <h3> CODE EDITOR  </h3>
                   </div>
                       <form id="preview-form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?> ">
                <textarea class="codemirror-textarea" name="preview-form-comment" id="preview-form-comment" rows="20" cols="20">
@@ -170,7 +170,7 @@ if(!isset($_SESSION['login_user'])){
             <div class="panel-heading">
 
 
-            <h3> Upload Your Files Here </h3>
+            <h3> UPLOAD YOUR FILES HERE: </h3>
                 </div>
 
             <?php
@@ -185,7 +185,7 @@ if(!isset($_SESSION['login_user'])){
 
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                <h3> Real-time Messaging  </h3>
+                <h3> REAL-TIME MESSAGING  </h3>
                         </div>
 
                     <?php
@@ -199,7 +199,7 @@ if(!isset($_SESSION['login_user'])){
 
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h3> Geo-Location </h3>
+                            <h3> GEO-LOCATION </h3>
                         </div>
 
 <?php
