@@ -117,7 +117,7 @@ function save_file($tmp_name, $name, $location)
 
 
 <body>
-<h2>File Upload test 02 </h2>
+
 <form action="" id="uploadimage" method="POST" enctype="multipart/form-data">
 
             <div id="imagepreview"><img id="previewing" src="noimagepng" />

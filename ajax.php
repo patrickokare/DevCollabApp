@@ -16,7 +16,7 @@ if (isset($_POST['submit'])) { //checking for anythiing will break the code
     }
 } else {
     echo 'Select A File For Upload : <br>';
-    echo '<br>';
+
 }
 
 
