@@ -5,6 +5,13 @@ $comment = null;
 if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'])) {
     $comment = $_POST['preview-form-comment'];
 
+
+
+    $content = "some text here";
+    $fp = fopen($_SERVER['DOCUMENT_ROOT'] . "/myText.txt","wb");
+    fwrite($fp,$content);
+    fclose($fp);
+
 }
 ?>
 
@@ -58,7 +65,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 </div>
     <br>
     <br>
-    <br>
+
 
 
                 <textarea rows="10" cols="89">
@@ -71,46 +78,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
 </body>
 </html>
-<!--
-<script>
-$(".save-file").click(function (){
-editor.save();
-var content = editor.getValue(); //textarea text
-var path = $("#hiddenFilePath").text(); //path of the file to save
-var response = confirm("Do you want to save?");
-if(response)
-{
-$.ajax({
-type: "POST",
-url: "saveFile.php",
-data: {c:content,p:path},
-dataType: 'text',
-success: function(){
-alert("File saved!");
-}
-});
-}
-else{
-alert("File not saved!");
-}
-});
-
-</script>
--->
-<!--
-<script>
-
-    var editor = CodeMirror(document.getElementById("preview-form-comment"),{
-
-        mode: "javascript",
-        theme: "night",
-        tabSize: 20,
-        lineNumbers: true,
-        firstLineNumber:1,
-        extraKeys:{"Ctrl": "autocomplete"}
-    });
-
-</script>
 
 
 
