@@ -13,7 +13,7 @@
 include("./phpFileTree/php_file_tree.php");
 
 // open the current directory
-$dhandle = opendir($_SERVER['DOCUMENT_ROOT/usercodes']);
+$dhandle = opendir(['DOCUMENT_ROOT/']);
 // define an array to hold the files
 $files = array();
 
@@ -37,7 +37,7 @@ if ($dhandle) {
 // Now loop through the files, echoing out a new select option for each one
 
 
-echo php_file_tree($_SERVER['DOCUMENT_ROOT/usercodes'], "http://karetechapp.azurewebsites.net/[link]");
+echo php_file_tree($_SERVER['DOCUMENT_ROOT'], "http://karetechapp.azurewebsites.net/[link]");
 
 
 
