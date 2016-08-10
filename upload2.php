@@ -14,7 +14,7 @@ include("./phpFileTree/php_file_tree.php");
 
 // open the current directory
 $dhandle = opendir(['DOCUMENT_ROOT/']);
-$dhandle .= "/usercodes/usercodes.txt";
+
 // define an array to hold the files
 $files = array();
 
