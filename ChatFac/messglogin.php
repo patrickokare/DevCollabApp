@@ -1,5 +1,6 @@
 <?php
 if(isset($_POST['name']) && !isset($display_case)){
+
     $name=htmlspecialchars($_POST['name']);
     $sql=$dbh->prepare("SELECT name FROM chatters WHERE name=?");
     $sql->execute(array($name));
