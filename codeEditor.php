@@ -74,10 +74,17 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
                  </textarea>
 
+
+
+
+
+
+
+
 <a>
 
     <?php include ("upload2.php")?>
-</a>
+</>
 
 
 
