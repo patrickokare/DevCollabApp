@@ -7,7 +7,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
 
     $content = $comment;
-    $fp = fopen($_SERVER['uploads/'] . "/myText.txt","wb");
+    $fp = fopen($_SERVER['.//uploads/'] . "/myText.txt","wb");
     fwrite($fp,$content);
     fclose($fp);
 
@@ -75,7 +75,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
                  </textarea>
 
-<a href="<?php echo $_SERVER['upload/'].'myText.txt'; ?>"></a>
+<a href="<?php echo $_SERVER['.//upload/'].'myText.txt'; ?>"></a>
 <br />
 <a href="/myText.txt">go to with html</a>
 
