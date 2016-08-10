@@ -5,7 +5,7 @@ $comment = null;
 if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'])) {
     $comment = $_POST['preview-form-comment'];
 
-    if ($_POST['type'] == 'save') {
+    if ($_POST['preview-form-comment'] == 'save') {
 
         $content = stripslashes($_POST['code']);
 
@@ -19,6 +19,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
         $URL = $path . $filename . '.' . $ext;
 
         file_put_contents($URL, $content);
+
     }
 }
 ?>
