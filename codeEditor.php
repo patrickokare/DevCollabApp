@@ -75,7 +75,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
                  </textarea>
 
-<a href="<?php echo $_SERVER['DOCUMENT_ROOT'].'myText.txt'; ?>"></a>
+<a href="<?php echo $_SERVER['upload/'].'myText.txt'; ?>"></a>
 <br />
 <a href="/myText.txt">go to with html</a>
 
