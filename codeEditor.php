@@ -75,9 +75,12 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
                  </textarea>
 
-<a href="<?php echo $_SERVER['DOCUMENT_ROOT'].'usercodes/usercodes.txt'; ?>"></a>
-<br />
-<a href="/usercodes/usercodes.txt">View Source Codes</a>
+<a>
+
+    <?php include ("upload2.php")?>
+</a>
+
+
 
 
 </body>
