@@ -77,7 +77,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
 <a href="<?php echo $_SERVER['DOCUMENT_ROOT'].'usercodes.txt'; ?>"></a>
 <br />
-<a href="/usercodes.txt">Click to get your Code Results.</a>
+<a href="/usercodes.txt">View Source Codes</a>
 
 
 </body>
