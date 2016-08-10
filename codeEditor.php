@@ -83,6 +83,11 @@ echo $URL;
 
 
                  </textarea>
+<table>
+    <?php echo $URL; ?>
+
+</table>
+
 
 </body>
 </html>
