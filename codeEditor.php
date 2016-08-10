@@ -19,7 +19,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 <head>
     <meta charset="UTF-8">
     <meta name ="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Page </title>
+    <title>Code Editor </title>
     <script src ="js/jquery.js"> </script>
     <link href="style.css" rel="stylesheet" type="text/css">
 
