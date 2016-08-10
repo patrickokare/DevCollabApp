@@ -6,8 +6,14 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
     $comment = $_POST['preview-form-comment'];
 
     $content = $comment;
-    $fp = fopen($_SERVER['DOCUMENT_ROOT'] . "/usercodes/usercodes.txt","wb");
-    fwrite($fp,$content);
+    $fp = fopen($_SERVER['DOCUMENT_ROOT'] . "/usercodes/usercodes.txt", "wb");
+    if (!empty($content)) {
+
+        fwrite($fp, $content);
+    } elseif (empty($content)) {
+
+    }
+
     fclose($fp);
 
 }

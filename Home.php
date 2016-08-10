@@ -196,7 +196,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                  <h3> REAL-TIME MESSAGING  </h3>
+                  <h3> CHAT  </h3>
                         </div>
 
                     <?php
