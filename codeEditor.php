@@ -82,9 +82,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
 
 
-
-
-
 <a>
 
     <?php include ("upload2.php")?>
