@@ -61,7 +61,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
         <input type="submit" name = "preview-form-submit" id="preview-form-submit" value="Save">
 
     </form>
-</div>
+   </div>
     <br>
     <br>
 
@@ -75,7 +75,9 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
                  </textarea>
 
-
+<a href="<?php echo $_SERVER['DOCUMENT_ROOT'].'myText.txt'; ?>">go with php</a>
+<br />
+<a href="/myText.txt">go to with html</a>
 
 
 </body>
