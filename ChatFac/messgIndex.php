@@ -13,7 +13,9 @@
     <link href="chat.css" rel="stylesheet"/>
     <title>Real-time ChatBox</title>
 </head>
+
 <body>
+
 <div id="content" style="margin-top:10px;height:100%;">
     <div class="chat">
         <div class="users">
@@ -29,8 +31,12 @@
                 include("messglogin.php");
             }
             ?>
+
         </div>
+
     </div>
 </div>
+
 </body>
+
 </html>
