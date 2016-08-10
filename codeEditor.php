@@ -6,7 +6,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
     $comment = $_POST['preview-form-comment'];
 
 
-
     $content = $comment;
     $fp = fopen($_SERVER['DOCUMENT_ROOT'] . "/myText.txt","wb");
     fwrite($fp,$content);
@@ -68,12 +67,15 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
 
 
+
                 <textarea rows="10" cols="89">
 
                    <?php echo $comment; ?>
 
 
                  </textarea>
+
+
 
 
 </body>
