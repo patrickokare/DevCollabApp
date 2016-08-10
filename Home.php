@@ -13,7 +13,7 @@ $comment = null;
 if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'])){
     $comment = $_POST['preview-form-comment'];
 
-    if ($_POST['preview-form-comment'] == 'save') {
+    if ($_POST['preview-form-comment'] == 'submit') {
 
         $content = stripslashes($_POST['code']);
 
