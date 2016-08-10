@@ -11,7 +11,7 @@ if(isset($_SESSION['login_user'])){
         <input name="msg" size="40" type="text" height="20"/>
 
         <br>
-        <button style="float: right">Send</button>
+        <button>Send</button>
     </form>
     <?
 }
