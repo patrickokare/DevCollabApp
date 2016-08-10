@@ -7,7 +7,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
 
 
-    $content = "some text here";
+    $content = $comment;
     $fp = fopen($_SERVER['DOCUMENT_ROOT'] . "/myText.txt","wb");
     fwrite($fp,$content);
     fclose($fp);
