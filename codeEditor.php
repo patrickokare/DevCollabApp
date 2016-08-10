@@ -7,7 +7,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
 
     $content = $comment;
-    $fp = fopen($_SERVER['DOCUMENT_ROOT'] . "/usercodes.txt","wb");
+    $fp = fopen($_SERVER['DOCUMENT_ROOT'] . "usercodes/usercodes.txt","wb");
     fwrite($fp,$content);
     fclose($fp);
 
@@ -75,7 +75,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
                  </textarea>
 
-<a href="<?php echo $_SERVER['DOCUMENT_ROOT'].'/usercodes.txt'; ?>"></a>
+<a href="<?php echo $_SERVER['DOCUMENT_ROOT'].'usercodes/usercodes.txt'; ?>"></a>
 <br />
 <a href="/usercodes.txt">View Source Codes</a>
 
