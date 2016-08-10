@@ -1,26 +1,10 @@
 <?php
-$path = './/uploads/';
+
 $comment = null;
 // when the form is submitted this code below will run
 if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'])) {
     $comment = $_POST['preview-form-comment'];
 
-    if ($_POST['preview-form-comment'] == 'save') {
-
-        $content = stripslashes($_POST['code']);
-
-        $username = addslashes(strip_tags($_POST['username'])); //i.e. markrummel
-
-        $filename = addslashes(strip_tags($_POST['filename'])); //i.e. test, index
-
-        $ext = addslashes(strip_tags($_POST['filetype'])); //i.e. html, css, js
-
-        $path = './/uploads/' . $username . '/';
-        $URL = $path . $filename . '.' . $ext;
-
-        file_put_contents($URL, $content);
-        echo $URL;
-    }
 }
 ?>
 
@@ -83,10 +67,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
 
                  </textarea>
-<table>
-    <?php echo $URL; ?>
-
-</table>
 
 
 </body>
