@@ -13,7 +13,7 @@ $(document).ready(function(){
         extraKeys:{"Ctrl-Space": "autocomplete"}
     });
 
-    $("#preview-form").submit(function(e){
+    $("#preview-form").save(function(e){
         var value = editor.getValue();
         if(value.length== 0){
             alert("missing comment!");

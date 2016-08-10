@@ -53,7 +53,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
                  </textarea>
 
-        <input type="submit" name = "preview-form-submit" id="preview-form-submit" value="Submit">
+        <input type="submit" name = "preview-form-submit" id="preview-form-submit" value="Save">
 
     </form>
 </div>
