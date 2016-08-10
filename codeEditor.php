@@ -3,20 +3,20 @@
 $comment = null;
 // when the form is submitted this code below will run
 if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'])) {
+
     $comment = $_POST['preview-form-comment'];
-
+if(!empty($comment)){
     $content = $comment;
+
     $fp = fopen($_SERVER['DOCUMENT_ROOT'] . "/usercodes/usercodes.txt", "wb");
-    if (!empty($content)) {
+    fwrite($fp, $content);
 
-        fwrite($fp, $content);
-    } elseif (empty($content)) {
-
-    }
-
-    fclose($fp);
-
+}else {
+    echo 'Cannot Update!';
+    // if()
 }
+}
+fclose($fp);
 ?>
 
 <!DOCTYPE html>
