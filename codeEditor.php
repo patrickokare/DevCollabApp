@@ -6,6 +6,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
     $comment = $_POST['preview-form-comment'];
 if(!empty($comment)){
+
     $content = $comment;
 
     $fp = fopen($_SERVER['DOCUMENT_ROOT'] . "/usercodes/usercodes.txt", "wb");
