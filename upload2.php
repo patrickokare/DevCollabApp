@@ -38,7 +38,7 @@ if ($dhandle) {
 // Now loop through the files, echoing out a new select option for each one
 
 
-echo php_file_tree('.//usercodes/', "http://karetechapp.azurewebsites.net/[link]");
+echo php_file_tree('./usercodes/', "http://karetechapp.azurewebsites.net/[link]");
 
 
 
