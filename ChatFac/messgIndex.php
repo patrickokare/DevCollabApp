@@ -1,8 +1,6 @@
 <?php
-  include("config.php");
-  include("messglogin.php");
-
-
+include("config.php");
+include("messglogin.php");
 ?>
 
 <!DOCTYPE html>
@@ -25,12 +23,9 @@
         <div class="chatbox">
             <?
             if(isset($_SESSION['login_user'])){
-
                 include("chatbox.php");
             }else{
-
                 $display_case=true;
-
                 include("messglogin.php");
             }
             ?>
