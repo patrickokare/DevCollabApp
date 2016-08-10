@@ -10,13 +10,13 @@ if(!empty($comment)){
 
     $fp = fopen($_SERVER['DOCUMENT_ROOT'] . "/usercodes/usercodes.txt", "wb");
     fwrite($fp, $content);
-
+    fclose($fp);
 }else {
     echo 'Cannot Update!';
     // if()
 }
 }
-fclose($fp);
+
 ?>
 
 <!DOCTYPE html>
