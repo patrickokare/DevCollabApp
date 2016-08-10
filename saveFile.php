@@ -1,6 +1,6 @@
 <?php
 
-
+/**
 if ($_POST['type'] == 'save') {
 
 $content = stripslashes($_POST['code']);
@@ -18,3 +18,4 @@ file_put_contents($URL, $content);
 
 }
 
+**/

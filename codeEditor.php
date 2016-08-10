@@ -19,7 +19,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
         $URL = $path . $filename . '.' . $ext;
 
         file_put_contents($URL, $content);
-echo $URL;
+        echo $URL;
     }
 }
 ?>
