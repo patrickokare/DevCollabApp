@@ -1,6 +1,6 @@
 <?
 include("config.php");
-if(isset($_SESSION['user'])){
+if(isset($_SESSION['login_user'])){
     ?>
     <h2>Chat Session</h2>
     <a style="right: 20px;top: 20px;position: absolute;cursor: pointer;" href="messgLogout.php">Log Out</a>
