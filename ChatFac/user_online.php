@@ -1,14 +1,14 @@
 <?php
 
-if(isset($_SESSION['user'])){
+if(isset($_SESSION['login_user'])){
     $sqlm=$dbh->prepare("SELECT name FROM chatters WHERE name=?");
-    $sqlm->execute(array($_SESSION['user']));
+    $sqlm->execute(array($_SESSION['login_user']));
     if($sqlm->rowCount()!=0){
         $sql=$dbh->prepare("UPDATE chatters SET seen=NOW() WHERE name=?");
-        $sql->execute(array($_SESSION['user']));
+        $sql->execute(array($_SESSION['login_user']));
     }else{
         $sql=$dbh->prepare("INSERT INTO chatters (name,seen) VALUES (?,NOW())");
-        $sql->execute(array($_SESSION['user']));
+        $sql->execute(array($_SESSION['login_user']));
     }
 }
 /* Make sure the timezone on Database server and PHP server is same */
