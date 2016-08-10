@@ -1,7 +1,7 @@
 <?php
 ini_set("display_errors","on");
 if(!isset($dbh)){
-    session_start();
+  //  session_start();
     date_default_timezone_set("UTC"); // Set Time Zone
     $host = "us-cdbr-azure-west-c.cloudapp.net"; // Hostname
     $port = "3306"; // MySQL Port : Default : 3306
