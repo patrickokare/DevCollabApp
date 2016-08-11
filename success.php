@@ -33,7 +33,7 @@ $username = $_GET['username'];
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.php"> <em style="font-family: cursive"> DevCollab  </em> </a>
+                <a class="navbar-brand" href="index.html"> <em style="font-family: cursive"> DevCollab  </em> </a>
             </div>
 
 
@@ -63,7 +63,7 @@ $username = $_GET['username'];
 
                        <h4>You have Successfully Completed your registration Process</h4><br>
                         <h4>Thank you!</h4>
-                        <a href="index.php">LOGIN</a>
+                        <a href="index.html">LOGIN</a>
 
 
                     </address>
