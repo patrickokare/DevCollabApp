@@ -214,14 +214,16 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                           <p>  Codes Results </p>
                           <?php include ("upload2.php")?>
                       </a>
+<?php
 
-                     Search Your File <br>
-
+                     echo $files[0]. '<br>';
+?>
                       <form action="">
                           Type the Name of the File to edit:<br>
                           <input type="text" name="firstname" value=""><br>
                           <input type="submit" value="Submit">
                       </form>
+
 
 
 <!-- do not touch thiis div's  -->
