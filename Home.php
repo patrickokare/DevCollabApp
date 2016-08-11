@@ -217,7 +217,12 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
                      Search Your File <br>
 
-                      <textarea name="msg" style="width:320px; height: 70px">  </textarea><br>
+                      <form action="action_page.php">
+                          Type the Name of the File to edit:<br>
+                          <input type="text" name="firstname" value="Mickey"><br>
+
+                          <input type="submit" value="Submit">
+                      </form>
 
 
 <!-- do not touch thiis div's  -->
