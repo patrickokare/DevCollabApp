@@ -300,7 +300,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
                         ?>
 
-                        <a href="#" style="color: darkred">CLICK TO GET INFORMATION ABOUT THE CITIES NEAR YOU </a>
+                        <a href="Geolocate.php" style="color: darkred">CLICK TO GET INFORMATION ABOUT THE CITIES NEAR YOU </a>
 
 
     </div>
