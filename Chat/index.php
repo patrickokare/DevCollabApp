@@ -18,7 +18,7 @@
         }
         form1.uname.readOnly = true;
         form1.uname.style.border = 'none';
-
+$('#imageload').show();
         var uname = form1.uname.value;
         var msg = form1.msg.value;
         var xmlhttp = new XMLHttpRequest();
@@ -26,6 +26,8 @@
         xmlhttp.onreadystatechange = function(){
             if(xmlhttp.readyState ==4&&xmlhttp.status==200){
                 document.getElementById('chatlogs').innerHTML = xmlhttp.responseText;
+
+                $('#imageload').hide();
             }
 
         }
@@ -54,8 +56,14 @@
     <textarea name="msg" style="width:200px; height: 70px"></textarea><br>
 <a href="#" onclick="submitChat(); return true;"> Send</a><br> <br>
 
+
+
+    <div id="imageload" style="display:none;">
+       <img src="Loading_icon.gif"/>
+    </div>
+
     <div id="chatlogs">
-        LOADING CHATLOGS PLEASE WAIT......
+        LOADING CHATLOGS PLEASE WAIT......<img src="Loading_icon.gif"/>
     </div>
 
 
