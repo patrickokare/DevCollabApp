@@ -1,9 +1,13 @@
 <?php
 session_start();
 if(!isset($_SESSION['username'])){
+
    ?>
+
   <?php  header("location: ../index.php"); ?>
-<?php
+
+   <?php
+
     exit;
 }
 ?>
