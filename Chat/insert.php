@@ -8,7 +8,10 @@ include ("../connection.php");
 if (mysqli_connect_errno())
 {
     echo "Failed to connect to MySQL: " . mysqli_connect_error();
+} else{
+    echo 'successful';
 }
+
 mysqli_select_db($db,'chatbox');
 
 mysqli_query($db,"INSERT INTO logs(`username`,`msg`)
