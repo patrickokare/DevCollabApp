@@ -215,6 +215,11 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                           <?php include ("upload2.php")?>
                       </a>
 
+                     Search Your File <br>
+
+                      <textarea name="msg" style="width:320px; height: 70px">  </textarea><br>
+
+
 <!-- do not touch thiis div's  -->
 
                  </div>
