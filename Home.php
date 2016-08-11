@@ -248,6 +248,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                          Enter your Message: <br>
 
                         <textarea name="msg" style="width:200px; height: 70px"></textarea><br>
+
                         <a href="#" onclick="submitChat(); return true;" class="button"> Send</a><br> <br>
 
 
