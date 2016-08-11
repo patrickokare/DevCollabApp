@@ -196,7 +196,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                           <?php include ("upload2.php")?>
                       </a>
 
-<!-- do not touch this div's  -->
+<!-- do not touch thiis div's  -->
 
                  </div>
 
