@@ -66,8 +66,10 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
 
 <a>
-<P>Results below </P>
+
+<p> Results Codes </p>
     <?php include ("upload2.php")?>
+
 </a>
 
 

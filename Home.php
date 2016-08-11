@@ -173,39 +173,32 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
                   <div>
 
+                           <form id="preview-form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?> ">
+                           <textarea class="codemirror-textarea" name="preview-form-comment" id="preview-form-comment" rows="20" cols="20">
+                           <?php echo $comment; ?>
+                           </textarea>
+                           <input type="submit" name = "preview-form-submit" id="preview-form-submit" value="Save">
+                           </form>
 
+                      <textarea rows="10" cols="89">
+                      <?php echo $comment; ?>
+                      </textarea>
+<br>
+<br>
+                      <a>
+                          <p> Results Codes </p>
+                          <?php include ("upload2.php")?>
+                      </a>
 
-                      <h3> hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</h3>
-                      <h3> hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</h3>
-                      <h3> hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</h3>
-                      <h3> hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</h3>
-                      <h3> hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</h3>
-                      <h3> hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</h3>
-                      <h3> hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</h3>
-                      <h3> hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</h3>
-                      <h3> hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</h3>
-                      <h3> hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</h3>
-                      <h3> hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</h3>
-                      <h3> hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</h3>
-                      <h3> hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</h3>
-
-
-
-
-              </div>
+<!-- do not touch this div's  -->
 
                  </div>
 
                  </div>
 
+                 </div>
 
-
-
-
-
-
-
-
+          <!-- do not touch this div's  -->
 
 
     <div class="col-sm-4 col-sm-4">
