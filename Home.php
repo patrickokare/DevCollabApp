@@ -18,6 +18,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
     $fp = fopen($_SERVER['DOCUMENT_ROOT'] . "/usercodes/usercodes.txt","wb");
     fwrite($fp,$content);
+
     fclose($fp);
 
 }
@@ -183,6 +184,11 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                       <textarea rows="10" cols="89">
                       <?php echo $comment; ?>
                       </textarea>
+
+
+
+                      <?php echo $today = date("H:i:s");?>
+
 <br>
 <br>
                       <a>
