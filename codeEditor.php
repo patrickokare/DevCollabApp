@@ -39,6 +39,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 <body>
 
 <div style="width: 50%">
+
     <form id="preview-form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?> ">
 
                   <textarea class="codemirror-textarea" name="preview-form-comment" id="preview-form-comment" rows="20" cols="20">
@@ -49,8 +50,9 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
         <input type="submit" name = "preview-form-submit" id="preview-form-submit" value="Save">
 
-    </form>
-   </div>
+              </form>
+
+          </div>
     <br>
     <br>
 
