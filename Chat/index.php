@@ -35,11 +35,13 @@
 
 <body>
 <form name="form1">
-    Enter Your Chatname:
-    <input type="text" name="uname"><br>
+    Enter Your Chatname:  <input type="text" name="uname"><br>
+
     Your Message: <br>
-    <textarea name="msg"></textarea>
+
+    <textarea name="msg"></textarea><br>
 <a href="#" onclick=""> Send</a><br> <br>
+
     <div id="chatlogs">
         LOADING CHATLOGS PLEASE WAIT......
     </div>
