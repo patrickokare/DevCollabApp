@@ -196,7 +196,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                           foreach($name as $names) { ?>
 
 
-                              <option value="<?= $names[$name] ?>"><?= $names[$name] ?></option>
+                              <option value="<?= $names[$name]['name'] ?>"><?= $names[$name]['name'] ?></option>
                               <?php
                               echo $names[$name];
                           }
