@@ -190,25 +190,34 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                       </a>
 
 <?php
-/**
-                             echo $files[0]. '<br>';
-
-                             echo "<select>";
-
-                            $arrlength = count($files);
-                            for($counter = 0; $counter < $arrlength; $x++) {
-
-                            echo $files[$counter];
-                            echo "<option value='.$files[$counter];'> </option> ";
-
-                          }
-
-                            echo "</select>";
 
 
+
+
+
+
+              echo ' <select name="per1" id="per1">';
+               echo  ' <option selected="selected">Choose one</option>';
+ // <?php
+
+         $name = array("Volvo", "BMW", "Toyota");
+          foreach($name as $name) {
+
+
+          }?>
+      <option value="<?= $name['name'] ?>"><?= $name['name'] ?></option>
+
+                      <?php
+
+                      ?>
+    }
+    ?>
+         <?php echo ' </select>';
 ?>
-**/
-?>
+
+
+
+
 
 
 
