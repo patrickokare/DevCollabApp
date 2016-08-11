@@ -207,7 +207,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
 
 
-              echo ' <select name="per1" id="per1">';
+              echo ' <select name="peer1" id="per1">';
                echo  ' <option selected="selected"> Choose one</option>';
  // <?php
 
