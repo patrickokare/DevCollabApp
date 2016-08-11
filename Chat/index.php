@@ -59,7 +59,9 @@ $('#imageload').show();
 
 <body>
 <form name="form1">
-    Enter Your Chatname: <br> <input type="text" name="uname" style="width: 200px;" class=""/><br>
+
+    Your Chat Name: <b> <?php echo $_SESSION['username']; ?></b><br>
+
 
     Your Message: <br>
 
@@ -72,7 +74,7 @@ $('#imageload').show();
        <img src=""/>
     </div>
 
-    <div id="chatlogs">
+    <div id="chatlogs" style="width:100%; text-align: center;">
         LOADING CHATLOGS PLEASE WAIT......<img src=""/>
     </div>
 
