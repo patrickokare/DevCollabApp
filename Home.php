@@ -193,12 +193,13 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                           <option selected="selected">Choose one</option>
                           <?php
                           $name = array('wale', 'john', 'tom');
+
                            foreach($name as $names) { ?>
 
-
                               <option value="<?= $names[0] ?>"><?= $names[1] ?></option>
+
                               <?php
-                              echo $names[$name];
+
                           }
 
 
@@ -208,31 +209,20 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
 <?php
 
-/**
 
 
+$colors = array("red", "green", "blue", "yellow");
 
+foreach ($colors as $value) {
 
-              echo ' <select name="peer1" id="per1">';
-               echo  ' <option selected="selected"> Choose one</option>';
- // <?php
-
-                  $name = array("Volvo", "BMW", "Toyota");
-                   foreach($name as $name) {
-
-
-          }?>
-      <option value="<?= $name['name'] ?>"><?= $name['name'] ?></option>
-
-                      <?php
-
-                      ?>
-    }
-    ?>
-         <?php echo ' </select>';
+    echo "$value <br>";
+}
 ?>
-**/
-?>
+
+
+
+
+
 
 
 
