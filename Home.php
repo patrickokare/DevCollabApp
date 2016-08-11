@@ -12,7 +12,16 @@ $comment = null;
 // when the form is submitted this code below will run
 if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'])) {
 
-    $comment = $_POST['preview-form-comment'];
+
+                      date_default_timezone_set('Europe/London');
+                      $today = date("Y-m-d H:i:s");
+
+
+
+               $comment = $_POST['preview-form-comment'] . '<br>' . 'Codes Saved :' . $today ;
+
+
+
 
     $content = $comment;
 
@@ -186,10 +195,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                       </textarea>
 
 
-                      <?php
-                      date_default_timezone_set('Europe/London');
-                       echo $today = date("H:i:s");
-                      ?>
 
 
 
