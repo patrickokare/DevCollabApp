@@ -242,10 +242,10 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
                     <form name="form1">
 
-                        Your Chat Name: <b> <?php echo $_SESSION['username']; ?></b><br>
+                         <b> <?php echo $_SESSION['username']; ?></b><br>
 
 
-                        Your Message: <br>
+                         Enter your Message: <br>
 
                         <textarea name="msg" style="width:200px; height: 70px"></textarea><br>
                         <a href="#" onclick="submitChat(); return true;" class="button"> Send</a><br> <br>
@@ -257,7 +257,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                         </div>
 
                         <div id="chatlogs" style="width:100%; text-align: ;">
-                            LOADING CHATLOGS PLEASE WAIT......<img src=""/>
+                            Loading Chatlogs Please wait......<img src=""/>
                         </div>
 
 
