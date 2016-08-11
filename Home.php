@@ -20,6 +20,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
                $comment = $_POST['preview-form-comment'] . "\r\n" . 'Codes Saved :' . $today ;
 
+
+
       $oldfile = file_get_contents("http://karetechapp.azurewebsites.net/usercodes/usercodes.txt");
 
       $comment = $oldfile . "\r\n" .$comment;
