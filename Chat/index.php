@@ -36,7 +36,7 @@
 
     $(document).ready(function(e){
         $.ajaxSetup({cache:false});
-        setInterval(function(){$(#chatlogs).load('logs.php');}, 2000);
+        setInterval(function(){$('#chatlogs').load('logs.php')}, 2000);
 
     });
 
