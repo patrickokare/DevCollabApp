@@ -189,19 +189,29 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                           <?php include ("upload2.php")?>
                       </a>
 
+                      <select name="per1" id="per1">
+                          <option selected="selected">Choose one</option>
+                          <?php
+                          foreach($names as $name) { ?>
+                              <option value="<?= $name['name'] ?>"><?= $name['name'] ?></option>
+                              <?php
+                          } ?>
+                      </select>
+
+
 <?php
 
-
+/**
 
 
 
 
               echo ' <select name="per1" id="per1">';
-               echo  ' <option selected="selected">Choose one</option>';
+               echo  ' <option selected="selected"> Choose one</option>';
  // <?php
 
-         $name = array("Volvo", "BMW", "Toyota");
-          foreach($name as $name) {
+                  $name = array("Volvo", "BMW", "Toyota");
+                   foreach($name as $name) {
 
 
           }?>
@@ -214,7 +224,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
     ?>
          <?php echo ' </select>';
 ?>
-
+**/
+?>
 
 
 
