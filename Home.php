@@ -262,7 +262,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                         </div>
 
                         <div id="chatlogs" style="width:100%; text-align: ;">
-                            Loading Chatlogs Please wait......<img src=""/>
+                            Loading chatlogs please wait........<img src=""/>
                         </div>
 
 
@@ -277,7 +277,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                         </div>
 
 <?php
-/**
+
 
                         require_once('geoplugin.class.php');
                         $geoplugin = new geoPlugin();
@@ -305,7 +305,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                         }
 
 
-**/
+
                         ?>
 
                         <a href="#" style="color: darkred">CLICK TO GET INFORMATION ABOUT THE CITIES NEAR YOU </a>
