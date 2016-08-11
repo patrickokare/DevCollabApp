@@ -193,10 +193,10 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                           for($i =0; $i< count($files);$i++){
                               echo'<option>' .$files[$i] . '</option>';
                           }
-
+                          echo '<button value="submit"> </button>';
                       echo'</select>';
            //
-                          echo '<button value="submit"> </button>';
+
                           ?>
                       </a>
 
