@@ -170,44 +170,24 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                       <h3> CODE EDITOR  </h3>
                   </div>
 
-                  <div style="width: 50%">
-                  <form id="preview-form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?> ">
 
-                  <textarea class="codemirror-textarea" name="preview-form-comment" id="preview-form-comment" rows="20" cols="20">
 
-                 <?php echo $comment; ?>
 
-                 </textarea>
 
-                      <input type="submit" name = "preview-form-submit" id="preview-form-submit" value="Save">
 
-                  </form>
+
+
               </div>
 
-
-
-              <br>
-              <br>
-
-
-                <textarea rows="10" cols="89">
-
-                   <?php echo $comment; ?>
-
-                 </textarea>
-
-
-              <a>
-                  <P>Results below </P>
-                  <?php include ("upload2.php")?>
-              </a>
-
-
-</div>
-
                  </div>
 
                  </div>
+
+
+
+
+
+
 
 
 
