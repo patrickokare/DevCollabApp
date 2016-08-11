@@ -186,17 +186,21 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 <br>
                       <a>
                           <p>  Codes Results </p>
-                          <?php include ("upload2.php")?>
+                          <?php include ("upload2.php");
+      //
+                          $color = array('bblue','red','green','orange');
+                          echo '<select name="color">';
+                          for($i =0; $i< count($color);$i++){
+                              echo'<option>' .$color[$i] . '</option>';
+                          }
+
+                      echo'</select>';
+           //
+                          ?>
                       </a>
                       <?php
 
-                      $color = array('blue','red','green','orange');
-                      echo '<select name="color">';
-                      for($i =0; $i< count($color);$i++){
-                      echo'<option>' .$color[$i] . '</option>';
-                      }
 
-                      echo'</select>';
 
                       ?>
 
