@@ -22,14 +22,15 @@ if(!isset($_SESSION['username'])){
 
 <script>
     function submitChat(){
-        if (form1.uname.value == '' || form1.msg.value == ''){
-            alert('ALL FIELDS ARE MANDATORY!!!!');
+        if (form1.msg.value == ''){
+            alert('ENTER A MESSAGE!!!');
             return;
         }
-        form1.uname.readOnly = true;
-        form1.uname.style.border = 'none';
+     //   form1.uname.readOnly = true;
+      //  form1.uname.style.border = 'none';
 $('#imageload').show();
-        var uname = form1.uname.value;
+
+       // var uname = form1.uname.value;
         var msg = form1.msg.value;
         var xmlhttp = new XMLHttpRequest();
 
@@ -42,7 +43,7 @@ $('#imageload').show();
 
         }
 
-        xmlhttp.open('GET', 'insert.php?uname='+uname+'&msg='+msg,true);
+        xmlhttp.open('GET', 'insert.php?&msg='+msg,true);
         xmlhttp.send();
     }
 
