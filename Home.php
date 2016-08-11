@@ -186,8 +186,12 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                       </textarea>
 
 
+                      <?php
+                      date_default_timezone_set('Europe/London');
+                       echo $today = date("H:i:s");
+                      ?>
 
-                      <?php echo $today = date("H:i:s");?>
+
 
 <br>
 <br>
