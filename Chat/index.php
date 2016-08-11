@@ -15,6 +15,9 @@
             alert('ALL FIELDS ARE MANDATORY!!!!');
             return;
         }
+        form1.uname.readOnly = true;
+        form1.uname.style.border = 'none';
+
         var uname = form1.uname.value;
         var msg = form1.msg.value;
         var xmlhttp = new XMLHttpRequest();
@@ -36,11 +39,11 @@
 
 <body>
 <form name="form1">
-    Enter Your Chatname:  <input type="text" name="uname"><br>
+    Enter Your Chatname:  <input type="text" name="uname" style="width: 200px;"><br>
 
     Your Message: <br>
 
-    <textarea name="msg"></textarea><br>
+    <textarea name="msg" style="width:200px; height: 70px"></textarea><br>
 <a href="#" onclick="submitChat(); return true;"> Send</a><br> <br>
 
     <div id="chatlogs">
