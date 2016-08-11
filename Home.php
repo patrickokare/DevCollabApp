@@ -190,8 +190,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
       //
                           $color = array('bblue','red','green','orange');
                           echo '<select name="color">';
-                          for($i =0; $i< count($color);$i++){
-                              echo'<option>' .$color[$i] . '</option>';
+                          for($i =0; $i< count($files);$i++){
+                              echo'<option>' .$files[$i] . '</option>';
                           }
 
                       echo'</select>';
