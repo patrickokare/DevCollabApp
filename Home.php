@@ -5,6 +5,14 @@ if(!isset($_SESSION['login_user'])){
     header("location:index.html");
 }
 ?>
+<?php
+
+
+?>
+
+
+
+
 
 <?php
 
@@ -189,7 +197,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                           <p>  Codes Results </p>
                           <?php include ("upload2.php");
       //
-                          echo '<form action="">';
+                          echo '<form action="Home.php" method="post">';
 
                           echo '<select name="color">';
                           for($i =0; $i< count($files);$i++){
