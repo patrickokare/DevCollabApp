@@ -216,7 +216,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
              -->
               <?php
-           //   include('hangout2.php');
+              include('hangout2.php');
                ?>
 
 
@@ -231,8 +231,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                 </div>
 
             <?php
-        //    include("fileUpload2.php");
-         //   include ("upload.php");
+            include("fileUpload2.php");
+            include ("upload.php");
                ?>
 
 
@@ -250,9 +250,9 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                          <b> <?php echo $_SESSION['username']; ?></b><br>
 
 
-                         Enter your Message: <br>
+                         Enter Your Message <br>
 
-                        <textarea name="msg" style="width:200px; height: 70px"></textarea><br>
+                        <textarea name="msg" style="width:320px; height: 70px">  </textarea><br>
 
                         <a href="#" onclick="submitChat(); return true;" class="button"> Send</a><br> <br>
 
