@@ -210,7 +210,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
     <div class="col-sm-4 col-sm-4">
         <div class="panel panel-default">
 
-            <!-- This codes below are for the video Conferencing, file Upload and messenging box -->
+            <!-- This codes below are for the video Conferencing, file Upload and chat -->
             <div class="panel-heading">
                 <h3>  VIDEO CONFERENCE  </h3>
             </div>
