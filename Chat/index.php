@@ -75,7 +75,7 @@ $('#imageload').show();
        <img src=""/>
     </div>
 
-    <div id="chatlogs" style="width:100%; text-align: center;">
+    <div id="chatlogs" style="width:100%; text-align: ;">
         LOADING CHATLOGS PLEASE WAIT......<img src=""/>
     </div>
 
