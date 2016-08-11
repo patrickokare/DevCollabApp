@@ -8,7 +8,14 @@ if(!isset($_SESSION['login_user'])){
 
 <?php
 
-$comment = null;
+
+//$comment = null;
+
+$userfilename = $_SESSION['login_user'].'_'.'codes.txt';
+$oldfile = file_get_contents("http://karetechapp.azurewebsites.net/usercodes/".$userfilename);
+
+$comment = $oldfile;
+
 // when the form is submitted this code below will run
 if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'])) {
 
@@ -18,18 +25,16 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
 
 
-               $comment = $_POST['preview-form-comment'] . "\r\n" . 'Codes Saved by:' .$_SESSION['login_user'] .'at '  . $today ;
+               $comment = $_POST['preview-form-comment'] . "\r\n" . 'Codes Saved by:' .$_SESSION['login_user'] .' at '  . $today ;
 
 
-
-      $oldfile = file_get_contents("http://karetechapp.azurewebsites.net/usercodes/usercodes.txt");
-
-      $comment = $oldfile . "\r\n" .$comment;
+      //$comment = $oldfile . "\r\n" .$comment;
 
 
                $content = $comment;
 
-    $fp = fopen($_SERVER['DOCUMENT_ROOT'] . "/usercodes/usercodes.txt","wb");
+    //$fp = fopen($_SERVER['DOCUMENT_ROOT'] . "/usercodes/usercodes.txt","wb");
+    $fp = fopen($_SERVER['DOCUMENT_ROOT'] . "/usercodes/".$userfilename,"wb");
     fwrite($fp,$content);
 
     fclose($fp);
@@ -187,8 +192,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
                   <div>
 
-                           <form id="preview-form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?> ">
-                           <textarea class="codemirror-textarea" name="preview-form-comment" id="preview-form-comment" rows="20" cols="20">
+                           <form id="preview-form"  method="post" action="<?php echo $_SERVER['PHP_SELF']; ?> ">
+                           <textarea class="codemirror-textarea" name="preview-form-comment" id="preview-form-comment" rows="20" cols="20" >
 
                            <?php echo $comment; ?>
                            </textarea>
