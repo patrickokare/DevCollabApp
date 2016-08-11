@@ -209,12 +209,9 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                 <h3>  VIDEO CONFERENCE  </h3>
             </div>
              <div>
-            <!--
-             <video height="250" width="320" id="localVideo"></video>
-                 <div id="remotesVideos" style="height: 300%: width: 100%;"></div>
 
 
-             -->
+
               <?php
               include('hangout2.php');
                ?>
@@ -354,23 +351,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 </body>
 </html>
 
-<!--
-<script type="application/javascript">
-    var webrtc = new SimpleWebRTC({
-        // the id/element dom element that will hold "our" Video
-        localVideoEl: 'localVideo',
-        // the id/element dom element that will hold remote videos
-        remoteVideosEl: 'remotesVideos',
-        // immediately ask for camera access
-        autoRequestMedia: true
-    });
 
-    // we have to wait until it's ready
-    webrtc.on('readyToCall', function () {
-        // you can name it anything
-        webrtc.joinRoom('chat');
-    });
-</script>
 
--->
+
 
