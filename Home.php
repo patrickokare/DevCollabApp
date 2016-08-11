@@ -56,69 +56,44 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
     <script src="https://simplewebrtc.com/latest-v2.js"></script>
     <script src ="js/jquery.js"> </script>
     <script src="js/bootstrap.min.js"></script>
-
     <script type="text/javascript" src="codemirror/js/jquery.min.js.js"></script>
-
     <script type="text/javascript" src ="default.js"></script>
-
     <link rel="stylesheet" href="lib/codemirror.css">
     <script src="lib/codemirror.js"> </script>
-
     <script src="mode/javascript/javascript.js"></script>
-
     <script src="hint/show-hint.js"></script>
     <script src="hint/css-hint.js"></script>
     <link rel="stylesheet" href="theme/night.css">
     <link rel="stylesheet" href="hint/show-hint.css">
-
     <link href="chat.css" rel="stylesheet" type="text/css">
     <script src="http://code.jquery.com/jquery-1.9.0.js"> </script>
 
 
     <script>
+
         function submitChat(){
             if (form1.msg.value == ''){
                 alert('ENTER A MESSAGE!!!');
                 return;
             }
-            //   form1.uname.readOnly = true;
-            //  form1.uname.style.border = 'none';
             $('#imageload').show();
-
-            // var uname = form1.uname.value;
             var msg = form1.msg.value;
             var xmlhttp = new XMLHttpRequest();
-
             xmlhttp.onreadystatechange = function(){
                 if(xmlhttp.readyState ==4&&xmlhttp.status==200){
                     document.getElementById('chatlogs').innerHTML = xmlhttp.responseText;
-
                     $('#imageload').hide();
                 }
-
             }
-
             xmlhttp.open('GET', 'insert.php?&msg='+msg,true);
             xmlhttp.send();
         }
-
         $(document).ready(function(e){
             $.ajaxSetup({cache:false});
             setInterval(function(){$('#chatlogs').load('logs.php');}, 2000);
-
         });
-
-
     </script>
 
-    <style>
-
-       div #remotesVideos{
-        /    height: 200%;
-        /    width: 100%;
-        /   border: solid darkred;
-        }
-    </style>
 
 </head>
 
@@ -207,30 +182,29 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
 
 
-
 <br>
 <br>
                       <a>
                           <p>  Codes Results </p>
                           <?php include ("upload2.php")?>
                       </a>
+
 <?php
 
                      echo $files[0]. '<br>';
-?>
 
-<?php
-                       echo '                     <select>         ';
+                          echo "<select>";
+
 
                             $arrlength = count($files);
-                          for($counter = 0; $counter < $arrlength; $x++) {
-                          echo $files[$counter];
-
-
-                      echo     "   <option value='.$files[$counter];'></option> ";
+                            for($counter = 0; $counter < $arrlength; $x++) {
+                            echo $files[$counter];
+                            echo "<option value='.$files[$counter];'> </option> ";
 
                           }
-                                    echo '</select>';
+
+                                    echo "</select>";
+
 ?>
 
 
