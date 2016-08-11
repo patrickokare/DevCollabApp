@@ -196,7 +196,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
 
                   <a>
-                      <P>CLICK HERE </P>
+                      <P>RESULTS </P>
                       <?php include ("upload2.php")?>
                   </a>
 
