@@ -15,10 +15,10 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
     $comment = $_POST['preview-form-comment'];
 
     $content = $comment;
-    $fp = fopen($_SERVER['DOCUMENT_ROOT'] . "/usercodes/usercodes.txt", "wb");
-    fwrite($fp, $content);
-    fclose($fp);
 
+    $fp = fopen($_SERVER['DOCUMENT_ROOT'] . "/usercodes/usercodes.txt","wb");
+    fwrite($fp,$content);
+    fclose($fp);
 
 }
 
@@ -177,13 +177,12 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
                  </textarea>
 
-                          <input type="submit" name = "preview-form-submit" id="preview-form-submit" value="Save">
+                      <input type="submit" name = "preview-form-submit" id="preview-form-submit" value="Save">
 
                   </form>
-
-                  <br>
-                  <br>
-                  <br>
+              </div>
+              <br>
+              <br>
 
 
                 <textarea rows="10" cols="89">
@@ -194,13 +193,14 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                  </textarea>
 
 
-                  <a>
-                      <P>RESULTS </P>
-                      <?php include ("upload2.php")?>
-                  </a>
+              <a>
+                  <P> Check results below </P>
+                  <?php include ("upload2.php")?>
+              </a>
 
 
-                 </div>
+
+          </div>
                  </div>
 
 
