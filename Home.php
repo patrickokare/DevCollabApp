@@ -217,7 +217,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
                      Search Your File <br>
 
-                      <form action="action_page.php">
+                      <form action="">
                           Type the Name of the File to edit:<br>
                           <input type="text" name="firstname" value="Mickey"><br>
 
