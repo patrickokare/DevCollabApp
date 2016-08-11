@@ -208,7 +208,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
 
 
-<!-- do not touch thiis div's  -->
+<!-- do not touch this div's  -->
 
                  </div>
 
