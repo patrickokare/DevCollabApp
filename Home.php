@@ -188,14 +188,18 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                           <p>  Codes Results </p>
                           <?php include ("upload2.php");
       //
-                          $color = array('bblue','red','green','orange');
+                          echo '<form action="">';
+
                           echo '<select name="color">';
                           for($i =0; $i< count($files);$i++){
                               echo'<option>' .$files[$i] . '</option>';
                           }
-                          echo '<button value="submit"> </button>';
+
                       echo'</select>';
            //
+                        echo '<input type="submit" value="Submit">' ;
+
+                       echo '</form>';
 
                           ?>
                       </a>
