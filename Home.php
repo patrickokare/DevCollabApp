@@ -184,7 +184,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                   </form>
               </div>
 
-              </div>
+
 
               <br>
               <br>
@@ -203,6 +203,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
               </a>
 
 
+</div>
 
                  </div>
 
