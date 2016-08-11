@@ -190,24 +190,25 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                       </a>
 
 <?php
+/**
+                             echo $files[0]. '<br>';
 
-                          echo $files[0]. '<br>';
-
-                           echo "<select>";
-
+                             echo "<select>";
 
                             $arrlength = count($files);
                             for($counter = 0; $counter < $arrlength; $x++) {
+
                             echo $files[$counter];
                             echo "<option value='.$files[$counter];'> </option> ";
 
                           }
 
-                                    echo "</select>";
+                            echo "</select>";
+
 
 ?>
-
-
+**/
+?>
 
 
 
