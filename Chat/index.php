@@ -41,7 +41,7 @@
     Your Message: <br>
 
     <textarea name="msg"></textarea><br>
-<a href="#" onclick=""> Send</a><br> <br>
+<a href="#" onclick="submitChat(); return true;"> Send</a><br> <br>
 
     <div id="chatlogs">
         LOADING CHATLOGS PLEASE WAIT......

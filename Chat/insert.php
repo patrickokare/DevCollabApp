@@ -1,7 +1,7 @@
 <?php
 
-$uname = $_GET['uname'];
-$msg = $_GET['msg'];
+$uname = $_REQUEST['uname'];
+$msg = $_REQUEST['msg'];
 
 include ("../connection.php");
 
