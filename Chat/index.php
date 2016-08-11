@@ -55,11 +55,11 @@ $('#imageload').show();
 
 
     <div id="imageload" style="display:none;">
-       <img src="Loading_icon.gif"/>
+       <img src="../Chat/simple-pre-loader/loading.gif"/>
     </div>
 
     <div id="chatlogs">
-        LOADING CHATLOGS PLEASE WAIT......<img src="Loading_icon.gif"/>
+        LOADING CHATLOGS PLEASE WAIT......<img src="../Chat/simple-pre-loader/loading.gif""/>
     </div>
 
 
