@@ -47,7 +47,7 @@
 
 <body>
 <form name="form1">
-    Enter Your Chatname:  <input type="text" name="uname" style="width: 200px;"/><br>
+    Enter Your Chatname:  <input type="text" name="uname" style="width: 200px;" class="uName"/><br>
 
     Your Message: <br>
 
