@@ -45,7 +45,7 @@ $('#imageload').show();
 
 <body>
 <form name="form1">
-    Enter Your Chatname:  <input type="text" name="uname" style="width: 200px;" class="uName"/><br>
+    Enter Your Chatname:  <input type="text" name="uname" style="width: 200px;" class=""/><br>
 
     Your Message: <br>
 
@@ -55,11 +55,11 @@ $('#imageload').show();
 
 
     <div id="imageload" style="display:none;">
-       <img src="../Chat/simple-pre-loader/loading.gif"/>
+       <img src=""/>
     </div>
 
     <div id="chatlogs">
-        LOADING CHATLOGS PLEASE WAIT......<img src="../Chat/simple-pre-loader/loading.gif""/>
+        LOADING CHATLOGS PLEASE WAIT......<img src=""/>
     </div>
 
 
