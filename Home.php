@@ -175,9 +175,9 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                            <input type="submit" name = "preview-form-submit" id="preview-form-submit" value="Save">
                            </form>
 
-                      <textarea rows="10" cols="89">
-                      <?php echo $comment; ?>
-                      </textarea>
+                          <textarea rows="10" cols="89">
+                          <?php echo $comment; ?>
+                          </textarea>
 
 
 
@@ -191,9 +191,9 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
 <?php
 
-                     echo $files[0]. '<br>';
+                          echo $files[0]. '<br>';
 
-                          echo "<select>";
+                           echo "<select>";
 
 
                             $arrlength = count($files);
