@@ -18,7 +18,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
 
 
-               $comment = $_POST['preview-form-comment'] . '\n' . 'Codes Saved :' . $today ;
+               $comment = $_POST['preview-form-comment'] . "\r\n" . 'Codes Saved :' . $today ;
 
                $content = $comment;
 
