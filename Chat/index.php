@@ -50,7 +50,7 @@ $('#imageload').show();
     Your Message: <br>
 
     <textarea name="msg" style="width:200px; height: 70px"></textarea><br>
-<a href="#" onclick="submitChat(); return true;"> Send</a><br> <br>
+<a href="#" onclick="submitChat(); return true;" class="button"> Send</a><br> <br>
 
 
 
