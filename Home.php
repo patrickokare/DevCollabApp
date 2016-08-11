@@ -219,8 +219,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
                       <form action="">
                           Type the Name of the File to edit:<br>
-                          <input type="text" name="firstname" value="Mickey"><br>
-
+                          <input type="text" name="firstname" value=""><br>
                           <input type="submit" value="Submit">
                       </form>
 
