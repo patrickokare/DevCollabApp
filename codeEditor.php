@@ -24,31 +24,18 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
     <title>Code Editor </title>
     <script src ="js/jquery.js"> </script>
     <link href="style.css" rel="stylesheet" type="text/css">
-
     <link rel="stylesheet" href="lib/codemirror.css">
     <script src="lib/codemirror.js"> </script>
-
     <script type="text/javascript" src="codemirror/js/jquery.min.js.js"></script>
     <script type="text/javascript" src="codemirror/plugin/codemirror/lib/codemirror.js"></script>
-
     <script type="text/javascript" src ="default.js"></script>
-<!--
-
-
-
--->
-
     <script src="mode/javascript/javascript.js"></script>
-
     <script src="hint/show-hint.js"></script>
     <script src="hint/css-hint.js"></script>
     <link rel="stylesheet" href="theme/night.css">
     <link rel="stylesheet" href="hint/show-hint.css">
-
-
-
-
 </head>
+
 <body>
 
 <div style="width: 50%">
