@@ -1,6 +1,7 @@
 <?php
 session_start();
-$uname = $_SESSION['username'];
+
+$uname = $_SESSION['login_user'];
 $msg = $_REQUEST['msg'];
 
 include ("../connection.php");
