@@ -192,11 +192,11 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                       <select name="per1" id="per1">
                           <option selected="selected">Choose one</option>
                           <?php
-                          $name = array('Volvo', 'BMW', 'Toyota');
+                          $name = array('012345', '012345', '54321');
                           foreach($name as $names) { ?>
 
 
-                              <option value="<?= $names[$name]['name'] ?>"><?= $names[$name]['name'] ?></option>
+                              <option value="<?= $names[1] ?>"><?= $names[2] ?></option>
                               <?php
                               echo $names[$name];
                           }
