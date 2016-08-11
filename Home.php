@@ -196,7 +196,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
                            foreach($name as $names) { ?>
 
-                              <option value="<?= $names[0] ?>"><?= $names[1] ?></option>
+                              <option value= " <? echo $names;?> " </option>
 
                               <?php
 
@@ -205,19 +205,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
                           ?>
                       </select>
-
-
-<?php
-
-
-
-$colors = array("red", "green", "blue", "yellow");
-
-foreach ($colors as $value) {
-
-    echo "$value <br>";
-}
-?>
 
 
 
