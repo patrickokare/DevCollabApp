@@ -6,7 +6,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-
+    <link href="chat.css" rel="stylesheet" type="text/css">
     <title>Chat Box </title>
 
 <script>
