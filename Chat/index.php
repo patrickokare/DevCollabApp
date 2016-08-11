@@ -45,7 +45,7 @@ $('#imageload').show();
 
 <body>
 <form name="form1">
-    Enter Your Chatname:  <input type="text" name="uname" style="width: 200px;" class=""/><br>
+    Enter Your Chatname: <br> <input type="text" name="uname" style="width: 200px;" class=""/><br>
 
     Your Message: <br>
 
