@@ -184,7 +184,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
 <br>
 <br>
-                      <a>
+
+
                           <p>  Codes Results </p>
                           <?php include ("upload2.php");
       //
@@ -202,7 +203,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                        echo '</form>';
 
                           ?>
-                      </a>
+
 
 
 
