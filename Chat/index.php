@@ -1,3 +1,13 @@
+<?php
+session_start();
+if(!isset($_SESSION['username'])){
+   ?>
+  <?php  header("location: ../index.php"); ?>
+<?php
+    exit;
+}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -50,7 +60,7 @@ $('#imageload').show();
     Your Message: <br>
 
     <textarea name="msg" style="width:200px; height: 70px"></textarea><br>
-<a href="#" onclick="submitChat(); return true;" class="button"> Send</a><br> <br>
+ <a href="#" onclick="submitChat(); return true;" class="button"> Send</a><br> <br>
 
 
 
