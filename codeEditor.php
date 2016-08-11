@@ -3,11 +3,13 @@
 $comment = null;
 // when the form is submitted this code below will run
 if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'])) {
+
     $comment = $_POST['preview-form-comment'];
 
     $content = $comment;
     $fp = fopen($_SERVER['DOCUMENT_ROOT'] . "/usercodes/usercodes.txt","wb");
     fwrite($fp,$content);
+    fclose($fp);
 
 }
 
@@ -65,8 +67,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
     <br>
 
 
-
-
                 <textarea rows="10" cols="89">
 
                    <?php echo $comment; ?>
@@ -75,11 +75,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                  </textarea>
 
 
-
-
-
 <a>
-<P>CLICK HERE </P>
+<P>Results below </P>
     <?php include ("upload2.php")?>
 </a>
 
