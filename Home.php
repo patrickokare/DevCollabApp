@@ -18,7 +18,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
 
 
-               $comment = $_POST['preview-form-comment'] . "\r\n" . 'Codes Saved :' . $today ;
+               $comment = $_POST['preview-form-comment'] . "\r\n" . 'Codes Saved by:' .$_SESSION['login_user'] .'at '  . $today ;
 
 
 
@@ -189,6 +189,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
                            <form id="preview-form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?> ">
                            <textarea class="codemirror-textarea" name="preview-form-comment" id="preview-form-comment" rows="20" cols="20">
+
                            <?php echo $comment; ?>
                            </textarea>
                            <input type="submit" name = "preview-form-submit" id="preview-form-submit" value="Save">
