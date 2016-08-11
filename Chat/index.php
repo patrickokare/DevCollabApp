@@ -7,6 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <link href="chat.css" rel="stylesheet" type="text/css">
+    <script src="http://code.jquery.com/jquery-1.9.0.js"> </script>
     <title>Chat Box </title>
 
 <script>
@@ -32,6 +33,13 @@
         xmlhttp.open('GET', 'insert.php?uname='+uname+'&msg='+msg,true);
         xmlhttp.send();
     }
+
+    $(document).ready(function(e){
+        $.ajaxSetup({cache:false});
+        setInterval(function(){$(#chatlogs).load('logs.php');}, 2000);
+
+    });
+
 
 </script>
 
