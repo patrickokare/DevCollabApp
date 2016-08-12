@@ -262,7 +262,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
             <div class="panel-heading">
 
 
-            <h3> UPLOAD YOUR FILES </h3>
+            <h3> FILE SHARING </h3>
                 </div>
 
             <?php
