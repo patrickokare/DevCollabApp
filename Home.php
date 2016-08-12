@@ -6,14 +6,11 @@ if(!isset($_SESSION['login_user'])){
 }
 ?>
 <?php
-
 // oldfile = webpath + Select Value
 //refresh codemirror
 
 
-
 ?>
-
 
 
 
@@ -26,9 +23,9 @@ if(!isset($_SESSION['login_user'])){
 $userfilename = $_SESSION['login_user'].'_'.'codes.txt';
 $oldfile = file_get_contents("http://karetechapp.azurewebsites.net/usercodes/".$userfilename);
 
-$link =  window.opendir("http://karetechapp.azurewebsites.net/usercodes/".$userfilename);
+//$link =  window.opendir("http://karetechapp.azurewebsites.net/usercodes/".$userfilename);
 
-echo $link;
+//echo $link;
 
 
 $comment = $oldfile;
