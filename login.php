@@ -35,7 +35,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
       //  header("location: Home.php?username=$username");
         header("location: Home.php");// Redirecting To another Page
     }else {
-        header("location: index.php");
+        header("location: index.html");
 
       //  $error = 'YOUR PASSWORD IS NOT RECOGNIZED! TRY AGAIN... <br>';
      //   echo $error;
