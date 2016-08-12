@@ -123,7 +123,7 @@ function save_file($tmp_name, $name, $location)
 
 <form action="" id="uploadimage" method="POST" enctype="multipart/form-data">
 
-            <div id="imagepreview"><img id="previewing" src="noimagepng" />
+            <div id="imagepreview"><img id="previewing" src="noimagepng">
             </div>
                  <div id="selectImage">
                  <input type="file" name="file" id="file"/><br> <br>
