@@ -61,6 +61,7 @@ function save_file($tmp_name, $name, $location)
         $name = $rand . '.' . pathinfo($name, PATHINFO_EXTENSION); //create new name
     }
     if (move_uploaded_file($tmp_name, $location . $name)) {
+
         echo '<span style="color: darkred">  Success! ' . $og_name . ' was uploaded </span>';
 
 
