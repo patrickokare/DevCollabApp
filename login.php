@@ -32,7 +32,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 //error check here...........
         $_SESSION['login_user'] = $username;
         echo $_SESSION['login_user'];
-        header("location: Home.php?username=$username"); // Redirecting To another Page
+      //  header("location: Home.php?username=$username"); // Redirecting To another Page
+        header("location: Home.php");
     }else {
         $error = 'YOUR PASSWORD IS NOT RECOGNIZED! TRY AGAIN... <br>';
         echo $error;
