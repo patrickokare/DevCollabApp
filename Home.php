@@ -251,7 +251,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                ?>
 
 
-                <div class="panel panel-default">
+                <div class="panel panel-default" style="color: #5bc0de">
                     <div class="panel-heading">
                   <h3> CHAT  </h3>
                         </div>
