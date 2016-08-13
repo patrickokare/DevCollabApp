@@ -67,14 +67,14 @@ if(!isset($_SESSION['login_user'])){
                             "Country Name: {$geoplugin->countryName} <br />\n".
                             "Country Code: {$geoplugin->countryCode} <br />\n".
                             "Longitude: {$geoplugin->longitude} <br />\n".
-                            "Latitude: {$geoplugin->latitude} <br />\n".
-                            "Currency Code: {$geoplugin->currencyCode} <br />\n".
-                            "Currency Symbol: {$geoplugin->currencySymbol} <br />\n".
-                            "Exchange Rate: {$geoplugin->currencyConverter} <br />\n";
+                            "Latitude: {$geoplugin->latitude} <br />\n";
+                          //  "Currency Code: {$geoplugin->currencyCode} <br />\n".
+                           // "Currency Symbol: {$geoplugin->currencySymbol} <br />\n".
+                           // "Exchange Rate: {$geoplugin->currencyConverter} <br />\n";
 
                         if ( $geoplugin->currency != $geoplugin->currencyCode ) {
                             //our visitor is not using the same currency as the base currency
-                            echo "<p>At today's rate, US$100 will cost you " . $geoplugin->convert(100) ." </p>\n";
+                        //    echo "<p>At today's rate, US$100 will cost you " . $geoplugin->convert(100) ." </p>\n";
                         }
 
 

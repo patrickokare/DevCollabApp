@@ -19,7 +19,7 @@ $oldfile = file_get_contents("http://karetechapp.azurewebsites.net/usercodes/".$
 //echo $link;
 $comment = $oldfile;
 
-if(!empty($comment)){
+//if(!empty($comment)){
 // when the form is submitted this code below will run
 if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'])) {
 
@@ -42,7 +42,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
     fwrite($fp,$content);
 
     fclose($fp);
-}
+//}
 
 }
 
@@ -191,7 +191,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
 
                           <p>  Code Results </p>
-                          <?php include ("upload2.php");
+                          <?php include("readUserCodes.php");
       //
                           echo '<form action="Home.php" method="post">';
 
@@ -247,7 +247,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
             <?php
             include("fileSharing.php");
-            include ("upload.php");
+            include("readUploadFile.php");
                ?>
 
 
