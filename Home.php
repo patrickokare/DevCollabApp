@@ -180,7 +180,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                            <input type="submit" name = "preview-form-submit" id="preview-form-submit" value="Save">
                            </form>
 
-                          <textarea rows="" cols="">
+                          <textarea rows="20" cols="">
                           <?php echo $comment; ?>
                           </textarea>
 
