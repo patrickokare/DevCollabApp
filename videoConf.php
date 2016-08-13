@@ -1,4 +1,3 @@
-<!-- KareTech Project by Wale Patrick 2016 (WebRTC -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,10 +17,6 @@
                width: 100%;
                border: solid darkred;
         }
-#localVideo{
-
-   / border:dotted darkred;
-}
 
     </style>
 
