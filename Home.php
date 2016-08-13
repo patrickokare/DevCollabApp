@@ -261,16 +261,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
                          <b> <?php echo $_SESSION['username']; ?></b><br>
 
-
-                         Enter Your Message <br>
-
-                        <textarea name="msg" style="width:; height: 70px">
-                        </textarea>
-                        <br>
-
-                        <a href="#" onclick="submitChat(); return true;" class="button"> Send</a><br> <br>
-
-
                         <div id="imageload" style="display:none;">
                             <img src=""/>
                         </div>
@@ -278,9 +268,14 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                         <div id="chatlogs" style="width:100%; text-align: ;">
                             Loading chatlogs please wait........<img src=""/>
                         </div>
+<br>
+                        Enter Your Message <br>
 
+                        <textarea name="msg" style="width:; height: 70px">
+                        </textarea>
+                        <br>
 
-
+                        <a href="#" onclick="submitChat(); return true;" class="button"> Send</a><br> <br>
 
 
                     </form>
