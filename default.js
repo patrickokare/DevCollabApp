@@ -10,7 +10,7 @@ $(document).ready(function(){
 
 
     var editor = CodeMirror.fromTextArea(code,{
-        mode: "htmlmixed",
+        mode: "mixedMode",
         theme: "night",
         tabSize: 10,
         lineNumbers: true,
