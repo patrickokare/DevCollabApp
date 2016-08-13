@@ -8,26 +8,15 @@ if(!isset($_SESSION['login_user'])){
 <?php
 // oldfile = webpath + Select Value
 //refresh codemirror
-
-
 ?>
-
-
-
 
 <?php
 
-
 //$comment = null;
-
 $userfilename = $_SESSION['login_user'].'_'.'codes.txt';
 $oldfile = file_get_contents("http://karetechapp.azurewebsites.net/usercodes/".$userfilename);
-
 //$link =  window.opendir("http://karetechapp.azurewebsites.net/usercodes/".$userfilename);
-
 //echo $link;
-
-
 $comment = $oldfile;
 
 // when the form is submitted this code below will run
@@ -43,7 +32,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
 
       //$comment = $oldfile . "\r\n" .$comment;
-
 
                $content = $comment;
 
@@ -163,7 +151,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
         <p style="color: darkred"> Welcome, <?php echo $_SESSION['login_user']; ?> </p>
         <h2 class="display-4: text-center lead">DevCollab, Optimized for Collaboration....</h2>
-    <!--     <h1 class="text-center lead">   </h1> -->
+
 
     </div>
 
@@ -184,7 +172,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                   <div>
 
                            <form id="preview-form"  method="post" action="<?php echo $_SERVER['PHP_SELF']; ?> ">
-                           <textarea class="codemirror-textarea" name="preview-form-comment" id="preview-form-comment" rows="20" cols="20"   >
+                           <textarea class="codemirror-textarea" name="preview-form-comment" id="preview-form-comment" rows="" cols=""   >
 
                            <?php echo $comment; ?>
 
@@ -192,7 +180,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                            <input type="submit" name = "preview-form-submit" id="preview-form-submit" value="Save">
                            </form>
 
-                          <textarea rows="10" cols="89">
+                          <textarea rows="" cols="">
                           <?php echo $comment; ?>
                           </textarea>
 
@@ -203,13 +191,14 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 <br>
 
 
-                          <p>  Codes Results </p>
+                          <p>  Code Results </p>
                           <?php include ("upload2.php");
       //
                           echo '<form action="Home.php" method="post">';
 
                           echo '<select name="color">';
                           for($i =0; $i< count($files);$i++){
+
                               echo'<option>' .$files[$i] . '</option>';
                           }
 
