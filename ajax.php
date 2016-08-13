@@ -62,7 +62,7 @@ function save_file($tmp_name, $name, $location)
     }
     if (move_uploaded_file($tmp_name, $location . $name)) {
 
-        echo '<span style="color: darkred">  Success! ' . $og_name . ' was uploaded </span>';
+        echo '<span style="color: darkred">  Success ' . $og_name . ' was uploaded! </span>';
 
 
         // header("Location:Home.php");
