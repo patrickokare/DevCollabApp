@@ -45,7 +45,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         header("location: Home.php");// Redirecting To another Page
 
         }else {
-        header("location: index.php");
+
+
+        header("location: index.php?error=$error");
 
         $error =  'username or password incorrect';
         echo $error;

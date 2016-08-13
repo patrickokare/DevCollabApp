@@ -1,7 +1,8 @@
 <?php
-include ("login.php");
 
+$error = $_GET['error'];
 echo $error;
+
 
 ?>
 
