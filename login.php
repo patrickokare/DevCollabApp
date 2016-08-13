@@ -45,9 +45,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         header("location: Home.php");// Redirecting To another Page
 
         }else {
-           $error =  "<span style='color: darkred'> Username or Password Incorrect </span>";
+           $error =  "<span style='color: darkred'> Username or Password Incorrect! Try Again </span>";
 
-        header("location: index.php?error=.$error.");
+        header("location: index.php?error=$error");
 
 
         echo $error;
