@@ -264,7 +264,9 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
                          Enter Your Message <br>
 
-                        <textarea name="msg" style="width:320px; height: 70px">  </textarea><br>
+                        <textarea name="msg" style="width:320px; height: 70px">
+                        </textarea>
+                        <br>
 
                         <a href="#" onclick="submitChat(); return true;" class="button"> Send</a><br> <br>
 
@@ -346,7 +348,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
 </div>
     <div class="bottom-footer">
-        <div class="col-sm-5"> Designed by Wale Patrick 2016(c)</div>
+        <div class="col-sm-5"> (c) Designed by Wale Patrick 2016</div>
         <div class="col-sm-7">
             <ul class="footer-nav lead">
                 <li class="active"><a href="Home.php"> Home </a> </li>
