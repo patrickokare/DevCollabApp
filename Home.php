@@ -19,6 +19,7 @@ $oldfile = file_get_contents("http://karetechapp.azurewebsites.net/usercodes/".$
 //echo $link;
 $comment = $oldfile;
 
+if(!empty($comment)){
 // when the form is submitted this code below will run
 if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'])) {
 
@@ -32,7 +33,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
 
       //$comment = $oldfile . "\r\n" .$comment;
-if(!empty($comment)){
+
 
      $content = $comment;
 
