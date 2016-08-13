@@ -50,8 +50,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
-if(empty($_POST["password"]) && empty($_POST["username"])) {
+//if(empty($_POST["password"]) && empty($_POST["username"])) {
 
-    echo "YOU CANNOT LEAVE BOTH INPUT FIELDS BLANK!. ";
-}
+ //   echo "YOU CANNOT LEAVE BOTH INPUT FIELDS BLANK!. ";
+//}
 
