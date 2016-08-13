@@ -47,7 +47,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         }else {
 
 
-        header("location: index.php?error='.$error.'");
+        header("location: index.php?error=error");
 
         $error =  'username or password incorrect';
         echo $error;
