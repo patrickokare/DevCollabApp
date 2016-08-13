@@ -45,14 +45,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         header("location: Home.php");// Redirecting To another Page
 
         }else {
-           $error =  "username or password incorrect";
+           $error =  "<span style='color: darkred'> Username or Password Incorrect </span>";
 
-        header("location: index.php?error=.'$error'.");
+        header("location: index.php?error=.$error.");
 
 
         echo $error;
 
     }
+
 }
 mysqli_close($db);
 

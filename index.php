@@ -1,8 +1,6 @@
 <?php
 
 $error2 = $_GET['error'];
-echo $error2;
-
 
 ?>
 
