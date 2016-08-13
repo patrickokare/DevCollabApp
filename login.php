@@ -9,7 +9,7 @@
 </style>
 
 </head>
-<body bgcolor="red">
+<body>
 
 
 
@@ -18,7 +18,6 @@
 
 <?php
 include ("connection.php");
-
 session_start();
 
 
