@@ -59,7 +59,7 @@ span{
 
 
     <div class="modal-body">
-
+<?php echo $error2; ?>
         <form method="post" action="login.php" class="col-md-12 center-block">
 
             <div class="form-group">
