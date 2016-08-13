@@ -15,10 +15,6 @@ include ("connection.php");
 
 session_start();
 
-if(empty($_POST["password"]) || empty($_POST["username"])) {
-
-    echo "YOU CANNOT LEAVE BOTH INPUT FIELDS BLANK!. ";
-}
 
 if($_SERVER["REQUEST_METHOD"] == "POST") {
     // username and password sent from form
