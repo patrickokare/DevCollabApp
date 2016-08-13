@@ -184,9 +184,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                           <?php echo $comment; ?>
                           </textarea>
 
-
-
-
 <br>
 <br>
 
@@ -209,13 +206,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                        echo '</form>';
 
                           ?>
-
-
-
-
-
-
-
 
 
 

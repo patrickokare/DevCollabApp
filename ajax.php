@@ -20,11 +20,6 @@ if (isset($_POST['submit'])) { //checking for anythiing will break the code
 
 function checkType($name, $type){
 
-    // $extension = strtolower(substr($name, strpos($name, '.') + 1)); //get the extension
-    // $extension = pathinfo($name, PATHINFO_EXTENSION); //better way to get extension
-
-
-
     if (!empty($name)) {
 
         return true;
@@ -32,7 +27,6 @@ function checkType($name, $type){
         echo 'Failed!';
         return false;
     }
-
 }
 function checkSize($size, $max_size){
     if($size <= $max_size){
@@ -47,8 +41,8 @@ function fileExists($name){
     echo $filename;
     return false;
 }
-function save_file($tmp_name, $name, $location)
-{
+function save_file($tmp_name, $name, $location){
+
     $og_name = $name;
     //so long as the name is in existance - loop to check new name after it is generated
     while (file_exists('uploads/' . $name)) {
@@ -56,16 +50,19 @@ function save_file($tmp_name, $name, $location)
         $rand = rand(10000, 99999);
         $name = $rand . '.' . pathinfo($name, PATHINFO_EXTENSION); //create new name
     }
+
     if (move_uploaded_file($tmp_name, $location . $name)) {
 
         echo '<span style="color: darkred">  Success ' . $og_name . ' was uploaded! </span>';
 
-
         // header("Location:Home.php");
 
         if (!($og_name == $name)) { //if original name != name
-            echo ' and renamed to ' . $name . '.<br/>';
+
+       echo ' and renamed to ' . $name . '.<br/>';
+
         } else {
+
             echo '.';
         }
     } else {

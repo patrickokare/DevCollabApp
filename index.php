@@ -1,6 +1,6 @@
 <?php
 
-$error2 = $_POST['error'];
+$error2 = $_GET['error'];
 
 ?>
 
