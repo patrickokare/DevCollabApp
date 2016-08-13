@@ -1,7 +1,7 @@
 <?php
 
-$error = $_GET['error'];
-echo $error;
+$error2 = $_GET[$error];
+echo $error2;
 
 
 ?>
