@@ -17,6 +17,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     // username and password sent from form
     $username = mysqli_real_escape_string($db,$_POST['username']);
     $password = mysqli_real_escape_string($db,$_POST['password']);
+
     $sql = "SELECT uid
             FROM users
             WHERE username = '$username'
@@ -28,22 +29,26 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $active = $row['active'];
     $count = mysqli_num_rows($result);
     // If result matched $username and $password, table row must be 1 row
-    if($count == 1) {
-//error check here...........
-        $_SESSION['login_user'] = $username;
-        echo $_SESSION['login_user'];
+       if($count == 1) {
+       //error check here...........
+         $_SESSION['login_user'] = $username;
+
+         echo $_SESSION['login_user'];
       //  header("location: Home.php?username=$username");
+
         header("location: Home.php");// Redirecting To another Page
-    }else {
+
+        }else if($count == 0) {
         header("location: index.html");
-echo 'username or password incorrect';
+
+        echo 'username or password incorrect';
       //  $error = 'YOUR PASSWORD IS NOT RECOGNIZED! TRY AGAIN... <br>';
      //   echo $error;
     }
 }
 
-if(empty($_POST["password"])) {
+if(empty($_POST["password"]) && empty($_POST["username"])) {
 
-    echo "PLEASE ENTER A PASSWWORD!. ";
+    echo "YOU CANNOT LEAVE BOTH INPUT FIELDS BLANK!. ";
 }
 
