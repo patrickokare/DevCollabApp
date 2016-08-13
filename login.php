@@ -2,6 +2,12 @@
 <html>
 <head>
 
+<style>
+    span{
+        background-color: lawngreen;
+    }
+</style>
+
 </head>
 <body bgcolor="red">
 
@@ -45,7 +51,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         header("location: Home.php");// Redirecting To another Page
 
         }else {
-           $error =  "<span style='color: darkred'> Username or Password Incorrect! Try Again </span>";
+           $error =  "<span style='color: darkred'> Username or Password Incorrect. Try Again! </span>";
 
         header("location: index.php?error=$error");
 
