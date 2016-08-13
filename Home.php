@@ -264,7 +264,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
                          Enter Your Message <br>
 
-                        <textarea name="msg" style="width:320px; height: 70px">
+                        <textarea name="msg" style="width:; height: 70px">
                         </textarea>
                         <br>
 
@@ -278,6 +278,9 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                         <div id="chatlogs" style="width:100%; text-align: ;">
                             Loading chatlogs please wait........<img src=""/>
                         </div>
+
+
+
 
 
                     </form>

@@ -4,17 +4,16 @@
     color: #00F;
     font-weight: bold;
     font-size: 15px;
-
     font-family: Verdana, Geneva, sans-serif;
-
-
 }
+
 .msg{
-    color: #390;
+    color: honeydew;
     font-size: 15px;
     font-family: Georgia sans-serif;
     background-color: #00aaaa;
 }
+
 .button{
     text-align: center;
     background-color: darkred;
