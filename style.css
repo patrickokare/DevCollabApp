@@ -12,14 +12,6 @@ h1, h3{
 
     color: darkred;
 }
-
-header{
-    color: navy;
-
-}
-
-
-
 /**To control the editor styling.... **/
 textarea{
     border:1px solid darkred;
@@ -28,16 +20,6 @@ textarea{
   /  padding:3px;
 }
 /** End of Code Editor Control ..... **/
-
-
-
-
-
-
-
-
-
-
 
 
 
