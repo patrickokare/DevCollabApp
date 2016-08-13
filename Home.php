@@ -74,7 +74,9 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
     <script type="text/javascript" src ="default.js"></script>
     <link rel="stylesheet" href="lib/codemirror.css">
     <script src="lib/codemirror.js"> </script>
-    <script src="mode/javascript/javascript.js"></script>
+
+    <script src="mode/htmlmixed/htmlmixed.js"></script>
+
     <script src="hint/show-hint.js"></script>
     <script src="hint/css-hint.js"></script>
     <link rel="stylesheet" href="theme/night.css">

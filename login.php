@@ -24,6 +24,7 @@ session_start();
 if($_SERVER["REQUEST_METHOD"] == "POST") {
     // username and password sent from form
     // To protect MySQL injection for Security purpose
+
     $username = mysqli_real_escape_string($db,$_POST['username']);
     $password = mysqli_real_escape_string($db,$_POST['password']);
 
