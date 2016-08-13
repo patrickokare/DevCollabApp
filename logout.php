@@ -1,13 +1,22 @@
 <?php
 session_start();
+
+
 /**
-To end a session and clear up its data, use this code:
-<?php
-session_start();
-$_SESSION = array();
+include("connection.php");
+$sql=$dbh->prepare("DELETE FROM chatters WHERE name=?");
+$sql->execute(array($_SESSION['user']));
 session_destroy();
+header("Location: index.php");
 ?>
- **/
+**/
+
+
+
+
+
 if(session_destroy()) {
+
+
     header("Location: index.php");
 }
