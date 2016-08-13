@@ -326,14 +326,14 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                         "Country Name: {$geoplugin->countryName} <br />\n".
                         "Country Code: {$geoplugin->countryCode} <br />\n".
                         "Longitude: {$geoplugin->longitude} <br />\n".
-                        "Latitude: {$geoplugin->latitude} <br />\n".
-                        "Currency Code: {$geoplugin->currencyCode} <br />\n".
-                        "Currency Symbol: {$geoplugin->currencySymbol} <br />\n".
-                        "Exchange Rate: {$geoplugin->currencyConverter} <br />\n";
+                        "Latitude: {$geoplugin->latitude} <br />\n";
+                      //  "Currency Code: {$geoplugin->currencyCode} <br />\n".
+                      // "Currency Symbol: {$geoplugin->currencySymbol} <br />\n".
+                       // "Exchange Rate: {$geoplugin->currencyConverter} <br />\n";
 
                         if ( $geoplugin->currency != $geoplugin->currencyCode ) {
                         //our visitor is not using the same currency as the base currency
-                        echo "<p>At today's rate, US$100 will cost you " . $geoplugin->convert(100) ." </p>\n";
+                      //  echo "<p>At today's rate, US$100 will cost you " . $geoplugin->convert(100) ." </p>\n";
                         }
 
 
@@ -360,7 +360,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 <div class="container">
      <div class="row">
 
-             <span style="font-family: cursive" class="moveright"> DevCollab App(c) </span>
+             <span style="font-family: cursive" class="moveright"> (c)DevCollab App </span>
 
          <a href="http://www.geoplugin.com/geolocation/" target="_new">IP Geolocation</a> by <a href="http://www.geoplugin.com/" target="_new">geoPlugin</a>
 
