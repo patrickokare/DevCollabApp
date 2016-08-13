@@ -32,14 +32,16 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
 
       //$comment = $oldfile . "\r\n" .$comment;
+if(!empty($comment)){
 
-               $content = $comment;
+     $content = $comment;
 
     //$fp = fopen($_SERVER['DOCUMENT_ROOT'] . "/usercodes/usercodes.txt","wb");
     $fp = fopen($_SERVER['DOCUMENT_ROOT'] . "/usercodes/".$userfilename,"wb");
     fwrite($fp,$content);
 
     fclose($fp);
+}
 
 }
 
@@ -160,7 +162,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
 <div class="container">
       <div class="row">
-
           <div class="col-md-8 col-md-8">
               <div class="panel panel-default">
 
@@ -216,10 +217,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                  </div>
 
                  </div>
-
           <!-- do not touch this div's  -->
-
-
     <div class="col-sm-4 col-sm-4">
         <div class="panel panel-default">
 
@@ -266,7 +264,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                         </div>
 
                         <div id="chatlogs" style="width:100%; text-align: ;">
-                            Loading chatlogs please wait........<img src=""/>
+                            Loading Chat Logs please wait........<img src=""/>
                         </div>
 <br>
                         Enter Your Message <br>
