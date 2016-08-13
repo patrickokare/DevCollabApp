@@ -1,6 +1,5 @@
 <?php
 
-
 $max_size = 12400000000;
 $location = 'uploads/'; //where the file is going
 if (isset($_POST['submit'])) { //checking for anythiing will break the code
@@ -18,9 +17,6 @@ if (isset($_POST['submit'])) { //checking for anythiing will break the code
     echo 'Select A File For Upload : <br>';
     echo '<br>';
 }
-
-
-
 
 function checkType($name, $type){
 
@@ -78,33 +74,4 @@ function save_file($tmp_name, $name, $location)
 
 }
 
-
-
-
-
-
-
-
-
-
-/**
-if(isset($_FILES["file"]["type"])){
-
-if(file_exists('.//uploads/'. $_FILES["file"]["name"])){
-    echo $_FILES["file"]["name"]. "<h2> Already exists</h2>";
-
-}
-    else{
-
-        $fname = $_FILES['file']['tmp_name'];
-        $path = './/uploads/' . $_FILES['file']['name'];
-        move_uploaded_file($fname, $path);
-        {
-            echo "Insert New data";
-        }
-
-    }
-
-}
-**/
 
