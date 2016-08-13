@@ -257,7 +257,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                 </div>
 
             <?php
-            include("fileUpload2.php");
+            include("fileSharing.php");
             include ("upload.php");
                ?>
 
