@@ -261,6 +261,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
             include ("upload.php");
                ?>
 
+
                 <div class="panel panel-default">
                     <div class="panel-heading">
                   <h3> CHAT  </h3>
