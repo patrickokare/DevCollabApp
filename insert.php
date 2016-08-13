@@ -8,9 +8,12 @@ include ("connection.php");
 
 
 mysqli_select_db($db,'chatbox');
+if(!empty($msg)){
+
 
 mysqli_query($db,"INSERT INTO logs(`username`,`msg`)
                   VALUES ('$uname','$msg')");
+}
 
 $result1 = mysqli_query($db,"SELECT * FROM logs ORDER by id DESC ");
 
