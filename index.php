@@ -1,3 +1,10 @@
+<?php
+include ("login.php");
+
+echo $error;
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>

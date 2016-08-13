@@ -5,6 +5,8 @@
 </head>
 <body bgcolor="red">
 
+
+
 </body>
 </html>
 
@@ -39,11 +41,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         header("location: Home.php");// Redirecting To another Page
 
         }else if($count == 0) {
-        header("location: index.html");
 
-        echo 'username or password incorrect';
+        header("location: index.php");
+
+        $error =  'username or password incorrect';
       //  $error = 'YOUR PASSWORD IS NOT RECOGNIZED! TRY AGAIN... <br>';
-     //   echo $error;
+        echo $error;
     }
 }
 

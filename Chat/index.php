@@ -4,7 +4,7 @@ if(!isset($_SESSION['login_user'])){
 
    ?>
 
-  <?php  header("location: ../index.html"); ?>
+  <?php  header("location: ../index.php"); ?>
 
    <?php
 

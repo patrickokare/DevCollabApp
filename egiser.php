@@ -90,7 +90,7 @@ $username = $_POST['username'];
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html"> <em style="font-family: cursive"> DevCollab  </em> </a>
+                <a class="navbar-brand" href="index.php"> <em style="font-family: cursive"> DevCollab  </em> </a>
             </div>
 
         </div>

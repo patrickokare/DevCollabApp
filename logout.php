@@ -9,5 +9,5 @@ session_destroy();
 ?>
  **/
 if(session_destroy()) {
-    header("Location: index.html");
+    header("Location: index.php");
 }
