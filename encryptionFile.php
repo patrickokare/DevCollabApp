@@ -43,24 +43,29 @@ if($_POST['submit'] == 'submit') {
         } else {
             $password = hashword($password, $salt);
 
-            echo $password;
 
-            $query = "INSERT INTO users (username,password)
-                            VALUES ('".encrypt( $username, $key) ."', '". encrypt($password, $key) ."');";
-    echo $query;
-        }
-            if (mysqli_query($db, $query)) {
-                header('Location: success.php?username=' . $username);
+            $query_run = mysqli_query($db, $query);
+
+
+            if (mysql_num_rows($query_run) == 1) {
+                echo 'The username' . $username . ' already exists.';
             } else {
-                echo 'Sorry, We Could not register you at this time. Try again Later.';
+
+
+                $query = "INSERT INTO users (username,password)
+                            VALUES ('" . encrypt($username, $key) . "', '" . encrypt($password, $key) . "');";
+
+
+                if ($query_run = mysqli_query($db, $query)) {
+                    header('Location: success.php?username=' . $username);
+                } else {
+                    echo 'Sorry, We Could not register you at this time. Try again Later.';
+                }
+
             }
 
+
         }
-
-
-
-
-
 
 
     }
