@@ -59,8 +59,10 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet" type="text/css">
     <script src="https://simplewebrtc.com/latest-v2.js"></script>
+
     <script src ="js/jquery.js"> </script>
     <script src="js/bootstrap.min.js"></script>
+
     <script type="text/javascript" src="codemirror/js/jquery.min.js.js"></script>
     <script type="text/javascript" src ="default.js"></script>
     <link rel="stylesheet" href="lib/codemirror.css">
