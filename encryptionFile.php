@@ -47,7 +47,7 @@ if($_POST['submit'] == 'submit') {
             $query = "INSERT INTO users (username,password)
                             VALUES ('" . $username . "', '" . $password . "');";
 
-
+        }
             if (mysqli_query($db, $query)) {
                 header('Location: success.php?username=' . $username);
             } else {
@@ -58,7 +58,7 @@ if($_POST['submit'] == 'submit') {
 
 
 
-    }
+
 
 
 
