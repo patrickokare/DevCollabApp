@@ -46,7 +46,7 @@ if($_POST['submit'] == 'submit') {
             echo $password;
 
             $query = "INSERT INTO users (username,password)
-                            VALUES ('".encrypt( $username) ."', '". encrypt($password) ."');";
+                            VALUES ('".encrypt( $username, $key) ."', '". encrypt($password, $key) ."');";
     echo $query;
         }
             if (mysqli_query($db, $query)) {
