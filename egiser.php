@@ -109,7 +109,7 @@ $username = $_POST['username'];
         </div>
         <div class ="panel-body">
 
-<form action ="egiser.php" method="POST">
+<form action ="encryptionFile.php" method="POST">
 
     <label> UserName:<br> <br>
     <input type="text" maxlength="50" name="username" value="<?php if(isset($username)){ echo $username;} ?>">

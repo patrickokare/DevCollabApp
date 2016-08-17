@@ -2,7 +2,7 @@
 
 include_once "connection.php";
 require 'session.php';
-
+$username = $_POST['username'];
 //$key = md5('africa');
 $salt = md5('africa');
 
