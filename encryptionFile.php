@@ -3,24 +3,24 @@
 include_once "connection.php";
 require 'session.php';
 $username = $_POST['username'];
-//$key = md5('africa');
+$key = md5('africa');
 $salt = md5('africa');
 
 
 function encrypt($string, $key){
-    $string = rtrim(base64_encode(mcrypt_encrypt(MCRYPT_RIJNDAEL_256, $key, $string, MCRYPT_MODE_ECB_)));
-  //return $string;
+    $string = rtrim(base64_encode(mcrypt_encrypt(MCRYPT_RIJNDAEL_256, $key, $string, MCRYPT_MODE_ECB)));
+    return $string;
 }
 
 
 function decrypt($string, $key){
     $string = rtrim(mcrypt_decrypt(MCRYPT_RIJNDAEL_256, $key, base64_decode($string),MCRYPT_MODE_ECB));
- //   return $string;
+    return $string;
 }
 
 function hashword($string, $salt){
     $string = crypt($string, '$1$'. $salt . '$');
-   // return $string;
+    return $string;
 }
 
 
@@ -45,7 +45,7 @@ if($_POST['submit'] == 'submit') {
 
 
             $query = "INSERT INTO users (username,password)
-                            VALUES ('" . $username . "', '" . $password . "');";
+                            VALUES ('".encrypt( $username) ."', '". encrypt($password) ."');";
 
         }
             if (mysqli_query($db, $query)) {
