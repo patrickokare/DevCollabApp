@@ -1,7 +1,7 @@
 <?php
 
 include_once "connection.php";
-require 'session.php';
+//require 'session.php';
 $username = $_POST['username'];
 $key = md5('africa');
 $salt = md5('africa');
@@ -43,6 +43,7 @@ if($_POST['submit'] == 'submit') {
         } else {
             $password = hashword($password, $salt);
 
+            echo $password;
 
             $query = "INSERT INTO users (username,password)
                             VALUES ('".encrypt( $username) ."', '". encrypt($password) ."');";
