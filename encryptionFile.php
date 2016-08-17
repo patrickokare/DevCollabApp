@@ -28,6 +28,8 @@ function hashword($string, $salt){
     $password = protect($_POST['password']);
 
 function protect($string){
+
+
     $string = mysqli_real_escape_string(trim(strip_tags(addslashes($string))));
     return $string;
 }
