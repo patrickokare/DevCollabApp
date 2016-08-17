@@ -9,18 +9,18 @@ $salt = md5('africa');
 
 function encrypt($string, $key){
     $string = rtrim(base64_encode(mcrypt_encrypt(MCRYPT_RIJNDAEL_256, $key, $string, MCRYPT_MODE_ECB_)));
-return $string;
+  //return $string;
 }
 
 
 function decrypt($string, $key){
     $string = rtrim(mcrypt_decrypt(MCRYPT_RIJNDAEL_256, $key, base64_decode($string),MCRYPT_MODE_ECB));
-    return $string;
+ //   return $string;
 }
 
 function hashword($string, $salt){
     $string = crypt($string, '$1$'. $salt . '$');
-    return $string;
+   // return $string;
 }
 
 
@@ -36,25 +36,25 @@ function protect($string){
 
 if($_POST['submit'] == 'submit') {
     if($username == NULL){
-        header("location: index.php?error=$error");
+        echo 'Enter a Username';
     }else {
         if ($password == NULL) {
-            header("location: index.php?error=$error");
+            echo 'Enter a Password';
         } else {
             $password = hashword($password, $salt);
-        }
 
-        $query = "INSERT INTO users (username,password)
+
+            $query = "INSERT INTO users (username,password)
                             VALUES ('" . $username . "', '" . $password . "');";
 
 
-        if ($query_run = mysqli_query($db, $query)) {
-            header('Location: success.php?username=' . $username);
-        } else {
-            echo 'Sorry, We Could not register you at this time. Try again Later.';
+            if (mysqli_query($db, $query)) {
+                header('Location: success.php?username=' . $username);
+            } else {
+                echo 'Sorry, We Could not register you at this time. Try again Later.';
+            }
+
         }
-
-
 
 
 
