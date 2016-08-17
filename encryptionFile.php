@@ -37,40 +37,32 @@ function protect($string){
 
 
 if($_POST['submit'] == 'submit') {
-    if($username == NULL){
-        echo 'Enter a Username';
-    }else {
+    if ($username == NULL) {
+     //   echo 'Enter a Username';
+    } else {
         if ($password == NULL) {
-            echo 'Enter a Password';
+        //    echo 'Enter a Password';
         } else {
             $password = hashword($password, $salt);
 
 
-            $query_run = mysqli_query($db, $query);
-
-
-            if (mysql_num_rows($query_run) == 1) {
-                echo 'The username' . $username . ' already exists.';
-            } else {
-
-
-                $query = "INSERT INTO users (username,password)
+            $query = "INSERT INTO users (username,password)
                             VALUES ('" . encrypt($username, $key) . "', '" . encrypt($password, $key) . "');";
 
 
-                if ($query_run = mysqli_query($db, $query)) {
-                    header('Location: success.php?username=' . $username);
-                } else {
-                    echo 'Sorry, We Could not register you at this time. Try again Later.';
-                }
-
+            if (mysqli_query($db, $query)) {
+                header('Location: success.php?username=' . $username);
+            } else {
+                echo 'Sorry, We Could not register you at this time. Try again Later.';
             }
-
 
         }
 
 
     }
+
+
+}
 
 
 
