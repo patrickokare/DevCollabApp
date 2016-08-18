@@ -16,6 +16,7 @@ if(!isset($_SESSION['login_user'])){
 $reloadedPage;
 
 echo $reloadedPage;
+echo 'testin';
 
 if(isset($reloadedPage) == false) {
 
@@ -243,7 +244,9 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
                           ?>
 
-<?php  echo $reloadedPage; ?>
+<?php  echo $reloadedPage;
+echo 'testin';?>
+
 
 <!-- do not touch this div's  -->
 
