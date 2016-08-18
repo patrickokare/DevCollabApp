@@ -18,15 +18,10 @@ $reloadedPage;
 echo $reloadedPage;
 echo 'testin';
 
-if(isset($reloadedPage) == false) {
 
-    //$comment = null;
-    $userfilename = $_SESSION['login_user'] . '_' . 'codes.txt';
-    $oldfile = file_get_contents("http://karetechapp.azurewebsites.net/usercodes/" . $userfilename);
-    $comment = $oldfile;
-    //$link =  window.opendir("http://karetechapp.azurewebsites.net/usercodes/".$userfilename);
-    //echo $link;
-}else if (isset($reloadedPage) == true) {
+
+
+if (isset($_POST['submit'])) {
 
     $selectedValue = $_POST['color'];
 
@@ -35,6 +30,14 @@ if(isset($reloadedPage) == false) {
     $oldfile = file_get_contents("http://karetechapp.azurewebsites.net/usercodes/" . $selectedValue);
     $comment = $oldfile;
 
+}else {
+
+    //$comment = null;
+    $userfilename = $_SESSION['login_user'] . '_' . 'codes.txt';
+    $oldfile = file_get_contents("http://karetechapp.azurewebsites.net/usercodes/" . $userfilename);
+    $comment = $oldfile;
+    //$link =  window.opendir("http://karetechapp.azurewebsites.net/usercodes/".$userfilename);
+    //echo $link;
 }
 
 
