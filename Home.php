@@ -14,7 +14,7 @@ if(!isset($_SESSION['login_user'])){
 
 
 
-if (isset($_POST['submit'])) {
+if (isset($_POST['submit']) || isset($_POST['preview-form-submit'])) {
     $selectedValue = $_POST['color'];
     $userfilename = $selectedValue;
     $oldfile = file_get_contents("http://karetechapp.azurewebsites.net/usercodes/" . $selectedValue);
