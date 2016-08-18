@@ -1,7 +1,48 @@
 <?php
-session_start();
+require 'session.php';
 include "connection.php";
 
+if (isset($_POST['username']) && isset($_POST['password']) && isset($_POST['password_again'])) {
+
+
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+}
+ else{
+    $sql = "SELECT uid FROM users WHERE uid='$uid'";
+     $result = $db->query($sql);
+     $uidcheck = mysqli_num__rows($result);
+if($uidcheck > 0){
+    header('Location: egiser.php');
+    exit();
+} else{
+    $sql = "INSERT INTO users (username,password)
+                            VALUES ('" . $username . "', '" . $password . "');";
+
+    $result = $db->query($sql);
+    header('Location: success.php');
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
 $uid = $_POST['uid'];
 $password= $_POST['password'];
 
@@ -27,3 +68,4 @@ if($hash ==0){
     }
     header("Location: success.php");
 }
+**/
