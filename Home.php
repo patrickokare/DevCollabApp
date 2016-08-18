@@ -31,7 +31,7 @@ if (isset($_POST['submit'])) {
     $oldfile = file_get_contents("http://karetechapp.azurewebsites.net/usercodes/" . $selectedValue);
     $comment = $oldfile;
 
-    echo 'post if sTAtement';
+    echo 'post if (2) statement';
 
 }else {
 
