@@ -15,8 +15,8 @@ if(!isset($_SESSION['login_user'])){
 // This is a boolean that only equals true when teh  page is reloaded
 $reloadedPage;
 
-echo $reloadedPage;
-echo 'testin';
+//echo $reloadedPage;
+//echo 'testin';
 
 
 
@@ -75,9 +75,9 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
     $fp = fopen($_SERVER['DOCUMENT_ROOT'] . "/usercodes/".$userfilename,"wb");
     fwrite($fp,$content);
 
-    fclose($fp);
-    $reloadedPage = TRUE;
 
+   // $reloadedPage = TRUE;
+    fclose($fp);
 //}
 
 }
