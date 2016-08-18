@@ -258,6 +258,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                   <h3> CHAT  </h3>
                         </div>
 <div style="background-color: #00ccaa">
+
                     <form name="form1">
 
                          <b> <?php echo $_SESSION['username']; ?></b><br>
@@ -276,7 +277,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                         </textarea>
                         <br>
 
-                        <a href="" onclick="submitChat(); return true;" class="button"> Send</a><br> <br>
+                        <a href="chatlogs" onclick="submitChat(); return true;" class="button"> Send</a><br> <br>
 
 
                     </form>
