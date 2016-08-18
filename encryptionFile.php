@@ -11,13 +11,15 @@ if (isset($_POST['username']) && isset($_POST['password']) && isset($_POST['pass
 
     $encrypted_password = password_hash($password, PASSWORD_DEFAULT);
 
+    echo $encrypted_password;
+/**
     $sql = "INSERT INTO users (username,password)
                             VALUES ('" . $username . "', '" . $encrypted_password . "');";
 
     $result = $db->query($sql);
     header('Location: success.php');
 
-
+**/
 
 
 }
