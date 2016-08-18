@@ -16,12 +16,8 @@ $reloadedPage;
 
 
 if (isset($_POST['submit'])) {
-
     $selectedValue = $_POST['color'];
     $userfilename = $selectedValue;
-
-    //$userfilename = $_SESSION['login_user'] . '_' . 'codes.txt';
-
     $oldfile = file_get_contents("http://karetechapp.azurewebsites.net/usercodes/" . $selectedValue);
     $comment = $oldfile;
 
@@ -34,41 +30,25 @@ if (isset($_POST['submit'])) {
     $oldfile = file_get_contents("http://karetechapp.azurewebsites.net/usercodes/" . $userfilename);
     $comment = $oldfile;
 
-    echo 'post else sTAtement';
+    echo 'post 1';
 }
 
 
 
 
-
-
-
-//if(!empty($comment)){
 // when the form is submitted this code below will run
 if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'])) {
-
 
                       date_default_timezone_set('Europe/London');
                       $today = date("Y-m-d H:i:s");
 
-
-
          $comment = $_POST['preview-form-comment'] . "\r\n" . 'Codes Saved by:' .$_SESSION['login_user'] .' at '  . $today ;
 
-
-      //$comment = $oldfile . "\r\n" .$comment;
-
-
      $content = $comment;
-
-    //$fp = fopen($_SERVER['DOCUMENT_ROOT'] . "/usercodes/usercodes.txt","wb");
     $fp = fopen($_SERVER['DOCUMENT_ROOT'] . "/usercodes/".$userfilename,"wb");
     fwrite($fp,$content);
 
-
-   // $reloadedPage = TRUE;
     fclose($fp);
-//}
 
 }
 
@@ -222,7 +202,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
 
                           <p>  Code Results </p>
-                          <?php include("readUserCodes.php");
+                         <?php include("readUserCodes.php");
       //
                           echo '<form action="Home.php" method="post">';
 
@@ -253,6 +233,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
                  </div>
           <!-- do not touch this div's  -->
+
+
     <div class="col-sm-4 col-sm-4">
         <div class="panel panel-default">
 
@@ -271,7 +253,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
 
                 </div>
-</div>
+
 
             <div class="panel-heading">
 
