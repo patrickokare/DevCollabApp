@@ -17,7 +17,7 @@ if(!isset($_SESSION['login_user'])){
 if (isset($_POST['submit'])) {
     $selectedValue = $_POST['color'];
     $userfilename = $selectedValue;
-    $oldfile = file_get_contents("http://karetechapp.azurewebsites.net/usercodes/" . $userfilename);
+    $oldfile = file_get_contents("http://karetechapp.azurewebsites.net/usercodes/" . $selectedValue);
     $comment = $oldfile;
 
     echo 'post if (2) statement';
