@@ -9,7 +9,7 @@ if (isset($_POST['username']) && isset($_POST['password']) && isset($_POST['pass
     $password = $_POST['password'];
 
 
-$encrypted_password = password_hash($password, PASSWORD_DEFAULT);
+    $encrypted_password = password_hash($password, PASSWORD_DEFAULT);
 
     $sql = "INSERT INTO users (username,password)
                             VALUES ('" . $username . "', '" . $encrypted_password . "');";
