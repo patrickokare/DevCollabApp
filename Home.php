@@ -12,12 +12,38 @@ if(!isset($_SESSION['login_user'])){
 
 <?php
 
-//$comment = null;
-$userfilename = $_SESSION['login_user'].'_'.'codes.txt';
-$oldfile = file_get_contents("http://karetechapp.azurewebsites.net/usercodes/".$userfilename);
-//$link =  window.opendir("http://karetechapp.azurewebsites.net/usercodes/".$userfilename);
-//echo $link;
-$comment = $oldfile;
+// This is a boolean that only equals true when teh  page is reloaded
+$reloadedPage;
+
+
+if(isset($reloadedPage) == false) {
+
+    //$comment = null;
+    $userfilename = $_SESSION['login_user'] . '_' . 'codes.txt';
+    $oldfile = file_get_contents("http://karetechapp.azurewebsites.net/usercodes/" . $userfilename);
+    $comment = $oldfile;
+    //$link =  window.opendir("http://karetechapp.azurewebsites.net/usercodes/".$userfilename);
+    //echo $link;
+}else if (isset($reloadedPage) == true) {
+
+    $selectedValue = $_POST['color'];
+
+    //$userfilename = $_SESSION['login_user'] . '_' . 'codes.txt';
+
+    $oldfile = file_get_contents("http://karetechapp.azurewebsites.net/usercodes/" . $selectedValue);
+    $comment = $oldfile;
+
+}
+
+
+
+
+
+
+
+
+
+
 
 //if(!empty($comment)){
 // when the form is submitted this code below will run
@@ -42,6 +68,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
     fwrite($fp,$content);
 
     fclose($fp);
+    $reloadedPage = TRUE;
+
 //}
 
 }
@@ -182,10 +210,13 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
                            </textarea>
                            <input type="submit" name = "preview-form-submit" id="preview-form-submit" value="Save">
+
                            </form>
 
                           <textarea rows="20" cols="">
+
                           <?php echo $comment; ?>
+
                           </textarea>
 
 <br>
