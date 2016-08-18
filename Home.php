@@ -15,6 +15,7 @@ if(!isset($_SESSION['login_user'])){
 // This is a boolean that only equals true when teh  page is reloaded
 $reloadedPage;
 
+echo $reloadedPage;
 
 if(isset($reloadedPage) == false) {
 
