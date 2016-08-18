@@ -10,8 +10,6 @@ if (isset($_POST['username']) && isset($_POST['password']) && isset($_POST['pass
 
 
 
-} else{
-
     $sql = "INSERT INTO users (username,password)
                             VALUES ('" . $username . "', '" . $password . "');";
 
