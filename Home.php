@@ -243,7 +243,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
                       echo'</select>';
            //
-                        echo '<input type="submit" value="Submit" name="submit">' ;
+                        echo '<input type="submit" value="submit" name="submit">' ;
 
                        echo '</form>';
 
