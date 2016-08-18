@@ -277,7 +277,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
                         </textarea>
                         <br>
 
-                        <a href="chatlogs" onclick="submitChat(); return true;" class="button"> Send</a><br> <br>
+                        <a href="#" onclick="submitChat(); return true;" class="button"> Send</a><br> <br>
 
 
                     </form>
