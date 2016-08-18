@@ -243,7 +243,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
                       echo'</select>';
            //
-                        echo '<input type="submit" value="Submit">' ;
+                        echo '<input type="submit" value="Submit" name="submit">' ;
 
                        echo '</form>';
 
@@ -251,6 +251,9 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
 <?php  echo $reloadedPage;
 echo 'testin';?>
+
+
+
 
 
 <!-- do not touch this div's  -->
