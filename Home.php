@@ -5,18 +5,12 @@ if(!isset($_SESSION['login_user'])){
     header("location:index.php");
 }
 ?>
-<?php
-// oldfile = webpath + Select Value
-//refresh codemirror
-?>
 
 <?php
 
 // This is a boolean that only equals true when teh  page is reloaded
 $reloadedPage;
 
-//echo $reloadedPage;
-//echo 'testin';
 
 
 
@@ -42,11 +36,6 @@ if (isset($_POST['submit'])) {
 
     echo 'post else sTAtement';
 }
-
-
-
-
-
 
 
 
@@ -282,7 +271,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'
 
 
                 </div>
-
+</div>
 
             <div class="panel-heading">
 
