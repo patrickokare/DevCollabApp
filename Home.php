@@ -29,6 +29,7 @@ if (isset($_POST['submit'])) {
 
     $oldfile = file_get_contents("http://karetechapp.azurewebsites.net/usercodes/" . $selectedValue);
     $comment = $oldfile;
+    echo 'post if sTAtement';
 
 }else {
 
@@ -38,6 +39,7 @@ if (isset($_POST['submit'])) {
     $comment = $oldfile;
     //$link =  window.opendir("http://karetechapp.azurewebsites.net/usercodes/".$userfilename);
     //echo $link;
+    echo 'post else sTAtement';
 }
 
 
