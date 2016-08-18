@@ -1,5 +1,5 @@
 <?php
-require 'session.php';
+
 include "connection.php";
 
 if (isset($_POST['username']) && isset($_POST['password']) && isset($_POST['password_again'])) {
@@ -8,8 +8,11 @@ if (isset($_POST['username']) && isset($_POST['password']) && isset($_POST['pass
     $username = $_POST['username'];
     $password = $_POST['password'];
 
+    echo $password . $username;
+
 }
- else{
+/**
+} else{
     $sql = "SELECT uid FROM users WHERE uid='$uid'";
      $result = $db->query($sql);
      $uidcheck = mysqli_num__rows($result);
