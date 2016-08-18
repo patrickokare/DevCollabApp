@@ -8,24 +8,16 @@ if (isset($_POST['username']) && isset($_POST['password']) && isset($_POST['pass
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    echo $password . $username;
 
-}
-/**
+
 } else{
-    $sql = "SELECT uid FROM users WHERE uid='$uid'";
-     $result = $db->query($sql);
-     $uidcheck = mysqli_num__rows($result);
-if($uidcheck > 0){
-    header('Location: egiser.php');
-    exit();
-} else{
+
     $sql = "INSERT INTO users (username,password)
                             VALUES ('" . $username . "', '" . $password . "');";
 
     $result = $db->query($sql);
     header('Location: success.php');
-}
+
 
 
 
