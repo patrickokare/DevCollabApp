@@ -14,14 +14,14 @@ $password = $_POST['password'];
  $encrypted_password = password_hash($password, PASSWORD_DEFAULT);
 
  echo $encrypted_password;
-/**
+
 $sql = "INSERT INTO users (username,password)
 VALUES ('" . $username . "', '" . $encrypted_password . "');";
 
 $result = $db->query($sql);
 header('Location: success.php');
 
-**/
 
 
 }
+
