@@ -9,7 +9,6 @@ if(!isset($_SESSION['login_user'])){
 <?php
 
 // This is a boolean that only equals true when teh  page is reloaded
-$reloadedPage;
 
 
 
@@ -18,7 +17,7 @@ $reloadedPage;
 if (isset($_POST['submit'])) {
     $selectedValue = $_POST['color'];
     $userfilename = $selectedValue;
-    $oldfile = file_get_contents("http://karetechapp.azurewebsites.net/usercodes/" . $selectedValue);
+    $oldfile = file_get_contents("http://karetechapp.azurewebsites.net/usercodes/" . $userfilename);
     $comment = $oldfile;
 
     echo 'post if (2) statement';
