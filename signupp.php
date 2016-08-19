@@ -9,14 +9,11 @@ if (isset($_POST['username']) && isset($_POST['password']) && isset($_POST['pass
 $username = $_POST['username'];
 $password = $_POST['password'];
 
+md5($password);
 
-
- $encrypted_password = password_hash($password, PASSWORD_DEFAULT);
-
- echo $encrypted_password;
 
 $sql = "INSERT INTO users (username,password)
-VALUES ('" . $username . "', '" . $encrypted_password . "');";
+VALUES ('" . $username . "', '" . $password . "');";
 
 $result = $db->query($sql);
 header('Location: success.php');
