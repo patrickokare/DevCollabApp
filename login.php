@@ -1,20 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
 
-<style>
-    span{
-        background-color: lawngreen;
-    }
-</style>
-
-</head>
-<body>
-
-
-
-</body>
-</html>
 
 <?php
 include ("connection.php");
@@ -29,7 +13,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
     $username = mysqli_real_escape_string($db,$_POST['username']);
-    $password = mysqli_real_escape_string($db,$_POST['password']);
+    $password = md5(mysqli_real_escape_string($db,$_POST['password']));
 
     $username = stripslashes($username);
     $password = stripslashes($password);
