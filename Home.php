@@ -280,7 +280,7 @@ if (isset($_POST['submit'])) {
                         </textarea>
                         <br>
 
-                        <a href="" onclick="submitChat(); return true;" class="button"> Send</a><br> <br>
+                        <a href="#" onclick="submitChat(); return true;" class="button"> Send</a><br> <br>
 
 
                     </form>
