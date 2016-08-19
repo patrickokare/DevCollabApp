@@ -40,7 +40,7 @@
 <form action="" id="uploadimage" method="POST" enctype="multipart/form-data">
 
               <div id="imagepreview">
-                  <img id="previewing" src="noimagepng"/>
+                  <img id="previewing" src="noimagepng">
                </div>
 
                <div id="selectImage">
