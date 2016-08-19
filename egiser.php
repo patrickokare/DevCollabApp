@@ -12,6 +12,8 @@ if(loggedin()) {
         $password = $_POST['password'];
         $password_again = $_POST['password_again'];
 
+        $passwordmd5 = md5($password);
+
         $username = mysqli_real_escape_string($db, $_POST['username']);
         $password = mysqli_real_escape_string($db, $_POST['password']);
         $password_again = mysqli_real_escape_string($db, $_POST['password_again']);
@@ -37,7 +39,7 @@ if(loggedin()) {
                     } else {
 
                         $query = "INSERT INTO users (username,password)
-                            VALUES ('" . $username . "', '" . $password . "');";
+                            VALUES ('" . $username . "', '" . $passwordmd5 . "');";
 
 
                         if ($query_run = mysqli_query($db, $query)) {

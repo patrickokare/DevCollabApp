@@ -11,9 +11,6 @@ if(!isset($_SESSION['login_user'])){
 // This is a boolean that only equals true when teh  page is reloaded
 
 
-
-
-
 if (isset($_POST['submit'])) {
     $selectedValue = $_POST['color'];
     $userfilename = $selectedValue;
