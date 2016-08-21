@@ -8,18 +8,10 @@ if(!isset($_SESSION['login_user'])){
 ?>
 
 <?php
-if (isset($_POST['submit'])) {
-    header("location: Editor.php");
-} else {
-    header("location: Editor.php");
-}
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'])) {
-    header("location: Editor.php");
-}
 // This is a boolean that only equals true when teh  page is reloaded
 
-/**
+
 if (isset($_POST['submit'])) {
     $selectedValue = $_POST['color'];
     $userfilename = $selectedValue;
@@ -48,7 +40,7 @@ if (isset($_POST['submit'])) {
         fclose($fp);
     }
 
-**/
+
 
 ?>
 
