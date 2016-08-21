@@ -19,6 +19,7 @@ if (isset($_POST['submit'])) {
     $comment = $oldfile;
 
 }else {
+//<?php echo $_SERVER['PHP_SELF']; ?> This was cut from the code mirror form
 
     //$comment = null;
     $userfilename = $_SESSION['login_user'] . '_' . 'codes.txt';
@@ -170,7 +171,7 @@ if (isset($_POST['submit'])) {
 
                   <div>
 
-                           <form id="preview-form"  method="post" action="<?php echo $_SERVER['PHP_SELF']; ?> ">
+                           <form id="preview-form"  method="post" action="Editor.php">
                            <textarea class="codemirror-textarea" name="preview-form-comment" id="preview-form-comment" rows="" cols=""   >
 
                            <?php echo $comment; ?>
