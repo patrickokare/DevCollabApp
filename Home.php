@@ -38,6 +38,8 @@ if (isset($_POST['submit'])) {
         $fp = fopen($_SERVER['DOCUMENT_ROOT'] . "/usercodes/" . $userfilename, "wb");
         fwrite($fp, $content);
         fclose($fp);
+
+
     }
 
 

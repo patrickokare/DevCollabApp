@@ -6,12 +6,14 @@ define('DB_DATABASE', 'karetechdb');
 $db = mysqli_connect(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE);
 
 if ($db) {
-    //  echo 'Successful Connection to the database <br>';
 } else {
     echo 'Failed to connect to the database';
 }
-
-
-
-
 ?>
+
+
+
+
+
+
+
