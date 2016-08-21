@@ -52,7 +52,7 @@ $username = $_GET['username'];
             <div class="panel panel-default">
                 <div class="panel-heading">
 
-                    <h4 class="panel-title"> Registration Successful! </h4>
+                    <h4 class="panel-title" style="color: darkred"> Registration Successful! </h4>
 
 
                 </div>

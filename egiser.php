@@ -6,63 +6,43 @@ require ("connection.php");
 if(loggedin()) {
 
     if (isset($_POST['username']) && isset($_POST['password']) && isset($_POST['password_again'])) {
-
-
         $username = $_POST['username'];
         $password = $_POST['password'];
         $password_again = $_POST['password_again'];
-
         $passwordmd5 = md5($password);
-
         $username = mysqli_real_escape_string($db, $_POST['username']);
         $password = mysqli_real_escape_string($db, $_POST['password']);
         $password_again = mysqli_real_escape_string($db, $_POST['password_again']);
-
         if (!empty($username) && !empty($password) && !empty($password_again)) {
             if (strlen($username) > 50 || strlen($password) > 50) {
            echo 'Maximum Length of field is 50';
             } else {
                 if ($password != $password_again) {
                     echo 'Passwords do not match.';
-                } else {
-
-
+                    } else {
                     $query = "SELECT `username`
                           FROM `users`
                           WHERE `username` = '$username'";
-
                     $query_run = mysqli_query($db, $query);
-
-
                     if (mysql_num_rows($query_run) == 1) {
                         echo 'The username' . $username . ' already exists.';
                     } else {
-
                         $query = "INSERT INTO users (username,password)
                             VALUES ('" . $username . "', '" . $passwordmd5 . "');";
-
-
                         if ($query_run = mysqli_query($db, $query)) {
                             header('Location: success.php?username=' . $username);
                         } else {
                             echo 'Sorry, We Could not register you at this time. Try again Later.';
                         }
-
-
                     }
                 }
                 }
-
             }
         else {
-
                 echo '<Span style="color: darkred"> All Fields are required.</Span>';
             }
         }
-
-
 }
-
 $username = $_POST['username'];
 ?>
 
