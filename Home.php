@@ -75,9 +75,7 @@ if (isset($_POST['submit'])) {
     <link href="chat.css" rel="stylesheet" type="text/css">
     <script src="http://code.jquery.com/jquery-1.9.0.js"> </script>
 
-
     <script>
-
         function submitChat(){
             if (form1.msg.value == ''){
                 alert('ENTER A MESSAGE!!!');
@@ -266,25 +264,21 @@ if (isset($_POST['submit'])) {
 <div style="background-color: #00ccaa">
 
                     <form name="form1">
-
                          <b> <?php echo $_SESSION['username']; ?></b><br>
 
                         <div id="imageload" style="display:none;">
-                            <img src=""/>
+                         <img src=""/>
                         </div>
-
                         <div id="chatlogs" style="width:100%; text-align: ;">
                             Loading Chat Logs please wait........<img src=""/>
                         </div>
 <br>
-                        Enter Your Message <br>
-
+                       <label> Enter Your Message   <br>
                         <textarea name="msg" style="width:; height: 70px">
                         </textarea>
+                       </label>
                         <br>
-
                         <a href="#" onclick="submitChat(); return true;" class="button"> Send</a><br> <br>
-
 
                     </form>
 
