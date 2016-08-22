@@ -18,6 +18,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = stripslashes($username);
     $password = stripslashes($password);
 
+    $_SESSION['login_user'] = htmlentities($_POST['username']);
+
     $sql = "SELECT uid
             FROM users
             WHERE username = '$username'
@@ -33,16 +35,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
        //error check here...........
          $_SESSION['login_user'] = $username;
 
-         echo $_SESSION['login_user'];
-      //  header("location: Home.php?username=$username");
-        header("location: Home.php");// Redirecting To another Page
 
+         echo $_SESSION['login_user'];
+        header("location: Home.php");// Redirecting To another Page
         }else {
            $error =  "<span style='color: darkred'> Username or Password Incorrect. Try Again! </span>";
-
         header("location: index.php?error=$error");
-
-
         echo $error;
 
     }
