@@ -59,22 +59,14 @@ if(!isset($_SESSION['login_user'])){
         </div>
     </nav>
 </header>
-
+<div class="container">
+    <div class="row">
+        <div class="col-sm-5">
 
 <h1> Project Specification in a Nutshell </h1>
 
-<p>
 
-    Code written in the Coding Window – could it be saved to file in some way.
-
-    Login / Accounts – could a user login be setup / could one also have a facility to collect together a number of accounts to form a Group (i.e. a Group of Collaborators – all working on the same project).  Chat – facility could automatically take the users login ID as the name.
-
-    Can the look / feel be improved UI
-
-
-</p>
-
-<strong>
+<h4>
      The M-learning framework Should consist of an integrated development
      environment, which allows the creation of dynamic student teams that can
      work together to rapidly develop a mobile application. This project is
@@ -86,25 +78,12 @@ if(!isset($_SESSION['login_user'])){
      forums for larger queries, social media integration, project management
      tools, code sharing and version control facilities and so on.
      The Application should have multiple Features(Collaborative feature) that will help in a Collaborative Learning Environment(Session management). <br>
-     Key Features are; A Collaborative Code Editor, Audio/Video Conferencing, mobile framework,file Upload Option and Text Chatting in real-time.
+     Key Features are; A Collaborative Code Editor, Audio/Video Conferencing,file Upload Option and Text Chatting in real-time.
 
-</strong>
+</h4>
 <br>
 <br>
 <br>
-<ul>
-
-     <li>The Application Must have a collaborative web editor- Something Similar to the one <a href="https://madeye.io/"> Mad Eye </a> or  <a href="https://codeshare.io/"> CodeShare Editor </a> use,  and the codes should be savable if possible </li>
-     <li> The Application must make use of Google Hangout Audio and Video Conferencing in Real-time. </li>
-     <li> The Application Must make use of bootstrap Framework to make it responsive on multiple devices </li>
-     <li>  Real-time chat/Messaging similar to Facebook Messenger pop up</li>
-     <li> The Application must be downloadable from an App Store irrespective of the Mobile OS using PhoneGap as a Native wrapper- similar to the way Instagram or Facebook Mobile App works</li>
-     <li> The Application Must make use of any file Upload API's for file Sharing preferably dropbox API <span style="color: darkred;"> BUT NOT GOOGLE DRIVE API</span> </li>
-     <li> Makes use of Azure Cloud-based Services, GitHub </li>
-     <li> Optional-  More Interactive and Dynamic UI desgin and Color Scheme which will make it more Appealing to Mobile Users. </li>
-    <li>  Finally, downloaded from the Apple, Google PlayStore and other App store </li>
-
-</ul>
 <br>
 <br>
 
@@ -129,6 +108,9 @@ if(!isset($_SESSION['login_user'])){
 <br>
 <br>
 <br>
+</div>
+        </div>
+    </div>
 
 <footer class="site-footer">
 
