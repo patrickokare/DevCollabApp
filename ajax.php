@@ -1,12 +1,12 @@
 <?php
 
 $max_size = 12400000000;
-$location = 'uploads/'; //where the file is going
-if (isset($_POST['submit'])) { //checking for anythiing will break the code
-    $name = $_FILES['file']['name']; //file name
-    $size = $_FILES['file']['size']; //file size
-    $type = $_FILES['file']['type']; //file type
-    $tmp_name = $_FILES['file']['tmp_name']; //temp location on server
+$location = 'uploads/';
+if (isset($_POST['submit'])) {
+    $name = $_FILES['file']['name'];
+    $size = $_FILES['file']['size'];
+    $type = $_FILES['file']['type'];
+    $tmp_name = $_FILES['file']['tmp_name'];
 
     if(checkType($name, $type) && checkSize($size, $max_size)){
         if (isset($name)) {
