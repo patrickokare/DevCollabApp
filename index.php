@@ -92,7 +92,7 @@ span{
             <div class="row">
 
                  <span style="font-family: cursive; color: darkred;"> (c) DevCollab App </span>
-                  <a href=""> Not a User? Click to Register</a>
+                  <a href="egiser.php"> Not a User? Click to Register</a>
 
             </div>
 
