@@ -126,8 +126,8 @@ if (isset($_POST['submit'])) {
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle nav navbar-nav nav-tabs " data-toggle="dropdown">DevCollab  <b class=" caret "> </b> </a>
                     <ul class="dropdown-menu lead">
-                        <li class="lead"> <a href="#"> Desktop Platform </a> </li>
-                        <li class="lead"> <a href="#"> Mobile Platform </a>  </li>
+                        <li class="lead"> <a href="#"> Desktop Platform version </a> </li>
+                        <li class="lead"> <a href="#"> Mobile Platform version </a>  </li>
                         <li class ="divider"> </li>
                         <li class="lead"><a href="#"> Download Link </a> </li>
 
@@ -259,7 +259,7 @@ if (isset($_POST['submit'])) {
 
                 <div class="panel panel-default" >
                     <div class="panel-heading">
-                  <h3> CHAT  </h3>
+                  <h3>  CHAT  </h3>
                         </div>
 <div style="background-color: #00ccaa">
 
