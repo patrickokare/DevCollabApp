@@ -29,18 +29,18 @@ if (isset($_POST['submit'])) {
 }
 
 // when the form is submitted this code below will run
-    if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'])) {
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['preview-form-comment'])) {
 
-        date_default_timezone_set('Europe/London');
-        $today = date("Y-m-d H:i:s");
-        $comment = $_POST['preview-form-comment'] . "\r\n" . 'Codes Saved by:' . $_SESSION['login_user'] . ' at ' . $today;
-        $content = $comment;
-        $fp = fopen($_SERVER['DOCUMENT_ROOT'] . "/usercodes/" . $userfilename, "wb");
-        fwrite($fp, $content);
-        fclose($fp);
+    date_default_timezone_set('Europe/London');
+    $today = date("Y-m-d H:i:s");
+    $comment = $_POST['preview-form-comment'] . "\r\n" . 'Codes Saved by:' . $_SESSION['login_user'] . ' at ' . $today;
+    $content = $comment;
+    $fp = fopen($_SERVER['DOCUMENT_ROOT'] . "/usercodes/" . $userfilename, "wb");
+    fwrite($fp, $content);
+    fclose($fp);
 
 
-    }
+}
 
 
 
@@ -105,42 +105,42 @@ if (isset($_POST['submit'])) {
 <body>
 
 <header>
-<nav class="navbar navbar-default navbar-static-top no-margin" role="navigation">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-ArrayTech-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="Home.php"> <em style="font-family: cursive"> DevCollab  </em> </a>
+    <nav class="navbar navbar-default navbar-static-top no-margin" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-ArrayTech-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="Home.php"> <em style="font-family: cursive"> DevCollab  </em> </a>
+            </div>
+
+
+            <div class="collapse navbar-collapse" id="bs-ArrayTech-navbar-collapse-1">
+                <ul class="nav navbar-nav nav-tabs lead">
+                    <li class="active "><a href="Home.php">Home </a> </li>
+                    <li> <a href="features.php"> Features </a> </li>
+                    <li> <a href="contact.php"> Contact </a> </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle nav navbar-nav nav-tabs " data-toggle="dropdown">DevCollab  <b class=" caret "> </b> </a>
+                        <ul class="dropdown-menu lead">
+                            <li class="lead"> <a href="#"> Desktop Platform </a> </li>
+                            <li class="lead"> <a href="#"> Mobile Platform </a>  </li>
+                            <li class ="divider"> </li>
+                            <li class="lead"><a href="#"> Download Link </a> </li>
+
+                        </ul>
+                    </li>
+                    <li style="float: right" class="pull-right"> <a href = "logout.php"> Log Out </a>  </li>
+
+                </ul>
+
+
+            </div>
         </div>
-
-
-        <div class="collapse navbar-collapse" id="bs-ArrayTech-navbar-collapse-1">
-            <ul class="nav navbar-nav nav-tabs lead">
-                <li class="active "><a href="Home.php">Home </a> </li>
-                <li> <a href="features.php"> Features </a> </li>
-                <li> <a href="contact.php"> Contact </a> </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle nav navbar-nav nav-tabs " data-toggle="dropdown">DevCollab  <b class=" caret "> </b> </a>
-                    <ul class="dropdown-menu lead">
-                        <li class="lead"> <a href="#"> Desktop Platform version </a> </li>
-                        <li class="lead"> <a href="#"> Mobile Platform version </a>  </li>
-                        <li class ="divider"> </li>
-                        <li class="lead"><a href="#"> Download Link </a> </li>
-
-                    </ul>
-                </li>
-                <li style="float: right" class="pull-right"> <a href = "logout.php"> Log Out </a>  </li>
-
-            </ul>
-
-
-        </div>
-    </div>
-</nav>
+    </nav>
 </header>
 
 
@@ -160,26 +160,26 @@ if (isset($_POST['submit'])) {
 
 
 <div class="container">
-      <div class="row">
-          <div class="col-md-8 col-md-8">
-              <div class="panel panel-default">
+    <div class="row">
+        <div class="col-md-8 col-md-8">
+            <div class="panel panel-default">
 
-                  <div class="panel-heading">
-                      <h3> CODE EDITOR  </h3>
-                  </div>
+                <div class="panel-heading">
+                    <h3> CODE EDITOR  </h3>
+                </div>
 
 
-                  <div>
+                <div>
 
-                           <form id="preview-form"  method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+                    <form id="preview-form"  method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
                            <textarea class="codemirror-textarea" name="preview-form-comment" id="preview-form-comment" rows="" cols=""   >
 
                            <?php echo $comment; ?>
 
                            </textarea>
-                           <input type="submit" name = "preview-form-submit" id="preview-form-submit" value="Save">
+                        <input type="submit" name = "preview-form-submit" id="preview-form-submit" value="Save">
 
-                           </form>
+                    </form>
 
                           <textarea rows="20" cols="">
 
@@ -187,102 +187,102 @@ if (isset($_POST['submit'])) {
 
                           </textarea>
 
-<br>
-<br>
+                    <br>
+                    <br>
 
 
-                          <p>  Code Results </p>
-                         <?php include("readUserCodes.php");
-      //
-                          echo '<form action="Home.php" method="post">';
+                    <p>  Code Results </p>
+                    <?php include("readUserCodes.php");
+                    //
+                    echo '<form action="Home.php" method="post">';
 
-                          echo '<select name="color">';
-                          for($i =0; $i< count($files);$i++){
+                    echo '<select name="color">';
+                    for($i =0; $i< count($files);$i++){
 
-                              echo'<option>' .$files[$i] . '</option>';
-                          }
+                        echo'<option>' .$files[$i] . '</option>';
+                    }
 
-                      echo'</select>';
-           //
-                        echo '<input type="submit" value="submit" name="submit">' ;
+                    echo'</select>';
+                    //
+                    echo '<input type="submit" value="submit" name="submit">' ;
 
-                       echo '</form>';
+                    echo '</form>';
 
-                          ?>
-
-
-
+                    ?>
 
 
 
-<!-- do not touch this div,s  -->
-
-                 </div>
-
-                 </div>
-
-                 </div>
-          <!-- do not touch this div's  -->
 
 
-    <div class="col-sm-4 col-sm-4">
-        <div class="panel panel-default">
 
-            <!-- This codes below are for the video Conferencing, file Upload and messenging box -->
-            <div class="panel-heading">
-                <h3>  VIDEO CONFERENCE  </h3>
+                    <!-- do not touch this div's  -->
+
+                </div>
+
             </div>
-             <div>
+
+        </div>
+        <!-- do not touch this div's  -->
+
+
+        <div class="col-sm-4 col-sm-4">
+            <div class="panel panel-default">
+
+                <!-- This codes below are for the video Conferencing, file Upload and messenging box -->
+                <div class="panel-heading">
+                    <h3>  VIDEO CONFERENCE  </h3>
+                </div>
+                <div>
 
 
 
-              <?php
-              include('videoConf.php');
-               ?>
+                    <?php
+                    include('videoConf.php');
+                    ?>
 
 
 
                 </div>
 
 
-            <div class="panel-heading">
+                <div class="panel-heading">
 
 
-            <h3> FILE SHARING </h3>
+                    <h3> FILE SHARING </h3>
                 </div>
 
-            <?php
-            include("fileSharing.php");
-            include("readUploadFile.php");
-               ?>
+                <?php
+                include("fileSharing.php");
+                include("readUploadFile.php");
+                ?>
 
 
                 <div class="panel panel-default" >
                     <div class="panel-heading">
-                  <h3>  CHAT  </h3>
-                        </div>
-<div style="background-color: #00ccaa">
+                        <h3> CHAT  </h3>
+                    </div>
+                    <div style="background-color: #00ccaa">
 
-                    <form name="form1">
-                         <b> <?php echo $_SESSION['username']; ?></b><br>
+                        <form name="form1">
+                            <b> <?php echo $_SESSION['username']; ?></b><br>
 
-                        <div id="imageload" style="display:none;">
-                         <img src=""/>
-                        </div>
-                        <div id="chatlogs" style="width:100%; text-align: ;">
-                            Loading Chat Logs please wait........<img src=""/>
-                        </div>
-<br>
-                       <label> Enter Your Message   <br>
+                            <div id="imageload" style="display:none;">
+                                <img src=""/>
+                            </div>
+                            <div id="chatlogs" style="width:100%; text-align: ;">
+                                Loading Chat Logs please wait........<img src=""/>
+                            </div>
+                            <br>
+                            <label> Enter Your Message   <br>
                         <textarea name="msg" style="width:; height: 70px">
                         </textarea>
-                       </label>
-                        <br>
-                        <a href="#" onclick="submitChat(); return true;" class="button"> Send</a><br> <br>
+                            </label>
+                            <br>
+                            <a href="#" onclick="submitChat(); return true;" class="button"> Send</a><br> <br>
 
-                    </form>
+                        </form>
 
-</div>
+                    </div>
 
 
                     <div class="panel panel-default">
@@ -290,7 +290,7 @@ if (isset($_POST['submit'])) {
                             <h3> GEO-LOCATION </h3>
                         </div>
 
-<?php
+                        <?php
 
 
                         require_once('geoplugin.class.php');
@@ -301,21 +301,21 @@ if (isset($_POST['submit'])) {
                         $geoplugin->locate();
 
                         echo "Geolocation results for {$geoplugin->ip}: <br />\n".
-                        "City: {$geoplugin->city} <br />\n".
-                        "Region: {$geoplugin->region} <br />\n".
-                        "Area Code: {$geoplugin->areaCode} <br />\n".
-                        "DMA Code: {$geoplugin->dmaCode} <br />\n".
-                        "Country Name: {$geoplugin->countryName} <br />\n".
-                        "Country Code: {$geoplugin->countryCode} <br />\n".
-                        "Longitude: {$geoplugin->longitude} <br />\n".
-                        "Latitude: {$geoplugin->latitude} <br />\n";
-                      //  "Currency Code: {$geoplugin->currencyCode} <br />\n".
-                      // "Currency Symbol: {$geoplugin->currencySymbol} <br />\n".
-                       // "Exchange Rate: {$geoplugin->currencyConverter} <br />\n";
+                            "City: {$geoplugin->city} <br />\n".
+                            "Region: {$geoplugin->region} <br />\n".
+                            "Area Code: {$geoplugin->areaCode} <br />\n".
+                            "DMA Code: {$geoplugin->dmaCode} <br />\n".
+                            "Country Name: {$geoplugin->countryName} <br />\n".
+                            "Country Code: {$geoplugin->countryCode} <br />\n".
+                            "Longitude: {$geoplugin->longitude} <br />\n".
+                            "Latitude: {$geoplugin->latitude} <br />\n";
+                        //  "Currency Code: {$geoplugin->currencyCode} <br />\n".
+                        // "Currency Symbol: {$geoplugin->currencySymbol} <br />\n".
+                        // "Exchange Rate: {$geoplugin->currencyConverter} <br />\n";
 
                         if ( $geoplugin->currency != $geoplugin->currencyCode ) {
-                        //our visitor is not using the same currency as the base currency
-                      //  echo "<p>At today's rate, US$100 will cost you " . $geoplugin->convert(100) ." </p>\n";
+                            //our visitor is not using the same currency as the base currency
+                            //  echo "<p>At today's rate, US$100 will cost you " . $geoplugin->convert(100) ." </p>\n";
                         }
 
 
@@ -325,12 +325,12 @@ if (isset($_POST['submit'])) {
                         <a href="Geolocate.php" style="color: darkred">CLICK TO GET INFORMATION ABOUT THE CITIES NEAR YOU </a>
 
 
-    </div>
-</div>
+                    </div>
+                </div>
 
 
-</div>
-    </div>
+            </div>
+        </div>
     </div>
 
 </div>
@@ -391,26 +391,26 @@ if (isset($_POST['submit'])) {
 
 <footer class="site-footer">
 
-<div class="container">
-     <div class="row">
+    <div class="container">
+        <div class="row">
 
-             <span style="font-family: cursive" class="moveright"> (c)DevCollab App </span>
+            <span style="font-family: cursive" class="moveright"> (c)DevCollab App </span>
 
-         <a href="http://www.geoplugin.com/geolocation/" target="_new">IP Geolocation</a> by <a href="http://www.geoplugin.com/" target="_new">geoPlugin</a>
+            <a href="http://www.geoplugin.com/geolocation/" target="_new">IP Geolocation</a> by <a href="http://www.geoplugin.com/" target="_new">geoPlugin</a>
 
-</div>
-    <div class="bottom-footer">
-        <div class="col-sm-5"> (c) Designed by Wale Patrick 2016</div>
-        <div class="col-sm-7">
-            <ul class="footer-nav lead">
-                <li class="active"><a href="Home.php"> Home </a> </li>
-                <li><a href="features.php"> Features </a> </li>
-                <li><a href="contact.php"> Contact </a> </li>
-            </ul>
         </div>
-</div>
+        <div class="bottom-footer">
+            <div class="col-sm-5"> (c) Designed by Wale Patrick 2016</div>
+            <div class="col-sm-7">
+                <ul class="footer-nav lead">
+                    <li class="active"><a href="Home.php"> Home </a> </li>
+                    <li><a href="features.php"> Features </a> </li>
+                    <li><a href="contact.php"> Contact </a> </li>
+                </ul>
+            </div>
+        </div>
 
-</div>
+    </div>
 
 
 
