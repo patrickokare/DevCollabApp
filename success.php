@@ -1,4 +1,7 @@
-
+<?php
+session_start();
+require_once ("connection.php");
+?>
 
 <?php
 
@@ -8,137 +11,93 @@ $username = $_GET['username'];
 
 
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet" type="text/css">
-
+    <title>DevCollab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrapmin.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script src ="js/jquery.js"> </script>
     <script src="js/bootstrap.min.js"></script>
+    <style>
+        a.nounderline {
 
+            text-decoration: none;
+            color: silver;
+
+        }
+
+
+        h1{
+            color: #e74c3c;
+        }
+        span{
+            text-align: -webkit-center;
+            color: #e74c3c;
+        }
+        input[type=submit]{
+            color: silver; !important;
+        }
+        body{
+        /  max-width: 960px; !important;
+        /  margin-left: auto;!important;
+        /   margin-right: auto;!important;
+            background-color: #2ecc71;
+        }
+    </style>
 </head>
+
+<header>
+
+
+</header>
 
 <body>
 
-<header>
-    <nav class="navbar navbar-default navbar-static-top no-margin" role="navigation">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-ArrayTech-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.php"> <em style="font-family: cursive"> DevCollab  </em> </a>
+<div class="modal-dialog">
+    <div class="modal-content">
+
+        <div class="modal-header">
+            <h1 class="text-center" style="font-family: cursive"> DevCollab </h1>
+            <div class="modal-body">
+
+
+                <address>
+                    <h4>  Username: <strong>  <?php echo $username;  ?>  </strong>   </h4>
+
+
+
+                    <br>
+                    <h4>You are now a user of DevCollab.</h4>
+                    <br>
+                    <a href="index.php">LOGIN</a>
+
+                </address>
+
             </div>
 
-
-            <div class="collapse navbar-collapse" id="bs-ArrayTech-navbar-collapse-1">
-
-
-
-            </div>
         </div>
-    </nav>
-</header>
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-5">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-
-                    <h4 class="panel-title" style="color: darkred"> Registration Successful! </h4>
-
-
-                </div>
-                <div class ="panel-body">
-
-                    <address>
-                    <h4>  Username: </h4> <strong>  <?php echo $username ?></strong>
-                        <br>
-
-                       <h4>You have Successfully Completed your Registration Process</h4>
-                        <br>
-                        <h4>Thank you!</h4>
-
-                        <a href="index.php">LOGIN</a>
-
-
-                    </address>
-
-                </div>
-
-            </div>
-        </div>
 
     </div>
-
 </div>
 
 
-
-
-
-
-
-
-
-
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
-
-<footer class="site-footer">
-
-    <div class="container">
-        <div class="row">
-
-            <span style="font-family: cursive" class="moveright"> DevCollab App(c) </span>
-
-
-
-        </div>
-        <div class="bottom-footer">
-            <div class="col-md-5"> Designed by Wale Patrick 2016(c)</div>
-            <div class="col-md-7">
-
-            </div>
-        </div>
-
-    </div>
-
-
-
-
-
-
-
-
-
+<footer class="modal-dialog">
+    <hr style="color: #e74c3c">
+    <span style="font-family: cursive; color: #e74c3c;"> (c) DevCollab </span>
+    <a class="nounderline">By signing up, you agree to our Terms, Data Policy and Cookies Policy </a>
 </footer>
 
 </body>
+
+
+
+
+
+
 </html>
