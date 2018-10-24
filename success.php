@@ -46,7 +46,7 @@ $username = $_GET['username'];
         /  max-width: 960px; !important;
         /  margin-left: auto;!important;
         /   margin-right: auto;!important;
-            background-color: #2ecc71;
+             background-color:#2c3e50;
         }
     </style>
 </head>
