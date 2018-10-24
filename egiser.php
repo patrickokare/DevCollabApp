@@ -82,7 +82,7 @@ echo '<Span style="color: darkred"> All Fields are required.</Span>';
         /  max-width: 960px; !important;
         /  margin-left: auto;!important;
         /   margin-right: auto;!important;
-           background-color: #2ecc71;
+           background-color:#2c3e50;
         }
     </style>
 </head>
