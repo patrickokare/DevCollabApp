@@ -1,6 +1,6 @@
 DevCollab - Wale Patrick(2016) 
 
-Development Collaboration, shorten as DevCollab, was a web application I designed to better facilitate collaboration between computer students at my University during group work. 
+Development Collaboration, shorten as DevCollab, is a web application I designed to better facilitate collaboration between computer students at my school during group work. 
 I accomplished this by harnessing a versatile text-editor for remote coding, real-time messaging, file transfer between users,
 real-time video conferencing and integrating them together to work concurrently into one system.
 
