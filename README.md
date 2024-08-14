@@ -1,21 +1,23 @@
-DevCollab - Wale Patrick(2016) 
 
-Development Collaboration, shorten as DevCollab, is a web application I designed to better facilitate collaboration between computer students at my school during group work. 
-I accomplished this by harnessing a versatile text-editor for remote coding, real-time messaging, file transfer between users,
-real-time video conferencing and integrating them together to work concurrently into one system.
 
-I made use of Azure’s cloud computing platform to host both the application’s web server and MySQL database to store and access user data. 
-They provided the infrastructure for utilizing cloud computing features in the backend development and management of DevCollab.
-I used the Adminer database visualization tool to manage the relational tables and user information. The frontend interface was designed
-using HTML5 and other web development technologies such as Jquery, Ajax, PHP, and Bootstrap framework for mobile responsiveness.
+**DevCollab - Wale Patrick (2016)**
 
-Components
-The major functional component of DevCollab was the code editor, which allowed collaborators to work through their software codes and
-save these codes into their work file. This consisted of an existing Library from Code Mirror using JavaScript to set the modes, theme,
-and other properties from the Library. Users could also share access to their code editor with other collaborators for group work and 
-assistance. A real-time messaging chat was also integrated into DevCollab which allowed two or more students to communicate with 
-each other through text messages. In addition, a file sharing component was also integrated into DevCollab to allow document
-sharing among collaborators.
+**Overview:**  
+DevCollab is a web application I developed to enhance collaboration among computer science students during group projects. It integrates multiple tools into a single platform, enabling remote coding, real-time messaging, file sharing, and video conferencing, all within a unified system.
 
-Finally, a video conferencing component which students could use to interact with their peers in real time. 
-WebRTC framework via JavaScript APIs was used to display real-time videos on the application.
+**Hosting and Infrastructure:**  
+I hosted DevCollab on Azure, leveraging its cloud computing platform for both the web server and MySQL database. Azure's infrastructure facilitated seamless backend development and management. For database visualization, I utilized Adminer to efficiently manage relational tables and user data.
+
+**Technology Stack:**  
+- **Frontend:** Designed with HTML5, jQuery, Ajax, PHP, and Bootstrap for responsive design.
+- **Backend:** MySQL database hosted on Azure.
+- **Code Editor:** Integrated with CodeMirror, a versatile JavaScript-based text editor, enabling real-time collaborative coding with customizable themes and modes.
+- **Real-Time Messaging:** Allows users to communicate instantly through text.
+- **File Sharing:** Facilitates easy document sharing among collaborators.
+- **Video Conferencing:** Powered by WebRTC via JavaScript APIs for real-time video interaction.
+
+**Key Features:**  
+- **Collaborative Code Editing:** Users can work together on code in real time, with the ability to share access and collaborate on the same project.
+- **Instant Messaging:** Integrated chat functionality allows students to communicate effectively during projects.
+- **File Transfer:** Secure file sharing between users to streamline the collaboration process.
+- **Video Conferencing:** Real-time video calls to enhance communication and coordination within the team.
