@@ -1,23 +1,39 @@
+# DevCollab — Patrick Okare (2016)
 
+## 📌 Overview
+DevCollab is a full-stack web application built to streamline team collaboration for computer science students during group projects. It unifies real-time messaging, collaborative code editing, file sharing, and video conferencing into a single, user-friendly platform.
 
-**DevCollab - Wale Patrick (2016)**
+## ☁️ Hosting & Infrastructure
+Deployed on Microsoft Azure, DevCollab uses a cloud-based architecture with MySQL as the backend database and Adminer for schema visualization and management.
 
-**Overview:**  
-DevCollab is a web application I developed to enhance collaboration among computer science students during group projects. It integrates multiple tools into a single platform, enabling remote coding, real-time messaging, file sharing, and video conferencing, all within a unified system.
+## 🛠️ Tech Stack
+- **Frontend:** HTML5, jQuery, Ajax, Bootstrap
+- **Backend:** PHP, MySQL (Azure-hosted)
+- **Code Editor:** CodeMirror (JavaScript)
+- **Real-Time Messaging:** AJAX and jQuery
+- **File Sharing:** Secure file upload & download interface
+- **Video Conferencing:** WebRTC-powered, built using native JS APIs
 
-**Hosting and Infrastructure:**  
-I hosted DevCollab on Azure, leveraging its cloud computing platform for both the web server and MySQL database. Azure's infrastructure facilitated seamless backend development and management. For database visualization, I utilized Adminer to efficiently manage relational tables and user data.
+## 🚀 Key Features
+- **Collaborative Code Editor:** Real-time editing using CodeMirror
+- **Instant Messaging:** AJAX-powered chat interface
+- **File Sharing:** Drag-and-drop interface for team resource exchange
+- **Video Calls:** Peer-to-peer video chat using WebRTC
 
-**Technology Stack:**  
-- **Frontend:** Designed with HTML5, jQuery, Ajax, PHP, and Bootstrap for responsive design.
-- **Backend:** MySQL database hosted on Azure.
-- **Code Editor:** Integrated with CodeMirror, a versatile JavaScript-based text editor, enabling real-time collaborative coding with customizable themes and modes.
-- **Real-Time Messaging:** Allows users to communicate instantly through text.
-- **File Sharing:** Facilitates easy document sharing among collaborators.
-- **Video Conferencing:** Powered by WebRTC via JavaScript APIs for real-time video interaction.
+## 📦 Folder Structure
+devcollab/
+├── css/                  # Bootstrap and custom styles
+├── js/                   # jQuery, AJAX scripts, and CodeMirror configs
+├── includes/             # PHP logic (database, session, auth)
+├── uploads/              # Shared documents
+├── views/                # HTML pages (chat, code editor, etc.)
+└── index.php             # Main entry point
 
-**Key Features:**  
-- **Collaborative Code Editing:** Users can work together on code in real time, with the ability to share access and collaborate on the same project.
-- **Instant Messaging:** Integrated chat functionality allows students to communicate effectively during projects.
-- **File Transfer:** Secure file sharing between users to streamline the collaboration process.
-- **Video Conferencing:** Real-time video calls to enhance communication and coordination within the team.
+## 💡 Project Vision
+The project was designed for educational collaboration, but the modular structure makes it extensible to open-source learning environments, coding bootcamps, or remote dev teams.
+
+## 📖 License
+[MIT](LICENSE)
+
+---
+
