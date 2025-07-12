@@ -22,12 +22,45 @@ Deployed on Microsoft Azure, DevCollab uses a cloud-based architecture with MySQ
 
 ## 📦 Folder Structure
 devcollab/
-├── css/                  # Bootstrap and custom styles
-├── js/                   # jQuery, AJAX scripts, and CodeMirror configs
-├── includes/             # PHP logic (database, session, auth)
-├── uploads/              # Shared documents
-├── views/                # HTML pages (chat, code editor, etc.)
-└── index.php             # Main entry point
+├── .idea/                   # Project workspace settings (JetBrains IDE)
+├── codemirror/              # Core CodeMirror files for the code editor
+├── css/                     # Custom stylesheets and Bootstrap CSS
+├── fonts/                   # Fonts used across the app
+├── hint/                    # CodeMirror hint functionality
+├── js/                      # JavaScript files (jQuery, chat, AJAX)
+├── lib/                     # CodeMirror libraries and dependencies
+├── mode/                    # CodeMirror language modes (e.g., JavaScript, PHP)
+├── phpFileTree/             # File directory interface for uploads
+├── theme/                   # CodeMirror theme configurations
+├── Abruptly_Goblins_Planner.ipynb   # Notebook (likely unrelated/dev notes)
+├── adminer.php              # Adminer DB interface for MySQL
+├── ajax.php                 # AJAX backend handler
+├── chat.css                 # Styles specific to chat UI
+├── codeEditor.php           # CodeMirror-based collaborative editor
+├── connection.php           # DB connection config
+├── contact.php              # Contact form
+├── default.js               # Main JavaScript functions
+├── egiser.php               # Registration (likely old name of register.php)
+├── features.php             # Feature explanation/landing page
+├── fileSharing.php          # Backend logic for file upload
+├── geoplugin.class.php      # Geolocation plugin class
+├── Geolocate.php            # PHP script for geolocation
+├── google*.html             # Google site verification file
+├── Home.php                 # Main homepage UI
+├── index.php                # Entry point (login/landing)
+├── insert.php               # DB insert logic
+├── login.php                # Login handler
+├── logout.php               # Logout script
+├── logs.php                 # Message logs or activity logs
+├── readUploadFile.php       # Read uploaded file content
+├── readUserCodes.php        # Load code content for users
+├── session.php              # PHP session controller
+├── style.css                # Global stylesheet
+├── success.php              # Post-login redirection
+├── videoConf.php            # WebRTC video conferencing page
+├── _config.yml              # Jekyll theme configuration for GitHub Pages
+├── README.md                # Project overview and setup instructions
+└── .htaccess                # Apache configuration for file uploads
 
 ## 💡 Project Vision
 The project was designed for educational collaboration, but the modular structure makes it extensible to open-source learning environments, coding bootcamps, or remote dev teams.
