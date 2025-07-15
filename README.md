@@ -6,6 +6,9 @@ DevCollab is a full-stack web application built to streamline team collaboration
 ## ☁️ Hosting & Infrastructure
 Deployed on Microsoft Azure, DevCollab uses a cloud-based architecture with MySQL as the backend database and Adminer for schema visualization and management.
 
+## Web App - URL
+karetechapp.azurewebsites.net
+
 ## 🛠️ Tech Stack
 - **Frontend:** HTML5, jQuery, Ajax, Bootstrap
 - **Backend:** PHP, MySQL (Azure-hosted)
