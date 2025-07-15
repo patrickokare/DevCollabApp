@@ -24,6 +24,8 @@ karetechapp.azurewebsites.net
 - **Video Calls:** Peer-to-peer video chat using WebRTC
 
 ## 📦 Folder Structure
+
+<pre><code>
 devcollab/
 ├── .idea/                   # Project workspace settings (JetBrains IDE)
 ├── codemirror/              # Core CodeMirror files for the code editor
@@ -64,6 +66,7 @@ devcollab/
 ├── _config.yml              # Jekyll theme configuration for GitHub Pages
 ├── README.md                # Project overview and setup instructions
 └── .htaccess                # Apache configuration for file uploads
+</code></pre>
 
 ## 💡 Project Vision
 The project was designed for educational collaboration, but the modular structure makes it extensible to open-source learning environments, coding bootcamps, or remote dev teams.
